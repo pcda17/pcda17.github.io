@@ -86,7 +86,7 @@
 ## Week 10
 >Choose two machine learning algorithms discussed last week and a set of texts or metadata records, preferably the collection you are using for the final project. In 300–500 words, compare the likely efficacy of the two approaches and discuss how their classifications may differ.
 
-- Discuss potential classification between variations variations in word usage, perhaps correlating with genre/regional/class variations.
+- Discuss potential classification between variations in word usage, perhaps correlating with genre/regional/class differences.
 
 ## Week 12: Peer Production & Crowdsourcing
 >Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
