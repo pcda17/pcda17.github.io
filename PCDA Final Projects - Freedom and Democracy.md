@@ -4,7 +4,7 @@
 
 - Study texts in Project Gutenberg, perhaps searching for changes in political language.
 
-##Week 3: To Do Before Class
+##Week 3
 
 >Choose an online data/metadata source, preferably one available to the public via direct download or API. Download a sample of the data, at least 50 or 100 records. Read them over closely, noting anything unexpected. Search for information about the dataset's history, purpose, intended audience, and any past uses by researchers or journalists. Describe what you learned in 400–500 words.
 
@@ -46,14 +46,14 @@
 - Instead of acquiring metadata from an API, which Project Gutenberg doesn't offer, spend this week writing code to parse XML/RDF metadata and export selected fields to CSV format. 
 - Define a subset of Project Gutenberg books (e.g., a list of genres or authors) and submit a CSV version of their metadata.
 
-## Week 6: Data and Politics
+## Week 6
 
 >In 500–600 words, evaluate the “moral dimension” of the dataset you collected last week. Take the [*list of questions*](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
 - Acquire [collected set](http://www.stephenmclaughlin.net/temp/freedom_democracy/gutenberg2010.zip) of Project Gutenberg ebooks from a third party and align files with existing metadata.
 - Discuss canons, corpora, and the constructed nature of any "baseline" dataset.
 
-## Week 7: Statistics and Visualization
+## Week 7
 
 >Submit a 500–700-word proposal for your final critical data analysis project. What data will you be using? What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses. You should consider this assignment an abstract or partial draft toward your final project. Each student should post the proposal two days before class. You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
 
@@ -88,6 +88,6 @@
 
 - Discuss potential classification between variations in word usage, perhaps correlating with genre/regional/class differences.
 
-## Week 12: Peer Production & Crowdsourcing
+## Week 12
 >Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
 

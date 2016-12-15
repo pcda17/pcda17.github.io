@@ -45,7 +45,7 @@
 - Download metadata for 2,000 most recent articles, or perhaps assemble thematic article groups based on keyword searches.
 - Convert JSON data to CSV, creating master metadata table. Note any inconsistencies/missing values.
 
-## Week 6: Data and Politics
+## Week 6
 
 >In 500–600 words, evaluate the “moral dimension” of the dataset you collected last week. Take the [*list of questions*](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
@@ -53,7 +53,7 @@
 
 
 
-## Week 7: Statistics and Visualization
+## Week 7
 
 >Submit a 500–700-word proposal for your final critical data analysis project. What data will you be using? What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses. You should consider this assignment an abstract or partial draft toward your final project. Each student should post the proposal two days before class. You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
 
@@ -62,7 +62,7 @@
 - 250 comments will be hand-classified by political orientation (if apparent within the comment).
 
 
-## Week 8: Machine Learning
+## Week 8
 
 >Choose an online data/metadata source, preferably the one you’re using for your final project. Using techniques from last week’s readings, present a quantitative exploration of the data using descriptive statistics and two or three visualizations. Up to two of these may be histograms, accompanied by another graphical format of your choice. You may use numerical values included in the collection or quantify some aspect of the data using techniques learned earlier in the course. In 300 words, describe your process and findings. Submit your code in a Jupyter notebook.
 
