@@ -90,7 +90,7 @@
 
 - Do sentiment analysis measures correspond to differences in apparent political orientation?
 - Which political orientation (if either) appears more likely to provoke conflict?
-- In reading the corpus closely, do we see any evidence of changes in opinion?
+- In reading the corpus closely, do we see evidence of changes in commenters' opinions?
 
 
 
