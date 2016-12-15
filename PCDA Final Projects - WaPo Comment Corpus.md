@@ -67,7 +67,7 @@
 >Choose an online data/metadata source, preferably the one you’re using for your final project. Using techniques from last week’s readings, present a quantitative exploration of the data using descriptive statistics and two or three visualizations. Up to two of these may be histograms, accompanied by another graphical format of your choice. You may use numerical values included in the collection or quantify some aspect of the data using techniques learned earlier in the course. In 300 words, describe your process and findings. Submit your code in a Jupyter notebook.
 
 - Plot comment rates over time after articles are posted. Compare plots for popular and less popular articles.
-- Create pie chart of comments that have been classified by political orientation so far (work likely ongoing).
+- Create pie chart of comments classified by political orientation (work likely ongoing).
 - Meanwhile, continue cleaning data (e.g., improving parsing of Javascript-generated comment code).
 
 
