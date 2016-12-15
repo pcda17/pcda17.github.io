@@ -88,7 +88,9 @@
 ## Week 12
 >Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
 
-
+- Do sentiment analysis measures correspond with differences in apparent political orientation?
+- Which political orientation (if either) appears more likely to provoke conflict?
+- In reading the corpus closely, do we see any evidence of changes in opinion?
 
 
 

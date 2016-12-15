@@ -86,4 +86,5 @@
 - Discuss potential classification between variations variations in word usage, perhaps correlating with genre/regional/class variations.
 
 ## Week 12: Peer Production & Crowdsourcing
->Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.​
+>Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
+
