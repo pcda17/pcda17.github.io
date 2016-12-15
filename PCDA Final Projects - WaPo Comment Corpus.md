@@ -83,7 +83,7 @@
 
 >Choose two machine learning algorithms discussed last week and a set of texts or metadata records, preferably the collection you are using for the final project. In 300–500 words, compare the likely efficacy of the two approaches and discuss how their classifications may differ.
 
-- Train a Naive Bayes classifier using comments in liberal and conservative categories. Identify vocabulary cues that seem to make the classifier succeed/fail.
+- Train a Naive Bayes classifier using comments in liberal and conservative categories. Identify vocabulary cues that may be leading the classifier to succeed/fail.
 
 ## Week 12
 >Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
