@@ -1,9 +1,9 @@
 
 # Washington Post Comment Corpus
 
-## Student aim at the outset:
+## Student aim at start of semester:
 
-- Study texts in an online newspaper archive.
+- Study texts on a national newspaper website.
 
 
 
@@ -49,7 +49,7 @@
 
 >In 500–600 words, evaluate the “moral dimension” of the dataset you collected last week. Take the [*list of questions*](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
-- Express interest in comment threads beneath articles, which hold the promise of civil discourse but are often overwhelmed with hyperpartisan mockery and trolling. 
+- Shift project focus to the comment streams beneath articles, which hold the promise of civil discourse yet are often overwhelmed with hyperpartisan mockery and trolling. 
 
 
 
@@ -59,7 +59,7 @@
 
 - Final project proposal: An analysis of comment streams for 10 recent articles in the Washington Post "Politics" section, with articles chosen at random over a single week.
 - Data collection will involve accessing URLs in metadata collected from API. Because Washington Post comments are displayed using JavaScript, pages must first be rendered using PhantomJS, e.g., via the Python package Selenium.
-- 250 comments will be hand-coded by political orientation (if apparent).
+- 250 comments will be hand-classified by political orientation (if apparent within the comment).
 
 
 ## Week 8: Machine Learning
@@ -67,7 +67,8 @@
 >Choose an online data/metadata source, preferably the one you’re using for your final project. Using techniques from last week’s readings, present a quantitative exploration of the data using descriptive statistics and two or three visualizations. Up to two of these may be histograms, accompanied by another graphical format of your choice. You may use numerical values included in the collection or quantify some aspect of the data using techniques learned earlier in the course. In 300 words, describe your process and findings. Submit your code in a Jupyter notebook.
 
 - Plot comment rates over time after articles are posted. Compare plots for popular and less popular articles.
-- Meanwhile, continue cleaning data (e.g., improving parsing of Javascript-generated comment code) and work on hand coding 250 comments by political orientation.
+- Create pie chart of comments that have been classified by political orientation so far (work likely ongoing).
+- Meanwhile, continue cleaning data (e.g., improving parsing of Javascript-generated comment code).
 
 
 
@@ -82,9 +83,9 @@
 
 >Choose two machine learning algorithms discussed last week and a set of texts or metadata records, preferably the collection you are using for the final project. In 300–500 words, compare the likely efficacy of the two approaches and discuss how their classifications may differ.
 
-- Train a Naive Bayes classifier using comments in liberal and conservative categories. Identify some vocabulary cues that lead the classifier to succeed/fail.
+- Train a Naive Bayes classifier using comments in liberal and conservative categories. Identify vocabulary cues that seem to make the classifier succeed/fail.
 
-## Week 12: Peer Production & Crowdsourcing
+## Week 12
 >Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
 
 

@@ -1,6 +1,6 @@
 # History of "Freedom" and "Democracy"
 
-## Student aim at the outset:
+## Student aim at start of semester:
 
 - Study texts in Project Gutenberg, perhaps searching for changes in political language.
 
@@ -51,7 +51,7 @@
 >In 500–600 words, evaluate the “moral dimension” of the dataset you collected last week. Take the [*list of questions*](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
 - Acquire [collected set](http://www.stephenmclaughlin.net/temp/freedom_democracy/gutenberg2010.zip) of Project Gutenberg ebooks from a third party and align files with existing metadata.
-- ​
+- Discuss canons and corpora and the constructed nature of any "baseline" dataset.
 
 ## Week 7: Statistics and Visualization
 
@@ -67,14 +67,15 @@
 >Choose an online data/metadata source, preferably the one you’re using for your final project. Using techniques from last week’s readings, present a quantitative exploration of the data using descriptive statistics and two or three visualizations. Up to two of these may be histograms, accompanied by another graphical format of your choice. You may use numerical values included in the collection or quantify some aspect of the data using techniques learned earlier in the course. In 300 words, describe your process and findings. Submit your code in a Jupyter notebook.
 
 - Plot usage rates of "freedom" and "democracy" over all texts in selected corpus, comparing results to [Google Ngam Viewer](https://books.google.com/ngrams/graph?content=freedom%2Cdemocracy&year_start=1800&year_end=2010&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cfreedom%3B%2Cc0%3B.t1%3B%2Cdemocracy%3B%2Cc0).
-- Plot in-progress hand coding data over time.
-- ​
+- Plot data from hand-coded excerpts over time (likely partial results).
+
+  ​
 
 ## Week 9
 >Share your complete, cleaned dataset for the final project. In 200 words, describe the collection and the work you’ve done to shape and/or augment it. Submit a sample of your collection and/or processing code in a Jupyter notebook.
 
 - Dataset contents:
-  - Cleaned metadata table for full corpus
+  - Cleaned metadata table for full text corpus
   - Cleaned text files for full corpus
   - Collection of ~200 text excerpts with assigned codes
 
@@ -82,9 +83,7 @@
 ## Week 10
 >Choose two machine learning algorithms discussed last week and a set of texts or metadata records, preferably the collection you are using for the final project. In 300–500 words, compare the likely efficacy of the two approaches and discuss how their classifications may differ.
 
-- Discuss 
+- Discuss potential classification between variations variations in word usage, perhaps correlating with genre/regional/class variations.
 
 ## Week 12: Peer Production & Crowdsourcing
->Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
-
-- ​
+>Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.​
