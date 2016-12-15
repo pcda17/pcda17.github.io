@@ -51,7 +51,7 @@
 >In 500–600 words, evaluate the “moral dimension” of the dataset you collected last week. Take the [*list of questions*](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
 - Acquire [collected set](http://www.stephenmclaughlin.net/temp/freedom_democracy/gutenberg2010.zip) of Project Gutenberg ebooks from a third party and align files with existing metadata.
-- Discuss canons and corpora and the constructed nature of any "baseline" dataset.
+- ​Discuss canons, corpora, and the constructed nature of any "baseline" dataset.
 
 ## Week 7: Statistics and Visualization
 
