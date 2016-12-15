@@ -29,7 +29,7 @@ Designed by Stephen McLaughlin, Spring 2016
 
 -   Learning to code takes trial and error. Work through weekly programming tutorials before class and continue polishing in-class coding assignments at home.
 
-### *Final Project: Critical Data Analysis*
+### Final Project: Critical Data Analysis
 
 For your final project, you will construct a dataset drawn from two or more online sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged by a cultural institution) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community). You should conceive and execute your project with a specific audience in mind, such as literary scholars, newspaper readers, or policy advocates.
 
