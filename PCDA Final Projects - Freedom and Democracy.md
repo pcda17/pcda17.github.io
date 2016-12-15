@@ -1,4 +1,4 @@
-# History of "Freedom" and "Democracy"
+# History of 'Freedom' and 'Democracy'
 
 ## Student aim at start of semester:
 
