@@ -68,9 +68,9 @@
 
 - Plot usage rates of "freedom" and "democracy" over all texts in selected corpus, comparing results to [Google Ngam Viewer](https://books.google.com/ngrams/graph?content=freedom%2Cdemocracy&year_start=1800&year_end=2010&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cfreedom%3B%2Cc0%3B.t1%3B%2Cdemocracy%3B%2Cc0).
 
-- Plot data from hand-coded excerpts over time (work likely ongoing).
+- Plot data from hand-coded excerpts over time (work likely ongoing this week).
 
-- Carry out sentence-level sentiment analysis on several authors' works and compare histogram distributions.
+- Carry out sentence-level sentiment analysis on several authors' works and compare distributions as histograms.
 
   ​
 
