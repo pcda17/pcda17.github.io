@@ -60,7 +60,7 @@
 - Final project proposal: Study the words "freedom" and "democracy" as they have been used over time in printed English.
 - Refer to the words' [OED entries](http://www.stephenmclaughlin.net/temp/freedom_democracy/freedom_democracy_oed.pdf) and other traditional philological/linguistic resources.
 - Describe scope and range of chosen corpus (e.g., works of US and UK nonfiction, 1900–1920).
-- Outline experiment: Choose 100 excerpts containing "freedom" and 100 containing "democracy" from texts in a given date range. Evaluate each and apply several codes: Does "democracy" refer to a political system or a political ideal? Does "freedom" refer to individual liberty or to group cooperation?
+- Outline experiment: Choose 100 excerpts containing "freedom" and 100 containing "democracy" from texts in a given date range. Evaluate each and apply several codes: Does "democracy" refer to a political system or a political ideal? Does "freedom" refer to individual liberty or to collective welfare?
 
 ## Week 8
 
