@@ -49,7 +49,7 @@
 
 >In 500–600 words, evaluate the “moral dimension” of the dataset you collected last week. Take the [*list of questions*](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
-- Shift project focus to the comment streams beneath articles, which hold the promise of civil discourse yet are often overwhelmed with hyperpartisan mockery and trolling. 
+- Shift project focus to the comment streams beneath articles, which hold the promise of civil discourse yet are often overwhelmed with partisan mockery and trolling. 
 
 
 
