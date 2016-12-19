@@ -55,7 +55,7 @@ Assignments should be posted on Canvas before the start of class each week.
 
 -   Software Tools
 
-- Sample Data Sources
+-   Sample Data Sources
 
 
 
@@ -111,7 +111,7 @@ Reading
 
 -   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
 
--   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string\_operations.html](http://chrisalbon.com/python/string_operations.html)
+-   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
 -   Oualline, Steve. “The End of Line Puzzle.” *The Practical Programmer*. [http://www.oualline.com/practical.programmer/eol.html](http://www.oualline.com/practical.programmer/eol.html)
 
@@ -159,7 +159,7 @@ Readings
 
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
--   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json\_parse\_file.html](http://chrisalbon.com/python/json_parse_file.html)
+-   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
 
 
@@ -190,7 +190,7 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 
 > pip install --user -U textblob
 >
-> python -m textblob.download\_corpora
+> python -m textblob.download_corpora
 
 Choose a book-length text (or set of texts) available online with which you are familiar. Following Montfort’s code examples, parse the text using the TextBlob library and run some exploratory tests. In 400–500 words, describe your process and what you learned about the text, emphasizing anything you found surprising. Submit your code in a Jupyter notebook.
 
@@ -204,7 +204,7 @@ Readings
 
 -   Fellenbaum, Christiane. “Wordnet(s).” In The *Encyclopedia of Language & Linguistics*, edited by E. K. Brown and Anne Anderson, 2nd ed., 14:665–79. Amsterdam ; Boston: Elsevier, 2005. [PDF](https://www.dropbox.com/s/zxuvhzlheiyo7uc/Fellenbaum%202005%20-%20Wordnet%28s%29.pdf?dl=0).
 
--   “Alphabetical list of part-of-speech tags used in the Penn Treebank Project.” [https://www.ling.upenn.edu/courses/Fall\_2003/ling001/penn\_treebank\_pos.html](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
+-   “Alphabetical list of part-of-speech tags used in the Penn Treebank Project.” [https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
 
 
@@ -251,11 +251,11 @@ Readings
 
 -   “HTML Introduction” and “HTML5 Introduction.” W3Schools.
 
-    -   [http://www.w3schools.com/html/html\_intro.asp](http://www.w3schools.com/html/html_intro.asp)
+    -   [http://www.w3schools.com/html/html_intro.asp](http://www.w3schools.com/html/html_intro.asp)
 
-    -   [http://www.w3schools.com/html/html5\_intro.asp](http://www.w3schools.com/html/html5_intro.asp)
+    -   [http://www.w3schools.com/html/html5_intro.asp](http://www.w3schools.com/html/html5_intro.asp)
 
--   Albon, Chris. “Beautiful Soup Basic HTML Scraping.” [http://chrisalbon.com/python/beautiful\_soup\_html\_basics.html](http://chrisalbon.com/python/beautiful_soup_html_basics.html)
+-   Albon, Chris. “Beautiful Soup Basic HTML Scraping.” [http://chrisalbon.com/python/beautiful_soup_html_basics.html](http://chrisalbon.com/python/beautiful_soup_html_basics.html)
 
 
 
@@ -288,7 +288,7 @@ Readings
 
 -   Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, ProPublica. “Machine Bias.” *ProPublica*. May 23, 2016. [https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
 
--   Freelon, Deen Goodwin, Charlton D. McIlwain, and Meredith D. Clark. “Beyond the Hashtags: \#Ferguson, \#Blacklivesmatter, and the Online Struggle for Offline Justice,” 2016. [http://cmsimpact.org/wp-content/uploads/2016/03/beyond\_the\_hashtags\_2016.pdf](http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf)
+-   Freelon, Deen Goodwin, Charlton D. McIlwain, and Meredith D. Clark. “Beyond the Hashtags: \#Ferguson, \#Blacklivesmatter, and the Online Struggle for Offline Justice,” 2016. [http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf](http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf)
 
 -   Sacasas, Michael. “Do Artifacts Have Ethics?” *The Frailest Thing*, November 29, 2014. [http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics](http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/)
 
@@ -387,7 +387,7 @@ Readings
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006. [PDF](https://www.dropbox.com/s/s5tfn318otdvu3q/Brew%202006%20-%20Language%20Processing-%20Statistical%20Methods.pdf?dl=0).
 
 -   “Working With Text Data.” scikit-learn.\
-            [http://scikit-learn.org/stable/tutorial/text\_analytics/working\_with\_text\_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
+              [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
 
 -   Geitgey, Adam. “Machine Learning is Fun!” *Medium*. [https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
 
@@ -419,6 +419,7 @@ Topics to Cover
 
 ##### ▸ In-Class Outline
 
+
 Week 9: Critical Text Analysis
 ================================
 
@@ -435,7 +436,7 @@ Share your complete, cleaned dataset for the final project. In 200 words, descri
 -   Jockers, Matthew Lee. “Chapter 8: Theme.” In *Macroanalysis: Digital Methods and Literary History*, 118–53. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2013. [PDF](https://www.dropbox.com/s/zsombfvplf5bh8f/Jockers%202013%20-%20Macroanalysis%20-%20Ch.%208%20-%20Theme.pdf?dl=0).
 
 -   Marche, Stephen. “Literature Is not Data: Against Digital Humanities.” *Los Angeles Review of Books*, October 28th, 2012.\
-            [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
+              [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
 
 
 
@@ -447,6 +448,7 @@ Optional Reading
 -   Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23. [PDF](https://www.dropbox.com/s/avad81hqc5sp6iw/Liu%202013%20-%20The%20Meaning%20of%20the%20Digital%20Humanities.pdf?dl=0).
 
 ##### ▸ In-Class Outline
+
 
 Week 10: Copyright and the Information Commons
 ================================================
@@ -513,7 +515,7 @@ Readings
 
 Optional Readings
 
--   Benkler, Yochai, and Helen Nissenbaum. “Commons-Based Peer Production and Virtue.” Journal of Political Philosophy 14, no. 4 (2006): 394–419. [https://www.nyu.edu/projects/nissenbaum/papers/jopp\_235.pdf](https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf).
+-   Benkler, Yochai, and Helen Nissenbaum. “Commons-Based Peer Production and Virtue.” Journal of Political Philosophy 14, no. 4 (2006): 394–419. [https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf](https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf).
 
 -   Kreiss, D., M. Finn, and F. Turner. “The Limits of Peer Production: Some Reminders from Max Weber for the Network Society.” New Media & Society 13, no. 2 (March 1, 2011): 243–59. [PDF](https://www.dropbox.com/s/mwhm10hz0nnania/Kreiss%20et%20al.%202011%20-%20The%20limits%20of%20peer%20production.pdf?dl=0).
 
@@ -541,8 +543,8 @@ Cleaning and transforming tabular data
 
     -   [Video Tutorial 2: Data Transformation](https://www.youtube.com/watch?v=cO8NVCs_Ba0&nohtml5=False)
 
-    - [Video Tutorial 3: Data Augmentation](https://www.youtube.com/watch?v=5tsyz3ibYzk&nohtml5=False)\
-                *
+    -   [Video Tutorial 3: Data Augmentation](https://www.youtube.com/watch?v=5tsyz3ibYzk&nohtml5=False)\
+                  *
 
 #### Fetch (FTP client)
 
@@ -582,8 +584,8 @@ Python module for parsing Web data
 
     -   [Processing Raw Text](http://www.nltk.org/book/ch03.html)
 
-    - [NLTK HOWTOs](http://www.nltk.org/howto/)\
-                *
+    -   [NLTK HOWTOs](http://www.nltk.org/howto/)\
+                  *
 
 #### Pattern
 
@@ -614,6 +616,7 @@ Command-line tool for encoding and editing audio and video files.
 “The Swiss Army knife of sound processing programs”
 
 - http://sox.sourceforge.net*
+
 
 *Sample Data Sources
 ---------------------
@@ -659,7 +662,7 @@ A collection of linked data from Wikipedia and other Wikimedia projects
 
 -   “An Ambitious Wikidata Tutorial”
 
-    -   [http://www.slideshare.net/\_Emw/an-ambitious-wikidata-tutorial](http://www.slideshare.net/_Emw/an-ambitious-wikidata-tutorial)
+    -   [http://www.slideshare.net/_Emw/an-ambitious-wikidata-tutorial](http://www.slideshare.net/_Emw/an-ambitious-wikidata-tutorial)
 
 #### NYPL Digital Collections API
 
@@ -778,3 +781,5 @@ Public datasets including collections related to education, healthcare, and poli
 #### Reddit: “What are some fun API's to play with?”
 
 -   <https://www.reddit.com/r/webdev/comments/3wrswc/what_are_some_fun_apis_to_play_with>
+
+
