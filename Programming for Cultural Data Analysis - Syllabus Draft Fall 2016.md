@@ -1,5 +1,5 @@
-Syllabus: Programming for Cultural Data Analysis\
-University of Texas at Austin School of Information\
+Syllabus: Programming for Cultural Data Analysis
+University of Texas at Austin School of Information
 Designed by Stephen McLaughlin, Spring 2016
 ====================================================
 
@@ -21,7 +21,7 @@ Designed by Stephen McLaughlin, Spring 2016
 
 ### Course Principles
 
--   Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a \#comment with the source’s URL.
+-   Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
 
 -   Begin assignments early. If you realize what you had in mind is more difficult than expected, talk to the instructor about choosing an alternative.
 
@@ -70,7 +70,7 @@ To access Lynda videos, follow links below, click “Log in,” then “Organiza
 
 - Optional: Allardice, Simon. “Foundations of Programming: Fundamentals.” Lynda.com. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html)
 
-- Optional: Marini, Joe. “Up and Running with Python.” Lynda.com.\
+- Optional: Marini, Joe. “Up and Running with Python.” Lynda.com.
             [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
 
 Laptop users only:
@@ -144,7 +144,7 @@ Install [OpenRefine](https://github.com/OpenRefine/OpenRefine/wiki/Installation-
 
 > • Like Jupyter, OpenRefine creates a locally accessible “server” and uses a browser window for its interface. If launching OpenRefine doesn’t open a browser window automatically, enter the following in the URL bar: *http://127.0.0.1:3333*
 >
-> • If you’re working with very large datasets, you may need to allocate more memory for OpenRefine:\
+> • If you’re working with very large datasets, you may need to allocate more memory for OpenRefine:
 > [https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory](https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory)
 
 
@@ -168,7 +168,7 @@ Optional Readings
 
 -   Fortune, Stephen. “A Brief History of Databases.” *Avant*, February 27th 2014. [https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases](https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases)
 
--   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) \[Python XML tutorial\]
+-   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) [Python XML tutorial]
 
 -   Beazley, David, and Brian K. Jones. “Chapter 6: Data Encoding and Processing.” In Python Cookbook: *recipes for Mastering Python 3*, 3. ed., 175–216. Bejing: O’Reilly, 2013. [PDF](https://www.dropbox.com/s/750hh3tych80v68/Python_Cookbook_3rd-ed_Ch-6.pdf?dl=0)
 
@@ -178,7 +178,7 @@ Optional Readings
 
 ##### ▸ In-Class Outline
 
-\
+
 Week 4: Word-Level Text Analysis
 ================================
 
@@ -288,7 +288,7 @@ Readings
 
 -   Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, ProPublica. “Machine Bias.” *ProPublica*. May 23, 2016. [https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
 
--   Freelon, Deen Goodwin, Charlton D. McIlwain, and Meredith D. Clark. “Beyond the Hashtags: \#Ferguson, \#Blacklivesmatter, and the Online Struggle for Offline Justice,” 2016. [http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf](http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf)
+-   Freelon, Deen Goodwin, Charlton D. McIlwain, and Meredith D. Clark. “Beyond the Hashtags: #Ferguson, #Blacklivesmatter, and the Online Struggle for Offline Justice,” 2016. [http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf](http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf)
 
 -   Sacasas, Michael. “Do Artifacts Have Ethics?” *The Frailest Thing*, November 29, 2014. [http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics](http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/)
 
@@ -386,8 +386,8 @@ Readings
 
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006. [PDF](https://www.dropbox.com/s/s5tfn318otdvu3q/Brew%202006%20-%20Language%20Processing-%20Statistical%20Methods.pdf?dl=0).
 
--   “Working With Text Data.” scikit-learn.\
-              [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
+-   “Working With Text Data.” scikit-learn.
+                [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
 
 -   Geitgey, Adam. “Machine Learning is Fun!” *Medium*. [https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
 
@@ -435,8 +435,8 @@ Share your complete, cleaned dataset for the final project. In 200 words, descri
 
 -   Jockers, Matthew Lee. “Chapter 8: Theme.” In *Macroanalysis: Digital Methods and Literary History*, 118–53. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2013. [PDF](https://www.dropbox.com/s/zsombfvplf5bh8f/Jockers%202013%20-%20Macroanalysis%20-%20Ch.%208%20-%20Theme.pdf?dl=0).
 
--   Marche, Stephen. “Literature Is not Data: Against Digital Humanities.” *Los Angeles Review of Books*, October 28th, 2012.\
-              [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
+-   Marche, Stephen. “Literature Is not Data: Against Digital Humanities.” *Los Angeles Review of Books*, October 28th, 2012.
+                [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
 
 
 
@@ -507,7 +507,7 @@ Report your progress toward the final critical data analysis project in 300–50
 Readings
 --------
 
--   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven \[Conn.\]: Yale University Press, 2006.
+-   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
 
 -   Manzo, Christina, Geoff Kaufman, Sukdith Punjasthitkul, and Mary Flanagan. “‘By the People, For the People’: Assessing the Value of Crowdsourced, User-Generated Metadata.” *Digital Humanities Quarterly* 9, no. 1 (2015). [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html)
 
@@ -543,8 +543,8 @@ Cleaning and transforming tabular data
 
     -   [Video Tutorial 2: Data Transformation](https://www.youtube.com/watch?v=cO8NVCs_Ba0&nohtml5=False)
 
-    -   [Video Tutorial 3: Data Augmentation](https://www.youtube.com/watch?v=5tsyz3ibYzk&nohtml5=False)\
-                  *
+    -   [Video Tutorial 3: Data Augmentation](https://www.youtube.com/watch?v=5tsyz3ibYzk&nohtml5=False)
+                    *
 
 #### Fetch (FTP client)
 
@@ -584,8 +584,8 @@ Python module for parsing Web data
 
     -   [Processing Raw Text](http://www.nltk.org/book/ch03.html)
 
-    -   [NLTK HOWTOs](http://www.nltk.org/howto/)\
-                  *
+    -   [NLTK HOWTOs](http://www.nltk.org/howto/)
+                    *
 
 #### Pattern
 
@@ -618,6 +618,7 @@ Command-line tool for encoding and editing audio and video files.
 - http://sox.sourceforge.net*
 
 
+
 *Sample Data Sources
 ---------------------
 
@@ -629,7 +630,7 @@ A large collection of dictionary and thesaurus resources
 
 -   Python client for Wordnik API
 
-    - <https://github.com/wordnik/wordnik-python>\
+    - <https://github.com/wordnik/wordnik-python>
         *
 
 #### WordNet
@@ -686,7 +687,7 @@ Metadata for 20,000+ orchestral performances and 500,000+ subscriber records
 
 #### The Tate Collection
 
-Metadata on \~70,000 artworks and \~3,500 artists from the UK’s Tate collection
+Metadata on ~70,000 artworks and ~3,500 artists from the UK’s Tate collection
 
 - <https://github.com/tategallery/collection>
 
