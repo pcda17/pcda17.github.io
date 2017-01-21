@@ -1,22 +1,5 @@
 ## Week 1 Outline: Introductions & Command Line Basics
-<script  language="Javascript" type="text/javascript">
-//cribbed from http://www.randomsnippets.com/2008/03/07/how-to-find-and-replace-text-dynamically-via-javascript/
-var haystackText = "";
-function findMyText(username) {
-     var generic='/yourname/'
-     username='/'+username+'/'
-     if (haystackText.length == 0) {
-          haystackText = document.getElementById("replace").innerHTML;
-     }
-     var match = new RegExp(generic, "ig");      
-     var replaced = haystackText.replace(match, username);
-     document.getElementById("replace").innerHTML = replaced;
-}      
 
-</script>
-<p>Enter your username to customize code snippets below: &nbsp;<input id="username" name="username" type="text" size=14 onKeyUp="findMyText(document.getElementById('username').value);"></p>
-
-<div id="replace">
 
 #### **1.** Student and instructor introductions
 
@@ -74,7 +57,7 @@ When Apple’s command-line tools are ready, a window will pop up that says “T
 Switch back to your original terminal window and press return to continue installing Homebrew. Enter your password at the prompt. Homebrew will take a minute or two to download and install. When it’s finished, your terminal window should look something like this.
 
 ![](DraggedImage-4.png)
-  
+
 Let’s make sure Homebrew is up to date. This shouldn’t take more than a minute.
 	brew update
 
