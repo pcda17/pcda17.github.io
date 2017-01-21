@@ -1,7 +1,3 @@
----
-title: Document Center
----
-
 Syllabus: Programming for Cultural Data Analysis
 University of Texas at Austin School of Information
 Designed by Stephen McLaughlin, Spring 2016
