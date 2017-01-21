@@ -72,8 +72,6 @@
 
 - Carry out sentence-level sentiment analysis on several authors' works and compare distributions as histograms.
 
-  ​
-
 ## Week 9
 >Share your complete, cleaned dataset for the final project. In 200 words, describe the collection and the work you’ve done to shape and/or augment it. Submit a sample of your collection and/or processing code in a Jupyter notebook.
 
@@ -81,7 +79,6 @@
   - Cleaned metadata table for full text corpus
   - Cleaned text files for full corpus
   - Collection of ~200 text excerpts with assigned codes
-
 
 ## Week 10
 >Choose two machine learning algorithms discussed last week and a set of texts or metadata records, preferably the collection you are using for the final project. In 300–500 words, compare the likely efficacy of the two approaches and discuss how their classifications may differ.
@@ -91,3 +88,4 @@
 ## Week 12
 >Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
 
+*Due credit to Melody Joy Kramer, who proposed investigating these two words' histories in a Facebook post.*
