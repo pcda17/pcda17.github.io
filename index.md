@@ -7,6 +7,7 @@ University of Texas at Austin School of Information
 
 2016–17
 
+[Week 1](week-1.md)
 
 ### Course Objectives
 
