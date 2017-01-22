@@ -83,12 +83,12 @@ Let’s load the `nltk` module, which was installed as a dependency of TextBlob.
 	nltk.download()
 
 A Python GUI window should appear on your screen. Select “All packages” and click “Download.” The download and installation should take a minute or two.
-![](DraggedImage.png)
+![](week/4/Image-0.png)
 
 In computational text analysis, the term “stopword” refers to words that appear frequently in most texts in a given language — e.g., “I,” “the,” “and,” “while,” and so on. NLTK provides a useful stopword list.
 	from nltk.corpus import stopwords
 	stopwords.words('english')
-![](DraggedImage-1.png)
+![](week/4/Image-1.png)
 
 
 Now let’s look at the most frequent words in a text, disregarding stopwords.
@@ -201,11 +201,3 @@ If time permits.
 
 #### Using WordNet
 If time permits.
-
-
-
-
-
-
-
-
