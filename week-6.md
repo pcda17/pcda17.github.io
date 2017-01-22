@@ -119,7 +119,8 @@ Every now and then you’ll find it necessary to compile a program from source, 
 Download the most recent release of MAT [here](https://mat.boum.org/files/) (`mat-0.6.tar.xz` as of this writing). Locate the tarball file in the Finder and double click it to decompress. If you can’t open it, try installing [The Unarchiver](http://unarchiver.c3.cx/unarchiver) first.
 
 Open the new directory “mat-0.6” and view its contents. This is the source code for MAT (written in Python), along with various documentation files and software resources.
-![](DraggedImage.png)
+
+![](week/6/Image-1.png)
 
 Drag the files “LICENSE,” “README.md,” and “README.security” to the TextWrangler (or TextEdit) icon in the Apple Dock. The license file specifies that MAT is released under the GNU General Public License (GPL), which allows free re-distribution of the program as long as it isn’t used for commercial purposes. In addition, any new software that uses MAT must be released under the GPL.
 
@@ -176,19 +177,23 @@ Enter the following to view a brief manual for MAT.
 Place a PDF file (e.g., [this one](https://cryptome.org/dodi/2016/secnav-5239-3c.pdf)) on your Desktop. Now check whether the file contains “harmful metadatas” with the `-c` option.
 	cd ~/Desktop
 	mat -c secnav-5239-3c.pdf
-![](DraggedImage-1.png)
+
+![](week/6/Image-1.png)
 
 To view a raw dump of a file’s metadata, use -d.
 	mat -d secnav-5239-3c.pdf
-![](DraggedImage-2.png)
+
+![](week/6/Image-2.png)
 
 If you scroll up, you’ll see that the file contains XML-formatted metadata created by Adobe Acrobat Pro. Recall that we can use `exiftool` to view such information in a more readable format.
 	exiftool secnav-5239-3c.pdf
-![](DraggedImage-3.png)
+
+![](week/6/Image-3.png)
 
 To remove all metadata from a PDF file, simply pass a filename to MAT as an argument. This will overwrite the original file, so make a copy if needed.
 	mat secnav-5239-3c.pdf
-![](DraggedImage-4.png)
+
+![](week/6/Image-4.png)
 
 Open the updated PDF file in Preview or Acrobat. For PDFs comprising images with OCR text overlaid, MAT will remove all OCR data.
 
