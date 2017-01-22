@@ -9,15 +9,16 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 ## Topics to Cover
 - Opening and editing CSV, JSON, and XML files in Python
 - Sorting a table by key
-	- [https://docs.python.org/2/howto/sorting.html#key-functions](https://docs.python.org/2/howto/sorting.html#key-functions)
+  - [https://docs.python.org/2/howto/sorting.html#key-functions](https://docs.python.org/2/howto/sorting.html#key-functions)
 - Discuss strengths and weaknesses of CSV, JSON, XML, and RDF models for various applications.
 - Cleaning data using OpenRefine
-	- Provide several data sets and work through OpenRefine tools as a class.
+  - Provide several data sets and work through OpenRefine tools as a class.
 
 #### CSV I/O in Python
 Paste the following code snippet into a new Jupyter notebook, then run the cell. We’ll go through it line by line in a moment.
+
 	import csv
-	
+
 	csv_path="/Users/yourname/Desktop/Artists.csv"
 	artist_table=[]
 	
@@ -33,9 +34,11 @@ Paste the following code snippet into a new Jupyter notebook, then run the cell.
 	artist_table.remove(artist_table[0])
 	
 	artist_header
-![](DraggedImage.png)
+
+![](week/3/Image-0.png)
 
 Check the length of the table, then enter an index value in brackets to look at an entry.
+
 	len(artist_table)
 	artist_table[6310]
 
@@ -45,14 +48,17 @@ We began by importing the `csv` module, Python’s built-in CSV input/output too
 	import csv
 
 Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table.
+
 	artwork_path="/Users/yourname/Desktop/Artworks.csv"
 	artwork_table=[]
 
 Then we create a file stream object `o` that points to our spreadsheet, including the argument `rU` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
+
 	o = open(artwork_path,'rU')
 	mydata = csv.reader(o)
 
 Using a for loop, we iterate through our csv object and add each row (represented by a list) to the master list `meta_table`.
+	
 	for row in mydata:
 		artwork_table.append(row)
 	
@@ -71,13 +77,13 @@ Finally, let’s look at our list of column titles …
 > **Tip:** Python will ignore any text following the “\\#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes. 
 > 	header=meta_table[0] #saves list of column titles to variable 'header'
 > 	meta_table.remove(meta_table[0]) #removes column titles from table
- 
+
 #### Quick Assignment
 Write a piece of code that prints each column label in `artist_header` and `artwork_header` next to its index in the list, beginning from zero as usual. You may want to keep this reference handy for the next few exercises.
 
 > _A possible solution:_
 > 	print 'Artists\n'
-> 	
+>
 > 	for i in  range(len(artist_header)):
 > 	      print str(i)+' '+artist_header[i]
 > 	
@@ -91,7 +97,7 @@ Write a piece of code that creates a new table (i.e., list of lists) containing 
 
 > _A possible solution:_
 > 	born_1880s=[]
-> 	 
+>
 > 	for row in artist_table:
 > 	    if 1880<=int(row[5])<=1889:
 > 	        born_1880s.append(row)
@@ -104,16 +110,16 @@ Now that we’ve defined a meaningful subset of our data, let’s see what we ca
 6 EndDate
 
 	lifespans_1880s=[]
-	
+
 	for row in born_1880s:
 	    lifespans_1880s.append(int(row[6])-int(row[5]))
 	
 	lifespans_1880s
-![](DraggedImage-1.png)
+![](week/3/Image-1.png)
 
 If you scroll through your list of lifespans, you’ll see occasional negative numbers (e.g., “-1887”). Since missing values are represented by “0,” if no death date is listed we’ll end up subtracting an artist’s birth year from zero. Let’s amend our code to leave out these rows.
 	lifespans_1880s=[]
-	
+
 	for row in born_1880s:
 	    age=int(row[6])-int(row[5])
 	    if age>0:
@@ -130,7 +136,7 @@ That format is a bit verbose for a simple task like this, so to make life easier
 Once it’s installed, switch back to Jupyter and try this alternative.
 	import numpy
 	numpy.mean(lifespans_1880s)
-	
+
 > **Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
 > 	from numpy import mean
 > 	mean(avg_lifespan_1880s)
@@ -143,7 +149,7 @@ Once it’s installed, switch back to Jupyter and try this alternative.
 Write a piece of code that creates a new table containing all artworks that include the term “Fluxus” in any metadata field.
 > _A possible solution:_
 > 	fluxus_table=[]
-> 	
+>
 > 	for row in artwork_table:
 > 	    for cell in row:
 > 	        if 'fluxus' in cell.lower():
@@ -161,13 +167,13 @@ Now let’s make a master list of entries under “medium” in our Fluxus metad
 Let’s look at 10 random samples from the collection, first importing the `sample()` function from `random`.
 	from random import sample
 	sample(medium_list,10)
-![](DraggedImage-2.png)
+![](week/3/Image-2.png)
 
 Let’s see what terms appear most frequently in our list of media.
 	from collections import Counter
 	c = Counter(medium_list)
 	c.most_common(10)
-![](DraggedImage-3.png)
+![](week/3/Image-3.png)
 Note that 1605 artworks are missing an entry for “medium,” with the term “(CONFIRM)” appearing 99 times. 
 
 #### Quick Assignment
@@ -182,7 +188,7 @@ Returning to our original MoMA metadata table, rite a piece of code that creates
 
 > _A way-too-elaborate solution with better precision but imperfect recall:_
 > 	import string
-> 	
+>
 > 	def date_span(date_string):
 > 	    if len(date_string)==0:return[-1,-1]
 > 	    temp_string=date_string
@@ -233,12 +239,12 @@ We can sort a table based on the values in a given column with the `sorted` func
 
 Since each row is so long, let’s just look at our sorted set of authors. The following notation returns a list of  each row’s “Artist” cell, located at index 1.
 	[row[1] for row in art_1960s_sorted]
-![](DraggedImage-4.png)
+![](week/3/Image-4.png)
 
 Here we’re once again using the `Counter` constructor from the `collections` module.
 	c=Counter([row[4] for row in art_1960s_sorted])
 	c.most_common(20)
-![](DraggedImage-5.png)
+![](week/3/Image-5.png)
 
 It’s impossible to memorize the details of every specialized tool available in Python, so you’ll probably end up repeatedly looking up processes like these.
 
@@ -254,7 +260,7 @@ Now that we’ve filtered and sorted our metadata, let’s export it to a new CS
 Note that we call use `writerows` function twice, first writing the column headers and then the actual data. Because `writerows` only accepts lists of lists, we’ve enclosed the `header` list object in brackets to create a new list that only contains `header`.
 
 Find the new file on your desktop and open it in Excel or Calc. Take a few moments to explore the collection.
-![](DraggedImage-6.png)
+![](week/3/Image-6.png)
 
 #### The Dictionary Data Type
 So far, when we want to access the “Artist” field in MoMA’s metadata, we’ve been referring to its position in a given row.
@@ -310,7 +316,7 @@ Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a
 
 Now we’ll use a for loop to iterate through `artist_table`, converting each list of cells to key-value format.
 	artist_dicts=[]
-	
+
 	for row in artist_table:
 	    artist_meta={}
 	    artist_meta['\xef\xbb\xbfConstituentID']=row[0]
@@ -332,7 +338,7 @@ Specifying an index in brackets will return a dict object.
 
 And we can use one of our standard key names to get a particular value.
 	artist_dicts[12007]['DisplayName']
-![](DraggedImage-7.png)
+![](week/3/Image-7.png)
 
 If we want to create a list of artist names, birth years, etc., we can thus iterate through the `artists_dicts` list and specify the field we want by name.
 
@@ -404,7 +410,7 @@ We can thus view the “artist” field like so.
 #### JSON Data to CSV
 Next we’ll transfer these metadata fields to CSV format. First, let’s create a list of column titles for reference:
 	header=[]
-	
+
 	for key in json_data['records'][0]['fields']:
 	    header.append(key)
 	
@@ -412,7 +418,7 @@ Next we’ll transfer these metadata fields to CSV format. First, let’s create
 
 Then we’ll use our column titles (which are also keys in the “fields” key-value set) to create a list of rows for our CSV. Since the CSV writer prefers working with non-Unicode strings, we’ll use the `str()` function to reformat each metadata item as we add it to the table.
 	meta_table=[]
-	
+
 	for record in json_data['records']:
 	    row=[]
 	    for key in header:
@@ -423,7 +429,7 @@ Then we’ll use our column titles (which are also keys in the “fields” key-
 
 Now let’s make a string version of our header.
 	header_string=[]
-	
+
 	for item in header:
 	    header_string.append(str(item))
 
