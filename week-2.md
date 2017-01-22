@@ -14,7 +14,9 @@ sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
 	
 sentence
 ```
+
 *Output:*
+
 ```
 'A green hunting cap squeezed the top of a fleshy balloon of a head.'
 ```
