@@ -2,6 +2,7 @@
 
 
 Provide collection of several hundred texts grouped by genre:
+
 - news articles
 - blog posts
 - literary prose
@@ -27,5 +28,3 @@ Demonstrate cluster analysis.
 
 
 Sentiment analysis: Evaluate/classify Twitter data.
-
-
