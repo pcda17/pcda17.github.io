@@ -38,13 +38,11 @@ Click 'No Uncommitted Changes' at the top to see the interface you'll spend most
 
 Navigate to your project directory and open a text file. Each page is in Markdown format, which has almost no learning curve. Here's a [quick reference](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) I like.
 
-Any plaintext editor will do; I'm using [Typora](https://typora.io/), which displays Markdown nicely.
-
 ![](img/GitHub_gui_06.png)
 
 
 
-Make an edit and save the file.
+Any plaintext editor will do; I'm using [Typora](https://typora.io/), which displays Markdown nicely. Make an edit and save the file.
 
 ![](img/GitHub_gui_07.png)
 
@@ -62,6 +60,8 @@ Finally, click "Sync" in the upper right to upload your changes to GitHub.
 
 
 
+Clicking 'Sync' will also download any new/updated files from the project on GitHub. You'll want to do this before starting every work session to make sure you're working with the most recent files.
+
 The PCDA syllabus is currently visible at [https://stevemclaugh.github.io/pcda/](https://stevemclaugh.github.io/pcda/).
 
 ![](img/GitHub_gui_10.png)
@@ -70,15 +70,17 @@ The PCDA syllabus is currently visible at [https://stevemclaugh.github.io/pcda/]
 
 
 
-
+If GitHub Desktop is too much hassle (or if you need to make an edit from someone else's computer), [parse.io](https://parse.io) is a nice Web-based editor that connects to GitHub.
 
 ![](img/prose_io_1.png)
 
-
+Once you make changes on a given file, click the save icon on the right.
 
 ![](img/prose_io_2.png)
 
 
+
+Enter a description and click "Commit." This syncs the file to GitHub instantly.
 
 ![](img/prose_io_3.png)
 
