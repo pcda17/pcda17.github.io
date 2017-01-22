@@ -46,13 +46,13 @@ for filename in corpus2_filenames:
 Let’s review the TextBlob package, introduced in this week’s reading by Nick Montfort. First, let’s load TextBlob and convert two texts to lists of words. Note that each is contained in a WordList object, which we can manipulate as if it were an ordinary list.
 
 ```python
-	from textblob import TextBlob
-	
-	text1=TextBlob(corpus1_texts[0])
-	print text1.words[:15]
-	
-	text2=TextBlob(corpus2_texts[0])
-	print text2.words[:15]
+from textblob import TextBlob
+
+text1=TextBlob(corpus1_texts[0])
+print text1.words[:15]
+
+text2=TextBlob(corpus2_texts[0])
+print text2.words[:15]
 ```
 
 We can also print sentences, contained in Sentence objects.
