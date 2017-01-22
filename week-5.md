@@ -9,20 +9,20 @@
 #### Wget intro
 We used Wget briefly in our first class, but today we’ll try out a few more advanced features. As we saw then, downloading the HTML source for a particular page is as easy as passing its url to Wget.
 
-	wget http://example.com
+    wget http://example.com
 
  If we want to download a series of files, we can list their URLs in a text document and download them all using the `--input` or `-i` option. You can assemble a list yourself or try it out with [this](https://www.dropbox.com/s/e8quww6kixusflw/Ten_URLs.txt?dl=1) set of 10 random Wikipedia URLs.
 
-	wget -i Ten_URLs.txt
+    wget -i Ten_URLs.txt
 
 Wget also supports recursive downloading. Download an entire website like so:
 
-	wget ‐‐execute robots=off ‐‐recursive ‐‐no-parent ‐‐continue ‐‐no-clobber http://example.com/
+    wget ‐‐execute robots=off ‐‐recursive ‐‐no-parent ‐‐continue ‐‐no-clobber http://example.com/
 
 You can also download a series of sequentially numbered files with following notation:
 
-	wget http://example.com/images/{1..20}.jpg
-	wget https://www.discogs.com/release/84319{10..25}
+    wget http://example.com/images/{1..20}.jpg
+    wget https://www.discogs.com/release/84319{10..25}
 
 
 #### Beautiful Soup basics
@@ -41,12 +41,12 @@ You can also download a series of sequentially numbered files with following not
 
 #### ElementTree XML parser in Python
 
-	import xml.etree.ElementTree as ET
-	tree = ET.parse('/Users/yourname/Desktop/sandbox/country_data.xml')
-	root = tree.getroot()
-	
-	for child in root:
-		print child.tag, child.attrib
+    import xml.etree.ElementTree as ET
+    tree = ET.parse('/Users/yourname/Desktop/sandbox/country_data.xml')
+    root = tree.getroot()
+    
+    for child in root:
+        print child.tag, child.attrib
 
 #### Discuss HTML, XML, and HTML5
 

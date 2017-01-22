@@ -24,32 +24,32 @@ Describe the [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) standard i
 
 #### Using GPG to encrypt and decrypt messages
 Strong encryption is useful when moving sensitive data from one place to another, such as confidential data from research participants. Install GPG via the [GPGTools](https://gpgtools.org/) bundle or enter the following in the shell:
-	brew install gpg
+    brew install gpg
 
 > GPG tutorial adapted from [http://edoceo.com/cli/gpg](http://edoceo.com/cli/gpg)
 > Before you can encrypt or sign files with GPG you must have a key.
-	gpg --gen-key
+    gpg --gen-key
 
 Post the public, ascii side of your key to the web
-	gpg --armor --output pubkey.txt --export 'Your Name'
-	gpg --send-keys 'Your Name' --keyserver hkp://subkeys.pgp.net
+    gpg --armor --output pubkey.txt --export 'Your Name'
+    gpg --send-keys 'Your Name' --keyserver hkp://subkeys.pgp.net
 
 Here we encrypt/decrypt a file that is just for our own use.
-	gpg --encrypt --recipient 'Your Name' foo.txt
-	gpg --output foo.txt --decrypt foo.txt.gpg
+    gpg --encrypt --recipient 'Your Name' foo.txt
+    gpg --output foo.txt --decrypt foo.txt.gpg
 
 Encrypting for Recipient
-	gpg --search-keys 'myfriend@his.isp.com' --keyserver hkp://subkeys.pgp.net
-	gpg --import key.asc
-	gpg --list-keys
-	gpg --encrypt --recipient 'myfriend@his.isp.net' foo.txt
+    gpg --search-keys 'myfriend@his.isp.com' --keyserver hkp://subkeys.pgp.net
+    gpg --import key.asc
+    gpg --list-keys
+    gpg --encrypt --recipient 'myfriend@his.isp.net' foo.txt
 
 Decrypting
-	gpg --output foo.txt --decrypt foo.txt.gpg
+    gpg --output foo.txt --decrypt foo.txt.gpg
 
 Signagures
-	gpg --verify crucial.tar.gz.asc crucial.tar.gz
-	gpg --armor --detach-sign your-file.zip
+    gpg --verify crucial.tar.gz.asc crucial.tar.gz
+    gpg --armor --detach-sign your-file.zip
 
 
 
@@ -74,36 +74,36 @@ Discuss Aaron Swartz
 
 #### Working with PDF Metadata
 Reading pdf metadata via python from command line
-	exiftool file.pdf
+    exiftool file.pdf
 
 
 #### Install PyExifTool
 - [https://smarnach.github.io/pyexiftool/](https://smarnach.github.io/pyexiftool/)
 
 ```bash
-	python setup.py install --user
+    python setup.py install --user
 ```
 ```python
-	import exiftool
-	import pprint
-	pp = pprint.PrettyPrinter()
-	
-	pdf_path="/Users/yourname/Desktop/Greenwald.pdf"
-	with exiftool.ExifTool() as et:
-	     metadata = et.get_metadata(pdf_path)
-	
-	pp.pprint(metadata)
+    import exiftool
+    import pprint
+    pp = pprint.PrettyPrinter()
+    
+    pdf_path="/Users/yourname/Desktop/Greenwald.pdf"
+    with exiftool.ExifTool() as et:
+         metadata = et.get_metadata(pdf_path)
+    
+    pp.pprint(metadata)
 ```
 
 Since `metadata` is a dictionary, we can iterate though it to view a list of keys.
-	for key in metadata:
-	     print key
+    for key in metadata:
+         print key
 
 Recall that we can use bracket notation to view the value associated with a given key in a dictionary.
-	metadata['XMP:Title']
+    metadata['XMP:Title']
 
 We can also check whether a dictionary contains a key like so. The following should return `True`.
-	'XMP:Title' in metadata
+    'XMP:Title' in metadata
 
 
 
@@ -127,87 +127,87 @@ Drag the files “LICENSE,” “README.md,” and “README.security” to the 
 
 Skim the “README.md” and “README.security” files. Note the list of MAT’s dependencies, which we’ll now install and configure. Enter the following lines one at a time; some may take a minute or two to finish.
 
-	brew install -U libffi
-	brew link --force libffi
-	brew install -U cairo
-	brew install -U py2cairo
-	brew link --force gettext
-	brew install -U poppler
-	brew install -U intltool
-	brew install -U exiftool
+    brew install -U libffi
+    brew link --force libffi
+    brew install -U cairo
+    brew install -U py2cairo
+    brew link --force gettext
+    brew install -U poppler
+    brew install -U intltool
+    brew install -U exiftool
 
 The following Python libraries require root privileges to install for the whole system, but if you want to play it safe you can add the `--user` option to limit them to the account you’re currently using.
 
-	pip install --user mutagen
-	pip install --user pdfrw
+    pip install --user mutagen
+    pip install --user pdfrw
 
 MAT uses the `shred` utility for securely deleting files, which is included in the `coreutils` bundle.
 
-	brew install coreutils
+    brew install coreutils
 
 The GNU version of coreutils adds a “g” to the beginning of each program's name, so “shred” is known as “gshred.” Because MAT expects the original name, we'll have to tweak our bashrc file, which is loaded each time you open a terminal window. If you're using a recent version of OS X, you can make the change by entering the following command and entering an admin password.
 
-	sudo nano /etc/bashrc
+    sudo nano /etc/bashrc
 
 Move the cursor to a blank line using the arrow keys and paste in the following snippet.
 
-	PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-	MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+    PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 Press ctrl+X to close the file, then type “y” and hit return to confirm you want to save. Close and re-open the terminal window to start a shell session with the new bashrc file. To confirm that the process worked, enter the following. You should see a brief manual entry.
 
-	shred --help
+    shred --help
 
 The MAT documentation lists `gi` as a dependency in Python, but don't try using pip for this one; it’ll install another program entirely. The intended gi module is included in `PyGObject`, which Brew and pip both seem to install incorrectly. Instead, we’ll go ahead and compile it from source. Download the current stable tarball from [this page](https://wiki.gnome.org/action/show/Projects/PyGObject?action=show&redirect=PyGObject#Source). 
 
 Unzip the file, then cd to the resulting directory.
 
-	cd /Users/yourname/Downloads/python-distutils-extra-2.39
+    cd /Users/yourname/Downloads/python-distutils-extra-2.39
 
 Install PyGObject by entering the following commands one at a time.
 
-	./configure
-	make
-	make install
+    ./configure
+    make
+    make install
 
 Next we’ll install the python-distutils-extra package, which doesn’t seem to be offered by pip or Brew. You can download the latest version [here](https://launchpad.net/python-distutils-extra). Unzip the file, cd to it, and enter the following command.
 
-	python setup.py install
+    python setup.py install
 
 Finally, return to the copy of MAT you downloaded earlier. `cd` to its directory, then enter the following command.
 
-	python setup.py install
+    python setup.py install
 
 If everything went as planned, MAT should now be ready to go. To get a list of file formats supported by MAT, enter the following in the shell.
 
-	mat -l
+    mat -l
 
 Enter the following to view a brief manual for MAT.
 
-	mat -h
+    mat -h
 
 Place a PDF file (e.g., [this one](https://cryptome.org/dodi/2016/secnav-5239-3c.pdf)) on your Desktop. Now check whether the file contains “harmful metadatas” with the `-c` option.
 
-	cd ~/Desktop
-	mat -c secnav-5239-3c.pdf
+    cd ~/Desktop
+    mat -c secnav-5239-3c.pdf
 
 ![](week/6/Image-1.png)
 
 To view a raw dump of a file’s metadata, use -d.
 
-	mat -d secnav-5239-3c.pdf
+    mat -d secnav-5239-3c.pdf
 
 ![](week/6/Image-2.png)
 
 If you scroll up, you’ll see that the file contains XML-formatted metadata created by Adobe Acrobat Pro. Recall that we can use `exiftool` to view such information in a more readable format.
 
-	exiftool secnav-5239-3c.pdf
+    exiftool secnav-5239-3c.pdf
 
 ![](week/6/Image-3.png)
 
 To remove all metadata from a PDF file, simply pass a filename to MAT as an argument. This will overwrite the original file, so make a copy if needed.
 
-	mat secnav-5239-3c.pdf
+    mat secnav-5239-3c.pdf
 
 ![](week/6/Image-4.png)
 
