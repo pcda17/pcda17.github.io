@@ -75,21 +75,20 @@ Each TextBlob object contains a dictionary with the number of times each word ap
 
 Create a function that returns the top 20 most frequent words in a given TextBlob object. Hint: Use the itemgetter module to sort a list of lists by a given index.
 
-Possible answer:
+> _A possible solution:
+> 
+>   from operator import itemgetter
+>   
+>   freq_dict=text1.word_counts
+>   freq_list=[]
+>   
+>   for key in freq_dict:
+>       freq_list.append([key,freq_dict[key]])
+>   
+>   sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
+>   
+>   print sorted_freq_list[:20]
 
-```python
-from operator import itemgetter
-
-freq_dict=text1.word_counts
-freq_list=[]
-
-for key in freq_dict:
-    freq_list.append([key,freq_dict[key]])
-
-sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
-
-print sorted_freq_list[:20]
-```
 
 What do you notice about these words?
 

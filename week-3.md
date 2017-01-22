@@ -84,6 +84,7 @@ Finally, let’s look at our list of column titles …
 Write a piece of code that prints each column label in `artist_header` and `artwork_header` next to its index in the list, beginning from zero as usual. You may want to keep this reference handy for the next few exercises.
 
 > _A possible solution:_
+>
 > 	print 'Artists\n'
 >
 > 	for i in  range(len(artist_header)):
@@ -98,6 +99,7 @@ Write a piece of code that prints each column label in `artist_header` and `artw
 Write a piece of code that creates a new table (i.e., list of lists) containing only artists born in the 1880s.
 
 > _A possible solution:_
+>
 > 	born_1880s=[]
 >
 > 	for row in artist_table:
@@ -149,7 +151,9 @@ Once it’s installed, switch back to Jupyter and try this alternative.
 
 #### Quick Assignment
 Write a piece of code that creates a new table containing all artworks that include the term “Fluxus” in any metadata field.
+
 > _A possible solution:_
+>
 > 	fluxus_table=[]
 >
 > 	for row in artwork_table:
@@ -183,12 +187,14 @@ Returning to our original MoMA metadata table, rite a piece of code that creates
 > Let students struggle with this a bit, then encourage them to settle on a relatively quick and dirty solution. The collection doesn’t have to be perfect; we’ll be cleaning the table in OpenRefine later.
 
 > _A simple solution with high recall and low precision:_
+>
 > 	art_1960s=[]
 > 	for row in artwork_table:
 > 	    if '196' in row[8]:
 > 	        art_1960s.append(row)
 
 > _A way-too-elaborate solution with better precision but imperfect recall:_
+>
 > 	import string
 >
 > 	def date_span(date_string):
@@ -252,6 +258,7 @@ It’s impossible to memorize the details of every specialized tool available in
 
 #### Writing CSVs
 Now that we’ve filtered and sorted our metadata, let’s export it to a new CSV file called `art_1960s.csv`.
+
 	outpath="/Users/yourname/Desktop/art_1960s.csv"
 	o = open(outpath, 'w')
 	a = csv.writer(o)
@@ -273,9 +280,6 @@ So far, when we want to access the “Artist” field in MoMA’s metadata, we�
 
 
 This system is straightforward and well-suited for many jobs, but for large, complex projects it can be difficult to keep track of all those index numbers. Instead, we can use a dictionary to reference metadata fields by name rather than list index.
-
-
-
 
 
 
@@ -317,20 +321,23 @@ Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a
 	artist_table.remove(artist_table[0])
 
 Now we’ll use a for loop to iterate through `artist_table`, converting each list of cells to key-value format.
-	artist_dicts=[]
 
-	for row in artist_table:
-	    artist_meta={}
-	    artist_meta['\xef\xbb\xbfConstituentID']=row[0]
-	    artist_meta['DisplayName']=row[1]
-	    artist_meta['ArtistBio']=row[2]
-	    artist_meta['Nationality']=row[3]
-	    artist_meta['Gender']=row[4]
-	    artist_meta['BeginDate']=int(row[5])
-	    artist_meta['EndDate']=int(row[6])
-	    artist_meta['Wiki QID']=row[7]
-	    artist_meta['ULAN']=row[8]
-	    artist_dicts.append(artist_meta)   
+```python
+artist_dicts=[]
+
+for row in artist_table:
+    artist_meta={}
+    artist_meta['\xef\xbb\xbfConstituentID']=row[0]
+    artist_meta['DisplayName']=row[1]
+    artist_meta['ArtistBio']=row[2]
+    artist_meta['Nationality']=row[3]
+    artist_meta['Gender']=row[4]
+    artist_meta['BeginDate']=int(row[5])
+    artist_meta['EndDate']=int(row[6])
+    artist_meta['Wiki QID']=row[7]
+    artist_meta['ULAN']=row[8]
+    artist_dicts.append(artist_meta)
+```  
 
 The list `artist_dicts` should now contain records for about 15,000 artists.
 	len(artist_dicts)
@@ -340,6 +347,7 @@ Specifying an index in brackets will return a dict object.
 
 And we can use one of our standard key names to get a particular value.
 	artist_dicts[12007]['DisplayName']
+
 ![](week/3/Image-7.png)
 
 If we want to create a list of artist names, birth years, etc., we can thus iterate through the `artists_dicts` list and specify the field we want by name.
@@ -354,14 +362,17 @@ JSON data is a representation of key-value pairs, very much like a dictionary in
 	json_data = json.loads(json_string)
 
 To view JSON data (as well as dictionaries and just about any other data format), Python offers a “pretty printer” module. There are also numerous online tools for prettifying JSON data, such as [these](http://jsonviewer.stack.hu/) [two](http://json.parser.online.fr/beta/).
+
 	import pprint
 	pprint.pprint(json_data)
 
 To examine the top-level keys in our JSON data, enter the following.
+
 	for key in json_data:
 	        print key
 
 > _Output_:
+>
 > 	records
 > 	meta
 
@@ -369,6 +380,7 @@ In this case, the “records” key points to a list of item records. The follow
 	print json_data['records'][0]
 
 > _Output_:
+>
 > 	{u'pk': 19579, u'model': u'collection.museumobject', u'fields': {u'primary_image_id': u'2006AJ6728', u'object': u'Cabinet', u'year_start': 1600, u'artist': u'Fiamengo, Iacopo', u'museum_number': u'W.36:1, 2-1981', u'rights': 3, u'object_number': u'O61539', u'last_processed': u'2016-04-30 02:11:57', u'event_text': u'', u'collection_code': u'FWK', u'place': u'Naples', u'longitude': u'14.25185000', u'last_checked': u'2016-04-30 02:11:57', u'museum_number_token': u'w361981', u'latitude': u'40.83990100', u'title': u'', u'date_text': u'about 1600 (Made)\nca. 1600 (made)', u'slug': u'cabinet-fiamengo-iacopo', u'sys_updated': u'2015-12-11 00:00:00', u'location': u'Europe 1600-1815, room 6, case CA11'}}
 
 
@@ -436,6 +448,7 @@ Now let’s make a string version of our header.
 	    header_string.append(str(item))
 
 Finally, we’ll write our metadata collection as a CSV.
+
 	import csv
 	outpath="/Users/yourname/Desktop/V_and_A_ivory.csv"
 	o = open(outpath, 'w')
@@ -458,5 +471,6 @@ Note that several “place” records are listed as “Germany,” while others 
 
 > More coming soon.
 
-#### Discussion 
+#### Discussion
+
 Talk about strengths and weaknesses of CSV, JSON, XML, and RDF models for various applications.
