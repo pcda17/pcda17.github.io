@@ -78,17 +78,17 @@ Create a function that returns the top 20 most frequent words in a given TextBlo
 Possible answer:
 
 ```python
-	from operator import itemgetter
+from operator import itemgetter
 
-	freq_dict=text1.word_counts
-	freq_list=[]
-	
-	for key in freq_dict:
-	    freq_list.append([key,freq_dict[key]])
-	
-	sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
-	
-	print sorted_freq_list[:20]
+freq_dict=text1.word_counts
+freq_list=[]
+
+for key in freq_dict:
+    freq_list.append([key,freq_dict[key]])
+
+sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
+
+print sorted_freq_list[:20]
 ```
 
 What do you notice about these words?
@@ -187,26 +187,27 @@ You can find a full list of POS tags used by TextBlob [here](https://www.ling.up
 
 Next, run your POS profile on each text in your two corpora. How much do these values vary between authors and among texts by the same author?
 
-_A possible solution:_
-	def POS_profile(blob):
-	    noun_codes=['NN','NNS','NNP','NNPS']
-	    adj_codes=['JJ','JJR','JJS']
-	    verb_codes=['VB','VBD','VBG','VBN','VBP','VBZ']
-	    adv_codes=['RB','RBR','RBS']
-	    pronoun_codes=['PRP']
-	    noun_count=0
-	    adj_count=0
-	    verb_count=0
-	    adv_count=0
-	    pronoun_count=0
-	    for (word, tag) in blob.tags:
-	        if tag in noun_codes: noun_count+=1
-	        if tag in adj_codes: adj_count+=1
-	        if tag in verb_codes: verb_count+=1
-	        if tag in adv_codes: adv_count+=1
-	        if tag in pronoun_codes: pronoun_count+=1
-	    word_count=len(blob.words)
-	    return [float(noun_count)/word_count, float(adj_count)/word_count, float(verb_count)/word_count, float(adv_count)/word_count, float(pronoun_count)/word_count]
+> _A possible solution:_
+> 
+> 	def POS_profile(blob):
+> 	    noun_codes=['NN','NNS','NNP','NNPS']
+> 	    adj_codes=['JJ','JJR','JJS']
+> 	    verb_codes=['VB','VBD','VBG','VBN','VBP','VBZ']
+> 	    adv_codes=['RB','RBR','RBS']
+> 	    pronoun_codes=['PRP']
+> 	    noun_count=0
+> 	    adj_count=0
+> 	    verb_count=0
+> 	    adv_count=0
+> 	    pronoun_count=0
+> 	    for (word, tag) in blob.tags:
+> 	        if tag in noun_codes: noun_count+=1
+> 	        if tag in adj_codes: adj_count+=1
+> 	        if tag in verb_codes: verb_count+=1
+> 	        if tag in adv_codes: adv_count+=1
+> 	        if tag in pronoun_codes: pronoun_count+=1
+> 	    word_count=len(blob.words)
+> 	    return [float(noun_count)/word_count, float(adj_count)/word_count, float(verb_count)/word_count, float(adv_count)/word_count, float(pronoun_count)/word_count]
 
 #### Break
 
