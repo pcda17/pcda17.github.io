@@ -14,8 +14,9 @@ sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
 	
 sentence
 ```
+*Output:*
 ```
-*Output:* 'A green hunting cap squeezed the top of a fleshy balloon of a head.'
+'A green hunting cap squeezed the top of a fleshy balloon of a head.'
 ```
 
 We’ll be using lists more often than any other data structure in the coming weeks, so it’s worth reviewing the details of Python’s slice notation. Let’s create a list of strings, then view a subset of the list to a new variable. Enter the variable “words2” to view the result.
