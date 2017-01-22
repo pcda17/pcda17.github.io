@@ -17,28 +17,28 @@ Enter the following in the shell to open Jupyter. Create a new notebook Python 2
 First, load each author’s works as a list of strings.
 
 ```python
-	import os
+import os
 
-	corpus1="/Users/yourname/Desktop/Sample-Data/Week-4/Emerson/"
-	corpus2="/Users/yourname/Desktop/Sample-Data/Week-4/Wilde/"
-	
-	os.chdir(corpus1)
-	corpus1_filenames=os.listdir("./")
-	
-	corpus1_texts=[]
-	
-	for filename in corpus1_filenames:
-	    text=open(filename).read().replace("\n"," ") #replaces newlines with spaces
-	    corpus1_texts.append(text)
-	
-	os.chdir(corpus2)
-	corpus2_filenames=os.listdir("./")
-	
-	corpus2_texts=[]
-	
-	for filename in corpus2_filenames:
-	    text=open(filename).read().replace("\n"," ") #replaces newline characters with spaces
-	    corpus2_texts.append(text)
+corpus1="/Users/yourname/Desktop/Sample-Data/Week-4/Emerson/"
+corpus2="/Users/yourname/Desktop/Sample-Data/Week-4/Wilde/"
+
+os.chdir(corpus1)
+corpus1_filenames=os.listdir("./")
+
+corpus1_texts=[]
+
+for filename in corpus1_filenames:
+    text=open(filename).read().replace("\n"," ") #replaces newlines with spaces
+    corpus1_texts.append(text)
+
+os.chdir(corpus2)
+corpus2_filenames=os.listdir("./")
+
+corpus2_texts=[]
+
+for filename in corpus2_filenames:
+    text=open(filename).read().replace("\n"," ") #replaces newline characters with spaces
+    corpus2_texts.append(text)
 ```
 
 #### TextBlob Review
