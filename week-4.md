@@ -6,15 +6,19 @@ Use text analysis techniques introduced by Montfort to examine and compare small
 
 #### Loading Corpora
 Today we will be analyzing and comparing two small text corpora. Choose two text sets from the following list:
+
 - [Works of Ralph Waldo Emerson](http://www.stephenmclaughlin.net/pcda/sample-data/week-4/Emerson.zip)
 - [Works of Oscar Wilde](http://www.stephenmclaughlin.net/pcda/sample-data/week-4/Wilde.zip)
 
 Enter the following in the shell to open Jupyter. Create a new notebook Python 2 notebook.
+
 	jupyter notebook
 
 First, load each author’s works as a list of strings.
+
+```python
 	import os
-	
+
 	corpus1="/Users/yourname/Desktop/Sample-Data/Week-4/Emerson/"
 	corpus2="/Users/yourname/Desktop/Sample-Data/Week-4/Wilde/"
 	
@@ -35,9 +39,13 @@ First, load each author’s works as a list of strings.
 	for filename in corpus2_filenames:
 	    text=open(filename).read().replace("\n"," ") #replaces newline characters with spaces
 	    corpus2_texts.append(text)
+```
 
 #### TextBlob Review
+
 Let’s review the TextBlob package, introduced in this week’s reading by Nick Montfort. First, let’s load TextBlob and convert two texts to lists of words. Note that each is contained in a WordList object, which we can manipulate as if it were an ordinary list.
+
+```python
 	from textblob import TextBlob
 	
 	text1=TextBlob(corpus1_texts[0])
@@ -45,26 +53,33 @@ Let’s review the TextBlob package, introduced in this week’s reading by Nick
 	
 	text2=TextBlob(corpus2_texts[0])
 	print text2.words[:15]
+```
 
 We can also print sentences, contained in Sentence objects.
+
 	print text1.sentences[:5]
 	print text2.sentences[:5]
 
 Note the following methods of manipulating your TextBlob results.
+
 	print sorted(text1.words) #prints sorted list of all words
 	print sorted(list(set(text1.words))) #prints sorted list of unique words
 
 
 
 #### Quick Exercise
+
 Each TextBlob object contains a dictionary with the number of times each word appears in a text. 
+
 	print text1.word_counts
 
 Create a function that returns the top 20 most frequent words in a given TextBlob object. Hint: Use the itemgetter module to sort a list of lists by a given index.
 
 Possible answer:
+
+```python
 	from operator import itemgetter
-	
+
 	freq_dict=text1.word_counts
 	freq_list=[]
 	
@@ -74,11 +89,13 @@ Possible answer:
 	sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
 	
 	print sorted_freq_list[:20]
+```
 
 What do you notice about these words?
 
 #### Word Frequency Sans Stopwords
 Let’s load the `nltk` module, which was installed as a dependency of TextBlob. Then we’ll download its additional packages and corpora.
+
 	import nltk
 	nltk.download()
 
@@ -92,8 +109,10 @@ In computational text analysis, the term “stopword” refers to words that app
 
 
 Now let’s look at the most frequent words in a text, disregarding stopwords.
+
+```python
 	from textblob import Word
-	
+
 	stopwords_eng=stopwords.words('english')
 	freq_dict=text1.word_counts
 	
@@ -107,6 +126,7 @@ Now let’s look at the most frequent words in a text, disregarding stopwords.
 	sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
 	
 	print sorted_freq_sans_stopwords[:20]
+```
 
 How do you interpret this list? Does it give you any insight into the text you’re looking at?
 
@@ -136,6 +156,7 @@ We can also use TextBlob to create a list of part-of-speech tags for each word i
 Let’s take a close look at our results. Examine two or three sentences a word at a time and check whether parts of speech were tagged correctly. If you find any mistakes, can you guess why the tagging algorithm slipped up?
 
 Following Montfort’s example, let’s create a function that counts the number of adjectives in a text.
+
 	def adjs(text):
 	    count = 0
 	    for (word, tag) in text.tags:
@@ -146,6 +167,7 @@ Following Montfort’s example, let’s create a function that counts the number
 	print adjs(text1)
 
 And another function to calculate the percentage of words in the text that are tagged as adjectives.
+
 	def adj_percent(text):
 	    return float(adjs(text))/len(text.words)
 	
@@ -153,6 +175,7 @@ And another function to calculate the percentage of words in the text that are t
 
 #### Exercise
 Create a function called `POS_profile` that takes a TextBlob object and returns a list containing several parts of speech and their relative frequency within the text. Your POS profile should include the following parts of speech:
+
 - nouns
 - adjectives
 - verbs
@@ -187,9 +210,11 @@ _A possible solution:_
 #### Break
 
 #### Naive Bayes Classification
+
 Review classification examples from Montfort text.
 
 #### Exercise
+
 Divide each of your corpora into two sets, one for training our classifier and one for testing. Split each text into a list of sentences and combine these to create four master lists: author 1 training, author 1 testing, author 2 training, author 2 testing.
 
 Create a Naive Bayes classifier using your two training sets. Run the classifier on each sentence in your test sets and calculate the accuracy of your model.
@@ -197,7 +222,9 @@ Create a Naive Bayes classifier using your two training sets. Run the classifier
 Examine sentences that were misclassified. Why do you think the algorithm was misled?
 
 #### Sentiment Analysis
+
 If time permits.
 
 #### Using WordNet
+
 If time permits.

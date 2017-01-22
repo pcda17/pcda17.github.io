@@ -55,6 +55,7 @@ If want to break our sentence into words, we can use the `split()` function to c
 	words
 
 The `join()` function reverses the process, inserting a chosen string (here, a space) between each item in a list. Note that “sentence2” below is identical to our original “sentence” string.
+
 	sentence2=' '.join(words)
 	sentence2
 	sentence
@@ -62,8 +63,8 @@ The `join()` function reverses the process, inserting a chosen string (here, a s
 #### Quick Exercise
 Using the functions described above, create a single string containing the words our sentence in reverse order. 
 
-_A possible solution:_
-	' '.join(sentence.split(' ')[::-1])
+> *A possible solution:*
+> 	' '.join(sentence.split(' ')[::-1])
 
 #### Review Continued
 Another useful string function is `replace()`, which lets us swap out one substring for another.
@@ -233,22 +234,22 @@ Assign a list of strings to a variable — in this case, a collection of foods 
 
 _Assignment:_ Write a function that accepts a list of strings and returns a randomly chosen value.
 
-_A possible solution:_
-	def random_choice(list):
-	     return list[int(random.random()*len(list))]
-	
-	random_choice(foods)
+> _A possible solution:_
+> 	def random_choice(list):
+> 	     return list[int(random.random()*len(list))]
+> 	
+> 	random_choice(foods)
 
 _Assignment:_ Create a new function that returns a list of 3 randomly chosen strings. Don’t worry about repetitions.
 
-_A possible solution:_
-	def random_three(list):
-	     temp_list=[]
-	     for i in range(3):
-	           temp_list.append(random_choice(list))
-	     return temp_list
-	
-	random_three(foods)
+> _A possible solution:_
+> 	def random_three(list):
+> 	     temp_list=[]
+> 	     for i in range(3):
+> 	           temp_list.append(random_choice(list))
+> 	     return temp_list
+> 	
+> 	random_three(foods)
 
 _Assignment:_ Modify the function to return a list of 3 random strings containing the letter “a.” Don’t worry about repetitions.
 	def random_three_with_a(list):
@@ -544,13 +545,13 @@ _A possible solution:_
 
 
 
-
-
 ## Demonstrate server-side Python script
 - Create a text file containing Python code to print “Hello world!”
 - Add shebang line at top of file:
+```
   #!/usr/bin/env python
-- Name the file “page.html.py”
+```
+- Name the file `page.html.py`
 - Upload file to server and set file permissions to 755.
 - Open URL in browser.
 
