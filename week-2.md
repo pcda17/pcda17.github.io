@@ -1,22 +1,5 @@
 ## Week 2 Outline: Python Intro and Text Manipulation
-<script  language="Javascript" type="text/javascript">
-//cribbed from http://www.randomsnippets.com/2008/03/07/how-to-find-and-replace-text-dynamically-via-javascript/
-var haystackText = "";
-function findMyText(username) {
-     var generic='/yourname/'
-     username='/'+username+'/'
-     if (haystackText.length == 0) {
-          haystackText = document.getElementById("replace").innerHTML;
-     }
-     var match = new RegExp(generic, "ig");      
-     var replaced = haystackText.replace(match, username);
-     document.getElementById("replace").innerHTML = replaced;
-}      
 
-</script>
-<p>Enter your username to customize code snippets below: &nbsp;<input id="username" name="username" type="text" size=14 onKeyUp="findMyText(document.getElementById('username').value);"></p>
-
-<div id="replace">
 
 **Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) rather than Jupyter. Open Terminal and enter the following line to open the Python shell.
 	python

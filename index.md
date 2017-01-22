@@ -1,7 +1,12 @@
 Syllabus: Programming for Cultural Data Analysis
-University of Texas at Austin School of Information
-Designed by Stephen McLaughlin, Spring 2016
 ====================================================
+
+Designed by Stephen McLaughlin with Tanya Clement
+
+University of Texas at Austin School of Information
+
+2016–17
+
 
 ### Course Objectives
 
@@ -18,6 +23,7 @@ Designed by Stephen McLaughlin, Spring 2016
 -   Familiarize students with Web archiving and data curation practices.
 
 -   Explore cultural implications of large-scale preservation of cultural materials.
+
 
 ### Course Principles
 

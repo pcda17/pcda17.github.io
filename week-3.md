@@ -1,22 +1,5 @@
 ## Week 3 Outline: Data Modeling Outline
-<script  language="Javascript" type="text/javascript">
-//cribbed from http://www.randomsnippets.com/2008/03/07/how-to-find-and-replace-text-dynamically-via-javascript/
-var haystackText = "";
-function findMyText(username) {
-     var generic='/yourname/'
-     username='/'+username+'/'
-     if (haystackText.length == 0) {
-          haystackText = document.getElementById("replace").innerHTML;
-     }
-     var match = new RegExp(generic, "ig");      
-     var replaced = haystackText.replace(match, username);
-     document.getElementById("replace").innerHTML = replaced;
-}      
 
-</script>
-<p>Enter your username to customize code snippets below: &nbsp;<input id="username" name="username" type="text" size=14 onKeyUp="findMyText(document.getElementById('username').value);"></p>
-
-<div id="replace">
 
 Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github.com/MuseumofModernArt/collection). Download these files to your desktop.
 - [Artists.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artists.csv)

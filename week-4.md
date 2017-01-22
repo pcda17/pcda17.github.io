@@ -1,22 +1,5 @@
 ## Week 4: Word-Level Text Analysis
-<script  language="Javascript" type="text/javascript">
-//cribbed from http://www.randomsnippets.com/2008/03/07/how-to-find-and-replace-text-dynamically-via-javascript/
-var haystackText = "";
-function findMyText(username) {
-     var generic='/yourname/'
-     username='/'+username+'/'
-     if (haystackText.length == 0) {
-          haystackText = document.getElementById("replace").innerHTML;
-     }
-     var match = new RegExp(generic, "ig");      
-     var replaced = haystackText.replace(match, username);
-     document.getElementById("replace").innerHTML = replaced;
-}      
 
-</script>
-<p>Enter your username to customize code snippets below: &nbsp;<input id="username" name="username" type="text" size=14 onKeyUp="findMyText(document.getElementById('username').value);"></p>
-
-<div id="replace">
 
 ### Class Objective
 Use text analysis techniques introduced by Montfort to examine and compare small text corpora.
