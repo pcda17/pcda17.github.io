@@ -120,7 +120,7 @@ Download the most recent release of MAT [here](https://mat.boum.org/files/) (`ma
 
 Open the new directory “mat-0.6” and view its contents. This is the source code for MAT (written in Python), along with various documentation files and software resources.
 
-![](week/6/Image-1.png)
+![](week/6/Image-0.png)
 
 Drag the files “LICENSE,” “README.md,” and “README.security” to the TextWrangler (or TextEdit) icon in the Apple Dock. The license file specifies that MAT is released under the GNU General Public License (GPL), which allows free re-distribution of the program as long as it isn’t used for commercial purposes. In addition, any new software that uses MAT must be released under the GPL.
 
