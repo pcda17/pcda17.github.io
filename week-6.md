@@ -106,11 +106,7 @@ We can also check whether a dictionary contains a key like so. The following sho
 
 
 
-#### 
-
-Second half of class: discuss people’s data.
-
-
+#### Second half of class: discuss people’s data.
 
 
 
