@@ -17,6 +17,7 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 #### CSV I/O in Python
 Paste the following code snippet into a new Jupyter notebook, then run the cell. We’ll go through it line by line in a moment.
 
+```python
 	import csv
 
 	csv_path="/Users/yourname/Desktop/Artists.csv"
@@ -34,6 +35,7 @@ Paste the following code snippet into a new Jupyter notebook, then run the cell.
 	artist_table.remove(artist_table[0])
 	
 	artist_header
+```
 
 ![](week/3/Image-0.png)
 
@@ -58,7 +60,7 @@ Then we create a file stream object `o` that points to our spreadsheet, includin
 	mydata = csv.reader(o)
 
 Using a for loop, we iterate through our csv object and add each row (represented by a list) to the master list `meta_table`.
-	
+​	
 	for row in mydata:
 		artwork_table.append(row)
 	
