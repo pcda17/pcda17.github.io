@@ -1,10 +1,12 @@
-## Updating PCDA Materials with GitHub Desktop
+## Updating PCDA Materials on GitHub
 
 
 
-Download [GitHub Desktop](https://desktop.github.com/).
+## GitHub Desktop
 
-Open GitHub Desktop and log in with your account. Click the '+' on the upper left to create or download (clone)  a project. Select 'pcda' and click 'Clone pcda.'
+Download [GitHub Desktop](https://desktop.github.com/). Open the application and log in to your account. 
+
+Click the '+' on the upper left to create or download (clone)  a project. Select 'pcda' and click 'Clone pcda.'
 
 
 ![](img/GitHub_gui_01.png)
@@ -24,13 +26,13 @@ The client will take a moment to download.
 
 
 
-When it's done you'll see a log of past project edits.
+When it's done you'll see a log of past edits.
 
 ![](img/GitHub_gui_04.png)
 
 
 
-Click 'No Uncommitted Changes' at the top to see the interface you'll spend most of your time in. Since we haven't made any changes yet, everything is blank.
+Click 'No Uncommitted Changes' at the top to see the interface you'll spend most of your time with. Since we haven't made any changes yet, everything is blank.
 
 ![](img/GitHub_gui_05.png)
 
@@ -48,7 +50,7 @@ Any plaintext editor will do; I'm using [Typora](https://typora.io/), which disp
 
 
 
-Return to GitHub Desktop and you'll a list of updated files. Briefly describe your changes in the text box on the lower left, then click 'Commit to master' to save your state.
+Return to GitHub Desktop and you'll see a list of files with updates. Describe your changes in the text box on the lower left, then click 'Commit to master' to save your state.
 
 ![](img/GitHub_gui_08.png)
 
@@ -60,7 +62,7 @@ Finally, click "Sync" in the upper right to upload your changes to GitHub.
 
 
 
-Clicking 'Sync' will also download any new/updated files from the project on GitHub. You'll want to do this before starting every work session to make sure you're working with the most recent files.
+Clicking 'Sync' will also download any new/updated files from the project on GitHub. You'll want to do this before starting each work session to make sure you have the most recent files.
 
 The PCDA syllabus is currently visible at [https://stevemclaugh.github.io/pcda/](https://stevemclaugh.github.io/pcda/).
 
@@ -68,7 +70,7 @@ The PCDA syllabus is currently visible at [https://stevemclaugh.github.io/pcda/]
 
 
 
-
+## parse.io
 
 If GitHub Desktop is too much hassle (or if you need to make an edit from someone else's computer), [parse.io](https://parse.io) is a nice Web-based editor that connects to GitHub.
 
