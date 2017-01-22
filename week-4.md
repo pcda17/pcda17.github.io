@@ -134,20 +134,21 @@ How do you interpret this list? Does it give you any insight into the text youâ€
 ## Quick Exercise
 Referencing the code above, create a function that returns a sorted list of stopword-free word frequency lists when passed a TextBlob object. Look at the top vocabulary for several texts by each of your authors. How similar or different are these frequency lists between texts and between authors?
 
-_A possible solution:_
-	def topwords(blob):
-	    stopwords_eng=stopwords.words('english')
-	    freq_dict=blob.word_counts
-	    freq_sans_stopwords=[]
-	    for key in freq_dict:
-	        lemma=Word(key).lemmatize()
-	        if lemma not in stopwords_eng:
-	            freq_sans_stopwords.append([key,freq_dict[key]])
-	    sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
-	    return sorted_freq_sans_stopwords
-	
-	print topwords(text1)[:20]
-	print topwords(text2)[:20]
+> _A possible solution:_
+>
+> 	def topwords(blob):
+> 	    stopwords_eng=stopwords.words('english')
+> 	    freq_dict=blob.word_counts
+> 	    freq_sans_stopwords=[]
+> 	    for key in freq_dict:
+> 	        lemma=Word(key).lemmatize()
+> 	        if lemma not in stopwords_eng:
+> 	            freq_sans_stopwords.append([key,freq_dict[key]])
+> 	    sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
+> 	    return sorted_freq_sans_stopwords
+> 	
+> 	print topwords(text1)[:20]
+> 	print topwords(text2)[:20]
 
 #### POS Tagging
 We can also use TextBlob to create a list of part-of-speech tags for each word in a text.
