@@ -19,25 +19,32 @@ We’ll be using lists more often than any other data structure in the coming we
 	words2
 
 The Python shell should print `['hunting', 'cap']`, i.e., the subset of the list “words” from index 2 to index 3. In general, `list_name[start:end]`, where “start” and “end” are integers, returns a subset of “list-name” from index `start` to `end-1`. The “end minus 1” bit may seem odd, but in practice it makes slice notation more readable. The snippet above, for instance, gives us a list containing 2 items, equal to 4-2. And if we want to excerpt the first three items in a list, the following notation will do the trick.
+
 	words[:3]
 
 Recall that omitting an index number before or after the colon means you want to include all items on that end of the list. The following returns everything from index 2 to the end of “words”: `['hunting', 'cap', 'squeezed']`.
+
 	words[2:]
 
 If you want to excerpt the last three entries in a list without counting from the beginning, use a negative number before the colon.
+
 	words[-3:]
 
 Likewise, the following will slice off the final 3 items in our list, returning `['A', 'green']`.
+
 	words[:-3]
 
 To reverse the order of a list, add an extra colon and “-1.”
+
 	words[::-1]
 
 It’s important to note that in Python, every string is a list of characters under the hood. We can thus reverse the spelling of a sentence like so.
+
 	sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
 	sentence[::-1]
 
 If want to break our sentence into words, we can use the `split()` function to create a list of substrings with the space character as delimiter.
+
 	words=sentence.split(' ')
 	words
 
@@ -104,7 +111,7 @@ Finally, we’ll close our file stream and view a line from our list.
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose. 
 > **Tip:** While the term “newline” refers to any character or character combination used to mark the end of a line, when we say “newline character” for the rest of the course we’ll mean `\n` (formally called “line feed”) unless otherwise noted.
-![](DraggedImage.png)
+> ![](DraggedImage.png)
 
 You may have noticed that our text file from Project Gutenberg is broken into short lines, none longer than 74 characters. Many ASCII text files follow this fixed-width convention, designed to fit the 80-character width of many early PC displays. That display format, in turn, was chosen to work with data from 80-column punch cards, introduced by IBM in the 1920s.
 
@@ -153,7 +160,7 @@ Try creating a simple text filter or two, printing all lines that contain a give
 	for line in toole_lines:
 	     if "orleans" in line.lower():
 	          print line
-
+	
 	for line in toole_lines:
 	     if "doughnut" in line.lower():
 	          print line
@@ -281,11 +288,11 @@ Likewise, single quotes can be used to assign a string containing double quotes.
 
 To include newline characters and/or any combination of single and double quotes, Python lets us bound strings with triple quotes (i.e., three single quotes in a row). Copy the entire code block below and paste it into the Python shell.
 	even_more_text='''"My," Ignatius said to the old man after having taken his first bite. "These are rather strong. What are the ingredients in these?"
-	
+
 	"Rubber, cereal, tripe. Who knows? I wouldn't touch one of them myself."
-	
+
 	“They're curiously appealing,” Ignatius said, clearing his throat. "I thought that the vibrissae about my nostrils detected something unique while I was outside."
-	
+
 	Ignatius chewed with a blissful savagery, studying the scar on the man's nose and listening to his whistling.'''
 
 By default, Python string objects represent text via 8-bit ASCII, a version of a bare-bones text encoding format dating back to the 1960s. Python also supports 16-bit Unicode (UTF-16), a more recent standard that includes ~120,000 characters from a vast array of contemporary and historical scripts, as well as symbol sets including abstract shapes and every emoji. In Python, Unicode strings are immediately preceded by the letter `u`.
@@ -508,8 +515,8 @@ _A possible solution:_
 	review_table=page_to_table(url)
 	
 	pp.pprint(review_table)
-	
-	
+
+
 	outpath="/Users/yourname/Desktop/amazon.csv"
 	o = open(outpath, 'w')
 	a = csv.writer(o)
@@ -524,7 +531,7 @@ _A possible solution:_
 ## Demonstrate server-side Python script
 - Create a text file containing Python code to print “Hello world!”
 - Add shebang line at top of file:
-	#!/usr/bin/env python
+  #!/usr/bin/env python
 - Name the file “page.html.py”
 - Upload file to server and set file permissions to 755.
 - Open URL in browser.
