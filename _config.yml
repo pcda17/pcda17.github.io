@@ -1,2 +1,8 @@
 theme: jekyll-theme-slate
-project_title: Programming for Cultural Data Analysis
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      project_title: "Programming for Cultural Data Analysis"
