@@ -8,13 +8,15 @@
 First we’ll address any questions about the reading and last week’s material. Then we’ll review a few points from Shieber’s coding tutorial, beginning with the `split`, `join`, and `replace` functions.
 
 Assign a sentence to the variable `sentence` — in this case the opening line from John Kennedy Toole’s  _A Confederacy of Dunces_. Type the name of the variable and hit return to view your new string.
-	
-	sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
-	
-	sentence
 
-    > _Output:_
-    > 	'A green hunting cap squeezed the top of a fleshy balloon of a head.'
+```	
+sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
+	
+sentence
+```
+```
+*Output:* 'A green hunting cap squeezed the top of a fleshy balloon of a head.'
+```
 
 We’ll be using lists more often than any other data structure in the coming weeks, so it’s worth reviewing the details of Python’s slice notation. Let’s create a list of strings, then view a subset of the list to a new variable. Enter the variable “words2” to view the result.
 	words=['A', 'green', 'hunting', 'cap', 'squeezed']
