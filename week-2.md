@@ -357,30 +357,39 @@ Beginning next week, we’ll be using “notebook” files in Jupyter to write, 
 
 To launch Jupyter, open a terminal window and enter the following line. Jupyter’s interface will appear in a new window in your Web browser.
 	jupyter notebook
-![](DraggedImage-1.png)
+
+![](week/2/Image-1.png)
 
 In the Jupyter window, navigate to Desktop or wherever you’d like to create your first Jupyter notebook. Click the “New” in the upper right, then choose “Python 2” from the drop-down menu.
-![](DraggedImage-2.png)
-![](DraggedImage-3.png)
+
+![](week/2/Image-2.png)
+
+![](week/2/Image-3.png)
+
 You’re now in the Jupyter environment. Here, you can create a series of “cells” for individual chunks of code, which can be saved and run repeatedly. Click the ✚ icon on the top left to add a new cell.
 
 Type a line of code that prints a string. To run the current cell, either click the `►❙` icon or go to the “Cell” menu and choose “Run Cells.”
 	print "Hello Jupyter!"
-![](DraggedImage-4.png)
+
+![](week/2/Image-4.png)
 
 
 Note that each cell’s output is displayed right below to the the code that produced it, which is a major benefit of working in Jupyter. We’ll learn more about the Jupyter environment next week. For now, switch back to Terminal.
 
 #### View list of all installed Python modules
 Enter the following command to enter Python’s help shell.
+
 	help()
 
 Now enter the following and press return. After a moment, Python will display a list of all available modules.
+
 	modules
 
 Enter the name of a module and press return to view its help page, including a list of the module’s functions and other resources.
+
 	random
-![](DraggedImage-5.png)
+
+![](week/2/Image-5.png)
 
 Press `q` to close the help page, then hit return to get back to the Python shell. You can jump straight to module’s help page by passing its name to the `help()` function.
 	help('random')
@@ -391,13 +400,15 @@ Or if the module is already imported, you can refer to the module itself.
 
 To view a pared-down list of module resources, use the `dir()` function instead.
 	dir(random)
-![](DraggedImage-6.png)
+
+![](week/2/Image-6.png)
 
 The result is a challenge to read through, so let’s introduce the `pprint`, or “pretty-print” module.
 	import pprint
 	pp = pprint.PrettyPrinter()
 	pp.pprint(dir(random))
-![](DraggedImage-7.png)
+
+![](week/2/Image-7.png)
 
 `pprint` displays one item from the list per line, a much more readable format. We won’t mention `pprint` often in these tutorials, but keep it in mind for your own future use.
 
