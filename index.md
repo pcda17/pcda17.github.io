@@ -3,7 +3,6 @@ Syllabus: Programming for Cultural Data Analysis
 ====================================================
 
 Designed by Stephen McLaughlin with Tanya Clement, 2016–17
-
 University of Texas at Austin School of Information
 
 [Sample Tools and Data Sources](tools_data.md)
