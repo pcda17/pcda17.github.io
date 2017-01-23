@@ -3,11 +3,12 @@ Syllabus: Programming for Cultural Data Analysis
 ====================================================
 
 Designed by Stephen McLaughlin with Tanya Clement, 2016–17
+
 University of Texas at Austin School of Information
 
-[Sample Tools and Data Sources](tools_data.md)
+- [Tools and Datasets](tools_data.md)
 
-In-Class Outlines:
+- In-Class Outlines:
 
 [Week 1](week-1.md) | [Week 2](week-2.md) | [Week 3](week-3.md) | [Week 4](week-4.md) | [Week 5](week-5.md)
 [Week 6](week-6.md) | [Week 7](week-7.md) | [Week 8](week-8.md) | [Week 9](week-9.md)
@@ -397,7 +398,7 @@ Readings
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006. [PDF](https://www.dropbox.com/s/s5tfn318otdvu3q/Brew%202006%20-%20Language%20Processing-%20Statistical%20Methods.pdf?dl=0).
 
 -   “Working With Text Data.” scikit-learn.
-                    [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
+                      [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
 
 -   Geitgey, Adam. “Machine Learning is Fun!” *Medium*. [https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
 
@@ -446,7 +447,7 @@ Share your complete, cleaned dataset for the final project. In 200 words, descri
 -   Jockers, Matthew Lee. “Chapter 8: Theme.” In *Macroanalysis: Digital Methods and Literary History*, 118–53. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2013. [PDF](https://www.dropbox.com/s/zsombfvplf5bh8f/Jockers%202013%20-%20Macroanalysis%20-%20Ch.%208%20-%20Theme.pdf?dl=0).
 
 -   Marche, Stephen. “Literature Is not Data: Against Digital Humanities.” *Los Angeles Review of Books*, October 28th, 2012.
-                    [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
+                      [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
 
 
 
