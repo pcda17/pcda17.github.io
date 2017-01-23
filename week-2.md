@@ -61,7 +61,7 @@ The `join()` function reverses the process, inserting a chosen string (here, a s
     sentence
 
 #### Quick Exercise
-Using the functions described above, create a single string containing the words our sentence in reverse order. 
+Using the techniques outlined above, reverse the order of words in our sentence and combine them into a single string.
 
 > _A possible solution:_
 >
@@ -108,7 +108,7 @@ First we’ll assign the file’s pathname to the variable `filepath` and create
 
     filepath="/Users/yourname/Desktop/pg623.txt"
     file=open(filepath)
-    
+
 > _Output:_
 >
 >     'You must apply to Mrs. Brent, {2}\r\n'
@@ -378,7 +378,7 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 >     swift_lines=urllib2.urlopen(url).read().splitlines()
 >     
 >     random_lines=random.sample(lines,14)
->
+>     
 >     for line in random_lines:
 >          print line
 
@@ -387,7 +387,7 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 _Exercise:_ Modify your code to return 14 random lines containing a chosen word or phrase.
 
 > _A possible solution:_
-> 
+>
 >     url="http://www.gutenberg.org/cache/epub/623/pg623.txt"
 >     swift_lines=urllib2.urlopen(url).read().splitlines()
 >     
