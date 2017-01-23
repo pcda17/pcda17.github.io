@@ -1,3 +1,4 @@
+
 Sample Tools
 --------------
 
@@ -16,7 +17,7 @@ Cleaning and transforming tabular data
     -   [Video Tutorial 2: Data Transformation](https://www.youtube.com/watch?v=cO8NVCs_Ba0&nohtml5=False)
 
     -   [Video Tutorial 3: Data Augmentation](https://www.youtube.com/watch?v=5tsyz3ibYzk&nohtml5=False)
-                        *
+
 
 #### Fetch (FTP client)
 
@@ -57,7 +58,7 @@ Python module for parsing Web data
     -   [Processing Raw Text](http://www.nltk.org/book/ch03.html)
 
     -   [NLTK HOWTOs](http://www.nltk.org/howto/)
-                        *
+
 
 #### Pattern
 
