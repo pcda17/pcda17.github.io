@@ -100,18 +100,14 @@ A string that includes only numbers and possibly a decimal point — no commas o
 
 
 #### Text I/O in Python
-Now we’ll review reading and writing text files from the Python environment. Download the following file from Project Gutenberg or the mirror provided and save it to your desktop. It’s a collection of essays by Jonathan Swift, including a line that Toole references in the title _A Confederacy of Dunces_.
-- [http://www.gutenberg.org/cache/epub/623/pg623.txt](http://www.gutenberg.org/cache/epub/623/pg623.txt)
+Now we’ll review reading and writing text files from the Python environment. Visit Project Gutenberg or the mirror provided and save the plain text version of Swift's *The Battle of the Books, and other Short Pieces* to your desktop. It's a collection of essays, including a line Toole references in the title _A Confederacy of Dunces_.
+- [http://www.gutenberg.org/ebooks/623](http://www.gutenberg.org/ebooks/623)
 - [mirror](http://www.stephenmclaughlin.net/pcda/sample_data/week-2/pg623.txt)
 
 First we’ll assign the file’s pathname to the variable `filepath` and create the file stream object we’ll use to read its contents. Open the Python shell and enter the following lines.
 
     filepath="/Users/yourname/Desktop/pg623.txt"
     file=open(filepath)
-
-> _Output:_
->
->     'You must apply to Mrs. Brent, {2}\r\n'
 
 Then we’ll make an empty list called `swift_lines` and iterate through our file stream using a for loop, adding each line to the list as we go.
 
@@ -124,7 +120,11 @@ Finally, we’ll close our file stream and view a line from our list.
     file.close()
     swift_lines[1000]
 
-> **Tip:** In OS X you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
+> _Output:_
+>
+>     'flung by the assistance of so foul a goddess should pollute his fountain,\r\n'
+
+> **Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
 > Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames.
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose. 
@@ -137,7 +137,7 @@ You may have noticed that our text file from Project Gutenberg is broken into sh
 
 Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll often find it helpful to get rid of whitespace characters (newlines, spaces, tabs) at the beginning and end of a given string. For a string named `line`, `line.strip()` will return a copy of the string with all newlines and other whitespace characters removed from either end.
 
-    line=lines[1000]
+    line=swift_lines[1000]
     line
     line.strip()
 
@@ -145,22 +145,40 @@ Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll
 
 Closing a file stream with `close()` when you’re done with it is good style, though it’s not strictly required. If you want to keep your code compliant yet crisp, the following format closes a file stream automatically.
 
-    lines=[]
+    swift_lines=[]
     with open(filepath) as file:
          for line in file:
-               lines.append(line) 
+               swift_lines.append(line) 
 
 Or you can use this command, which does the same in one line.
 
-    lines=open(filepath).readlines()
+    swift_lines=open(filepath).readlines()
 
-Note that calling `readlines()` creates a list of all lines in a text file, including any newline characters (in this case, `\r\n` ). We could easily use a for loop with the `strip()` function to remove newlines from each string in the list, but the following line does the same in a shorter form. Here `open()` creates a file stream and `read()` returns the file’s contents as a single string. Finally, `some_text.splitlines()` returns a list of lines in the string `some_text`, removing newline characters along the way.
+Note that calling `readlines()` creates a list of all lines in a text file, including any newline characters (in this case, `\r\n` ). Let's take a look at 5 lines from our list.
 
-    lines=open(filepath).read().splitlines()
+    swift_lines[100:105]
 
-If we’d like to convert our list of lines to a block of flowable text, we can use `join()` to combine all items in the list `lines`, each separated by a space. Note that we end up losing the paragraph breaks that we saw in the original file.
+> _Output:_
+>
+>     ["their after-life.  In July, 1692, with Sir William Temple's help,\r\n", 'Jonathan Swift commenced M.A. in Oxford, as of Hart Hall.  In 1694,\r\n', "Swift's ambition having been thwarted by an offer of a clerkship, of 120\r\n", 'pounds a year, in the Irish Rolls, he broke from Sir William Temple, took\r\n', 'orders, and obtained, through other influence, in January, 1695, the\r\n']
 
-    ' '.join(lines)
+We could easily use a for loop with the `strip()` function to remove newlines from each string in the list, but the following line does the same in a shorter form. Here `open()` creates a file stream and `read()` returns the file’s contents as a single string. Finally, `some_text.splitlines()` returns a list of lines in the string `some_text`, removing newline characters along the way. Let's load the file using `splitlines()` and compare the results.
+
+    swift_lines=open(filepath).read().splitlines()
+    swift_lines[100:105]
+
+> _Output:_
+>
+>     ["their after-life.  In July, 1692, with Sir William Temple's help,", 'Jonathan Swift commenced M.A. in Oxford, as of Hart Hall.  In 1694,', "Swift's ambition having been thwarted by an offer of a clerkship, of 120", 'pounds a year, in the Irish Rolls, he broke from Sir William Temple, took', 'orders, and obtained, through other influence, in January, 1695, the']
+
+If we’d like to convert our list of lines to a block of flowable text, we can use `join()` to combine all items in the list `lines`, each separated by a space. Note that we end up losing the paragraph breaks we saw in the original file.
+
+    swift_text=' '.join(swift_lines)
+    swift_text[10005:10223]
+
+> _Output:_
+>
+>     "Satire is a sort of glass wherein beholders do generally discover everybody's face but their own; which is the chief reason for that kind reception it meets with in the world, and that so very few are offended with it."
 
 #### Accessing Text Files on the Web
 
@@ -178,7 +196,7 @@ Let’s look at the 200th line in the file.
 >
 >     'Ignatius had himself broken the baseball machine by kicking it.'
 
-Since we’ll be doing a lot of text filtering this semester, you should get used to checking whether a string includes a specified substring.
+Since we’ll be doing a lot of text filtering this semester, you should get used to checking whether a string includes a specified substring. Enter the following lines and press return twice. The first return brings us to a new line and lets us add more indented code if we choose to. The second confirms we've finished our conditional statement and runs it.
 
     if "Reilly" in "Ignatius J. Reilly":
          print "yes"
@@ -188,15 +206,17 @@ To do a case-insensitive substring search, use the `lower()` function to convert
     if "reilly" in "Ignatius J. Reilly".lower():
          print "yes"
 
-Try creating a simple text filter or two, printing all lines that contain a given substring.
+Try creating a simple text filter or two, printing all lines that contain a given substring. Run these examples one at a time, then search for a word of your choice.
 
-    for line in toole_lines:
-         if "orleans" in line.lower():
-              print line
-    
-    for line in toole_lines:
-         if "doughnut" in line.lower():
-              print line
+```python
+for line in toole_lines:
+    if "orleans" in line.lower():
+        print line
+
+for line in toole_lines:
+    if "doughnut" in line.lower():
+        print line
+```
 
 While you’re at it, use a for loop to identify the sentence by Jonathan Swift (in `swift_lines`) that Toole references in his title _A Confederacy of Dunces_. Try to resist the urge to use ⌘+F in TextWrangler.
 
