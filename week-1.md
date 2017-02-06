@@ -43,7 +43,8 @@ While in many cases we can use the terms “command line,” “terminal,” and
 
 “**Command line**” has the broadest scope, referring to a style of interface. A command-line interface, also known as a command-line interpreter (CLI) is any system in which all interaction occurs via text-based commands issued through a keyboard.
 
-A **terminal**, or more accurately a terminal emulator, is an application in your local operating system that essentially just provides a window to type in. We’ll be using the built-in Mac OSX terminal emulator, called **Terminal**, which you can find under “Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return.
+A **terminal**, or more accurately a terminal emulator, is an application in your local operating system that essentially just provides a window to type in. We’ll be using the built-in Mac OSX terminal emulator, called **Terminal**, which you can find under “Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return. (Note that there is a space after `echo`.)
+
     echo $SHELL
 
 A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to “the shell” they typically mean a command-line interpreter like [Bash](#). The command you entered above should have returned something like `/bin/bash`, which is the location of Bash’s “binary,” or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
@@ -76,7 +77,7 @@ A version of Python comes pre-installed with OS X, but to make our lives easier 
     brew install -U python
 
 > **Tip:** If the command above returns “Error: Cannot write to /usr/local/Cellar,” this is due to a permissions tweak in a recent version of OS X. Enter the following commands one at a time to fix the issue, entering your password after the last line.
->
+
 >     chgrp -R admin /usr/local
 >     chmod -R g+w /usr/local
 >     chgrp -R admin /Library/Caches/Homebrew
@@ -84,7 +85,7 @@ A version of Python comes pre-installed with OS X, but to make our lives easier 
 
 #### **5.** Exploring the File System
 
-While we wait for Python to install, let’s learn about interacting with the Mac file system from the shell. Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](#).
+While we wait for Python to install, let’s learn about interacting with the Mac file system from the shell. Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](http://cc.iiti.ac.in/lcommands.pdf).
 
 Unix-like operating systems are based on a metaphor: a nested set of directories and data files, forming a tree structure that begins at the root directory `/`. A benefit of this arrangement is that each file can be uniquely identified using a pathname of the following format:`/Users/yourname/Desktop/file.txt`.
 
@@ -115,8 +116,10 @@ In OS X, the file path `~/` is a shortcut to the current user’s home directory
 #### **6.** Command Line Basics Continued
 Next, let’s create a new directory and brief text file on the desktop. We’ll spend more time working with text after the break.
 
-    mkdir test_dir
-    echo "This is some text." > test.txt
+```bash
+mkdir test_dir
+echo "This is some text." > test.txt
+```
 
 To move our text document into our directory we can use the `mv` tool. We’ll then `cd` into the folder.
 
