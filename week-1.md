@@ -188,7 +188,7 @@ If we want to view our new text file, we have lots of options to choose from. By
 
 ![](week/1/Image-8.png)
 
-Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+O` (the letter 'O'), followed by `return` to confirm the filename. Press `ctrl+x` to exit Nano.
+Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+O` (the letter 'O'), followed by `return` to confirm the filename. Press `ctrl+X` to exit Nano.
 
 #### **8.** Installing software with Homebrew and pip
 

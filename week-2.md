@@ -102,6 +102,7 @@ A string that includes only numbers and possibly a decimal point — no commas o
 
 #### Text I/O in Python
 Now we’ll review reading and writing text files from the Python environment. Visit Project Gutenberg or the mirror provided and save the plain text version of Swift's *The Battle of the Books, and other Short Pieces* to your desktop. It's a collection of essays, including a line Toole references in the title _A Confederacy of Dunces_.
+
 - [http://www.gutenberg.org/ebooks/623](http://www.gutenberg.org/ebooks/623)
 - [mirror](http://www.stephenmclaughlin.net/pcda/sample_data/week-2/pg623.txt)
 
