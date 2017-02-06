@@ -29,7 +29,7 @@ First we’ll install the package manager [Homebrew](#), which will expedite the
 
 The following window will appear. Click “Install” to download a set of standard tools for Unix-like operating systems. Alternately, you can get the same tools by installing Apple’s **Xcode** development environment from the [App Store](#) (~4GB).
 
-![](week/1/week/1/Image.png)
+![](week/1/week/1/Image-0.png)
 
 A license agreement window will appear. Read (or at least skim) the text, then click “Agree.” The software will take a minute or two to download and install.
 
@@ -188,7 +188,7 @@ If we want to view our new text file, we have lots of options to choose from. By
 
 ![](week/1/Image-8.png)
 
-Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+o`, followed by `return` to confirm the filename. Press `ctrl+x` to exit Nano.
+Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+O` (the letter 'O'), followed by `return` to confirm the filename. Press `ctrl+x` to exit Nano.
 
 #### **8.** Installing software with Homebrew and pip
 
@@ -293,11 +293,11 @@ We’ll begin by assigning some data to variables.
     y=5.0
     z="Hello"
 
-If you type `x` and hit return, you’ll notice the variable’s current value is output on the line below. Trying the same with with `x+2` will return 7.
+If you type `x` and hit return, you’ll notice the variable’s current value is output on the line below. Trying the same with `x+2` will return 7.
 
     x+2
 
-> Output:
+> *Output:*
 >
 >     7
 
@@ -306,7 +306,7 @@ Note that `x+x` gives a result of 10, while `x+y` returns 10.0. That’s because
 Now try using the `+` operator on two strings.
     z+" world"
 
-> Output:
+> *Output:*
 >
 >     'Hello world'
 
