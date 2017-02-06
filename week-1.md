@@ -29,11 +29,11 @@ First we’ll install the package manager [Homebrew](#), which will expedite the
 
 The following window will appear. Click “Install” to download a set of standard tools for Unix-like operating systems. Alternately, you can get the same tools by installing Apple’s **Xcode** development environment from the [App Store](#) (~4GB).
 
-![](DraggedImage.png)
+![](week/1/week/1/DraggedImage.png)
 
 A license agreement window will appear. Read (or at least skim) the text, then click “Agree.” The software will take a minute or two to download and install.
 
-![](DraggedImage-1.png) 
+![](week/1/DraggedImage-1.png) 
 
 While we wait, let’s talk a bit about the command-line interface.
 
@@ -65,7 +65,7 @@ When Apple’s command-line tools are ready, a window will pop up that says “T
 
 Switch back to your original terminal window and press return to continue installing Homebrew. Enter your password at the prompt. Homebrew will take a minute or two to download and install. When it’s finished, your terminal window should look something like this.
 
-![](DraggedImage-4.png)
+![](week/1/DraggedImage-4.png)
 
 Let’s make sure Homebrew is up to date. This shouldn’t take more than a minute.
 
@@ -100,7 +100,7 @@ You can view the contents of the current directory with the `ls` command.
 
     ls
 
-![](DraggedImage-5.png)
+![](week/1/DraggedImage-5.png)
 
 You should see a list of directories including “Library,” “Users,” “bin,” “dev” and so on. Add the `-a` option and you’ll see a longer list including the hidden files “.DS\_Store” “.Trashes.” You can find dozens of other options in the `ls` manual, which you can read using the following line. Press “q” to return to the shell.
 
@@ -166,7 +166,7 @@ If we want to view our new text file, we have lots of options to choose from. By
     head note.txt
     head -n 1 note.txt
 
-![](DraggedImage-6.png)
+![](week/1/DraggedImage-6.png)
 
 **tail** is similar, printing a file’s final lines instead.
 
@@ -177,13 +177,13 @@ If we want to view our new text file, we have lots of options to choose from. By
 
     less note.txt
 
-![](DraggedImage-7.png)
+![](week/1/DraggedImage-7.png)
 
 **Nano** is a simple text editor that is available in most Unix-like systems.
 
     nano note.txt
 
-![](DraggedImage-8.png)
+![](week/1/DraggedImage-8.png)
 
 Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+o`, followed by `return` to confirm the filename. Press `ctrl+x` to exit Nano.
 
@@ -221,11 +221,11 @@ Then enter `wget` followed by any URL.
 
     wget http://google.com
 
-![](DraggedImage-9.png)
+![](week/1/DraggedImage-9.png)
 
 If you’re connected to the Internet and Wget is installed correctly, you should see feedback in the shell that looks something like the above. In this case, Wget has saved Google’s “index.html” file to the desktop. Either view the file in the shell using `less` or open it in TextWrangler.
 
-![](DraggedImage-10.png)
+![](week/1/DraggedImage-10.png)
 
 To make the file more readable in TextWrangler, go to the toolbar and select `View > Text Display > Soft Wrap Text`.
 
@@ -244,13 +244,13 @@ First, install **youtube-dl** and **FFmpeg** using Homebrew.
     cd ~/Desktop
     youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0
 
-![](DraggedImage-11.png)
+![](week/1/DraggedImage-11.png)
 
 To simplify things, locate the video in Finder and change its name to `Bucket.mp4`. Now let’s look at the file’s metadata with ExifTool. 
 
     exiftool Bucket.mp4 
 
-![](DraggedImage-12.png)
+![](week/1/DraggedImage-12.png)
 
 Use the `--help` option to view ExifTool’s man page, which you can also find [here](#). Press `q` to exit the manual viewer.
 
@@ -260,7 +260,7 @@ Next, we’ll extract a 90-second segment from the video using [FFmpeg](#). The 
 
     ffmpeg -i Bucket.mp4 -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
 
-![](DraggedImage-13.png)
+![](week/1/DraggedImage-13.png)
 
 Instead of HH:MM:SS.S notation, we can also specify start time and/or length using seconds. The following command produces the same output as the one above.
 
@@ -272,7 +272,7 @@ To re-encode a video clip when you make an excerpt, you can include the `-c copy
 
 When FFmpeg is finished, open `Bucket_clip.mp4` in VLC Media Player and see how it turned out. You may notice missing video frames or other errors.
 
-![](DraggedImage-14.png)
+![](week/1/DraggedImage-14.png)
 
 As usual, entering `man ffmpeg` will display the program’s manual.
 
