@@ -17,7 +17,7 @@
 - youtube-dl (command-line video downloader)
 - Wget (command-line file downloader)
 
-#### **2.** Installing Command Line Tools and Homebrew (laptops only)
+#### **2.** Installing Command Line Tools and Homebrew (laptops only) <!-- commented text-->
 
 First we’ll install the package manager [Homebrew](#), which will expedite the process of installing other command-line programs. Open a window in Terminal, then paste the following line and press return.
 
