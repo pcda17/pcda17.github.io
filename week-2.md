@@ -19,13 +19,13 @@ sentence
 
     A green hunting cap squeezed the top of a fleshy balloon of a head.
 
-We’ll be using lists more often than any other data structure in the coming weeks, so it’s worth reviewing the details of Python’s slice notation. Let’s create a list of strings, then view a subset of the list to a new variable. Enter the variable “words2” to view the result.
+We’ll be using lists (which are indicated by brackets [] a lot in the coming weeks. To review Python’s slice notation, we'll create a a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable “words2”, shows the result.
 
     words=['A', 'green', 'hunting', 'cap', 'squeezed']
     words2=words[2:4]
     words2
 
-The Python shell should print `['hunting', 'cap']`, i.e., the subset of the list “words” from index 2 to index 3. In general, `list_name[start:end]`, where “start” and “end” are integers, returns a subset of “list-name” from index `start` to `end-1`. The “end minus 1” bit may seem odd, but in practice it makes slice notation more readable. The snippet above, for instance, gives us a list containing 2 items, equal to 4-2. And if we want to excerpt the first three items in a list, the following notation will do the trick.
+The Python shell should print `['hunting', 'cap']`, i.e., the subset of the list “words” from index 2 to index 3. An *index* refers to a position within an ordered list.In general, `list_name[start:end]`, where “start” and “end” are integers, returns a subset of “list-name” from index `start` to `end-1`. The “end minus 1” bit may seem odd, but in practice it makes slice notation more readable. The snippet above, for instance, gives us a list containing 2 items, equal to 4-2. And if we want to excerpt the first three items in a list, the following notation will do the trick.
 
     words[:3]
 

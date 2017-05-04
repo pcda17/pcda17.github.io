@@ -17,7 +17,7 @@
 - youtube-dl (command-line video downloader)
 - Wget (command-line file downloader)
 
-#### **2.** Installing Command Line Tools and Homebrew (laptops only) <!-- commented text-->
+#### **2.** Installing Command Line Tools and Homebrew (laptops only) <!-- We may not need this part since students won't be installing on their own computers. We can add in a "if you want to go further than the class" kind of page but we can't get into troubleshooting their installations all semester-->
 
 First we’ll install the package manager [Homebrew](#), which will expedite the process of installing other command-line programs. Open a window in Terminal, then paste the following line and press return.
 
@@ -236,7 +236,7 @@ Wget is an amazingly versatile tool, and we’ll return to it in later weeks. In
 
     man wget
 
-#### **9.** Download a video with youtube-dl and create an excerpt with FFmpeg
+#### **9.** Download a video with youtube-dl and create an excerpt with FFmpeg <!-- Note: this takes a while. -->
 First, install **youtube-dl** and **FFmpeg** using Homebrew.
 
     brew install youtube-dl
