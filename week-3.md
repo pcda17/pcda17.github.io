@@ -116,42 +116,43 @@ Now that we’ve defined a meaningful subset of our data, let’s see what we ca
 5 BeginDate
 6 EndDate
 
-    lifespans_1880s=[]
+>    lifespans_1880s=[]
 
-    for row in born_1880s:
-        lifespans_1880s.append(int(row[6])-int(row[5]))
+>    for row in born_1880s:
+>       lifespans_1880s.append(int(row[6])-int(row[5]))
     
-    lifespans_1880s
+>    lifespans_1880s
 ![](week/3/Image-1.png)
 
 If you scroll through your list of lifespans, you’ll see occasional negative numbers (e.g., “-1887”). Since missing values are represented by “0,” if no death date is listed we’ll end up subtracting an artist’s birth year from zero. Let’s amend our code to leave out these rows.
 
-    lifespans_1880s=[]
+>    lifespans_1880s=[]
 
-    for row in born_1880s:
-        age=int(row[6])-int(row[5])
-        if age>0:
-            lifespans_1880s.append(age)
+>    for row in born_1880s:
+>       age=int(row[6])-int(row[5])
+>       if age>0:
+>           lifespans_1880s.append(age)
     
-    lifespans_1880s
+>    lifespans_1880s
 
 Now that we have a list of valid integers, all we need to do is calculate the mean. Below we divide the sum of the list (which we cast as a float) by its length to get 72.65 years.
 
-    float(sum(lifespans_1880s)) / len(lifespans_1880s)
+>    float(sum(lifespans_1880s)) / len(lifespans_1880s)
 
 That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways. 
     
-    //# First way to install numpy is to open a new terminal window and type:
-    pip install -U --user numpy
+>    //# First way to install numpy is to open a new terminal window and type:
+>    pip install -U --user numpy
 
-    //# Second way to install numpy is to type the same line but start with //! -- this tells the Jupyter notebook to run the command on the system:
-    #!pip install -U --user numpy
+>    //# Second way to install numpy is to type the same line but start with //! -- this tells the Jupyter notebook to run the command on the system:
+>    #!pip install -U --user numpy
 
 Once it’s installed, switch back to Jupyter and try this alternative.
-    import numpy
-    numpy.mean(lifespans_1880s)
+>    import numpy
+>    numpy.mean(lifespans_1880s)
 
-> **Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
+**Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
+
 >     from numpy import mean
 >     mean(avg_lifespan_1880s)
 > Another common convention is to rename `numpy` to `np` at the import step.
@@ -174,21 +175,23 @@ Write a piece of code that creates a new table containing all artworks that incl
 
 #### Fluxus Metadata Continued
 Now let’s make a master list of entries under “medium” in our Fluxus metadata set.
-    medium_list=[]
-    for row in fluxus_table:
-        medium_list.append(row[9])
+>    medium_list=[]
+>    for row in fluxus_table:
+>       medium_list.append(row[9])
     
-    len(medium_list)
+>    len(medium_list)
 
 Let’s look at 10 random samples from the collection, first importing the `sample()` function from `random`.
-    from random import sample
-    sample(medium_list,10)
+
+>    from random import sample
+>    sample(medium_list,10)
 ![](week/3/Image-2.png)
 
 Let’s see what terms appear most frequently in our list of media.
-    from collections import Counter
-    c = Counter(medium_list)
-    c.most_common(10)
+
+>    from collections import Counter
+>    c = Counter(medium_list)
+>    c.most_common(10)
 ![](week/3/Image-3.png)
 Note that 1605 artworks are missing an entry for “medium,” with the term “(CONFIRM)” appearing 99 times. 
 
@@ -252,16 +255,19 @@ Returning to our original MoMA metadata table, rite a piece of code that creates
 
 
 We can sort a table based on the values in a given column with the `sorted` function and and the `itemgetter` tool, which we use to specify the column we’re sorting by. The following sorts the table `art_1960s` by artist name.
-    from operator import itemgetter
-    art_1960s_sorted=sorted(art_1960s, key=itemgetter(1))
+
+>    from operator import itemgetter
+>    art_1960s_sorted=sorted(art_1960s, key=itemgetter(1))
 
 Since each row is so long, let’s just look at our sorted set of authors. The following notation returns a list of  each row’s “Artist” cell, located at index 1.
-    [row[1] for row in art_1960s_sorted]
+
+>    [row[1] for row in art_1960s_sorted]
 ![](week/3/Image-4.png)
 
 Here we’re once again using the `Counter` constructor from the `collections` module.
-    c=Counter([row[4] for row in art_1960s_sorted])
-    c.most_common(20)
+    
+>    c=Counter([row[4] for row in art_1960s_sorted])
+>    c.most_common(20)
 ![](week/3/Image-5.png)
 
 It’s impossible to memorize the details of every specialized tool available in Python, so you’ll probably end up repeatedly looking up processes like these.
@@ -269,12 +275,12 @@ It’s impossible to memorize the details of every specialized tool available in
 #### Writing CSVs
 Now that we’ve filtered and sorted our metadata, let’s export it to a new CSV file called `art_1960s.csv`.
 
-    outpath="/Users/yourname/Desktop/art_1960s.csv"
-    o = open(outpath, 'w')
-    a = csv.writer(o)
-    a.writerows([artwork_header])
-    a.writerows(art_1960s_sorted)
-    o.close()
+>    outpath="/Users/yourname/Desktop/art_1960s.csv"
+>    o = open(outpath, 'w')
+>    a = csv.writer(o)
+>    a.writerows([artwork_header])
+>    a.writerows(art_1960s_sorted)
+>    o.close()
 
 Note that we call use `writerows` function twice, first writing the column headers and then the actual data. Because `writerows` only accepts lists of lists, we’ve enclosed the `header` list object in brackets to create a new list that only contains `header`.
 
@@ -283,8 +289,9 @@ Find the new file on your desktop and open it in Excel or Calc. Take a few momen
 
 #### The Dictionary Data Type
 So far, when we want to access the “Artist” field in MoMA’s metadata, we’ve been referring to its position in a given row.
-    row=art_1960s_sorted[7700]
-    row[1]
+
+>    row=art_1960s_sorted[7700]
+>    row[1]
 > _Output:_
 >     'Helen Frankenthaler'
 
@@ -295,16 +302,16 @@ This system is straightforward and well-suited for many jobs, but for large, com
 
 
 Just like we can refer to a item in a list using brackets to enclose its position in the list, a dictionary, or dict, uses strings or numbers to identify each item in a collection. This data structure is known as a key-value pair. Here’s the simplest way to create a new dictionary.
-    artist_meta={}
-    artist_meta['\xef\xbb\xbfConstituentID']=248
-    artist_meta['DisplayName']='Richard Avedon'
-    artist_meta['ArtistBio']='American, 1923–2004'
-    artist_meta['Nationality']='American'
-    artist_meta['Gender']='Male'
-    artist_meta['BeginDate']=1923
-    artist_meta['EndDate']=2004
-    artist_meta['Wiki QID']='Q305497'
-    artist_meta['ULAN']='500013773'
+>    artist_meta={}
+>    artist_meta['\xef\xbb\xbfConstituentID']=248
+>    artist_meta['DisplayName']='Richard Avedon'
+>    artist_meta['ArtistBio']='American, 1923–2004'
+>    artist_meta['Nationality']='American'
+>    artist_meta['Gender']='Male'
+>    artist_meta['BeginDate']=1923
+>    artist_meta['EndDate']=2004
+>    artist_meta['Wiki QID']='Q305497'
+>    artist_meta['ULAN']='500013773'
 
 The following is a more compact format for the same key-value assignment.
     artist_meta={'\xef\xbb\xbfConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923\xe2\x80\x932004', 'Nationality': 'American'}
