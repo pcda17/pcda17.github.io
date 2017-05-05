@@ -114,22 +114,22 @@ Write a piece of code that creates a new table (i.e., list of lists) containing 
 Now that we’ve defined a meaningful subset of our data, let’s see what we can do with it. For instance, what was the mean life span of artists born in the 1880s (that happen to be represented at MoMA)?
 
 >    lifespans_1880s=[]
-
+>    
 >    for row in born_1880s:
 >       lifespans_1880s.append(int(row[6])-int(row[5]))
-    
+>       
 >    lifespans_1880s
 ![](week/3/Image-1.png)
 
 If you scroll through your list of lifespans, you’ll see occasional negative numbers (e.g., “-1887”). Since missing values are represented by “0,” if no death date is listed we’ll end up subtracting an artist’s birth year from zero. Let’s amend our code to leave out these rows.
 
 >    lifespans_1880s=[]
-
+>    
 >    for row in born_1880s:
 >       age=int(row[6])-int(row[5])
 >       if age>0:
 >           lifespans_1880s.append(age)
-    
+>        
 >    lifespans_1880s
 
 Now that we have a list of valid integers, all we need to do is calculate the mean. Below we divide the sum of the list (which we cast as a float) by its length to get 72.65 years.
@@ -138,13 +138,16 @@ Now that we have a list of valid integers, all we need to do is calculate the me
 
 That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways. 
     
->    //# First way to install numpy is to open a new terminal window and type:
+>    //# First way to install numpy is to open a new terminal window and type the following
+>    
 >    pip install -U --user numpy
-
+>    
 >    //# Second way to install numpy is to type the same line but start with //! -- this tells the Jupyter notebook to run the command on the system:
+>    
 >    #!pip install -U --user numpy
 
 Once it’s installed, switch back to Jupyter and try this alternative.
+
 >    import numpy
 >    numpy.mean(lifespans_1880s)
 
