@@ -52,8 +52,8 @@ We began by importing the `csv` module, Python’s built-in CSV input/output too
 
 Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing "yourname" with your user name.
 
-    artwork_path="/Users/yourname/Desktop/Artworks.csv"
-    artwork_table=[]
+>    artwork_path="/Users/yourname/Desktop/Artworks.csv"
+>    artwork_table=[]
 
 Then we create a file stream object `o` that points to our spreadsheet, including the argument `rU` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
 
@@ -112,9 +112,6 @@ Write a piece of code that creates a new table (i.e., list of lists) containing 
 
 #### Average Artist Age
 Now that we’ve defined a meaningful subset of our data, let’s see what we can do with it. For instance, what was the mean life span of artists born in the 1880s (that happen to be represented at MoMA)?
-
-5 BeginDate
-6 EndDate
 
 >    lifespans_1880s=[]
 
