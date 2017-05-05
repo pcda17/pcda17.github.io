@@ -40,10 +40,10 @@ Paste the following code snippet into a new Jupyter notebook, change "yourname" 
 ![](week/3/Image-0.png)
 
 Check the length of the table, then enter an index value in brackets to look at an entry.
-
->   len(artist_table)
->   artist_table[6310]
-
+```python
+len(artist_table)
+artist_table[6310]
+```
 We’ve just copied all the data from a CSV-formatted spreadsheet and turned it into a format Python can easily work with: a list of lists of strings. Let’s walk through the above a step at a time, this time loading MoMa’s artwork metadata. 
 
 We began by importing the `csv` module, Python’s built-in CSV input/output tool. Note, since you've already done it above, you don't have to do it again.
