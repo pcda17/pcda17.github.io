@@ -56,11 +56,13 @@ Next we assign our pathname to the `artwork_path` variable and initialize an emp
 >   artwork_table=[]
 ```
 Then we create a file stream object `o` that points to our spreadsheet, including the argument `rU` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
+
 ```python
 >   second_csv = open(artwork_path,'rU')
 >   mydata = csv.reader(second_csv)
 ```
 Using a for loop, we iterate through our csv object and add each row (represented by a list) to the master list `meta_table`.
+
 ​ ```python   
 >     for row in mydata:
 >       artwork_table.append(row)
