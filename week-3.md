@@ -47,30 +47,30 @@ artist_table[6310]
 We’ve just copied all the data from a CSV-formatted spreadsheet and turned it into a format Python can easily work with: a list of lists of strings. Let’s walk through the above a step at a time, this time loading MoMa’s artwork metadata. 
 
 We began by importing the `csv` module, Python’s built-in CSV input/output tool. Note, since you've already done it above, you don't have to do it again.
-
+```python
 >   import csv
-
+```
 Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing `yourname` with your user name.
-
+```python
 >   artwork_path="/Users/yourname/Desktop/Artworks.csv"
 >   artwork_table=[]
-
+```
 Then we create a file stream object `o` that points to our spreadsheet, including the argument `rU` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
-
+```python
 >   second_csv = open(artwork_path,'rU')
 >   mydata = csv.reader(second_csv)
-
+```
 Using a for loop, we iterate through our csv object and add each row (represented by a list) to the master list `meta_table`.
-​    
+​ ```python   
 >     for row in mydata:
 >       artwork_table.append(row)
 >     second_csv.close()
-
+```
 Because this table uses column labels in the first row, we’ll save those labels to the variable `header` and remove it from the table.
-
+```python
 >     artwork_header=artwork_table[0]
 >     artwork_table.remove(artwork_table[0])
-
+```
 Finally, let’s look at our list of column titles …
 
 >     artwork_header
