@@ -143,14 +143,14 @@ First way to install numpy is to open a new terminal window and type the followi
 >    
 >    pip install -U --user numpy
 >    
-Second way to install numpy is to type the same line but start with \\! -- this tells the Jupyter notebook to run the command on the system.
+Second way to install numpy is to type the same line but start with \! -- this tells the Jupyter notebook to run the command on the system.
 >    
->    \\!pip install -U --user numpy
+>    \!pip install -U --user numpy
 
 Once it’s installed, switch back to Jupyter and try this alternative.
 
->    import numpy
->    numpy.mean(lifespans_1880s)
+>   import numpy
+>       numpy.mean(lifespans_1880s)
 
 **Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
 
@@ -178,11 +178,12 @@ Write a piece of code that creates a new table containing all artworks that incl
 
 #### Fluxus Metadata Continued
 Now let’s make a master list of entries under “medium” in our Fluxus metadata set.
->    medium_list=[]
->    for row in fluxus_table:
+
+>   medium_list=[]
+>   for row in fluxus_table:
 >       medium_list.append(row[9])
     
->    len(medium_list)
+>   len(medium_list)
 
 Let’s look at 10 random samples from the collection, first importing the `sample()` function from `random`.
 
