@@ -139,11 +139,11 @@ Now that we have a list of valid integers, all we need to do is calculate the me
 
 That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways. 
     
->    //# First way to install numpy is to open a new terminal window and type the following
+First way to install numpy is to open a new terminal window and type the following
 >    
 >    pip install -U --user numpy
 >    
->    //# Second way to install numpy is to type the same line but start with //! -- this tells the Jupyter notebook to run the command on the system:
+Second way to install numpy is to type the same line but start with //! -- this tells the Jupyter notebook to run the command on the system.
 >    
 >    #!pip install -U --user numpy
 
