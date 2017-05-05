@@ -54,10 +54,12 @@ We began by importing the `csv` module, Python’s built-in CSV input/output too
    import csv
 ```
 Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing `yourname` with your user name.
+
 ```python
    artwork_path="/Users/yourname/Desktop/Artworks.csv"
    artwork_table=[]
 ```
+
 Then we create a file stream object `o` that points to our spreadsheet, including the argument `rU` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
 
 ```python
@@ -66,29 +68,37 @@ Then we create a file stream object `o` that points to our spreadsheet, includin
 ```
 Using a for loop, we iterate through our csv object and add each row (represented by a list) to the master list `meta_table`.
 
-​ ```python   
+```python   
      for row in mydata:
        artwork_table.append(row)
      second_csv.close()
 ```
 Because this table uses column labels in the first row, we’ll save those labels to the variable `header` and remove it from the table.
+
 ```python
      artwork_header=artwork_table[0]
      artwork_table.remove(artwork_table[0])
 ```
+
 Finally, let’s look at our list of column titles …
+
 ```python
      artwork_header
 ```
+
 … as well as a row in our table.
+
 ```python
      artwork_table[60946]
 ```
- **Tip:** Python will ignore any text following the “\#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes. 
+
+ **Tip:** Python will ignore any text following the “#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes. 
+
 ```python
      header=meta_table[0] #saves list of column titles to variable 'header'
      meta_table.remove(meta_table[0]) #removes column titles from table
 ```
+
 #### Quick Assignment
 Write a piece of code that prints each column label in `artist_header` and `artwork_header` next to its index in the list, beginning from zero as usual. You may want to keep this reference handy for the next few exercises.
 
