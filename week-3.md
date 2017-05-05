@@ -168,7 +168,7 @@ First way to install numpy is to open a new terminal window and type the followi
 Second way to install numpy is to type the same line but start with \! -- this tells the Jupyter notebook to run the command on the system.
 
 ```python  
-    \!pip install -U --user numpy
+    !pip install -U --user numpy
 ```
 Once it’s installed, switch back to Jupyter and try this alternative.
 
@@ -339,7 +339,10 @@ So far, when we want to access the “Artist” field in MoMA’s metadata, we�
 ```python
     row=art_1960s_sorted[7700]
     row[1]
+```
  _Output:_
+
+ ```python
      'Helen Frankenthaler'
 ```
 
