@@ -143,9 +143,9 @@ First way to install numpy is to open a new terminal window and type the followi
 >    
 >    pip install -U --user numpy
 >    
-Second way to install numpy is to type the same line but start with //! -- this tells the Jupyter notebook to run the command on the system.
+Second way to install numpy is to type the same line but start with \\! -- this tells the Jupyter notebook to run the command on the system.
 >    
->    #!pip install -U --user numpy
+>    \\!pip install -U --user numpy
 
 Once it’s installed, switch back to Jupyter and try this alternative.
 
@@ -155,11 +155,13 @@ Once it’s installed, switch back to Jupyter and try this alternative.
 **Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
 
 >     from numpy import mean
->     mean(avg_lifespan_1880s)
-> Another common convention is to rename `numpy` to `np` at the import step.
+>     mean(lifespans_1880s)
+
+Another common convention is to rename `numpy` to `np` at the import step.
 >     import numpy as np
->     np.mean(avg_lifespan_1880s)
-> This guide will use to `numpy.mean()` for the sake of clarity, but feel free to set up your environment however you like.
+>     np.mean(lifespans_1880s)
+
+This guide will use to `numpy.mean()` for the sake of clarity, but feel free to set up your environment however you like.
 
 #### Quick Assignment
 Write a piece of code that creates a new table containing all artworks that include the term “Fluxus” in any metadata field.
