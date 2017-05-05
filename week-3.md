@@ -15,7 +15,7 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
   - Provide several data sets and work through OpenRefine tools as a class.
 
 #### CSV I/O in Python
-Paste the following code snippet into a new Jupyter notebook, then run the cell. We’ll go through it line by line in a moment.
+Paste the following code snippet into a new Jupyter notebook, change "yourname" to your username on your computer (e.g. "tclement"), run the cell. 
 
 ```python
     import csv
@@ -46,10 +46,11 @@ Check the length of the table, then enter an index value in brackets to look at 
 
 We’ve just copied all the data from a CSV-formatted spreadsheet and turned it into a format Python can easily work with: a list of lists of strings. Let’s walk through the above a step at a time, this time loading MoMa’s artwork metadata. 
 
-We began by importing the `csv` module, Python’s built-in CSV input/output tool.
+We began by importing the `csv` module, Python’s built-in CSV input/output tool. Note, since you've already done it above, you don't have to do it again.
+
     import csv
 
-Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table.
+Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing "yourname" with your user name.
 
     artwork_path="/Users/yourname/Desktop/Artworks.csv"
     artwork_table=[]
@@ -67,14 +68,16 @@ Using a for loop, we iterate through our csv object and add each row (represente
     o.close()
 
 Because this table uses column labels in the first row, we’ll save those labels to the variable `header` and remove it from the table.
-    artwork_header=artwork_table[0]
-    artwork_table.remove(artwork_table[0])
+
+>     artwork_header=artwork_table[0]
+>     artwork_table.remove(artwork_table[0])
 
 Finally, let’s look at our list of column titles …
-    artwork_header
+
+>     artwork_header
 
 … as well as a row in our table.
-    artwork_table[60946]
+>     artwork_table[60946]
 
 > **Tip:** Python will ignore any text following the “\\#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes. 
 >     header=meta_table[0] #saves list of column titles to variable 'header'
