@@ -89,12 +89,12 @@ Write a piece of code that prints each column label in `artist_header` and `artw
 >
 >     print 'Artists\n'
 >
->     for i in  range(len(artist_header)):
+>     for i in range(len(artist_header)):
 >           print str(i)+' '+artist_header[i]
 >     
 >     print '\nArtworks\n'
 >             
->     for i in  range(len(artwork_header)):
+>     for i in range(len(artwork_header)):
 >           print str(i)+' '+artwork_header[i]
 
 #### Quick Assignment
@@ -124,6 +124,7 @@ Now that we’ve defined a meaningful subset of our data, let’s see what we ca
 ![](week/3/Image-1.png)
 
 If you scroll through your list of lifespans, you’ll see occasional negative numbers (e.g., “-1887”). Since missing values are represented by “0,” if no death date is listed we’ll end up subtracting an artist’s birth year from zero. Let’s amend our code to leave out these rows.
+
     lifespans_1880s=[]
 
     for row in born_1880s:
