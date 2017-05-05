@@ -79,6 +79,7 @@ Finally, let’s look at our list of column titles …
 >     artwork_table[60946]
 
 > **Tip:** Python will ignore any text following the “\\#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes. 
+
 >     header=meta_table[0] #saves list of column titles to variable 'header'
 >     meta_table.remove(meta_table[0]) #removes column titles from table
 
@@ -135,9 +136,11 @@ If you scroll through your list of lifespans, you’ll see occasional negative n
     lifespans_1880s
 
 Now that we have a list of valid integers, all we need to do is calculate the mean. Below we divide the sum of the list (which we cast as a float) by its length to get 72.65 years.
+
     float(sum(lifespans_1880s)) / len(lifespans_1880s)
 
-That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. Open a new terminal window and enter the following to install it.
+That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways. 
+    
     pip install -U --user numpy
 
 Once it’s installed, switch back to Jupyter and try this alternative.
