@@ -11,7 +11,7 @@ University of Texas at Austin School of Information
 - In-Class Outlines:
 
 [Week 1](week-1.md) | [Week 2](week-2.md) | [Week 3](week-3.md) | [Week 4](week-4.md) | [Week 5](week-5.md)
-[Week 6](week-6.md) | [Week 7](week-7.md) | [Week 8](week-8.md) | [Week 9](week-9.md)
+[Week 6](week-6.md) | [Week 7](week-7.md) | [Week 8](week-8.md) | [Week 9](week-9.md) | [Week 10](week-10.md)
 
 ### Course Objectives
 
@@ -73,10 +73,6 @@ Assignments should be posted on Canvas before the start of class each week.
 Week 1: Introductions & Command Line Basics
 ===========================================
 
-Reading
--------
-Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
-
 To Do Before Class
 ------------------
 To access Lynda videos, follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.
@@ -85,6 +81,11 @@ To access Lynda videos, follow links below, click “Log in,” then “Organiza
 
 - Optional: Marini, Joe. “Up and Running with Python.” Lynda.com.
             [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
+
+Reading
+-------
+Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
+
 
 Laptop users only:
 
@@ -196,7 +197,6 @@ Optional Readings
 
 
 ##### ▸ In-Class Outline
-
 
 
 

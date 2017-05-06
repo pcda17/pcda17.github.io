@@ -1,231 +1,141 @@
-## Week 4: Word-Level Text Analysis
+## Week 4: Collections as Data: Data Models
 
-
-### Class Objective
-Use text analysis techniques introduced by Montfort to examine and compare small text corpora.
-
-#### Loading Corpora
-Today we will be analyzing and comparing two small text corpora. Choose two text sets from the following list:
-
-- [Works of Ralph Waldo Emerson](http://www.stephenmclaughlin.net/pcda/sample-data/week-4/Emerson.zip)
-- [Works of Oscar Wilde](http://www.stephenmclaughlin.net/pcda/sample-data/week-4/Wilde.zip)
-
-Enter the following in the shell to open Jupyter. Create a new notebook Python 2 notebook.
-
-    jupyter notebook
-
-First, load each author’s works as a list of strings.
+#### Working with JSON
+JSON data is a representation of key-value pairs, very much like a dictionary in Python. For the following example we’ll download a JSON version of the artwork metadata we’ve been working with.
 
 ```python
-import os
-
-corpus1="/Users/yourname/Desktop/Sample-Data/Week-4/Emerson/"
-corpus2="/Users/yourname/Desktop/Sample-Data/Week-4/Wilde/"
-
-os.chdir(corpus1)
-corpus1_filenames=os.listdir("./")
-
-corpus1_texts=[]
-
-for filename in corpus1_filenames:
-    text=open(filename).read().replace("\n"," ") #replaces newlines with spaces
-    corpus1_texts.append(text)
-
-os.chdir(corpus2)
-corpus2_filenames=os.listdir("./")
-
-corpus2_texts=[]
-
-for filename in corpus2_filenames:
-    text=open(filename).read().replace("\n"," ") #replaces newline characters with spaces
-    corpus2_texts.append(text)
+    import urllib2
+    url="https://github.com/MuseumofModernArt/collection/blob/master/Artworks.json?raw=true"
+    json_string=urllib2.urlopen(url).read()
+    json_data = json.loads(json_string)
 ```
-
-#### TextBlob Review
-
-Let’s review the TextBlob package, introduced in this week’s reading by Nick Montfort. First, let’s load TextBlob and convert two texts to lists of words. Note that each is contained in a WordList object, which we can manipulate as if it were an ordinary list.
+To view JSON data (as well as dictionaries and just about any other data format), Python offers a “pretty printer” module. There are also numerous online tools for prettifying JSON data, such as [these](http://jsonviewer.stack.hu/) [two](http://json.parser.online.fr/beta/).
 
 ```python
-from textblob import TextBlob
-
-text1=TextBlob(corpus1_texts[0])
-print text1.words[:15]
-
-text2=TextBlob(corpus2_texts[0])
-print text2.words[:15]
+    import pprint
+    pprint.pprint(json_data)
 ```
-
-We can also print sentences, contained in Sentence objects.
-
-    print text1.sentences[:5]
-    print text2.sentences[:5]
-
-Note the following methods of manipulating your TextBlob results.
-
-    print sorted(text1.words) #prints sorted list of all words
-    print sorted(list(set(text1.words))) #prints sorted list of unique words
-
-
-
-#### Quick Exercise
-
-Each TextBlob object contains a dictionary with the number of times each word appears in a text. 
-
-    print text1.word_counts
-
-Create a function that returns the top 20 most frequent words in a given TextBlob object. Hint: Use the itemgetter module to sort a list of lists by a given index.
-
-> _A possible solution:
-> 
->   from operator import itemgetter
->   
->   freq_dict=text1.word_counts
->   freq_list=[]
->   
->   for key in freq_dict:
->       freq_list.append([key,freq_dict[key]])
->   
->   sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
->   
->   print sorted_freq_list[:20]
-
-
-What do you notice about these words?
-
-#### Word Frequency Sans Stopwords
-Let’s load the `nltk` module, which was installed as a dependency of TextBlob. Then we’ll download its additional packages and corpora.
-
-    import nltk
-    nltk.download()
-
-A Python GUI window should appear on your screen. Select “All packages” and click “Download.” The download and installation should take a minute or two.
-![](week/4/Image-0.png)
-
-In computational text analysis, the term “stopword” refers to words that appear frequently in most texts in a given language — e.g., “I,” “the,” “and,” “while,” and so on. NLTK provides a useful stopword list.
-    from nltk.corpus import stopwords
-    stopwords.words('english')
-![](week/4/Image-1.png)
-
-
-Now let’s look at the most frequent words in a text, disregarding stopwords.
+To examine the top-level keys in our JSON data, enter the following.
 
 ```python
-    from textblob import Word
+    for key in json_data:
+            print key
+```
+ _Output_:
 
-    stopwords_eng=stopwords.words('english')
-    freq_dict=text1.word_counts
-    
-    freq_sans_stopwords=[]
-    
-    for key in freq_dict:
-         lemma=Word(key).lemmatize()
-         if lemma not in stopwords_eng:
-               freq_sans_stopwords.append([key,freq_dict[key]])
-    
-    sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
-    
-    print sorted_freq_sans_stopwords[:20]
+```python
+     records
+     meta
+```
+In this case, the “records” key points to a list of item records. The following will return the first record.
+    print json_data['records'][0]
+
+ _Output_:
+
+```python
+     {u'pk': 19579, u'model': u'collection.museumobject', u'fields': {u'primary_image_id': u'2006AJ6728', u'object': u'Cabinet', u'year_start': 1600, u'artist': u'Fiamengo, Iacopo', u'museum_number': u'W.36:1, 2-1981', u'rights': 3, u'object_number': u'O61539', u'last_processed': u'2016-04-30 02:11:57', u'event_text': u'', u'collection_code': u'FWK', u'place': u'Naples', u'longitude': u'14.25185000', u'last_checked': u'2016-04-30 02:11:57', u'museum_number_token': u'w361981', u'latitude': u'40.83990100', u'title': u'', u'date_text': u'about 1600 (Made)\nca. 1600 (made)', u'slug': u'cabinet-fiamengo-iacopo', u'sys_updated': u'2015-12-11 00:00:00', u'location': u'Europe 1600-1815, room 6, case CA11'}}
 ```
 
-How do you interpret this list? Does it give you any insight into the text you’re looking at?
+A record, in turn, contains three keys: “pk,” “model,” and “fields.”
 
+```python
+    print json_data['records'][0]
+```
+ _Output:_
 
-## Quick Exercise
-Referencing the code above, create a function that returns a sorted list of stopword-free word frequency lists when passed a TextBlob object. Look at the top vocabulary for several texts by each of your authors. How similar or different are these frequency lists between texts and between authors?
+```python
+     pk
+     model
+     fields
+```
+The metadata we’re interested in is under “fields.” 
+```python
+    for key in json_data['records'][0]['fields']:
+        print key
+```
+```python
+ _Output:_
+     primary_image_id
+     object
+     year_start
+     artist
+     museum_number
+     rights
+     object_number
+     last_processed
+     event_text
+     collection_code
+     place
+     longitude
+     last_checked
+     museum_number_token
+     latitude
+     title
+     date_text
+     slug
+     sys_updated
+     location
+```
+We can thus view the “artist” field like so.
+    print json_data['records'][0]['fields']['artist']
 
-> _A possible solution:_
->
->     def topwords(blob):
->         stopwords_eng=stopwords.words('english')
->         freq_dict=blob.word_counts
->         freq_sans_stopwords=[]
->         for key in freq_dict:
->             lemma=Word(key).lemmatize()
->             if lemma not in stopwords_eng:
->                 freq_sans_stopwords.append([key,freq_dict[key]])
->         sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
->         return sorted_freq_sans_stopwords
->     
->     print topwords(text1)[:20]
->     print topwords(text2)[:20]
+#### JSON Data to CSV
+Next we’ll transfer these metadata fields to CSV format. First, let’s create a list of column titles for reference:
 
-#### POS Tagging
-We can also use TextBlob to create a list of part-of-speech tags for each word in a text.
-    print text1.tags
+```python
+    header=[]
 
-Let’s take a close look at our results. Examine two or three sentences a word at a time and check whether parts of speech were tagged correctly. If you find any mistakes, can you guess why the tagging algorithm slipped up?
-
-Following Montfort’s example, let’s create a function that counts the number of adjectives in a text.
-
-    def adjs(text):
-        count = 0
-        for (word, tag) in text.tags:
-            if tag == 'JJ':
-                count+=1
-        return count
+    for key in json_data['records'][0]['fields']:
+        header.append(key)
     
-    print adjs(text1)
+    print header
+```
+Then we’ll use our column titles (which are also keys in the “fields” key-value set) to create a list of rows for our CSV. Since the CSV writer prefers working with non-Unicode strings, we’ll use the `str()` function to reformat each metadata item as we add it to the table.
 
-And another function to calculate the percentage of words in the text that are tagged as adjectives.
+```python
+    meta_table=[]
 
-    def adj_percent(text):
-        return float(adjs(text))/len(text.words)
+    for record in json_data['records']:
+        row=[]
+        for key in header:
+            row.append(unidecode(record['fields'][key]))
+        meta_table.append(row)
     
-    print adj_percent(text1)
+    print meta_table[0]
+```
+Now let’s make a string version of our header.
 
-#### Exercise
-Create a function called `POS_profile` that takes a TextBlob object and returns a list containing several parts of speech and their relative frequency within the text. Your POS profile should include the following parts of speech:
+```python
+    header_string=[]
 
-- nouns
-- adjectives
-- verbs
-- adverbs
-- pronouns
+    for item in header:
+        header_string.append(str(item))
+```
+Finally, we’ll write our metadata collection as a CSV.
 
-You can find a full list of POS tags used by TextBlob [here](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html). Note that several parts of speech are split into multiple codes (e.g., NN, NNS, NNP, and NNPS for different classes of noun).
+```python
+    import csv
+    outpath="/Users/yourname/Desktop/V_and_A_ivory.csv"
+    o = open(outpath, 'w')
+    a = csv.writer(o)
+    a.writerows([header_string])
+    a.writerows(meta_table)
+    o.close()
+```
+Open your CSV in Excel or Calc and marvel at your 
 
-Next, run your POS profile on each text in your two corpora. How much do these values vary between authors and among texts by the same author?
+#### OpenRefine
+Launch the OpenRefine application and enter the following in your browser’s URL bar to access the interface.
+- [http://127.0.0.1:3333/](http://127.0.0.1:3333/)
 
-> _A possible solution:_
-> 
->     def POS_profile(blob):
->         noun_codes=['NN','NNS','NNP','NNPS']
->         adj_codes=['JJ','JJR','JJS']
->         verb_codes=['VB','VBD','VBG','VBN','VBP','VBZ']
->         adv_codes=['RB','RBR','RBS']
->         pronoun_codes=['PRP']
->         noun_count=0
->         adj_count=0
->         verb_count=0
->         adv_count=0
->         pronoun_count=0
->         for (word, tag) in blob.tags:
->             if tag in noun_codes: noun_count+=1
->             if tag in adj_codes: adj_count+=1
->             if tag in verb_codes: verb_count+=1
->             if tag in adv_codes: adv_count+=1
->             if tag in pronoun_codes: pronoun_count+=1
->         word_count=len(blob.words)
->         return [float(noun_count)/word_count, float(adj_count)/word_count, float(verb_count)/word_count, float(adv_count)/word_count, float(pronoun_count)/word_count]
+Click “Create Project” then “Choose Files” and choose “V\_and\_A\_ivory.csv.” Click “Next.” In the following window, click “Create Project” in the upper right corner.
 
-#### Break
+At the top of the “place” column, click the dropdown button and choose “Text Facet.” A list of places will appear in the left column. Click “Paris” to display only works created there.
 
-#### Naive Bayes Classification
+Note that several “place” records are listed as “Germany,” while others are German cities. Let’s group them under a single facet.
 
-Review classification examples from Montfort text.
+ 
 
-#### Exercise
+#### Discussion
 
-Divide each of your corpora into two sets, one for training our classifier and one for testing. Split each text into a list of sentences and combine these to create four master lists: author 1 training, author 1 testing, author 2 training, author 2 testing.
 
-Create a Naive Bayes classifier using your two training sets. Run the classifier on each sentence in your test sets and calculate the accuracy of your model.
-
-Examine sentences that were misclassified. Why do you think the algorithm was misled?
-
-#### Sentiment Analysis
-
-If time permits.
-
-#### Using WordNet
-
-If time permits.
