@@ -17,7 +17,7 @@
 - youtube-dl (command-line video downloader)
 - Wget (command-line file downloader)
 
-#### **2.** Installing Command Line Tools and Homebrew (laptops only)
+#### **2.** Installing Command Line Tools and Homebrew (laptops only) <!-- We may not need this part since students won't be installing on their own computers. We can add in a "if you want to go further than the class" kind of page but we can't get into troubleshooting their installations all semester-->
 
 First we’ll install the package manager [Homebrew](#), which will expedite the process of installing other command-line programs. Open a window in Terminal, then paste the following line and press return.
 
@@ -236,7 +236,7 @@ Wget is an amazingly versatile tool, and we’ll return to it in later weeks. In
 
     man wget
 
-#### **9.** Download a video with youtube-dl and create an excerpt with FFmpeg
+#### **9.** Download a video with youtube-dl and create an excerpt with FFmpeg <!-- Note: this takes a while. -->
 First, install **youtube-dl** and **FFmpeg** using Homebrew.
 
     brew install youtube-dl
@@ -356,20 +356,20 @@ Conditional statements are a fundamental part of all programming languages. We u
 
     number=12
     if number==12:
-         print "The value is 12, an integer."
+         print("The value is 12, an integer.")
 
 By adding `else`, we can tell Python to do something if the conditional isn’t true.
 
     number=10
     if number==12:
-         print "The value is 12, an integer."
+         print("The value is 12, an integer.")
     else: 
-         print "The value is not 12."
+         print("The value is not 12.")
 
 A **for loop** is a structure that lets us iterate through lists and other data structures so we can refer to each item one at a time.
     
     for country in eu_countries:
-        print country + ' is great.'
+        print(country + ' is great.')
 
 Finally, we can create functions to automate repetitive processes. Use the `def` declaration to start s function definition. The code below will produce the same output as the last example.
 
@@ -378,7 +378,7 @@ def is_great(word):
     return word + ' is great.'
 
 for country in eu_countries:
-    print is_great(country)
+    print(is_great(country))
 ```
 
 In this case we’re not saving much effort, but as we proceed you’ll find that functions will help you write simpler, more readable code.

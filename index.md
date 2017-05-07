@@ -11,7 +11,7 @@ University of Texas at Austin School of Information
 - In-Class Outlines:
 
 [Week 1](week-1.md) | [Week 2](week-2.md) | [Week 3](week-3.md) | [Week 4](week-4.md) | [Week 5](week-5.md)
-[Week 6](week-6.md) | [Week 7](week-7.md) | [Week 8](week-8.md) | [Week 9](week-9.md)
+[Week 6](week-6.md) | [Week 7](week-7.md) | [Week 8](week-8.md) | [Week 9](week-9.md) | [Week 10](week-10.md)
 
 ### Course Objectives
 
@@ -73,16 +73,19 @@ Assignments should be posted on Canvas before the start of class each week.
 Week 1: Introductions & Command Line Basics
 ===========================================
 
-
 To Do Before Class
 ------------------
-
 To access Lynda videos, follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.
 
 - Optional: Allardice, Simon. “Foundations of Programming: Fundamentals.” Lynda.com. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html)
 
 - Optional: Marini, Joe. “Up and Running with Python.” Lynda.com.
             [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
+
+Reading
+-------
+Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
+
 
 Laptop users only:
 
@@ -101,8 +104,6 @@ Note that the university caps each student’s wi-fi bandwidth use at 1 GB per w
 ##### ▸ In-Class Outline
 
 
-
-
 Week 2: Python Intro and Text Manipulation
 ==========================================
 
@@ -111,34 +112,44 @@ To Do Before Class
 ------------------
 
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
+-   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
 
 Work through Chris Albon’s tutorial on Python string operations.
+-   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
 
 Reading
 -------
-
--   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
-
--   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
-
--   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
+-   Noria, Xavier. “Understanding Newlines.” *O’Reilly ONLamp*, August 17, 2006. [http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html](http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html)
 
 -   Oualline, Steve. “The End of Line Puzzle.” *The Practical Programmer*. [http://www.oualline.com/practical.programmer/eol.html](http://www.oualline.com/practical.programmer/eol.html)
 
-
-
-Optional Reading
-----------------
-
--   Noria, Xavier. “Understanding Newlines.” *O’Reilly ONLamp*, August 17, 2006. [http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html](http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html)
-
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
+
 
 ##### ▸ In-Class Outline
 
+Week 3: Collections as Data: Meaning making
+================================
 
-Week 3: Data Models
+To Do Before Class
+------------------
+
+-   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
+
+Readings
+--------
+
+- Gallinger, M. and Daniel Chudnov "Library of Congress Lab: Library of Congress Digital Scholars Lab Pilot Project Report," ([PDF](http://digitalpreservation.gov/meetings/dcs16/DChudnov-MGallinger_LCLabReport.pdf).
+
+- Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41. [PDF](https://www.dropbox.com/s/s0zmg1iw308vb4e/Introna%202011%20-%20The%20Enframing%20of%20Code-%20Agency%2C%20Originality%20and%20the%20Plagiarist.pdf?dl=0).
+
+- Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
+
+-   Posner, Miriam. “Humanities Data: A Necessary Contradiction.” *Miriam Posner’s Blog*, June 25, 2015. *http://miriamposner.com/blog/humanities-data-a-necessary-contradiction*
+
+
+Week 4: Collections as Data: Data Models
 ===================
 
 > Note: In this course we will primarily work with data in CSV and JSON formats. Relational databases and RDF are discussed in readings but will not be emphasized in class.
@@ -166,11 +177,9 @@ Readings
 
 -   Swartz, Aaron. “Building a Platform: Providing APIs.” In *Aaron Swartz’s ‘A Programmable Web’: An Unfinished Work*, 31–39. San Rafael, CA: Morgan & Claypool Publishers, 2013. [PDF](https://www.dropbox.com/s/wmgtcko0u9q59aw/Swartz%202013%20-%20Building%20a%20Platform-%20Providing%20APIs.pdf?dl=0).
 
--   Posner, Miriam. “Humanities Data: A Necessary Contradiction.” *Miriam Posner’s Blog*, June 25, 2015. *http://miriamposner.com/blog/humanities-data-a-necessary-contradiction*
-
--   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
+
 
 
 
@@ -185,12 +194,13 @@ Optional Readings
 
 -   Zhuang, Atima Han, Ishita Vedvyas, and Rishikesh Dole. “Tutorial: OpenRefine,” 2013. [http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf](http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf)
 
--   Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41. [PDF](https://www.dropbox.com/s/s0zmg1iw308vb4e/Introna%202011%20-%20The%20Enframing%20of%20Code-%20Agency%2C%20Originality%20and%20the%20Plagiarist.pdf?dl=0).
+
 
 ##### ▸ In-Class Outline
 
 
-Week 4: Word-Level Text Analysis
+
+Week 5: Word-Level Text Analysis
 ================================
 
 
@@ -237,7 +247,7 @@ Topics to Cover
 ##### ▸ In-Class Outline
 
 
-Week 5: Web Scraping & APIs
+Week 6: Web Scraping & APIs
 =============================
 
 
@@ -280,7 +290,7 @@ Optional Readings
 > ▸ In-Class Outline
 
 
-Week 6: Data and Politics
+Week 7: Data and Politics
 =========================
 
 
@@ -321,7 +331,7 @@ Optional Readings
 ##### ▸ In-Class Outline
 
 
-Week 7: Statistics and Visualization
+Week 8: Statistics and Visualization
 ====================================
 
 
@@ -372,7 +382,7 @@ Optional Readings
 ##### ▸ In-Class Outline
 
 
-Week 8: Machine Learning
+Week 9: Machine Learning
 ==========================
 
 
@@ -431,7 +441,7 @@ Topics to Cover
 ##### ▸ In-Class Outline
 
 
-Week 9: Critical Text Analysis
+Week 10: Critical Text Analysis
 ================================
 
 
@@ -461,7 +471,7 @@ Optional Reading
 ##### ▸ In-Class Outline
 
 
-Week 10: Copyright and the Information Commons
+Week 11: Copyright and the Information Commons
 ================================================
 
 
@@ -533,5 +543,5 @@ Optional Readings
 ##### ▸ In-Class Outline
 
 
-*Week 14: Final Presentations*
+*Week 13: Final Presentations*
 ------------------------------
