@@ -12,7 +12,9 @@ Today we will be analyzing and comparing two small text corpora. Choose two text
 
 Enter the following in the shell to open Jupyter. Create a new notebook Python 2 notebook.
 
+```python
     jupyter notebook
+```
 
 First, load each author’s works as a list of strings.
 
@@ -57,14 +59,16 @@ print text2.words[:15]
 
 We can also print sentences, contained in Sentence objects.
 
+```python
     print text1.sentences[:5]
     print text2.sentences[:5]
-
+```
 Note the following methods of manipulating your TextBlob results.
 
+```python
     print sorted(text1.words) #prints sorted list of all words
     print sorted(list(set(text1.words))) #prints sorted list of unique words
-
+```
 
 
 #### Quick Exercise
@@ -75,35 +79,42 @@ Each TextBlob object contains a dictionary with the number of times each word ap
 
 Create a function that returns the top 20 most frequent words in a given TextBlob object. Hint: Use the itemgetter module to sort a list of lists by a given index.
 
-> _A possible solution:
-> 
->   from operator import itemgetter
->   
->   freq_dict=text1.word_counts
->   freq_list=[]
->   
->   for key in freq_dict:
->       freq_list.append([key,freq_dict[key]])
->   
->   sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
->   
->   print sorted_freq_list[:20]
+_A possible solution:
 
+```python 
+from operator import itemgetter
+
+freq_dict=text1.word_counts
+freq_list=[]
+
+for key in freq_dict:
+    freq_list.append([key,freq_dict[key]])
+
+sorted_freq_list=sorted(freq_list, key=itemgetter(1))[::-1]
+
+print sorted_freq_list[:20]
+```
 
 What do you notice about these words?
 
 #### Word Frequency Sans Stopwords
 Let’s load the `nltk` module, which was installed as a dependency of TextBlob. Then we’ll download its additional packages and corpora.
 
+```python
     import nltk
     nltk.download()
+```
 
 A Python GUI window should appear on your screen. Select “All packages” and click “Download.” The download and installation should take a minute or two.
 ![](week/4/Image-0.png)
 
 In computational text analysis, the term “stopword” refers to words that appear frequently in most texts in a given language — e.g., “I,” “the,” “and,” “while,” and so on. NLTK provides a useful stopword list.
+
+```python
     from nltk.corpus import stopwords
     stopwords.words('english')
+```
+
 ![](week/4/Image-1.png)
 
 
@@ -133,22 +144,23 @@ How do you interpret this list? Does it give you any insight into the text you�
 ## Quick Exercise
 Referencing the code above, create a function that returns a sorted list of stopword-free word frequency lists when passed a TextBlob object. Look at the top vocabulary for several texts by each of your authors. How similar or different are these frequency lists between texts and between authors?
 
-> _A possible solution:_
->
->     def topwords(blob):
->         stopwords_eng=stopwords.words('english')
->         freq_dict=blob.word_counts
->         freq_sans_stopwords=[]
->         for key in freq_dict:
->             lemma=Word(key).lemmatize()
->             if lemma not in stopwords_eng:
->                 freq_sans_stopwords.append([key,freq_dict[key]])
->         sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
->         return sorted_freq_sans_stopwords
->     
->     print topwords(text1)[:20]
->     print topwords(text2)[:20]
+_A possible solution:_
 
+```python
+  def topwords(blob):
+      stopwords_eng=stopwords.words('english')
+      freq_dict=blob.word_counts
+      freq_sans_stopwords=[]
+      for key in freq_dict:
+          lemma=Word(key).lemmatize()
+          if lemma not in stopwords_eng:
+              freq_sans_stopwords.append([key,freq_dict[key]])
+      sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
+      return sorted_freq_sans_stopwords
+  
+  print topwords(text1)[:20]
+  print topwords(text2)[:20]
+```
 #### POS Tagging
 We can also use TextBlob to create a list of part-of-speech tags for each word in a text.
     print text1.tags
@@ -157,6 +169,7 @@ Let’s take a close look at our results. Examine two or three sentences a word 
 
 Following Montfort’s example, let’s create a function that counts the number of adjectives in a text.
 
+```python
     def adjs(text):
         count = 0
         for (word, tag) in text.tags:
@@ -165,13 +178,16 @@ Following Montfort’s example, let’s create a function that counts the number
         return count
     
     print adjs(text1)
+```
 
 And another function to calculate the percentage of words in the text that are tagged as adjectives.
 
+```python
     def adj_percent(text):
         return float(adjs(text))/len(text.words)
     
     print adj_percent(text1)
+```
 
 #### Exercise
 Create a function called `POS_profile` that takes a TextBlob object and returns a list containing several parts of speech and their relative frequency within the text. Your POS profile should include the following parts of speech:
@@ -186,27 +202,28 @@ You can find a full list of POS tags used by TextBlob [here](https://www.ling.up
 
 Next, run your POS profile on each text in your two corpora. How much do these values vary between authors and among texts by the same author?
 
-> _A possible solution:_
-> 
->     def POS_profile(blob):
->         noun_codes=['NN','NNS','NNP','NNPS']
->         adj_codes=['JJ','JJR','JJS']
->         verb_codes=['VB','VBD','VBG','VBN','VBP','VBZ']
->         adv_codes=['RB','RBR','RBS']
->         pronoun_codes=['PRP']
->         noun_count=0
->         adj_count=0
->         verb_count=0
->         adv_count=0
->         pronoun_count=0
->         for (word, tag) in blob.tags:
->             if tag in noun_codes: noun_count+=1
->             if tag in adj_codes: adj_count+=1
->             if tag in verb_codes: verb_count+=1
->             if tag in adv_codes: adv_count+=1
->             if tag in pronoun_codes: pronoun_count+=1
->         word_count=len(blob.words)
->         return [float(noun_count)/word_count, float(adj_count)/word_count, float(verb_count)/word_count, float(adv_count)/word_count, float(pronoun_count)/word_count]
+_A possible solution:_
+```python
+  def POS_profile(blob):
+      noun_codes=['NN','NNS','NNP','NNPS']
+      adj_codes=['JJ','JJR','JJS']
+      verb_codes=['VB','VBD','VBG','VBN','VBP','VBZ']
+      adv_codes=['RB','RBR','RBS']
+      pronoun_codes=['PRP']
+      noun_count=0
+      adj_count=0
+      verb_count=0
+      adv_count=0
+      pronoun_count=0
+      for (word, tag) in blob.tags:
+          if tag in noun_codes: noun_count+=1
+          if tag in adj_codes: adj_count+=1
+          if tag in verb_codes: verb_count+=1
+          if tag in adv_codes: adv_count+=1
+          if tag in pronoun_codes: pronoun_count+=1
+      word_count=len(blob.words)
+      return [float(noun_count)/word_count, float(adj_count)/word_count, float(verb_count)/word_count, float(adv_count)/word_count, float(pronoun_count)/word_count]
+```
 
 #### Break
 
