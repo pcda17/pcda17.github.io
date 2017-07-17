@@ -3,6 +3,31 @@
 
 #### **1.** Student and instructor introductions
 
+### Launch Jupyter notebook using Docker
+
+Enter the following command to run the Jupyter notebook Docker container.
+
+```
+docker run -it --name pcda_notebook -p 8888:8888 -d -v ~/Desktop/sharedfolder/:/sharedfolder jupyter/notebook /bin/bash
+```
+
+Now start a shell session in your running Docker image:
+
+```
+docker exec -ti pcda_notebook /bin/bash
+```
+
+Enter the following command to launch Jupyter, then point your browser to `localhost:8888`.
+
+```
+jupyter notebook
+```
+
+
+
+
+
+
 ### Pre-installed software on Computer lab machines
 
 - Apple command line tools
@@ -33,13 +58,13 @@ The following window will appear. Click “Install” to download a set of stand
 
 A license agreement window will appear. Read (or at least skim) the text, then click “Agree.” The software will take a minute or two to download and install.
 
-![](week/1/Image-1.png) 
+![](week/1/Image-1.png)
 
 While we wait, let’s talk a bit about the command-line interface.
 
 #### **3.** Command Line Basics
 
-While in many cases we can use the terms “command line,” “terminal,” and “shell” interchangeably, each has a slightly different denotation. 
+While in many cases we can use the terms “command line,” “terminal,” and “shell” interchangeably, each has a slightly different denotation.
 
 “**Command line**” has the broadest scope, referring to a style of interface. A command-line interface, also known as a command-line interpreter (CLI) is any system in which all interaction occurs via text-based commands issued through a keyboard.
 
@@ -97,7 +122,7 @@ The root directory, `/`, is just like any other folder in the system. Enter the 
 
     cd /
 
-You can view the contents of the current directory with the `ls` command. 
+You can view the contents of the current directory with the `ls` command.
 
     ls
 
@@ -145,7 +170,7 @@ Another useful file path shortcut is `../`, which refers to the parent directory
 
     cd ../
 
-Finally, we’ll delete our test directory and the file inside. Adding the `-r` option tells `rm`  to remove files recursively, meaning everything in the specified folder gets wiped out. 
+Finally, we’ll delete our test directory and the file inside. Adding the `-r` option tells `rm`  to remove files recursively, meaning everything in the specified folder gets wiped out.
 
     rm -r test_dir
 
@@ -157,14 +182,14 @@ Be careful with `rm`, especially in recursive mode. It deletes files permanently
 
 Below, we create a text file in the Desktop directory using the `>` operator. We then append a second line using `>>` and view the contents of Desktop to confirm we’ve made a new file.
 
-> **Tip:** If `>` is directed at an existing file, it will overwrite the original without warning. 
+> **Tip:** If `>` is directed at an existing file, it will overwrite the original without warning.
 
     cd ~/Desktop
     echo "Hello there." > note.txt
     echo "Hello again." >> note.txt
     ls
 
-If we want to view our new text file, we have lots of options to choose from. By default, **head** will read the first 10 lines of a text file and print them in the shell. You can specify any number of lines with the `-n` option. 
+If we want to view our new text file, we have lots of options to choose from. By default, **head** will read the first 10 lines of a text file and print them in the shell. You can specify any number of lines with the `-n` option.
 
     head note.txt
     head -n 1 note.txt
@@ -192,7 +217,7 @@ Use the arrow keys to move your cursor around in the document. Add another line 
 
 #### **8.** Installing software with Homebrew and pip
 
-Now that Python is installed, enter the following lines one at a time at the terminal to view Python’s location in the file system and its version number. 
+Now that Python is installed, enter the following lines one at a time at the terminal to view Python’s location in the file system and its version number.
 
     which python
     python --version
@@ -249,9 +274,9 @@ First, install **youtube-dl** and **FFmpeg** using Homebrew.
 
 ![](week/1/Image-11.png)
 
-To simplify things, locate the video in Finder and change its name to `Bucket.mp4`. Now let’s look at the file’s metadata with ExifTool. 
+To simplify things, locate the video in Finder and change its name to `Bucket.mp4`. Now let’s look at the file’s metadata with ExifTool.
 
-    exiftool Bucket.mp4 
+    exiftool Bucket.mp4
 
 ![](week/1/Image-12.png)
 
@@ -259,7 +284,7 @@ Use the `--help` option to view ExifTool’s man page, which you can also find [
 
     exiftool --help
 
-Next, we’ll extract a 90-second segment from the video using [FFmpeg](#). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes. 
+Next, we’ll extract a 90-second segment from the video using [FFmpeg](#). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes.
 
     ffmpeg -i Bucket.mp4 -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
 
@@ -301,7 +326,7 @@ If you type `x` and hit return, you’ll notice the variable’s current value i
 >
 >     7
 
-Note that `x+x` gives a result of 10, while `x+y` returns 10.0. That’s because 5 and 5.0 are different data types in Python. The former is an **int**, or integer, while the latter is a **float**, or floating point value. 
+Note that `x+x` gives a result of 10, while `x+y` returns 10.0. That’s because 5 and 5.0 are different data types in Python. The former is an **int**, or integer, while the latter is a **float**, or floating point value.
 
 Now try using the `+` operator on two strings.
     z+" world"
@@ -363,11 +388,11 @@ By adding `else`, we can tell Python to do something if the conditional isn’t 
     number=10
     if number==12:
          print("The value is 12, an integer.")
-    else: 
+    else:
          print("The value is not 12.")
 
 A **for loop** is a structure that lets us iterate through lists and other data structures so we can refer to each item one at a time.
-    
+
     for country in eu_countries:
         print(country + ' is great.')
 
@@ -384,14 +409,14 @@ for country in eu_countries:
 In this case we’re not saving much effort, but as we proceed you’ll find that functions will help you write simpler, more readable code.
 
 #### **11.** Accessing the shell from Python with the `os` package (if time permits)
-The next section is intended as an instructor demonstration, to be included if time permits. 
+The next section is intended as an instructor demonstration, to be included if time permits.
 
 First, let’s check the length of the film with `exiftool`. Open a new terminal window and enter the following.
     cd ~/Desktop
     exiftool Bucket.mp4
 
 The file comes to 1:05:57, or 3907 seconds. Lets extract 10 5-second clips at random and combine them to create a new video.
- 
+
  ```python
 import os
 import random
@@ -411,4 +436,3 @@ os.system('''ffmpeg -i "concat:clip0.mpg|clip1.mpg|clip2.mpg|clip3.mpg|clip4.mpg
 ```
 
 #### **12.** Discuss reading and assignment for following week
-
