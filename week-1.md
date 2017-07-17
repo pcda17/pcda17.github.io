@@ -324,6 +324,7 @@ If you type `x` and hit return, you’ll notice the variable’s current value i
 
 Note that `x+x` gives a result of 10, while `x+y` returns 10.0. That’s because 5 and 5.0 are different data types in Python. The former is an **int**, or integer, while the latter is a **float**, or floating point value.
 
+
 Now try using the `+` operator on two strings.
     z+" world"
 
