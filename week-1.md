@@ -8,20 +8,16 @@
 Enter the following command to run the Jupyter notebook Docker container.
 
 ```
-docker run -it --name pcda_notebook -p 8888:8888 -d -v ~/Desktop/sharedfolder/:/sharedfolder jupyter/notebook /bin/bash
+docker rm -f pcda_notebook
+
+docker run -it --name pcda_notebook -p 8888:8888 -v ~/Desktop/sharedfolder/:/sharedfolder/ jupyter/minimal-notebook
 ```
 
-Now start a shell session in your running Docker image:
+In your terminal window, you should see a message similar to the following.
 
-```
-docker exec -ti pcda_notebook /bin/bash
-```
+>Copy/paste this URL into your browser when you connect for the first time, to login with a token:
+>    http://localhost:8888/?token=e00d450b9e9f2518b5d36bb814cd56dbc2fb67d1a8af8df0
 
-Enter the following command to launch Jupyter, then point your browser to `localhost:8888`.
-
-```
-jupyter notebook
-```
 
 
 
