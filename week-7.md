@@ -185,7 +185,7 @@ Enter the following to view a brief manual for MAT.
 
 Place a PDF file (e.g., [this one](https://cryptome.org/dodi/2016/secnav-5239-3c.pdf)) on your Desktop. Now check whether the file contains “harmful metadatas” with the `-c` option.
 
-    cd ~/Desktop
+    cd /sharedfolder
     mat -c secnav-5239-3c.pdf
 
 ![](week/6/Image-1.png)

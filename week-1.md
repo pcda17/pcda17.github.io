@@ -1,62 +1,67 @@
 ## Week 1 Outline: Introductions & Command Line Basics
 
 
+
+
+## Software to Install Before Class
+
+- Docker CE or Docker Toolbox
+    - https://store.docker.com/search?type=edition&offering=community
+    - https://www.docker.com/products/docker-toolbox
+
+- Text editor: Atom or Geany
+    - https://atom.io
+    - https://www.geany.org
+
+
+
+
 #### **1.** Student and instructor introductions
 
-### Launch Jupyter notebook using Docker
 
-Enter the following command to run the Jupyter notebook Docker container.
+#### **2.** Up and running with Docker
+
+Open a new terminal window:
+
+- macOS: Open the application `Terminal`, located in `/Applications/Utilities`.
+- Windows: Double click `Docker Quickstart Terminal` on your desktop.
+- Linux: Press `Ctrl+Alt+T`.
+
+
+Now enter the following command to download the pre-built Docker image we'll be using. This should take 2 or 3 minutes.
 
 ```
-docker rm -f pcda_notebook
-
-docker run -it --name pcda_notebook -p 8888:8888 -v ~/Desktop/sharedfolder/:/sharedfolder/ jupyter/minimal-notebook
+docker pull ubuntu:16.04
 ```
 
-In your terminal window, you should see a message similar to the following.
+When the download is complete, enter the following to run the container. This will create a new directory called `sharedfolder` on your desktop.
 
->Copy/paste this URL into your browser when you connect for the first time, to login with a token:
->    http://localhost:8888/?token=e00d450b9e9f2518b5d36bb814cd56dbc2fb67d1a8af8df0
+```
+docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ ubuntu:16.04
+```
 
+>For future, reference, the following command will kill the container we just created.
 
+>```
+>docker rm -f pcda_ubuntu
+>```
 
+You should now be in an interactive terminal session in your new Ubuntu image. To make sure, enter the following command to check your username; the response should be `root`.
 
+```
+whoami
+```
 
+Now `cd` to the directory `/sharedfolder` in your Ubuntu image and create a new text file.
 
+```
+cd /sharedfolder
 
-### Pre-installed software on Computer lab machines
+echo "Some text" > sample_file.txt
+```
 
-- Apple command line tools
-- TextWrangler (text editor)
-- VLC Media Player
-- Homebrew (package manager)
-- Python 2.7
-- pip (package manager for Python)
-- Jupyter (code editor)
-- ExifTool (command-line metadata reader)
-- FFmpeg (command-line media encoder)
-- youtube-dl (command-line video downloader)
-- Wget (command-line file downloader)
+On your desktop, open the directory `sharedfolder`. You should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is a shared volume between the Docker Ubuntu image and our local OS, meaning both can read and write files located there.
 
-#### **2.** Installing Command Line Tools and Homebrew (laptops only) <!-- We may not need this part since students won't be installing on their own computers. We can add in a "if you want to go further than the class" kind of page but we can't get into troubleshooting their installations all semester-->
-
-First we’ll install the package manager [Homebrew](#), which will expedite the process of installing other command-line programs. Open a window in Terminal, then paste the following line and press return.
-
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-> _Tip:_ If you aren’t currently running as an administrator, you’ll need to switch to an admin account first, then re-enter the line above. Enter `su` followed by the name of an admin account, then enter the account’s password at the prompt.
->
->     su adminname
-
-The following window will appear. Click “Install” to download a set of standard tools for Unix-like operating systems. Alternately, you can get the same tools by installing Apple’s **Xcode** development environment from the [App Store](#) (~4GB).
-
-![](week/1/week/1/Image-0.png)
-
-A license agreement window will appear. Read (or at least skim) the text, then click “Agree.” The software will take a minute or two to download and install.
-
-![](week/1/Image-1.png)
-
-While we wait, let’s talk a bit about the command-line interface.
 
 #### **3.** Command Line Basics
 
@@ -72,37 +77,7 @@ A **shell** is the software layer between user input and the rote world of file 
 
 It’s important to understand that both Mac’s GUI (known as [Aqua](#)) and Bash are rooted in the same set of underlying OS services. Since the introduction of OS X, and now in iOS as well, these core utilities have been handled by a Unix-like operating system called [Darwin](#), which is based on the famously stable [Berkeley Software Distribution (BSD)](#) Unix clone.
 
-[Z shell](#) (or just Zsh) is an alternate command-line interpreter included in OS X and many other Unix-like systems. You can temporarily switch to Zsh by entering the following.
 
-    zsh
-
-Your command prompt will change its appearance slightly, but otherwise you won’t notice much difference in the two CLIs’ basic functions. While the developers behind Bash have prioritized stability and backwards compatibility above all, the Zsh community has bucked convention by adding lots of features aimed at automating tasks for busy developers. We won’t be using Zsh in this course, so let’s switch back to Bash.
-
-    bash
-
-#### **4.**Installing Homebrew and Python
-
-When Apple’s command-line tools are ready, a window will pop up that says “The software was installed.” Click “Done.”
-
-
-Switch back to your original terminal window and press return to continue installing Homebrew. Enter your password at the prompt. Homebrew will take a minute or two to download and install. When it’s finished, your terminal window should look something like this.
-
-![](week/1/Image-4.png)
-
-Let’s make sure Homebrew is up to date. This shouldn’t take more than a minute.
-
-    brew update
-
-A version of Python comes pre-installed with OS X, but to make our lives easier we’ll install a fresh copy using Homebrew that includes the pip package manager and a few other tools Apple left out. We’ll be using Python 2.7, by the way. This will take 5 or 10 minutes to download and install.
-
-    brew install -U python
-
-> **Tip:** If the command above returns “Error: Cannot write to /usr/local/Cellar,” this is due to a permissions tweak in a recent version of OS X. Enter the following commands one at a time to fix the issue, entering your password after the last line.
-
->     chgrp -R admin /usr/local
->     chmod -R g+w /usr/local
->     chgrp -R admin /Library/Caches/Homebrew
->     sudo chmod -R g+w /Library/Caches/Homebrew
 
 #### **5.** Exploring the File System
 
@@ -124,20 +99,18 @@ You can view the contents of the current directory with the `ls` command.
 
 ![](week/1/Image-5.png)
 
-You should see a list of directories including “Library,” “Users,” “bin,” “dev” and so on. Add the `-a` option and you’ll see a longer list including the hidden files “.DS\_Store” “.Trashes.” You can find dozens of other options in the `ls` manual, which you can read using the following line. Press “q” to return to the shell.
+You should see a list of directories including “Library,” “Users,” “bin,” “dev” and so on. Add the `-a` option and you’ll see a longer list that may include hidden files beginning with `.`. You can find dozens of other options in the `ls` manual, which you can read using the following line. Press “q” to return to the shell.
 
+    #[Note: Ignore this until our class Docker container is ready.]
     man ls
-
-In OS X, the file path `~/` is a shortcut to the current user’s home directory, which contains the “Documents” and “Downloads” folders users see foregrounded in the Finder. From the perspective of the command line, “Desktop” is a directory like any other. Let’s `cd` there.
-
-    cd ~/Desktop
 
 > **Tip:** Hold down the Option key and click within the current line to move the cursor.
 
 #### **6.** Command Line Basics Continued
-Next, let’s create a new directory and brief text file on the desktop. We’ll spend more time working with text after the break.
+Next, let’s create a new directory and brief text file in our shared folder. We’ll spend more time working with text after the break.
 
 ```bash
+cd /sharedfolder
 mkdir test_dir
 echo "This is some text." > test.txt
 ```
@@ -180,7 +153,7 @@ Below, we create a text file in the Desktop directory using the `>` operator. We
 
 > **Tip:** If `>` is directed at an existing file, it will overwrite the original without warning.
 
-    cd ~/Desktop
+    cd /sharedfolder
     echo "Hello there." > note.txt
     echo "Hello again." >> note.txt
     ls
@@ -211,37 +184,17 @@ If we want to view our new text file, we have lots of options to choose from. By
 
 Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+O` (the letter 'O'), followed by `return` to confirm the filename. Press `ctrl+X` to exit Nano.
 
-#### **8.** Installing software with Homebrew and pip
-
-Now that Python is installed, enter the following lines one at a time at the terminal to view Python’s location in the file system and its version number.
-
-    which python
-    python --version
-
-Homebrew has automatically installed **pip**, a package manager for software libraries we can access within Python. Let’s update our copy of pip to the latest version (laptop users only).
-
-    pip install --upgrade pip
-
-> _Note:_ When we include the `--upgrade` option, pip will download the newest versions of any dependencies associated with the software we’re installing. The abbreviated form of this option is `-U`.
-
- Next, install **[Jupyter](#)** using pip.
-
-    pip install -U jupyter
-
-Install **[ExifTool](#)**, a metadata viewer and editor for a wide range of media formats (laptop users only).
-
-    brew install exiftool
-
-Finally, install **[Wget](#)**, a command-line tool for downloading Web data (laptop users only).
-
-    brew install wget
 
 #### Download a Web page from the shell
-Begin by `cd`ing to Desktop.
+Begin by `cd`ing to `sharedfolder`.
 
-    cd ~/Desktop
+    cd /sharedfolder
 
-Then enter `wget` followed by any URL.
+Let's install `wget` using the `apt` package manager.
+
+    apt-get install -y wget
+
+Now enter `wget` followed by any URL.
 
     wget http://google.com
 
@@ -258,14 +211,14 @@ Wget is an amazingly versatile tool, and we’ll return to it in later weeks. In
     man wget
 
 #### **9.** Download a video with youtube-dl and create an excerpt with FFmpeg <!-- Note: this takes a while. -->
-First, install **youtube-dl** and **FFmpeg** using Homebrew.
+First, install **youtube-dl** and **FFmpeg** using apt.
 
-    brew install youtube-dl
-    brew install ffmpeg
+    apt-get install youtube-dl
+    apt-get install ffmpeg
 
 `cd` to Desktop and pass a YouTube URL to `youtube-dl`. We’ll be downloading _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so you can substitute a shorter YouTube video if you’re close to your wi-fi bandwidth limit.
 
-    cd ~/Desktop
+    cd /sharedfolder
     youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0
 
 ![](week/1/Image-11.png)
@@ -409,7 +362,7 @@ In this case we’re not saving much effort, but as we proceed you’ll find tha
 The next section is intended as an instructor demonstration, to be included if time permits.
 
 First, let’s check the length of the film with `exiftool`. Open a new terminal window and enter the following.
-    cd ~/Desktop
+    cd /sharedfolder
     exiftool Bucket.mp4
 
 The file comes to 1:05:57, or 3907 seconds. Lets extract 10 5-second clips at random and combine them to create a new video.
