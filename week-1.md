@@ -41,7 +41,6 @@ docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ ubun
 ```
 
 >For future, reference, the following command will kill the container we just created.
-
 >```
 >docker rm -f pcda_ubuntu
 >```
