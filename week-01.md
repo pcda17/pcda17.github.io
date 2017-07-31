@@ -11,7 +11,7 @@
     - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows)
 
 
-#### Introductions
+#### Student and instructor introductions
 
 
 #### Command Line Basics
@@ -22,22 +22,22 @@ While the terms “command line,” “terminal,” and “shell” are sometime
 
 A **terminal**, also known as a terminal emulator, is an application in your local operating system that provides a window to type in. We’ll be using the built-in macOS terminal emulator, called **Terminal**, which you can find under “Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return. (Note that there is a space after `echo`.)
 
-    echo $SHELL
+```
+echo $SHELL
+```
 
-A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to “the shell” they typically mean a command-line interpreter like [Bash](#). The command you entered above should have returned something like `/bin/bash`, which is the location of Bash’s “binary,” or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
+A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to “the shell” they typically mean a command-line interpreter like [Bash](#). The command you entered above should have returned `/bin/bash`, which is the location of Bash’s “binary,” or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
 
-It’s important to understand that both Mac’s GUI (known as [Aqua](#)) and Bash are rooted in the same set of underlying OS services. Since the introduction of OS X, and now in iOS as well, these core utilities have been handled by a Unix-like operating system called [Darwin](#), which is based on the famously stable [Berkeley Software Distribution (BSD)](#) Unix clone.
-
-
+It is important to understand that both Mac’s GUI (known as [Aqua](#)) and Bash are rooted in the same set of underlying OS services. Since the introduction of OS X, and now in iOS as well, these core utilities have been handled by a Unix-like operating system called [Darwin](#), which is based on the famously stable [Berkeley Software Distribution (BSD)](#) Unix clone.
 
 
 #### Exploring the File System
 
-While we wait for Python to install, let’s learn about interacting with the Mac file system from the shell. Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](http://cc.iiti.ac.in/lcommands.pdf).
+Let’s learn about interacting with the Mac file system from the shell. Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](http://cc.iiti.ac.in/lcommands.pdf).
 
 Unix-like operating systems are based on a metaphor: a nested set of directories and data files, forming a tree structure that begins at the root directory `/`. A benefit of this arrangement is that each file can be uniquely identified using a pathname of the following format:`/Users/yourname/Desktop/file.txt`.
 
-At any given moment in a shell session, the user metaphorically occupies a particular “working directory” within this greater tree structure. Enter the `pwd` (“print working directory”) command to see your current location.
+At any given moment in a shell session, the user occupies a particular “working directory” within this tree structure. Enter the command `pwd` (“print working directory”) to see your current location.
 
     pwd
 
@@ -53,16 +53,16 @@ You can view the contents of the current directory with the `ls` command.
 
 You should see a list of directories including “Library,” “Users,” “bin,” “dev” and so on. Add the `-a` option and you’ll see a longer list that may include hidden files beginning with `.`. You can find dozens of other options in the `ls` manual, which you can read using the following line. Press “q” to return to the shell.
 
-    #[Note: Ignore this until our class Docker container is ready.]
     man ls
 
-> **Tip:** Hold down the Option key and click within the current line to move the cursor.
+> **Tip:** Hold down the Option key and click within the current line to change the position of the cursor.
 
 #### Command Line Basics Continued
-Next, let’s create a new directory and brief text file in our shared folder. We’ll spend more time working with text after the break.
+
+Next, let’s create a new directory and text file in our shared folder. We’ll spend more time working with text data after the break.
 
 ```bash
-cd /sharedfolder
+cd ~/Desktop
 mkdir test_dir
 echo "This is some text." > test.txt
 ```
@@ -79,12 +79,15 @@ Let’s make a copy of our text file with `cp` and check the updated directory c
     cp test.txt test2.txt
     ls
 
-> **Tip:** If you’re midway through typing the name of a pre-existing file in the shell, you can press tab to compete the name automatically.
+> **Tip:** If you’re midway through typing the name of a pre-existing file in the shell, you can press tab to complete the filename automatically.
 
-Let’s rename our new text file using `mv` then check the change with `ls`. Then we’ll delete the file with `rm`.
+Let’s rename our new text file with the `mv` command, then view the contents of the current directory with `ls`.
 
     mv test2.txt test3.txt
     ls
+
+Next, delete the file we just created using `rm`.
+
     rm test3.txt
 
 Another useful file path shortcut is `../`, which refers to the parent directory of our current location on the file tree. Let’s use it to `cd` back to Desktop.
