@@ -3,8 +3,8 @@
 ## Software to install before class
 
 - Text editor: Atom or Geany
-    - https://atom.io
-    - https://www.geany.org
+    - [https://atom.io](https://atom.io)
+    - [https://www.geany.org](https://www.geany.org)
 
 - Docker CE or Docker Toolbox
     - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux)
@@ -168,6 +168,8 @@ docker pull pcda17/ubuntu-container
 
 Docker makes it possible to run a virtual copy of the Linux operating system within your primary OS. We will be using Ubuntu, a version of Linux that is often used to run web servers. Ordinarily, you would launch an Ubuntu server and then install the programs you need, one by one; Docker lets us speed up that process by defining our system's initial configuration in a plain text file, known as a Dockerfile. You can view the Dockerfile we are currently using [here](https://hub.docker.com/r/pcda17/ubuntu-container/~/dockerfile/).
 
+For a more details on how Docker works, see this [overview](https://docs.docker.com/engine/docker-overview/).
+
 When the download is complete, enter the following command to run the container. This will create a new directory called `sharedfolder` on your desktop.
 
 ```
@@ -229,11 +231,11 @@ To simplify things, locate the video file in `sharedfolder` and change its name 
 
 ![](week/1/Image-12.png)
 
-Use the `--help` option to view ExifTool’s man page, which you can also find [here](https://linux.die.net/man/1/exiftool). Press `q` to exit the manual viewer.
+Take a moment to view ExifTool’s man page, which you can also find [here](https://linux.die.net/man/1/exiftool). Press `q` to exit the manual viewer.
 
-    exiftool --help
+    man exiftool
 
-Next, we will extract a 90-second segment from the video using [FFmpeg](#). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes.
+Next, we will extract a 90-second segment from the video using [FFmpeg](https://www.ffmpeg.org/). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes.
 
     ffmpeg -i Bucket.mp4 -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
 
@@ -243,15 +245,17 @@ Instead of HH:MM:SS.S notation, we can also specify start time and/or length usi
 
     ffmpeg -i Bucket.mp4 -ss 701 -t 90 Bucket_clip.mp4
 
+<!--
 To re-encode a video clip when you make an excerpt, you can include the `-c copy` option.
 
     ffmpeg -i Bucket.mp4 -c copy -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
+-->
 
 When FFmpeg is finished, open `Bucket_clip.mp4` in VLC Media Player and see how it turned out. You may notice missing video frames or other errors.
 
 ![](week/1/Image-14.png)
 
-As usual, entering `man ffmpeg` will display the program’s manual.
+As usual, the command `man ffmpeg` will display FFmpeg’s manual.
 
 
 #### Programming basics in Python (as much as time permits)
