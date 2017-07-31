@@ -10,6 +10,8 @@
     - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux)
     - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows)
 
+- VLC Media Player
+    - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
 #### Student and instructor introductions
 
@@ -96,7 +98,7 @@ Another useful file path shortcut is `../`, which refers to the parent directory
 
     cd ../
 
-Finally, we’ll delete our test directory and the the file it contains. Adding the `-r` option tells `rm`  to remove files recursively, meaning everything in the specified folder will be destroyed.
+Finally, we’ll delete our test directory and the file it contains. Adding the `-r` option tells `rm`  to remove files recursively, meaning everything in the specified folder will be destroyed.
 
     rm -r test_dir
 
@@ -172,7 +174,7 @@ When the download is complete, enter the following command to run the container.
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
 ```
 
-The command above includes several options. The `--name` flag sets the name of our container as `pcda_ubuntu`, while `-ti` tells Docker that we want to use an interactive terminal. `-p` maps port 8889 in our container to port 8889 in our local OS (more on this later). The `--volume` option defines a "shared volume" between the container and our local machine, a directory called `sharedfolder`. `pcda17/ubuntu-container` identifies the container we want to download, which is hosted on the Dockerhub website. Finally, `bash` specifies that we want to launch the bash shell.
+The command above includes several options. The `--name` flag sets the name of our container as `pcda_ubuntu`, while `-ti` tells Docker that we want to use an interactive terminal. `-p` maps port 8889 in our container to port 8889 in our local OS (more on this later). The `--volume` option defines a "shared volume" between the container and our local machine, a directory called `sharedfolder`. `pcda17/ubuntu-container` identifies the container we want to download, which is hosted on the Dockerhub website. Finally, `bash` specifies that we want to enter the bash shell.
 
 You should now be in an interactive bash session in your new Ubuntu container. To make sure, type the following command and press enter to see your username. The response should be `root`.
 
@@ -197,47 +199,41 @@ Open the `sharedfolder` directory on your desktop, and you should see the file w
 
 #### Download a Web page from the shell
 
-
-Now enter `wget` followed by any URL.
+Enter `wget` followed by any URL to download the web page or file at that URL. Let's try it with Google's home page.
 
     wget http://google.com
 
 ![](week/1/Image-9.png)
 
-If you’re connected to the Internet and Wget is installed correctly, you should see feedback in the shell that looks something like the above. In this case, Wget has saved Google’s “index.html” file to the desktop. Either view the file in the shell using `less` or open it in TextWrangler.
+If you’re connected to the Internet, you should see feedback in the shell that looks something like the above. In this case, Wget has saved Google’s “index.html” file to the desktop. Either view the file in the shell using `less` or open it in your text editor.
 
 ![](week/1/Image-10.png)
 
-To make the file more readable in TextWrangler, go to the toolbar and select `View > Text Display > Soft Wrap Text`.
+To make the file more readable in Atom, go to the toolbar and select `View > Toggle Soft Wrap`.
 
-Wget is an amazingly versatile tool, and we’ll return to it in later weeks. In the meantime, the manual is worth a skim.
+Wget is an amazingly versatile tool, and we will use it many times in this course. Enter the following command to view Wget's user manual.
 
     man wget
 
-#### Download a video with youtube-dl and create an excerpt with FFmpeg <!-- Note: this takes a while. -->
-First, install **youtube-dl** and **FFmpeg** using apt.
+#### Download a video with youtube-dl and create an excerpt with FFmpeg
 
-    apt-get install youtube-dl
-    apt-get install ffmpeg
+Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Let's try it with _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so you can substitute a shorter video if you prefer.
 
-`cd` to Desktop and pass a YouTube URL to `youtube-dl`. We’ll be downloading _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so you can substitute a shorter YouTube video if you’re close to your wi-fi bandwidth limit.
-
-    cd /sharedfolder
     youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0
 
 ![](week/1/Image-11.png)
 
-To simplify things, locate the video in Finder and change its name to `Bucket.mp4`. Now let’s look at the file’s metadata with ExifTool.
+To simplify things, locate the video file in `sharedfolder` and change its name to `Bucket.mp4`. Now let’s view the file’s metadata with ExifTool.
 
     exiftool Bucket.mp4
 
 ![](week/1/Image-12.png)
 
-Use the `--help` option to view ExifTool’s man page, which you can also find [here](#). Press `q` to exit the manual viewer.
+Use the `--help` option to view ExifTool’s man page, which you can also find [here](https://linux.die.net/man/1/exiftool). Press `q` to exit the manual viewer.
 
     exiftool --help
 
-Next, we’ll extract a 90-second segment from the video using [FFmpeg](#). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes.
+Next, we will extract a 90-second segment from the video using [FFmpeg](#). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes.
 
     ffmpeg -i Bucket.mp4 -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
 
