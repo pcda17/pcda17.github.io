@@ -190,16 +190,16 @@ Now enter the command `pwd` to print the current working directory. You should b
 pwd
 ```
 
-Let's create a text file, just like we did earlier in the macOS shell.
+Let's create a new text file, just like we did earlier in the macOS shell.
 
 ```
 echo "Hello!" > sample_file.txt
 ```
 
-Open the `sharedfolder` directory on your desktop, and you should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is like a portal between Ubuntu and your primary OS; both can read and write files located there, and any changes you make will be instantly visible in both operating systems.
+Open the `sharedfolder` directory on your desktop, and you should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is like a portal between Ubuntu and your primary OS; both can read and write files located there, and any changes you make will instantly be visible in both operating systems.
 
 
-#### Download a Web page from the shell
+#### Download a web page from the command line
 
 Enter `wget` followed by any URL to download the web page or file at that URL. Let's try it with Google's home page.
 
@@ -219,7 +219,7 @@ Wget is an amazingly versatile tool, and we will use it many times in this cours
 
 #### Download a video with youtube-dl and create an excerpt with FFmpeg
 
-Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Let's try it with _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so you can substitute a shorter video if you prefer.
+Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Let's try it with _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so this may take a few minutes. You can substitute a shorter video if you prefer.
 
     youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0
 
