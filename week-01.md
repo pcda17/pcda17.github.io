@@ -1,7 +1,6 @@
 ## Week 1 Outline: Introductions & Command Line Basics
 
-
-## Software to Install Before Class
+## Software to install before class
 
 - Docker CE or Docker Toolbox
     - https://store.docker.com/search?type=edition&offering=community
@@ -12,54 +11,10 @@
     - https://www.geany.org
 
 
-
-#### **1.** Student and instructor introductions
-
-
-#### **2.** Up and running with Docker
-
-Open a new terminal window:
-
-- macOS: Open the application `Terminal`, located in `/Applications/Utilities`.
-- Windows: Double click `Docker Quickstart Terminal` on your desktop.
-- Linux: Press `Ctrl+Alt+T`.
+#### Student and instructor introductions
 
 
-Now enter the following command to download the pre-built Docker image we'll be using. This should take 2 or 3 minutes.
-
-```
-docker pull pcda17/ubuntu-container
-```
-
-When the download is complete, enter the following to run the container. This will create a new directory called `sharedfolder` on your desktop.
-
-```
-docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
-```
-
->For future, reference, the following command will kill the container we just created.
->```
->docker rm -f pcda_ubuntu
->```
-
-You should now be in an interactive terminal session in your new Ubuntu image. To make sure, enter the following command to check your username; the response should be `root`.
-
-```
-whoami
-```
-
-Now `cd` to the directory `/sharedfolder` in your Ubuntu image and create a new text file.
-
-```
-cd /sharedfolder
-
-echo "Some text" > sample_file.txt
-```
-
-On your desktop, open the directory `sharedfolder`. You should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is a shared volume between the Docker Ubuntu image and our local OS, meaning both can read and write files located there.
-
-
-#### **3.** Command Line Basics
+#### Command Line Basics
 
 While in many cases we can use the terms “command line,” “terminal,” and “shell” interchangeably, each has a slightly different denotation.
 
@@ -75,7 +30,8 @@ It’s important to understand that both Mac’s GUI (known as [Aqua](#)) and Ba
 
 
 
-#### **5.** Exploring the File System
+
+#### Exploring the File System
 
 While we wait for Python to install, let’s learn about interacting with the Mac file system from the shell. Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](http://cc.iiti.ac.in/lcommands.pdf).
 
@@ -102,7 +58,7 @@ You should see a list of directories including “Library,” “Users,” “bi
 
 > **Tip:** Hold down the Option key and click within the current line to move the cursor.
 
-#### **6.** Command Line Basics Continued
+#### Command Line Basics Continued
 Next, let’s create a new directory and brief text file in our shared folder. We’ll spend more time working with text after the break.
 
 ```bash
@@ -141,9 +97,8 @@ Finally, we’ll delete our test directory and the file inside. Adding the `-r` 
 
 Be careful with `rm`, especially in recursive mode. It deletes files permanently rather than sending them to a Trash folder, so a small mistake can really ruin your day.
 
-#### Break
 
-#### **7.** Text I/O from the Command Line
+#### Text I/O from the Command Line
 
 Below, we create a text file in the Desktop directory using the `>` operator. We then append a second line using `>>` and view the contents of Desktop to confirm we’ve made a new file.
 
@@ -181,6 +136,56 @@ If we want to view our new text file, we have lots of options to choose from. By
 Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+O` (the letter 'O'), followed by `return` to confirm the filename. Press `ctrl+X` to exit Nano.
 
 
+
+
+#### Break
+
+
+#### Up and running with Docker
+
+Open a new terminal window:
+
+- macOS: Open the application `Terminal`, located in `/Applications/Utilities`.
+- Windows: Double click `Docker Quickstart Terminal` on your desktop.
+- Linux: Press `Ctrl+Alt+T` to launch a terminal window.
+
+
+Now enter the following command to download the pre-built Docker image we'll be using. This should take 2 or 3 minutes.
+
+```
+docker pull pcda17/ubuntu-container
+```
+
+When the download is complete, enter the following to run the container. This will create a new directory called `sharedfolder` on your desktop.
+
+```
+docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
+```
+
+>For future, reference, the following command will kill the container we just created.
+>```
+>docker rm -f pcda_ubuntu
+>```
+
+You should now be in an interactive terminal session in your new Ubuntu image. To make sure, enter the following command to check your username; the response should be `root`.
+
+```
+whoami
+```
+
+Now `cd` to the directory `/sharedfolder` in your Ubuntu image and create a new text file.
+
+```
+cd /sharedfolder
+
+echo "Some text" > sample_file.txt
+```
+
+On your desktop, open the directory `sharedfolder`. You should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is a shared volume between the Docker Ubuntu image and our local OS, meaning both can read and write files located there.
+
+
+
+
 #### Download a Web page from the shell
 Begin by `cd`ing to `sharedfolder`.
 
@@ -206,7 +211,7 @@ Wget is an amazingly versatile tool, and we’ll return to it in later weeks. In
 
     man wget
 
-#### **9.** Download a video with youtube-dl and create an excerpt with FFmpeg <!-- Note: this takes a while. -->
+#### Download a video with youtube-dl and create an excerpt with FFmpeg <!-- Note: this takes a while. -->
 First, install **youtube-dl** and **FFmpeg** using apt.
 
     apt-get install youtube-dl
@@ -250,7 +255,7 @@ When FFmpeg is finished, open `Bucket_clip.mp4` in VLC Media Player and see how 
 As usual, entering `man ffmpeg` will display the program’s manual.
 
 
-#### **10.** Programming basics in Python (as much as time permits)
+#### Programming basics in Python (as much as time permits)
 To get started using Python, simply enter `python` in the shell.
 
     python
