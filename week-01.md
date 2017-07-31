@@ -76,8 +76,10 @@ To move our text document into our directory we can use the `mv` tool. We’ll t
 
 Let’s make a copy of our text file with `cp` and check the updated directory contents.
 
-    cp test.txt test2.txt
-    ls
+```
+cp test.txt test2.txt
+ls
+```
 
 > **Tip:** If you’re midway through typing the name of a pre-existing file in the shell, you can press tab to complete the filename automatically.
 
@@ -107,10 +109,12 @@ Below, we write a text file in the Desktop directory using the `>` operator. We 
 
 > **Tip:** If `>` is directed at an existing file, it will overwrite the original without warning.
 
-    cd ~/Desktop
-    echo "Hello there." > note.txt
-    echo "Hello again." >> note.txt
-    ls
+```
+cd ~/Desktop
+echo "Hello there." > note.txt
+echo "Hello again." >> note.txt
+ls
+```
 
 If we want to view our new text file, we have lots of options to choose from. By default, **head** will read the first 10 lines of a text file and print them in the shell. You can specify any number of lines with the `-n` option.
 
@@ -160,49 +164,39 @@ Now enter the following command to download the image files we'll be using. This
 docker pull pcda17/ubuntu-container
 ```
 
+Docker makes it possible to run a virtual copy of the Linux operating system within your primary OS. We will be using Ubuntu, a version of Linux that is often used to run web servers. Ordinarily, you would launch an Ubuntu server and then install the programs you need, one by one; Docker lets us speed up that process by defining our system's initial configuration in a plain text file, known as a Dockerfile. You can view the Dockerfile we are currently using [here](https://hub.docker.com/r/pcda17/ubuntu-container/~/dockerfile/).
 
-
-
-
-
-When the download is complete, enter the following to run the container. This will create a new directory called `sharedfolder` on your desktop.
+When the download is complete, enter the following command to run the container. This will create a new directory called `sharedfolder` on your desktop.
 
 ```
-docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
 ```
 
->For future, reference, the following command will kill the container we just created.
->```
->docker rm -f pcda_ubuntu
->```
+The command above includes several options. The `--name` flag sets the name of our container as `pcda_ubuntu`, while `-ti` tells Docker that we want to use an interactive terminal. `-p` maps port 8889 in our container to port 8889 in our local OS (more on this later). The `--volume` option defines a "shared volume" between the container and our local machine, a directory called `sharedfolder`. `pcda17/ubuntu-container` identifies the container we want to download, which is hosted on the Dockerhub website. Finally, `bash` specifies that we want to launch the bash shell.
 
-You should now be in an interactive terminal session in your new Ubuntu image. To make sure, enter the following command to check your username; the response should be `root`.
+You should now be in an interactive bash session in your new Ubuntu container. To make sure, type the following command and press enter to see your username. The response should be `root`.
 
 ```
 whoami
 ```
 
-Now `cd` to the directory `/sharedfolder` in your Ubuntu image and create a new text file.
+Now enter the command `pwd` to print the current working directory. You should be in `/sharedfolder`.
 
 ```
-cd /sharedfolder
-
-echo "Some text" > sample_file.txt
+pwd
 ```
 
-On your desktop, open the directory `sharedfolder`. You should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is a shared volume between the Docker Ubuntu image and our local OS, meaning both can read and write files located there.
+Let's create a text file, just like we did earlier in the macOS shell.
 
+```
+echo "Hello!" > sample_file.txt
+```
 
+Open the `sharedfolder` directory on your desktop, and you should see the file we just created, `sample_file.txt`. The `sharedfolder` directory is like a portal between Ubuntu and your primary OS; both can read and write files located there, and any changes you make will be instantly visible in both operating systems.
 
 
 #### Download a Web page from the shell
-Begin by `cd`ing to `sharedfolder`.
 
-    cd /sharedfolder
-
-Let's install `wget` using the `apt` package manager.
-
-    apt-get install -y wget
 
 Now enter `wget` followed by any URL.
 
