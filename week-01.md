@@ -94,7 +94,7 @@ Another useful file path shortcut is `../`, which refers to the parent directory
 
     cd ../
 
-Finally, we’ll delete our test directory and the file inside. Adding the `-r` option tells `rm`  to remove files recursively, meaning everything in the specified folder gets wiped out.
+Finally, we’ll delete our test directory and the the file it contains. Adding the `-r` option tells `rm`  to remove files recursively, meaning everything in the specified folder will be destroyed.
 
     rm -r test_dir
 
@@ -103,11 +103,11 @@ Be careful with `rm`, especially in recursive mode. It deletes files permanently
 
 #### Text I/O from the Command Line
 
-Below, we create a text file in the Desktop directory using the `>` operator. We then append a second line using `>>` and view the contents of Desktop to confirm we’ve made a new file.
+Below, we write a text file in the Desktop directory using the `>` operator. We then append a second line using `>>` and list the contents of the Desktop to confirm we’ve created a new file.
 
 > **Tip:** If `>` is directed at an existing file, it will overwrite the original without warning.
 
-    cd /sharedfolder
+    cd ~/Desktop
     echo "Hello there." > note.txt
     echo "Hello again." >> note.txt
     ls
@@ -124,7 +124,7 @@ If we want to view our new text file, we have lots of options to choose from. By
     tail note.txt
     tail -n 1 note.txt
 
-**less** is a program that lets us scroll through longer files. To close less when you’re finished, press the `q` key.
+**less** is a program that lets us scroll through long text files. To close less when you’re finished, press the `q` key.
 
     less note.txt
 
@@ -145,6 +145,8 @@ Use the arrow keys to move your cursor around in the document. Add another line 
 
 
 #### Up and running with Docker
+
+
 
 Open a new terminal window:
 
