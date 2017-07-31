@@ -146,20 +146,24 @@ Use the arrow keys to move your cursor around in the document. Add another line 
 
 #### Up and running with Docker
 
+So far, we have been using the bash shell in macOS to learn some basic command-line vocabulary. Not everyone has a Mac, however, so for the rest of this course we will use Docker to create a Linux environment that will run identically any computer.
 
-
-Open a new terminal window:
+First, let's download the files we need for our Docker container. Open a new terminal window.
 
 - macOS: Open the application `Terminal`, located in `/Applications/Utilities`.
 - Windows: Double click `Docker Quickstart Terminal` on your desktop.
 - Linux: Press `Ctrl+Alt+T` to launch a terminal window.
 
-
-Now enter the following command to download the pre-built Docker image we'll be using. This should take 2 or 3 minutes.
+Now enter the following command to download the image files we'll be using. This should take several minutes.
 
 ```
 docker pull pcda17/ubuntu-container
 ```
+
+
+
+
+
 
 When the download is complete, enter the following to run the container. This will create a new directory called `sharedfolder` on your desktop.
 
