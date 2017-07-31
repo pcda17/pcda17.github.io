@@ -2,25 +2,25 @@
 
 ## Software to install before class
 
-- Docker CE or Docker Toolbox
-    - https://store.docker.com/search?type=edition&offering=community
-    - https://www.docker.com/products/docker-toolbox
-
 - Text editor: Atom or Geany
     - https://atom.io
     - https://www.geany.org
 
+- Docker CE or Docker Toolbox
+    - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux)
+    - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows)
 
-#### Student and instructor introductions
+
+#### Introductions
 
 
 #### Command Line Basics
 
-While in many cases we can use the terms “command line,” “terminal,” and “shell” interchangeably, each has a slightly different denotation.
+While the terms “command line,” “terminal,” and “shell” are sometimes used interchangeably, each has a slightly different denotation.
 
 “**Command line**” has the broadest scope, referring to a style of interface. A command-line interface, also known as a command-line interpreter (CLI) is any system in which all interaction occurs via text-based commands issued through a keyboard.
 
-A **terminal**, or more accurately a terminal emulator, is an application in your local operating system that essentially just provides a window to type in. We’ll be using the built-in Mac OSX terminal emulator, called **Terminal**, which you can find under “Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return. (Note that there is a space after `echo`.)
+A **terminal**, or more accurately a terminal emulator, is an application in your local operating system that simply provides a window to type in. We’ll be using the built-in macOS terminal emulator, called **Terminal**, which you can find under “Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return. (Note that there is a space after `echo`.)
 
     echo $SHELL
 
