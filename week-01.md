@@ -1,8 +1,6 @@
 ## Week 1 Outline: Introductions & Command Line Basics
 
 
-
-
 ## Software to Install Before Class
 
 - Docker CE or Docker Toolbox
@@ -12,7 +10,6 @@
 - Text editor: Atom or Geany
     - https://atom.io
     - https://www.geany.org
-
 
 
 
@@ -31,13 +28,13 @@ Open a new terminal window:
 Now enter the following command to download the pre-built Docker image we'll be using. This should take 2 or 3 minutes.
 
 ```
-docker pull ubuntu:16.04
+docker pull pcda17/ubuntu-container
 ```
 
 When the download is complete, enter the following to run the container. This will create a new directory called `sharedfolder` on your desktop.
 
 ```
-docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ ubuntu:16.04
+docker run -it --name pcda_ubuntu -v ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
 ```
 
 >For future, reference, the following command will kill the container we just created.

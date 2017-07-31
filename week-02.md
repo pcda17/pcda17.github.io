@@ -11,7 +11,7 @@ Assign a sentence to the variable `sentence` — in this case the opening line f
 
 ```    
 sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
-    
+
 sentence
 ```
 
@@ -104,7 +104,7 @@ A string that includes only numbers and possibly a decimal point — no commas o
 Now we’ll review reading and writing text files from the Python environment. Visit Project Gutenberg or the mirror provided and save the plain text version of Swift's *The Battle of the Books, and other Short Pieces* to your desktop. It's a collection of essays, including a line Toole references in the title _A Confederacy of Dunces_.
 
 - [http://www.gutenberg.org/ebooks/623](http://www.gutenberg.org/ebooks/623)
-- [mirror](http://www.stephenmclaughlin.net/pcda/sample_data/week-2/pg623.txt)
+- [mirror](https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt)
 
 First we’ll assign the file’s pathname to the variable `filepath` and create the file stream object we’ll use to read its contents. Open the Python shell and enter the following lines.
 
@@ -129,7 +129,7 @@ Finally, we’ll close our file stream and view a line from our list.
 > **Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
 > Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames.
 
-Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose. 
+Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose.
 
 > **Tip:** While the term “newline” refers to any character or character combination used to mark the end of a line, when we say “newline character” for the rest of the course we’ll mean `\n` (formally called “line feed”) unless otherwise noted.
 
@@ -150,7 +150,7 @@ Closing a file stream with `close()` when you’re done with it is good style, t
     swift_lines=[]
     with open(filepath) as file:
          for line in file:
-               swift_lines.append(line) 
+               swift_lines.append(line)
 
 Or you can use this command, which does the same in one line.
 
@@ -187,7 +187,7 @@ If we’d like to convert our list of lines to a block of flowable text, we can 
 The Python module `urllib2`  makes grabbing text from the Web as easy as working with local files. Let’s download the first two chapters of _A Confederacy of Dunces_ in plain ASCII format.
 
     import urllib2
-    url="http://www.stephenmclaughlin.net/pcda/sample_data/week-2/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
+    url="https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
     toole_lines=urllib2.urlopen(url).read().splitlines()
 
 Let’s look at the 200th line in the file.
@@ -243,7 +243,7 @@ We can also create functions that take two or more arguments.
 ```python
 def multiply(x,y):
     return x*y
-    
+
 multiply(4,6)
 ```
 
@@ -278,7 +278,7 @@ It is often useful to generate random numbers or make random selections from a s
 Import the `random` module and generate a random float X, where 0 \<= X \< 1.
 
     import random
-    random.random() 
+    random.random()
 
 Return a random integer from 0 to 49.
 
@@ -291,7 +291,7 @@ This is equivalent to the following:
 Note that `randint` is inclusive, so it may output 49, the second argument we passed it.
 
 #### Quick Assignments
-Assign a list of strings to a variable — in this case, a collection of foods mentioned in Toole’s novel. 
+Assign a list of strings to a variable — in this case, a collection of foods mentioned in Toole’s novel.
 
     foods=['macaroon', 'hot dog', 'jelly doughnut', 'Dr. Nut', 'wine cake', 'Dutch cookies', 'stuffed eggplant', 'jumbalaya with shrimps', 'brownie']
 
@@ -324,7 +324,7 @@ _Assignment:_ Modify the function to return a list of 3 random strings containin
                if 'a' in temp_choice:
                      temp_list.append(temp_choice)
          return temp_list
-    
+
     random_three_with_a(foods)
 
 As you might expect, Python provides tools to speed up the work you just did by hand. The following returns a single randomly selected item from a list.
@@ -357,7 +357,7 @@ Is there anything notable about the words in this random list? If so, how might 
 
 #### Text Processing Oddities
 
-By this point you’ve likely noticed that text strings can be enclosed in single quotes (`'Miss Trixie'`) or double (`"Patrolman Mancuso"`) at the coder’s discretion. 
+By this point you’ve likely noticed that text strings can be enclosed in single quotes (`'Miss Trixie'`) or double (`"Patrolman Mancuso"`) at the coder’s discretion.
 
 If we use double quotes, our string can contain single quote characters without ambiguity. Note that the first line below returns an “invalid syntax” error, while the second is successful.
 
@@ -404,7 +404,7 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 >     for line in random_lines:
 >          print line
 
-> **Tip:** If you have trouble downloading a file from Project Gutenberg, open the [URL](http://www.gutenberg.org/cache/epub/623/pg623.txt) in your browser and complete a CAPTCHA to prove you’re human. 
+> **Tip:** If you have trouble downloading a file from Project Gutenberg, open the [URL](http://www.gutenberg.org/cache/epub/623/pg623.txt) in your browser and complete a CAPTCHA to prove you’re human.
 
 _Exercise:_ Modify your code to return 14 random lines containing a chosen word or phrase.
 
@@ -439,7 +439,7 @@ _Exercise:_ Try using a different text and compare the results.
 >         print line
 
 
-#### Installing and Launching Jupyter 
+#### Installing and Launching Jupyter
 Beginning next week, we’ll be using “notebook” files in Jupyter to write, run, and store code for class exercises. You should have installed it last week; if not, do so now using `pip`.
 
     pip install -U jupyter
@@ -529,7 +529,7 @@ The `os.system` function lets us issue commands at the level of the system shell
 
 #### Downloading Reviews from Amazon (the hard way)
 
-Open Jupyter and start a new notebook. 
+Open Jupyter and start a new notebook.
 
     jupyter notebook.
 
@@ -547,7 +547,7 @@ To make things simple, let’s skip the reviews at the top of the page and only 
 
     page=page.split("Filter by:")[1]
 
-Next we’ll split the remaining text into individual reviews. Note that the “review rating” HTML class is used at the beginning of each review. We’ll split our page 
+Next we’ll split the remaining text into individual reviews. Note that the “review rating” HTML class is used at the beginning of each review. We’ll split our page
 at those points, using triple quotes to include the end of the HTML tag.
 
     segs=page.split('''review-rating">''')
@@ -603,7 +603,7 @@ print review_list
 
 #### In-Class Exercise
 
-Open TextWrangler or your text editor of choice. Drawing on the code examples above, create a script that accepts a URL and produces a list of lists, one for each review on the page. A good strategy is to split the work between two functions: one that accepts a segment of the text and code (such as `test_seg` above) and returns a cleaned-up list of fields, and a second that 
+Open TextWrangler or your text editor of choice. Drawing on the code examples above, create a script that accepts a URL and produces a list of lists, one for each review on the page. A good strategy is to split the work between two functions: one that accepts a segment of the text and code (such as `test_seg` above) and returns a cleaned-up list of fields, and a second that
 
 You can use the `html_stripper` function above or modify it at will.
 
@@ -673,6 +673,3 @@ Working in pairs, create a server-side script that detects mp3 files in a given 
 - Example solution: [Link](#)
 
 ### 2:35 Discuss next week’s assignments and reading
-
-
-

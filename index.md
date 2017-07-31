@@ -10,8 +10,8 @@ University of Texas at Austin School of Information
 
 - In-Class Outlines:
 
-[Week 1](week-1.md) | [Week 2](week-2.md) | [Week 3](week-3.md) | [Week 4](week-4.md) | [Week 5](week-5.md)
-[Week 6](week-6.md) | [Week 7](week-7.md) | [Week 8](week-8.md) | [Week 9](week-9.md) | [Week 10](week-10.md)
+[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md) | [Week 5](week-05.md)
+[Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md) | [Week 9](week-09.md) | [Week 10](week-10.md)
 
 ### Course Objectives
 
@@ -251,7 +251,7 @@ Week 6: Web Scraping & APIs
 =============================
 
 
-To Do Before Class 
+To Do Before Class
 -------------------
 
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.

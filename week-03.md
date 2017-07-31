@@ -51,7 +51,7 @@ We’ve just copied all the data from a CSV-formatted spreadsheet and turned it 
 We began by importing the `csv` module, Python’s built-in CSV input/output tool. Note, since you've already done it above, you don't have to do it again.
 
 ```python
-   import csv
+import csv
 ```
 Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing `yourname` with your user name.
 
