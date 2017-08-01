@@ -6,7 +6,7 @@
     - [https://atom.io](https://atom.io)
     - [https://www.geany.org](https://www.geany.org)
 
-- Docker CE or Docker Toolbox
+- Docker Community Edition or Docker Toolbox
     - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux)
     - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows)
 
@@ -35,7 +35,7 @@ It is important to understand that both Mac’s GUI (known as [Aqua](#)) and Bas
 
 #### Exploring the File System
 
-Let’s learn about interacting with the Mac file system from the shell. Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](http://cc.iiti.ac.in/lcommands.pdf).
+Interacting with the Mac file system from the shell: Create a new terminal window by pressing ⌘+N. Before we go further, you may find it helpful to pull up the following cheat sheet: [Unix/Linux Command Reference](http://cc.iiti.ac.in/lcommands.pdf).
 
 Unix-like operating systems are based on a metaphor: a nested set of directories and data files, forming a tree structure that begins at the root directory `/`. A benefit of this arrangement is that each file can be uniquely identified using a pathname of the following format:`/Users/yourname/Desktop/file.txt`.
 
@@ -61,7 +61,7 @@ You should see a list of directories including “Library,” “Users,” “bi
 
 #### Command Line Basics Continued
 
-Next, let’s create a new directory and text file in our shared folder. We’ll spend more time working with text data after the break.
+Next, create a new directory and text file in our shared folder. We’ll spend more time working with text data after the break.
 
 ```bash
 cd ~/Desktop
@@ -76,7 +76,7 @@ To move our text document into our directory we can use the `mv` tool. We’ll t
 
 > **Tip:** `cd` interprets `test_dir` as a relative file path in the above lines. Because a folder with that names is indeed present in the working directory, we can refer to it by its local name rather than its full pathname beginning with `/`.
 
-Let’s make a copy of our text file with `cp` and check the updated directory contents.
+Make a copy of our text file with `cp` and check the updated directory contents.
 
 ```
 cp test.txt test2.txt
@@ -85,7 +85,7 @@ ls
 
 > **Tip:** If you’re midway through typing the name of a pre-existing file in the shell, you can press tab to complete the filename automatically.
 
-Let’s rename our new text file with the `mv` command, then view the contents of the current directory with `ls`.
+Rename our new text file with the `mv` command, then view the contents of the current directory with `ls`.
 
     mv test2.txt test3.txt
     ls
@@ -94,7 +94,7 @@ Next, delete the file we just created using `rm`.
 
     rm test3.txt
 
-Another useful file path shortcut is `../`, which refers to the parent directory of our current location on the file tree. Let’s use it to `cd` back to Desktop.
+Another useful file path shortcut is `../`, which refers to the parent directory of our current location on the file tree. Use it to `cd` back to Desktop.
 
     cd ../
 
@@ -154,7 +154,9 @@ Use the arrow keys to move your cursor around in the document. Add another line 
 
 So far, we have been using the bash shell in macOS to learn some basic command-line vocabulary. Not everyone has a Mac, however, so for the rest of this course we will use Docker to create a Linux environment that will run identically any computer.
 
-First, let's download the files we need for our Docker container. Open a new terminal window.
+First, open your Docker application and log in to your Docker account (if you haven't made one yet, go ahead).
+
+Next, download the files we need for our Docker container. Open a new terminal window.
 
 - macOS: Open the application `Terminal`, located in `/Applications/Utilities`.
 - Windows: Double click `Docker Quickstart Terminal` on your desktop.
@@ -190,7 +192,7 @@ Now enter the command `pwd` to print the current working directory. You should b
 pwd
 ```
 
-Let's create a new text file, just like we did earlier in the macOS shell.
+Create a new text file, just like we did earlier in the macOS shell.
 
 ```
 echo "Hello!" > sample_file.txt
@@ -201,7 +203,7 @@ Open the `sharedfolder` directory on your desktop, and you should see the file w
 
 #### Download a web page from the command line
 
-Enter `wget` followed by any URL to download the web page or file at that URL. Let's try it with Google's home page.
+Enter `wget` followed by any URL to download the web page or file at that URL. Try it with Google's home page.
 
     wget http://google.com
 
@@ -219,13 +221,13 @@ Wget is an amazingly versatile tool, and we will use it many times in this cours
 
 #### Download a video with youtube-dl and create an excerpt with FFmpeg
 
-Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Let's try it with _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so this may take a few minutes. You can substitute a shorter video if you prefer.
+Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Try it with _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so this may take a few minutes. You can substitute a shorter video if you prefer.
 
     youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0
 
 ![](week/1/Image-11.png)
 
-To simplify things, locate the video file in `sharedfolder` and change its name to `Bucket.mp4`. Now let’s view the file’s metadata with ExifTool.
+To simplify things, locate the video file in `sharedfolder` and change its name to `Bucket.mp4`. Now view the file’s metadata with ExifTool.
 
     exiftool Bucket.mp4
 
@@ -365,11 +367,11 @@ In this case we’re not saving much effort, but as we proceed you’ll find tha
 #### **11.** Accessing the shell from Python with the `os` package (if time permits)
 The next section is intended as an instructor demonstration, to be included if time permits.
 
-First, let’s check the length of the film with `exiftool`. Open a new terminal window and enter the following.
+First, check the length of the film with `exiftool`. Open a new terminal window and enter the following.
     cd /sharedfolder
     exiftool Bucket.mp4
 
-The file comes to 1:05:57, or 3907 seconds. Lets extract 10 5-second clips at random and combine them to create a new video.
+The file comes to 1:05:57, or 3907 seconds. Extract 10 5-second clips at random and combine them to create a new video.
 
  ```python
 import os
