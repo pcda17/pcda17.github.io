@@ -122,7 +122,7 @@ Finally, we’ll write our metadata collection as a CSV.
     a.writerows(meta_table)
     o.close()
 ```
-Open your CSV in Excel or Calc and marvel at your 
+Open your CSV in Excel or Calc.
 
 #### OpenRefine
 Launch the OpenRefine application and enter the following in your browser’s URL bar to access the interface.

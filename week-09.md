@@ -1,5 +1,20 @@
 ##Week 9: Machine Learning
 
+Topics to Cover
+---------------
+
+-   preprocessing for text machine learning:
+
+    -   removing stop words
+
+    -   lemmatizing
+
+-   classifying texts using scikit-learn
+
+-   author attribution
+
+-   cluster analysis
+
 
 
 Provide collection of several hundred texts grouped by genre:

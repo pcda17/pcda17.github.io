@@ -1,6 +1,5 @@
 ## Week 3 Outline: Data Modeling Outline
 
-
 Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github.com/MuseumofModernArt/collection). Download these files to your desktop.
 - [Artists.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artists.csv)
 - [Artworks.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artworks.csv)
@@ -438,3 +437,5 @@ If we want to create a list of artist names, birth years, etc., we can thus iter
 
 
 Talk about strengths and weaknesses of CSV, JSON, XML, and RDF models for various applications.
+
+#### Discussion and review of key points from reading

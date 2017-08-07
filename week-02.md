@@ -1,10 +1,9 @@
 ## Week 2 Outline: Python Intro and Text Manipulation
 
-**Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) rather than Jupyter. Open Terminal and enter the following line to open the Python shell.
+**Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) and then move on to Jupyter notebooks. Open Terminal and enter the following line to open the Python shell.
 
     python
 
-#### Review of key points from reading
 First we’ll address any questions about the reading and last week’s material. Then we’ll review a few points from Shieber’s coding tutorial, beginning with the `split`, `join`, and `replace` functions.
 
 Assign a sentence to the variable `sentence` — in this case the opening line from John Kennedy Toole’s  _A Confederacy of Dunces_. Type the name of the variable and hit return to view your new string.
@@ -655,7 +654,6 @@ You can use the `html_stripper` function above or modify it at will.
 
 
 
-
 ## Demonstrate server-side Python script
 - Create a text file containing Python code to print “Hello world!”
 - Add shebang line at top of file:
@@ -672,4 +670,4 @@ Working in pairs, create a server-side script that detects mp3 files in a given 
 - Example podcast feed: [https://www.dropbox.com/s/x5ubi18086eod9n/simple\_podcast.rss?dl=0](#)
 - Example solution: [Link](#)
 
-### 2:35 Discuss next week’s assignments and reading
+#### Discussion and review of key points from reading
