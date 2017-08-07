@@ -114,7 +114,6 @@ Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and 
 Week 2 (9/18): The Operating System in Context
 ==========================================
 
-
 To Do Before Class
 ------------------
 
@@ -123,7 +122,6 @@ Read pages 1–28 of Shieber’s Python tutorial and work through the code examp
 
 Work through Chris Albon’s tutorial on Python string operations.
 -   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
-
 
 Reading
 -------
@@ -140,7 +138,7 @@ WA #1: Post a discussion question and a response that reflects a careful reading
 
 ##### ▸ In-Class Outline
 
-Week 3: Collections as Data: Meaning making
+Week 3 (9/25): Collections as Data: Meaning making
 ================================
 
 To Do Before Class
@@ -164,7 +162,7 @@ Asssignment
 
 WA #2: Post a discussion question and a response that reflects a careful reading of the material for this week. Questions and responses are meant to stimulate thoughtful class discussion. *Responses should touch on a majority of the readings for full credit.* Synthesis and synergy across readings are keys to successful questions. These questions should demonstrate an understanding (even if that understanding is nascent). Students can post more than once to each thread. Students can ask questions about confusing parts or respond to another person’s post (as along as it demonstrates that the student has completed the readings and is contributing his or her own synthesis). The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
 
-Week 4: Collections as Data: Data Models
+Week 4 (10/2): Collections as Data: Data Models
 ===================
 
 > Note: In this course we will primarily work with data in CSV and JSON formats. Relational databases and RDF are discussed in readings but will not be emphasized in class.
@@ -207,7 +205,7 @@ Reflect on this exercise and how it relates to the readings by van Hooland and V
 
 ##### ▸ In-Class Outline
 
-Week 5: Word-Level Text Analysis
+Week 5 (10/9): Word-Level Text Analysis
 ================================
 
 To Do Before Class
@@ -253,7 +251,7 @@ WA #4:  Choose a book-length text (or set of texts) available online with which 
 ##### ▸ In-Class Outline
 
 
-Week 6: Web Scraping & APIs
+Week 6 (10/16): Web Scraping & APIs
 =============================
 
 
@@ -299,7 +297,7 @@ WA #5: Choose an API from the list of examples or choose one that is relevant to
 > ▸ In-Class Outline
 
 
-Week 7: Data and Politics
+Week 7 (10/23): Data and Politics
 =========================
 
 To Do Before Class
@@ -338,7 +336,7 @@ WA #6:  In 500–600 words, reflect on the readings this week by evaluating the 
 ##### ▸ In-Class Outline
 
 
-Week 8: Statistics and Visualization
+Week 8 (10/30): Statistics and Visualization
 ====================================
 
 To Do Before Class
@@ -388,7 +386,7 @@ Each student should post the proposal two days before class. You will be assigne
 ##### ▸ In-Class Outline
 
 
-Week 9: Machine Learning
+Week 9 (11/6): Machine Learning
 ==========================
 
 To Do Before Class
@@ -431,7 +429,7 @@ WA #7: Use some of the techniques from last week’s readings on the online/data
 ##### ▸ In-Class Outline
 
 
-Week 10: Critical Text Analysis
+Week 10 (11/13): Critical Text Analysis
 ================================
 
 To Do Before Class
@@ -460,7 +458,7 @@ WA #8:  Share your complete, cleaned dataset for the final project. In 200 words
 ##### ▸ In-Class Outline
 
 
-Week 11: Copyright and the Information Commons
+Week 11 (11/20): Copyright and the Information Commons
 ================================================
 To Do Before Class
 ------------------
@@ -492,9 +490,8 @@ WA #9:  Choose two machine learning algorithms discussed last week and a set of 
 ##### ▸ In-Class Outline
 
 
-Week 12: Peer Production & Crowdsourcing
+Week 12 (11/27): Peer Production & Crowdsourcing
 ========================================
-
 
 To Do Before Class
 ------------------
@@ -520,6 +517,9 @@ WA #10:   Report your progress toward the final critical data analysis project i
 
 ##### ▸ In-Class Outline
 
+Week 13 (12/4): 
+========================================
 
-*Week 13: Final Presentations*
+
+*Week 14 (12/11): Final Presentations*
 ------------------------------
