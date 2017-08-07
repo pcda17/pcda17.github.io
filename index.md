@@ -1,5 +1,5 @@
 
-Syllabus: Programming for Cultural Data Analysis -- TESTING
+Syllabus: Programming for Cultural Data Analysis
 ====================================================
 Fall 2017, Mondays 3-6pm
 
