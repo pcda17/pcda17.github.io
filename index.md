@@ -74,6 +74,7 @@ Assignments should be posted on Canvas before the start of class each week.
 
 -   Sample Data Sources
 
+##### ▸ In-Class Outline
 
 Week 1 (9/11): Introductions & Command Line Basics
 ===========================================
@@ -101,12 +102,11 @@ To access Lynda videos, follow links below, click “Log in,” then “Organiza
     - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
 
-Reading
+Readings
 -------
-Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
+-   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
 
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
-
 
 ##### ▸ In-Class Outline
 
@@ -116,14 +116,14 @@ Week 2 (9/18): The Operating System in Context
 
 To Do Before Class
 ------------------
-
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
 
 Work through Chris Albon’s tutorial on Python string operations.
 -   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
-Reading
+
+Readings
 -------
 -   Noria, Xavier. “Understanding Newlines.” *O’Reilly ONLamp*, August 17, 2006. [http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html](http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html)
 
@@ -135,7 +135,6 @@ Asssignment
 --------
 WA #1: Post a discussion question and a response that reflects a careful reading of the material for this week. Questions and responses are meant to stimulate thoughtful class discussion. *Responses should touch on a majority of the readings for full credit.* Synthesis and synergy across readings are keys to successful questions. These questions should demonstrate an understanding (even if that understanding is nascent). Students can post more than once to each thread. Students can ask questions about confusing parts or respond to another person’s post (as along as it demonstrates that the student has completed the readings and is contributing his or her own synthesis). The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
 
-
 ##### ▸ In-Class Outline
 
 Week 3 (9/25): Collections as Data: Meaning making
@@ -143,12 +142,10 @@ Week 3 (9/25): Collections as Data: Meaning making
 
 To Do Before Class
 ------------------
-
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 Readings
 --------
-
 - Gallinger, M. and Daniel Chudnov "Library of Congress Lab: Library of Congress Digital Scholars Lab Pilot Project Report," ([PDF](http://digitalpreservation.gov/meetings/dcs16/DChudnov-MGallinger_LCLabReport.pdf).
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41. [PDF](https://www.dropbox.com/s/s0zmg1iw308vb4e/Introna%202011%20-%20The%20Enframing%20of%20Code-%20Agency%2C%20Originality%20and%20the%20Plagiarist.pdf?dl=0).
@@ -159,18 +156,15 @@ Readings
 
 Asssignment
 --------
-
 WA #2: Post a discussion question and a response that reflects a careful reading of the material for this week. Questions and responses are meant to stimulate thoughtful class discussion. *Responses should touch on a majority of the readings for full credit.* Synthesis and synergy across readings are keys to successful questions. These questions should demonstrate an understanding (even if that understanding is nascent). Students can post more than once to each thread. Students can ask questions about confusing parts or respond to another person’s post (as along as it demonstrates that the student has completed the readings and is contributing his or her own synthesis). The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
+
+##### ▸ In-Class Outline
 
 Week 4 (10/2): Collections as Data: Data Models
 ===================
 
-> Note: In this course we will primarily work with data in CSV and JSON formats. Relational databases and RDF are discussed in readings but will not be emphasized in class.
-
-
 To Do Before Class
 ------------------
-
 Readings
 --------
 
@@ -201,7 +195,7 @@ Install [OpenRefine](https://github.com/OpenRefine/OpenRefine/wiki/Installation-
 > • If you’re working with very large datasets, you may need to allocate more memory for OpenRefine:
 > [https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory](https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory)
 
-Reflect on this exercise and how it relates to the readings by van Hooland and Verborgh.
+Reflect on this exercise and how it relates to the readings by van Hooland and Verborgh. The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
 
 ##### ▸ In-Class Outline
 
@@ -220,7 +214,6 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 
 Readings
 --------
-
 -   Ramsay, Stephen. “Chapter 1: An Algorithmic Criticism.” In *Reading Machines: Toward an Algorithmic Criticism*, 1–17. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2011. [PDF](https://www.dropbox.com/s/ox35us0vfj7ppng/Ramsay%202011%20-%20Reading%20Machines%20-%20Ch.%201.pdf?dl=0).
 
 -   Montfort, Nick. “Text III.” In *Exploratory Programming for the Arts and Humanities*, 185–213. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/gib77npezdaz1kr/Montfort%202016%20-%20Text%20III.pdf?dl=0).
@@ -229,20 +222,6 @@ Readings
 
 -   “Alphabetical list of part-of-speech tags used in the Penn Treebank Project.” [https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
-Topics to Cover
----------------
-
--   comparing word frequency between authors
-
--   part-of-speech (POS) tagging
-
--   POS frequency comparison
-
--   Naive Bayes text classification
-
--   sentiment analysis
-
--   using WordNet
 
 Asssignment
 --------
@@ -253,7 +232,6 @@ WA #4:  Choose a book-length text (or set of texts) available online with which 
 
 Week 6 (10/16): Web Scraping & APIs
 =============================
-
 
 To Do Before Class
 -------------------
@@ -266,7 +244,6 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 Readings
 --------
-
 -   Pomerantz, Jeffrey. “The Future of Metadata.” In *Metadata*. The MIT Press Essential Knowledge Series. Cambridge, MA ; London, England: The MIT Press, 2015. [PDF](https://www.dropbox.com/s/hj3i12cinl3ublj/Pomerantz%202015%20-%20Ch.%208%20-%20The%20Future%20of%20Metadata.pdf?dl=0).
 
 -   Swartz, Aaron. “Building a Platform: Providing APIs.” In *Aaron Swartz’s ‘A Programmable Web’: An Unfinished Work*, 31–39. San Rafael, CA: Morgan & Claypool Publishers, 2013. [PDF](https://www.dropbox.com/s/wmgtcko0u9q59aw/Swartz%202013%20-%20Building%20a%20Platform-%20Providing%20APIs.pdf?dl=0).
@@ -284,7 +261,6 @@ Readings
 
 Optional Readings
 -----------------
-
 -   Sanger, David E., and Eric Schmitt. “Snowden Used Low-Cost Tool to Best N.S.A.” The New York Times. February 8, 2014. [http://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html](http://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html)
 
 -   Kazil, Jacqueline, and Katharine Jarmul. “PDFs and Problem Solving in Python.” In *Data Wrangling with Python: Tips and Tools to Make Your Life Easier*, 91–126. O’Reilly, 2016. [PDF](https://www.dropbox.com/s/hfc8m731eiik0g8/Kazil%20and%20Jarmul%202016%20-%20PDFs%20and%20Problem%20Solving%20in%20Python.pdf?dl=0).
@@ -293,58 +269,69 @@ Asssignment
 --------
 WA #5: Choose an API from the list of examples or choose one that is relevant to your final project. An API with a URL-based interface is preferable. Sign up for a developer key if necessary, keeping in mind that it may take a day or two for your request to be processed. Read the documentation for the API and familiarize yourself with it by running a few sample queries. Then execute a larger query (or series of queries) within bounds you choose, aiming to collect at least 2,000–3,000 metadata records. Verify that your dataset is complete and intact. Transform the data to CSV format and conduct any necessary cleaning in Excel, Calc, or OpenRefine. Reflect on your collection process and results, sepifically as they relate to the Swartz, Pomerantz, and Kelly articles. 
 
+##### ▸ In-Class Outline
 
-> ▸ In-Class Outline
 
-
-Week 7 (10/23): Data and Politics
+Week 7 (10/23) The Politics of Data
 =========================
 
 To Do Before Class
 ------------------
-
 Readings
 --------
+-  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
 -   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016. [PDF](https://www.dropbox.com/s/fg195av2ayiwc31/Peters%202016%20-%20The%20Idealist%20-%20Chs.%206-7.pdf?dl=0).
 
 -   Greenwald, Glenn. “Chapter 1: Contact.” In *No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State*, 2015. [PDF](https://www.dropbox.com/s/1evnc6xu6pbdin6/Greenwald%202014%20-%20No%20Place%20to%20Hide%20-%20Intro%20%26%20Chapter%201.pdf?dl=0).
 
--   Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, ProPublica. “Machine Bias.” *ProPublica*. May 23, 2016. [https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
-
 -   Freelon, Deen Goodwin, Charlton D. McIlwain, and Meredith D. Clark. “Beyond the Hashtags: #Ferguson, #Blacklivesmatter, and the Online Struggle for Offline Justice,” 2016. [http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf](http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf)
-
--   Sacasas, Michael. “Do Artifacts Have Ethics?” *The Frailest Thing*, November 29, 2014. [http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics](http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/)
 
 -   American Civil Liberties Union. "First Amendment Lawsuit Brought on Behalf of Academic Researchers and Journalists Who Fear Prosecution Under the Computer Fraud and Abuse Act." [https://www.aclu.org/news/aclu-challenges-law-preventing-studies-big-data-discrimination](https://www.aclu.org/news/aclu-challenges-law-preventing-studies-big-data-discrimination)
 
 Optional Readings
 -----------------
-
 -   Day, Ronald E. “Governing Expression: Social Big Data and Neoliberalism.” In *Indexing It All: The Subject in the Age of Documentation*, Information, and Data, 123–44. History and Foundations of Information Science. Cambridge, Massachusetts: The MIT Press, 2014. [PDF](https://www.dropbox.com/s/mab080ymg2pqjon/Day%202014%20-%20Indexing%20it%20All%20-%20Ch.%206%20-%20Governing%20Expression-%20Social%20Big%20Data%20and%20Neoliberalism.pdf?dl=0).
 
 -   Hitchcock, Tim. “Digital Searching and the Re-formulation of Historical Knowledge” 2008. In *The Virtual Representation of the Past*, edited by Mark Greenglass and Lorna Hughes, 81-90. Ashgate: 2008. [PDF](https://www.dropbox.com/s/ht8si4vygm3bkh4/Hitchcock%202008%20-%20Digital%20Searching%20and%20the%20Re-formulation%20of%20Historical%20Knowledge.pdf?dl=0).
 
+Asssignment
+--------
+WA #6:  In 500–600 words, reflect on the readings this week by evaluating the “moral dimension” of the dataset you will be using for your final project. [Be sure to to describe the dataset -- Where did it come from? What kind of data does it include? How big is it?] 
+
+##### ▸ In-Class Outline
+
+Week 8 (10/30): Your Data
+=========================
+To Do Before Class
+------------------
+Readings
+--------
 -   Winner, Langdon. “Do Artifacts Have Politics?” *Daedalus* 109, no. 1 (1980): 121–36. [PDF](https://www.dropbox.com/s/ttr620gqbv4tj48/Winner%201980%20-%20Do%20Artifacts%20Have%20Politics%3F.pdf?dl=0).
 
 -   Joerges, B. “Do Politics Have Artefacts?” *Social Studies of Science* 29, no. 3 (June 1, 1999): 411–31. [PDF](https://www.dropbox.com/s/mb8cn5trvphm3oz/Joerges%201999%20-%20Do%20Politics%20Have%20Artefacts.pdf?dl=0).
 
+-   Sacasas, Michael. “Do Artifacts Have Ethics?” *The Frailest Thing*, November 29, 2014. [http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics](http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/)
+
+
 Asssignment
 --------
-WA #6:  In 500–600 words, reflect on the readings this week by evaluating the “moral dimension” of the dataset you will be using for your final project. [Be sure to to describe the dataset -- Where did it come from? What kind of data does it include? How big is it?] Take the [list of questions](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
+Proposal: Submit a 1000-word proposal for your final critical data analysis project. What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses. You should conside
+
+Each student should post the proposal two days before class. You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
+
+
+Take the [list of questions](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
 ##### ▸ In-Class Outline
 
-
-Week 8 (10/30): Statistics and Visualization
+Week 9 (11/6): Statistics and Visualization
 ====================================
 
 To Do Before Class
 ------------------
-
 Readings
 --------
-
 -   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/7ihzxmrcq2997e4/Montfort%202016%20-%20Statistics%20and%20Visualization.pdf?dl=0).
 
 -   Krumme, Coco. “What Data Doesn’t Do.” In *Beautiful Data: The Stories behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009. [PDF](https://www.dropbox.com/s/b751c7noglf5nu0/Krumme%202009%20-%20What%20Data%20Doesn%27t%20Do.pdf?dl=0).
@@ -358,7 +345,6 @@ Readings
 
 Optional Readings
 -----------------
-
 -   Gries, Stefan. “Useful statistics for corpus linguistics.”*<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.9846&rep=rep1&type=pdf>
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
@@ -376,28 +362,18 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 > pip install --user -U matplotlib
 
-Asssignment
---------
-
-Proposal: Submit a 1000-word proposal for your final critical data analysis project. What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses. You should consider this assignment an abstract or partial draft toward your final project.
-
-Each student should post the proposal two days before class. You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
-
 ##### ▸ In-Class Outline
 
 
-Week 9 (11/6): Machine Learning
+Week 10 (11/13): Machine Learning
 ==========================
-
 To Do Before Class
 ------------------
-
 Readings
 --------
-
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006. [PDF](https://www.dropbox.com/s/s5tfn318otdvu3q/Brew%202006%20-%20Language%20Processing-%20Statistical%20Methods.pdf?dl=0).
 
--   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
+-   Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, ProPublica. “Machine Bias.” *ProPublica*. May 23, 2016. [https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
 
 -   “Working With Text Data.” scikit-learn.
                       [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
@@ -406,7 +382,6 @@ Readings
 
 Optional Readings
 -----------------
-
 -   Norvig, Peter. “Natural Language Corpus Data.” In *Beautiful Data: The Stories Behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009. [PDF](https://www.dropbox.com/s/6m8n6wzzd7887jp/Norvig%202009%20-%20Natural%20Language%20Corpus%20Data.pdf?dl=0).
 
 -   Baharudin, Baharum, Lam Hong Lee, and Khairullah Khan. “A Review of Machine Learning Algorithms for Text-Documents Classification.” *Journal of Advances in Information Technology* 1, no. 1 (February 1, 2010). [PDF](https://www.dropbox.com/s/iljelruc17gvj0g/Khan%20et%20al.%202010%20-%20A%20Review%20of%20Machine%20Learning%20Algorithms%20for%20Text-Documents%20Classification.pdf?dl=0).
@@ -429,13 +404,13 @@ WA #7: Use some of the techniques from last week’s readings on the online/data
 ##### ▸ In-Class Outline
 
 
-Week 10 (11/13): Critical Text Analysis
+Week 11 (11/20): Critical Text Analysis
 ================================
-
 To Do Before Class
 ------------------
-
-#### Readings
+Readings
+--------
+-   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
 
 -   Hall, Gary. “Toward a Postdigital Humanities: Cultural Analytics and the Computational Turn to Data-Driven Scholarship.” *American Literature* 85, no. 4 (January 1, 2013): 781–809. [PDF](https://www.dropbox.com/s/d8ty5fcwm0afdtz/Hall%202013%20-%20Toward%20a%20Postdigital%20Humanities.pdf?dl=0).
 
@@ -446,7 +421,6 @@ To Do Before Class
 
 Optional Reading
 ----------------
-
 -   Ramsay, Stephen. “Chapter 3: Potential Readings.” In *Reading Machines: Toward an Algorithmic Criticism*, 33–57. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2011. [PDF](https://www.dropbox.com/s/bo8dpeaodymk9d2/Ramsay%202011%20-%20Reading%20Machines%20-%20Ch.%203.pdf?dl=0).
 
 -   Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23. [PDF](https://www.dropbox.com/s/avad81hqc5sp6iw/Liu%202013%20-%20The%20Meaning%20of%20the%20Digital%20Humanities.pdf?dl=0).
@@ -458,13 +432,12 @@ WA #8:  Share your complete, cleaned dataset for the final project. In 200 words
 ##### ▸ In-Class Outline
 
 
-Week 11 (11/20): Copyright and the Information Commons
+Week 12 (11/27): Copyright and the Information Commons
 ================================================
 To Do Before Class
 ------------------
 Readings
 --------
-
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
 
 -   O’Sullivan, Michael. “Aaron Swartz, New Technologies, and the Myth of Open Access.” In *Academic Barbarism, Universities and Inequality*. Palgrave Critical University Studies. Houndmills, Basingstoke, Hampshire ; New York, NY: Palgrave Macmillan, 2016. [Link](https://www.dropbox.com/s/xawj4hi4fpyj5mw/Aaron_Swartz_New_Technologies_and_the_My.docx?dl=0).
@@ -478,7 +451,6 @@ Readings
 
 Optional Readings
 -----------------
-
 -   Code of Best Practices in Fair Use for Academic and Research Libraries*. Association of Research Libraries, 2012*. [http://www.arl.org/storage/documents/publications/code-of-best-practices-fair-use.pdf](http://www.arl.org/storage/documents/publications/code-of-best-practices-fair-use.pdf)
 
 
@@ -490,15 +462,12 @@ WA #9:  Choose two machine learning algorithms discussed last week and a set of 
 ##### ▸ In-Class Outline
 
 
-Week 12 (11/27): Peer Production & Crowdsourcing
+Week 13 (12/4): Peer Production & Crowdsourcing
 ========================================
-
 To Do Before Class
 ------------------
-
 Readings
 --------
-
 -   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
 
 -   Manzo, Christina, Geoff Kaufman, Sukdith Punjasthitkul, and Mary Flanagan. “‘By the People, For the People’: Assessing the Value of Crowdsourced, User-Generated Metadata.” *Digital Humanities Quarterly* 9, no. 1 (2015). [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html)
@@ -506,7 +475,7 @@ Readings
 -   Bodó, Balázs. “Set the Fox to Watch the Geese: Voluntary IP Regimes in Piratical File-sharing Communities.” In Piracy: Leakages from Modernity, edited by James Arvanitakis and Martin Fredriksson, 241–63. Sacramento, CA: Litwin Books, 2014. [PDF](https://www.dropbox.com/s/3e2zrjiafp77pt9/Bodo%202014%20-%20Set%20the%20Fox%20to%20Watch%20the%20Geese.pdf?dl=0).
 
 Optional Readings
-
+--------
 -   Benkler, Yochai, and Helen Nissenbaum. “Commons-Based Peer Production and Virtue.” Journal of Political Philosophy 14, no. 4 (2006): 394–419. [https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf](https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf).
 
 -   Kreiss, D., M. Finn, and F. Turner. “The Limits of Peer Production: Some Reminders from Max Weber for the Network Society.” New Media & Society 13, no. 2 (March 1, 2011): 243–59. [PDF](https://www.dropbox.com/s/mwhm10hz0nnania/Kreiss%20et%20al.%202011%20-%20The%20limits%20of%20peer%20production.pdf?dl=0).
@@ -517,9 +486,8 @@ WA #10:   Report your progress toward the final critical data analysis project i
 
 ##### ▸ In-Class Outline
 
-Week 13 (12/4): 
+
+*Week 14 (12/11): Final Presentations*
 ========================================
 
 
-*Week 14 (12/11): Final Presentations*
-------------------------------

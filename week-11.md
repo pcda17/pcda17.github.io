@@ -1,10 +1,13 @@
-##Week 11: Copyright and the Information Commons
+##Week 11: Critical Text Analysis
 
-Topics to Cover
----------------
 
--   copyright policy overview: DMCA, fair use, Creative Commons licenses
+#### Critical Text Analysis
+Discuss readings for first 45 minutes.
 
--   database copyright in the U.S. vs. Europe
+#### Discussion
+ Have students briefly present their work and discuss projects as a group.
 
--   legal debates around acquiring material for text and data mining research
+#### Break
+
+#### Exercise
+Work on final project in class.

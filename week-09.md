@@ -1,46 +1,16 @@
-##Week 9: Machine Learning
-
-Topics to Cover
----------------
-
--   preprocessing for text machine learning:
-
-    -   removing stop words
-
-    -   lemmatizing
-
--   classifying texts using scikit-learn
-
--   author attribution
-
--   cluster analysis
+##Week 9: Statistics and Visualization
 
 
+## Topics to Cover
 
-Provide collection of several hundred texts grouped by genre:
+- Descriptive statistics using numpy Python module
+- Creating graphs in the matplotlib Python module
 
-- news articles
-- blog posts
-- literary prose
-- poetry
-- scientific articles
-- spam emails
+- Visualization
 
-Have students choose two or three categories to work with.
-
-Using scikit-learn rain ML model using small number of texts and measure classification accuracy for remaining set.
-
-Train model using more texts and see if there’s any improvement.
-
-Compare models.
-
-Look at mis-classified texts and discuss what features make them outliers.
+    - Tutorial source: [http://www.labri.fr/perso/nrougier/teaching/matplotlib/](http://www.labri.fr/perso/nrougier/teaching/matplotlib/)
 
 
+Tutorial source for statistical tests on literary works:
 
-#### Break
-
-Demonstrate cluster analysis.
-
-
-Sentiment analysis: Evaluate/classify Twitter data.
+- http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0

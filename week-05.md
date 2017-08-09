@@ -1,6 +1,22 @@
 ## Week 5: Word-Level Text Analysis
 
 
+Topics to Cover
+---------------
+
+-   comparing word frequency between authors
+
+-   part-of-speech (POS) tagging
+
+-   POS frequency comparison
+
+-   Naive Bayes text classification
+
+-   sentiment analysis
+
+-   using WordNet
+
+
 ### Class Objective
 Use text analysis techniques introduced by Montfort to examine and compare small text corpora.
 
