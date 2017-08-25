@@ -14,6 +14,7 @@ University of Texas at Austin School of Information
 
 [Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md) | [Week 5](week-05.md)
 [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md) | [Week 9](week-09.md) | [Week 10](week-10.md)
+| [Week 11](week-11.md) | [Week 12](week-12.md)
 
 ### Course Objectives
 
@@ -132,8 +133,8 @@ Readings
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
 Asssignment
---------
-WA #1: Post a discussion question and a response that reflects a careful reading of the material for this week. Questions and responses are meant to stimulate thoughtful class discussion. *Responses should touch on a majority of the readings for full credit.* Synthesis and synergy across readings are keys to successful questions. These questions should demonstrate an understanding (even if that understanding is nascent). Students can post more than once to each thread. Students can ask questions about confusing parts or respond to another person’s post (as along as it demonstrates that the student has completed the readings and is contributing his or her own synthesis). The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
+-------
+WA #1
 
 ##### ▸ In-Class Outline
 
@@ -300,6 +301,7 @@ Asssignment
 WA #6:  In 500–600 words, reflect on the readings this week by evaluating the “moral dimension” of the dataset you will be using for your final project. [Be sure to to describe the dataset -- Where did it come from? What kind of data does it include? How big is it?] 
 
 ##### ▸ In-Class Outline
+
 
 Week 8 (10/30): Your Data
 =========================
