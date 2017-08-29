@@ -18,6 +18,16 @@ University of Texas at Austin School of Information
 
 ### Course Objectives
 
+Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred; 
+
+In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, *data* appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, *data* is “raw” and lacking in meaning, while *information*, the next higher level of the pyramid---just below *knowledge* and then *wisdom*---represents the presence of added links and relationships; *information* is higher up on the wisdom chain because it is *data* made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (*Where* is the data?); media, format, and technology constraints (*How* is the data?); and perspectives (*What* is the data? *Who* is involved in and impacted by its creation and use?). 
+
+Learning to think critically about data as *information* means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about *information* from this more critical perspective means first understanding how a culture tends to understand what is informative. 
+
+Towards these ends, this course takes on "data wrangling" in the context of humanist perspectives. 
+
+Goals: 
+ 
 -   Teach scripting-style programming in Python and Unix-like systems, emphasizing literacy in finding and using free and open source software.
 
 -   Familiarize students with techniques for collecting, transforming, and analyzing media and metadata available on the Web.
@@ -35,7 +45,9 @@ University of Texas at Austin School of Information
 
 ### Course Principles
 
--   Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
+-  Writing critically about data requires both a level of knowldege about data and data wrangling as it requires a level of knowledge about thinking and writing from critical perspectives learned in cultural studies. While this course does not *teach* cultural studies, an understanding of and experience in humanities theory and research and the principles of cultural studies are essential. 
+
+-  Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
 
 -   Begin assignments early. If you realize what you had in mind is more difficult than expected, talk to the instructor about choosing an alternative.
 
@@ -53,15 +65,11 @@ Your dataset should comprise at least 200 texts or other media files, or at leas
 
 Your final project will include the following elements:
 
--   A description of your dataset (10%)
+-   Proposal (10%)
 
 -   In-class presentation (week 14) (10%)
 
--   8-10 page critical essay, including 3–4 data visualizations (20%)
-
--   1-page description of your chosen research genre and intended audience, as well as a reflection on the strengths and weaknesses of your method (5%)
-
--   Jupyter notebook containing code used for data analysis and visualization (5%)
+-   12 page critical essay, with an appendix of 3–4 data visualizations (30%)
 
 ### Weekly Assignments (WA) (50%)
 
@@ -107,6 +115,9 @@ Readings
 -------
 -   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
 
+-   danah boyd & Kate Crawford (2012) CRITICAL QUESTIONS FOR BIG DATA, Information, Communication & Society, 15:5, 662-679
+
+To start for next week:
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
 ##### ▸ In-Class Outline
@@ -318,9 +329,9 @@ Readings
 
 Asssignment
 --------
-Proposal: Submit a 1000-word proposal for your final critical data analysis project. What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses. You should conside
+[Due 10/27: Proposal] (https://utexas.instructure.com/courses/1204381/assignments/4166696):  Submit a 1000-word proposal for your final critical data analysis project. What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses.
 
-Each student should post the proposal two days before class. You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
+[Due 10/30: Peer Review] (https://utexas.instructure.com/courses/1204381/assignments/4166696). You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
 
 
 Take the [list of questions](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
@@ -491,5 +502,6 @@ WA #10:   Report your progress toward the final critical data analysis project i
 
 *Week 14 (12/11): Final Presentations*
 ========================================
+[Final Presentation due] (https://utexas.instructure.com/courses/1204381/assignments/4166564)
 
-
+12/18: [Final Project due] (https://utexas.instructure.com/courses/1204381/assignments/4166548)
