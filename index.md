@@ -65,7 +65,9 @@ Your dataset should comprise at least 200 texts or other media files, or at leas
 
 Your final project will include the following elements:
 
--   Proposal (10%)
+-   Proposal (7%)
+
+-   Proposal Peer Review (3%)
 
 -   In-class presentation (week 14) (10%)
 
@@ -75,7 +77,7 @@ Your final project will include the following elements:
 
 Except when indicated, there will be required readings each week. The required readings will either be available online and linked below or posted on Canvas, so there are no books to buy or papers to acquire for the class.
 
-Assignments should be posted on Canvas before the start of class each week.
+Assignments should be posted on Canvas by midnight the day before class. 
 
 ### Resources
 
@@ -145,7 +147,7 @@ Readings
 
 Asssignment
 -------
-WA #1
+[WA #1](https://utexas.instructure.com/courses/1204381/discussion_topics/2826310)
 
 ##### ▸ In-Class Outline
 
@@ -168,7 +170,7 @@ Readings
 
 Asssignment
 --------
-WA #2: Post a discussion question and a response that reflects a careful reading of the material for this week. Questions and responses are meant to stimulate thoughtful class discussion. *Responses should touch on a majority of the readings for full credit.* Synthesis and synergy across readings are keys to successful questions. These questions should demonstrate an understanding (even if that understanding is nascent). Students can post more than once to each thread. Students can ask questions about confusing parts or respond to another person’s post (as along as it demonstrates that the student has completed the readings and is contributing his or her own synthesis). The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
+[WA #2](https://utexas.instructure.com/courses/1204381/discussion_topics/2840058)
 
 ##### ▸ In-Class Outline
 
@@ -198,16 +200,7 @@ Optional Readings
 
 Asssignment
 --------
-WA #3: Choose an online data/metadata source, preferably one available to the public via direct download or API. Download a sample of the data, at least 50 or 100 records. Read them over closely, noting anything unexpected. Search for information about the dataset's history, purpose, intended audience, and any past uses by researchers or journalists. 
-
-Install [OpenRefine](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions) and create a project using a sample dataset. Familiarize yourself with some of its basic functions.
-
-> • Like Jupyter, OpenRefine creates a locally accessible “server” and uses a browser window for its interface. If launching OpenRefine doesn’t open a browser window automatically, enter the following in the URL bar: *http://127.0.0.1:3333*
->
-> • If you’re working with very large datasets, you may need to allocate more memory for OpenRefine:
-> [https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory](https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory)
-
-Reflect on this exercise and how it relates to the readings by van Hooland and Verborgh. The length of the post depends on how long it takes the student to generate a response that takes all the readings into account.
+[WA #3](https://utexas.instructure.com/courses/1204381/discussion_topics/2841839)
 
 ##### ▸ In-Class Outline
 
@@ -237,7 +230,7 @@ Readings
 
 Asssignment
 --------
-WA #4:  Choose a book-length text (or set of texts) available online with which you are familiar. Following Montfort’s code examples, parse the text using the TextBlob library and run some exploratory tests. Submit your code in a Jupyter notebook. Reflect on this exercise by describing your process and emphasizing anything you found surprising about the text. Desribe how your activity relates to the readings by Ramsay and Montfort. 
+[WA #4](https://utexas.instructure.com/courses/1204381/discussion_topics/2841813)
 
 ##### ▸ In-Class Outline
 
@@ -279,7 +272,7 @@ Optional Readings
 
 Asssignment
 --------
-WA #5: Choose an API from the list of examples or choose one that is relevant to your final project. An API with a URL-based interface is preferable. Sign up for a developer key if necessary, keeping in mind that it may take a day or two for your request to be processed. Read the documentation for the API and familiarize yourself with it by running a few sample queries. Then execute a larger query (or series of queries) within bounds you choose, aiming to collect at least 2,000–3,000 metadata records. Verify that your dataset is complete and intact. Transform the data to CSV format and conduct any necessary cleaning in Excel, Calc, or OpenRefine. Reflect on your collection process and results, sepifically as they relate to the Swartz, Pomerantz, and Kelly articles. 
+[WA #5](https://utexas.instructure.com/courses/1204381/discussion_topics/2841854)
 
 ##### ▸ In-Class Outline
 
@@ -309,7 +302,7 @@ Optional Readings
 
 Asssignment
 --------
-WA #6:  In 500–600 words, reflect on the readings this week by evaluating the “moral dimension” of the dataset you will be using for your final project. [Be sure to to describe the dataset -- Where did it come from? What kind of data does it include? How big is it?] 
+[WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926) 
 
 ##### ▸ In-Class Outline
 
@@ -329,12 +322,8 @@ Readings
 
 Asssignment
 --------
-[Due 10/27: Proposal] (https://utexas.instructure.com/courses/1204381/assignments/4166696):  Submit a 1000-word proposal for your final critical data analysis project. What kind of patterns are you looking for? What critical lens will you apply? Most importantly, who is the intended audience for your study and why would/should they care about your findings? Describe what led you to choose this project and present any preliminary observations and hypotheses.
+[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696) 
 
-[Due 10/30: Peer Review] (https://utexas.instructure.com/courses/1204381/assignments/4166696). You will be assigned another student at random, and you will post a 100–200-word response to that student’s proposal before class.
-
-
-Take the [list of questions](https://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/) posed by Michael Sacasas as a starting point, describing any biases, exclusions, or individual interests reflected in the collection. What can't these data tell you? How might they be used or misused?
 
 ##### ▸ In-Class Outline
 
@@ -343,6 +332,19 @@ Week 9 (11/6): Statistics and Visualization
 
 To Do Before Class
 ------------------
+
+Install [numpy](http://www.numpy.org/) scientific computing library for Python.
+
+> pip install --user -U numpy
+
+Install [pandas](http://pandas.pydata.org/) data analysis library for Python.
+
+> pip install --user -U pandas
+
+Install [matplotlib](http://matplotlib.org/) visualization library for Python.
+
+> pip install --user -U matplotlib
+
 Readings
 --------
 -   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/7ihzxmrcq2997e4/Montfort%202016%20-%20Statistics%20and%20Visualization.pdf?dl=0).
@@ -362,18 +364,10 @@ Optional Readings
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
 
+Asssignment
+--------
+[Due: Proposal Peer Review](https://utexas.instructure.com/courses/1204381/assignments/4166696).
 
-Install [numpy](http://www.numpy.org/) scientific computing library for Python.
-
-> pip install --user -U numpy
-
-Install [pandas](http://pandas.pydata.org/) data analysis library for Python.
-
-> pip install --user -U pandas
-
-Install [matplotlib](http://matplotlib.org/) visualization library for Python.
-
-> pip install --user -U matplotlib
 
 ##### ▸ In-Class Outline
 
@@ -502,6 +496,6 @@ WA #10:   Report your progress toward the final critical data analysis project i
 
 *Week 14 (12/11): Final Presentations*
 ========================================
-[Final Presentation due] (https://utexas.instructure.com/courses/1204381/assignments/4166564)
+[Final Presentation due](https://utexas.instructure.com/courses/1204381/assignments/4166564)
 
-12/18: [Final Project due] (https://utexas.instructure.com/courses/1204381/assignments/4166548)
+12/18: [Final Project due](https://utexas.instructure.com/courses/1204381/assignments/4166548)
