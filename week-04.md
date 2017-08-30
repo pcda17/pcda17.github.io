@@ -136,6 +136,6 @@ Note that several “place” records are listed as “Germany,” while others 
 
  
 
-#### Discussion
+#### Discussion and review of key points from reading
 
 

@@ -1,22 +1,10 @@
 ## Week 1 Outline: Introductions & Command Line Basics
 
-## Software to install before class
-
-- Text editor: Atom or Geany
-    - [https://atom.io](https://atom.io)
-    - [https://www.geany.org](https://www.geany.org)
-
-- Docker Community Edition or Docker Toolbox
-    - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux)
-    - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows)
-
-- VLC Media Player
-    - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
 #### Student and instructor introductions
 
 
-#### Command Line Basics
+#### Command Line basics
 
 While the terms “command line,” “terminal,” and “shell” are sometimes used interchangeably, each has a slightly different denotation.
 
@@ -146,13 +134,9 @@ Use the arrow keys to move your cursor around in the document. Add another line 
 
 
 
-
-#### Break
-
-
 #### Up and running with Docker
 
-So far, we have been using the bash shell in macOS to learn some basic command-line vocabulary. Not everyone has a Mac, however, so for the rest of this course we will use Docker to create a Linux environment that will run identically any computer.
+So far, we have been using the bash shell in macOS to learn some basic command-line vocabulary. Not everyone has a Mac, however, so for the rest of this course we will use Docker to create a Linux environment that will run identically on any computer.
 
 First, open your Docker application and log in to your Docker account (if you haven't made one yet, go ahead).
 

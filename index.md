@@ -396,17 +396,7 @@ Optional Readings
 
 Asssignment
 --------
-Install scipy Python library.
-
-> pip install scipy
-
-Install scikit-learn Python library and work through text classification tutorial.
-
-> pip install sklearn
->
-> pip install scikit-neuralnetwork
-
-WA #7: Use some of the techniques from last week’s readings on the online/data source that you have identified for your final project;  present a quantitative exploration of the data using descriptive statistics and two or three visualizations. Up to two of these may be histograms, accompanied by another graphical format of your choice. You may use numerical values included in the collection or quantify some aspect of the data using techniques learned earlier in the course. Reflect on your process and findings through this weeks' readings, specifically in relation to Burrows. Submit your code in a Jupyter notebook.
+[WA #7](https://utexas.instructure.com/courses/1204381/discussion_topics/2842235)
 
 ##### ▸ In-Class Outline
 
@@ -434,7 +424,7 @@ Optional Reading
 
 Asssignment
 --------
-WA #8:  Share your complete, cleaned dataset for the final project. In 200 words, describe the collection and the work you’ve done to shape and/or augment it. Submit a sample of your collection and/or processing code in a Jupyter notebook.
+[WA #8](https://utexas.instructure.com/courses/1204381/discussion_topics/2842240)
 
 ##### ▸ In-Class Outline
 
@@ -463,7 +453,7 @@ Optional Readings
 
 Asssignment
 --------
-WA #9:  Choose two machine learning algorithms discussed last week and a set of texts or metadata records, preferably the collection you are using for the final project. In 300–500 words, compare the likely efficacy of the two approaches and discuss how their classifications may differ.
+[WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
 
 
 ##### ▸ In-Class Outline
@@ -489,7 +479,7 @@ Optional Readings
 
 Asssignment
 --------
-WA #10:   Report your progress toward the final critical data analysis project in 300–500 words. Note your preliminary findings and describe how your perspective and/or approach has changed since you began.
+[WA #10]()
 
 ##### ▸ In-Class Outline
 
