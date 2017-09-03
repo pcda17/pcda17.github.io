@@ -115,7 +115,8 @@ To access Lynda videos, follow links below, click “Log in,” then “Organiza
 
 Readings
 -------
--   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/kb2xy8giavxpo89/Montfort%202016%20-%20Why%20Program.pdf?dl=0).
+[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
+-   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016.
 
 -   danah boyd & Kate Crawford (2012) CRITICAL QUESTIONS FOR BIG DATA, Information, Communication & Society, 15:5, 662-679
 
@@ -160,9 +161,10 @@ To Do Before Class
 
 Readings
 --------
-- Gallinger, M. and Daniel Chudnov "Library of Congress Lab: Library of Congress Digital Scholars Lab Pilot Project Report," ([PDF](http://digitalpreservation.gov/meetings/dcs16/DChudnov-MGallinger_LCLabReport.pdf).
+[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)
+- Gallinger, M. and Daniel Chudnov "Library of Congress Lab: Library of Congress Digital Scholars Lab Pilot Project Report."
 
-- Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41. [PDF](https://www.dropbox.com/s/s0zmg1iw308vb4e/Introna%202011%20-%20The%20Enframing%20of%20Code-%20Agency%2C%20Originality%20and%20the%20Plagiarist.pdf?dl=0).
+- Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 
@@ -181,10 +183,10 @@ To Do Before Class
 ------------------
 Readings
 --------
-
+[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
--   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014. [PDF](https://www.dropbox.com/s/uv9xhmiq574rbyj/van%20Hooland%20and%20Verborgh%202014%20-%20Modelling.pdf?dl=0).
+-   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014. 
 
 -   Zhuang, Atima Han, Ishita Vedvyas, and Rishikesh Dole. “Tutorial: OpenRefine,” 2013. [http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf](http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf)
 
