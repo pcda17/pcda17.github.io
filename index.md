@@ -137,7 +137,9 @@ Assignment
 [WA #1](https://utexas.instructure.com/courses/1204381/discussion_topics/2826310)
 
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-02.md)
+
+
 
 Week 3 (9/25): Collections as Data: Meaning making
 ================================
@@ -168,7 +170,8 @@ Asssignment
 --------
 [WA #2](https://utexas.instructure.com/courses/1204381/discussion_topics/2840058)
 
-##### ▸ In-Class Outline
+
+#### [▸ In-Class Outline](week-03.md)
 
 Week 4 (10/2): Collections as Data: Data Models
 ===================
@@ -195,7 +198,8 @@ Asssignment
 --------
 [WA #3](https://utexas.instructure.com/courses/1204381/discussion_topics/2841839)
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-04.md)
+
 
 Week 5 (10/9): Word-Level Text Analysis
 ================================
@@ -222,7 +226,7 @@ Asssignment
 --------
 [WA #4](https://utexas.instructure.com/courses/1204381/discussion_topics/2841813)
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-05.md)
 
 
 Week 6 (10/16): Web Scraping & APIs
@@ -260,7 +264,7 @@ Asssignment
 --------
 [WA #5](https://utexas.instructure.com/courses/1204381/discussion_topics/2841854)
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-06.md)
 
 
 Week 7 (10/23) The Politics of Data
@@ -287,7 +291,7 @@ Asssignment
 --------
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-07.md)
 
 
 Week 8 (10/30): Your Data
@@ -306,7 +310,7 @@ Asssignment
 [Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
 
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-08.md)
 
 Week 9 (11/6): Statistics and Visualization
 ====================================
@@ -338,7 +342,7 @@ Readings
 
 Optional Readings
 -----------------
--   Gries, Stefan. “Useful statistics for corpus linguistics.”*<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.9846&rep=rep1&type=pdf>
+-   Gries, Stefan. “Useful statistics for corpus linguistics.” <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.9846&rep=rep1&type=pdf>
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
 
@@ -347,7 +351,7 @@ Asssignment
 [Due: Proposal Peer Review](https://utexas.instructure.com/courses/1204381/assignments/4166696).
 
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-09.md)
 
 
 Week 10 (11/13): Machine Learning
@@ -374,7 +378,7 @@ Asssignment
 --------
 [WA #7](https://utexas.instructure.com/courses/1204381/discussion_topics/2842235)
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-10.md)
 
 
 Week 11 (11/20): Critical Text Analysis
@@ -400,11 +404,13 @@ Asssignment
 --------
 [WA #8](https://utexas.instructure.com/courses/1204381/discussion_topics/2842240)
 
-##### ▸ In-Class Outline
+
+#### [▸ In-Class Outline](week-11.md)
 
 
 Week 12 (11/27): Copyright and the Information Commons
-================================================
+======================================================
+
 Readings
 --------
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
@@ -428,7 +434,7 @@ Asssignment
 [WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
 
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-12.md)
 
 
 Week 13 (12/4): Peer Production & Crowdsourcing
@@ -451,7 +457,7 @@ Asssignment
 --------
 [WA #10]()
 
-##### ▸ In-Class Outline
+#### [▸ In-Class Outline](week-13.md)
 
 
 *Week 14 (12/11): Final Presentations*
