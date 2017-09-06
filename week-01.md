@@ -370,4 +370,6 @@ for i in range(10):
 os.system('''ffmpeg -i "concat:clip0.mpg|clip1.mpg|clip2.mpg|clip3.mpg|clip4.mpg|clip5.mpg|clip6.mpg|clip7.mpg|clip8.mpg|clip9.mpg" -c copy collage.mpg''')
 ```
 
-#### **12.** Discuss reading and assignment for following week
+#### **12.** Closing Docker
+
+

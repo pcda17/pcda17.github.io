@@ -1,10 +1,21 @@
 ## Week 2 Outline: Python Intro and Text Manipulation
 
-**Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) and then move on to Jupyter notebooks. Open Terminal and enter the following line to open the Python shell.
+**Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) and then move on to Jupyter notebooks. 
 
-    python
+Open Terminal and run our docker container: 
 
-First we’ll address any questions about the reading and last week’s material. Then we’ll review a few points from Shieber’s coding tutorial, beginning with the `split`, `join`, and `replace` functions.
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
+
+```
+And enter the following line to launch the Python shell.
+
+```
+python
+
+```
 
 Assign a sentence to the variable `sentence` — in this case the opening line from John Kennedy Toole’s  _A Confederacy of Dunces_. Type the name of the variable and hit return to view your new string.
 
@@ -18,7 +29,7 @@ sentence
 
     A green hunting cap squeezed the top of a fleshy balloon of a head.
 
-We’ll be using lists (which are indicated by brackets [] a lot in the coming weeks. To review Python’s slice notation, we'll create a a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable "words2", shows the result.
+We’ll be using lists (which are indicated by brackets [] a lot in the coming weeks. To review Python’s slice notation, we'll create a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable "words2", shows the result.
 
     words=['A', 'green', 'hunting', 'cap', 'squeezed']
     words2=words[2:4]
@@ -100,14 +111,14 @@ A string that includes only numbers and possibly a decimal point — no commas o
 
 
 #### Text I/O in Python
-Now we’ll review reading and writing text files from the Python environment. Visit Project Gutenberg or the mirror provided and save the plain text version of Swift's *The Battle of the Books, and other Short Pieces* to your desktop. It's a collection of essays, including a line Toole references in the title _A Confederacy of Dunces_.
+Now we’ll review reading and writing text files from the Python environment. Visit Project Gutenberg or the mirror provided and save the plain text version of Swift's *The Battle of the Books, and other Short Pieces* to your /sharedfolder on your desktop. It's a collection of essays, including a line Toole references in the title _A Confederacy of Dunces_.
 
 - [http://www.gutenberg.org/ebooks/623](http://www.gutenberg.org/ebooks/623)
 - [mirror](https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt)
 
 First we’ll assign the file’s pathname to the variable `filepath` and create the file stream object we’ll use to read its contents. Open the Python shell and enter the following lines.
 
-    filepath="/Users/yourname/Desktop/pg623.txt"
+    filepath="/sharedfolder/pg623.txt"
     file=open(filepath)
 
 Then we’ll make an empty list called `swift_lines` and iterate through our file stream using a for loop, adding each line to the list as we go.
@@ -125,8 +136,14 @@ Finally, we’ll close our file stream and view a line from our list.
 >
 >     'flung by the assistance of so foul a goddess should pollute his fountain,\r\n'
 
-> **Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
-> Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames.
+**Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
+> Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames. 
+
+If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder directory. For example: 
+Instead of this pathname: 
+"/Users/yourname/Desktop/Artists.csv"
+You would have this pathname: 
+ "/sharedfolder/Artists.csv"
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose.
 
@@ -134,7 +151,7 @@ Each line ends with `\r\n` , a carriage return followed by a line feed character
 
 ![](week/2/Image-1.png)
 
-You may have noticed that our text file from Project Gutenberg is broken into short lines, none longer than 74 characters. Many ASCII text files follow this fixed-width convention, designed to fit the 80-character width of many early PC displays. That display format, in turn, was chosen to work with data from 80-column punch cards, introduced by IBM in the 1920s.
+Our text file from Project Gutenberg is broken into short lines, none longer than 74 characters. Many ASCII text files follow this fixed-width convention, designed to fit the 80-character width of many early PC displays. That display format, in turn, was chosen to work with data from 80-column punch cards, introduced by IBM in the 1920s.
 
 Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll often find it helpful to get rid of whitespace characters (newlines, spaces, tabs) at the beginning and end of a given string. For a string named `line`, `line.strip()` will return a copy of the string with all newlines and other whitespace characters removed from either end.
 
@@ -438,18 +455,23 @@ _Exercise:_ Try using a different text and compare the results.
 >         print line
 
 
-#### Installing and Launching Jupyter
-Beginning next week, we’ll be using "notebook" files in Jupyter to write, run, and store code for class exercises. You should have installed it last week; if not, do so now using `pip`.
+#### Launching Jupyter
+First, we have to restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter. 
 
-    pip install -U jupyter
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
+```
 
-To launch Jupyter, open a terminal window and enter the following line. Jupyter’s interface will appear in a new window in your Web browser.
+Open any browser and type: 
+```
+localhost:8889
 
-    jupyter notebook
-
+```
 ![](week/2/Image-1.png)
 
-In the Jupyter window, navigate to Desktop or wherever you’d like to create your first Jupyter notebook. Click the "New" in the upper right, then choose "Python 2" from the drop-down menu.
+In the Jupyter window, navigate to Desktop or wherever you’d like to create your first Jupyter notebook. Click the "New" in the upper right, then choose "Python 3" from the drop-down menu.
 
 ![](week/2/Image-2.png)
 

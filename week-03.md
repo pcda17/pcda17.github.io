@@ -1,6 +1,6 @@
 ## Week 3 Outline: Data Modeling Outline
 
-Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github.com/MuseumofModernArt/collection). Download these files to your desktop.
+Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github.com/MuseumofModernArt/collection). Download these files to your /sharedfolder on your desktop.
 - [Artists.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artists.csv)
 - [Artworks.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artworks.csv)
 
@@ -12,6 +12,15 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 - Discuss strengths and weaknesses of CSV, JSON, XML, and RDF models for various applications.
 - Cleaning data using OpenRefine
   - Provide several data sets and work through OpenRefine tools as a class.
+
+#### Run Docker through Terminal
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
+
+```
+#### Open Jupyter Notebook
 
 #### CSV I/O in Python
 Paste the following code snippet into a new Jupyter notebook, change "yourname" to your username on your computer (e.g. "tclement"), run the cell. 
