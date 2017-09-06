@@ -82,7 +82,6 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 -   Sample Data Sources
 
-##### ▸ In-Class Outline
 
 Week 1 (9/11): Introductions & Command Line Basics
 ===========================================
@@ -107,7 +106,7 @@ Readings
 To start for next week:
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
-##### [▸ In-Class Outline](week-01.md)
+#### [▸ In-Class Outline](week-01.md)
 
 
 Week 2 (9/18): The Operating System in Context
@@ -130,9 +129,27 @@ Readings
 
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
-Asssignment
--------
+
+Software to install on your laptop or home computer
+---------------------------------------------------
+
+- Text editor: Atom or Geany
+    - [https://atom.io](https://atom.io)
+    - [https://www.geany.org](https://www.geany.org)
+
+- Docker Community Edition or Docker Toolbox
+    - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux/Windows 10)
+    - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows 7 or 8)
+
+- VLC Media Player (optional)
+    - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
+
+
+Assignment
+----------
+
 [WA #1](https://utexas.instructure.com/courses/1204381/discussion_topics/2826310)
+
 
 ##### ▸ In-Class Outline
 
