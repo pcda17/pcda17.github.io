@@ -456,7 +456,7 @@ _Exercise:_ Try using a different text and compare the results.
 
 
 #### Launching Jupyter
-First, we have to restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter. 
+First, leave the Docker terminal (like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter: 
 
 ```
 docker rm -f pcda_ubuntu
@@ -464,14 +464,14 @@ docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
 ```
 
-Open any browser and type: 
+Open any browser and type (your Juypter Notebook will launch): 
 ```
 localhost:8889
 
 ```
 ![](week/2/Image-1.png)
 
-In the Jupyter window, navigate to Desktop or wherever you’d like to create your first Jupyter notebook. Click the "New" in the upper right, then choose "Python 3" from the drop-down menu.
+Click the "New" in the upper right, then choose "Python 3" from the drop-down menu.
 
 ![](week/2/Image-2.png)
 
