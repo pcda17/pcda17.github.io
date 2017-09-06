@@ -85,10 +85,6 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 Week 1 (9/11): Introductions & Command Line Basics
 ===========================================
-
-To Do Before Class
-------------------
-
 Readings
 -------
 [Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
@@ -104,9 +100,6 @@ To start for next week:
 
 Week 2 (9/18): The Operating System in Context
 ==========================================
-
-To Do Before Class
-------------------
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
 
@@ -148,9 +141,6 @@ Assignment
 
 Week 3 (9/25): Collections as Data: Meaning making
 ================================
-
-To Do Before Class
-------------------
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 -   Optional: Lynda videos [To access follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
@@ -182,9 +172,6 @@ Asssignment
 
 Week 4 (10/2): Collections as Data: Data Models
 ===================
-
-To Do Before Class
-------------------
 Readings
 --------
 [Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)
@@ -213,9 +200,6 @@ Asssignment
 Week 5 (10/9): Word-Level Text Analysis
 ================================
 
-To Do Before Class
-------------------
-
 Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
 
 > pip install --user -U textblob
@@ -243,10 +227,6 @@ Asssignment
 
 Week 6 (10/16): Web Scraping & APIs
 =============================
-
-To Do Before Class
--------------------
-
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.
 
 > pip install -U --user beautifulsoup
@@ -285,9 +265,6 @@ Asssignment
 
 Week 7 (10/23) The Politics of Data
 =========================
-
-To Do Before Class
-------------------
 Readings
 --------
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
@@ -315,8 +292,6 @@ Asssignment
 
 Week 8 (10/30): Your Data
 =========================
-To Do Before Class
-------------------
 Readings
 --------
 -   Winner, Langdon. “Do Artifacts Have Politics?” *Daedalus* 109, no. 1 (1980): 121–36. [PDF](https://www.dropbox.com/s/ttr620gqbv4tj48/Winner%201980%20-%20Do%20Artifacts%20Have%20Politics%3F.pdf?dl=0).
@@ -335,9 +310,6 @@ Asssignment
 
 Week 9 (11/6): Statistics and Visualization
 ====================================
-
-To Do Before Class
-------------------
 
 Install [numpy](http://www.numpy.org/) scientific computing library for Python.
 
@@ -380,8 +352,6 @@ Asssignment
 
 Week 10 (11/13): Machine Learning
 ==========================
-To Do Before Class
-------------------
 Readings
 --------
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006. [PDF](https://www.dropbox.com/s/s5tfn318otdvu3q/Brew%202006%20-%20Language%20Processing-%20Statistical%20Methods.pdf?dl=0).
@@ -409,8 +379,6 @@ Asssignment
 
 Week 11 (11/20): Critical Text Analysis
 ================================
-To Do Before Class
-------------------
 Readings
 --------
 -   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
@@ -437,8 +405,6 @@ Asssignment
 
 Week 12 (11/27): Copyright and the Information Commons
 ================================================
-To Do Before Class
-------------------
 Readings
 --------
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
@@ -467,8 +433,6 @@ Asssignment
 
 Week 13 (12/4): Peer Production & Crowdsourcing
 ========================================
-To Do Before Class
-------------------
 Readings
 --------
 -   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
