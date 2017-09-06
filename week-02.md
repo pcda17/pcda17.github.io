@@ -657,9 +657,11 @@ You can use the `html_stripper` function above or modify it at will.
 ## Demonstrate server-side Python script
 - Create a text file containing Python code to print "Hello world!"
 - Add shebang line at top of file:
+
 ```
   #!/usr/bin/env python
 ```
+
 - Name the file `page.html.py`
 - Upload file to server and set file permissions to 755.
 - Open URL in browser.
