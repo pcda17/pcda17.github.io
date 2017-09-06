@@ -117,7 +117,7 @@ Finally, we’ll write our metadata collection as a CSV.
 
 ```python
     import csv
-    outpath="/Users/yourname/Desktop/V_and_A_ivory.csv"
+    outpath="/sharedfolder/V_and_A_ivory.csv"
     o = open(outpath, 'w')
     a = csv.writer(o)
     a.writerows([header_string])
@@ -127,6 +127,8 @@ Finally, we’ll write our metadata collection as a CSV.
 Open your CSV in Excel or Calc.
 
 #### OpenRefine
+We will use OpenRefine in the regular file system. 
+
 Launch the OpenRefine application and enter the following in your browser’s URL bar to access the interface.
 - [http://127.0.0.1:3333/](http://127.0.0.1:3333/)
 
@@ -136,8 +138,6 @@ At the top of the “place” column, click the dropdown button and choose “Te
 
 Note that several “place” records are listed as “Germany,” while others are German cities. Let’s group them under a single facet.
 
- 
 
-#### Discussion and review of key points from reading
 
 
