@@ -6,17 +6,17 @@
 
 #### Command Line basics
 
-While the terms “command line,” “terminal,” and “shell” are sometimes used interchangeably, each has a slightly different denotation.
+While the terms "command line,” "terminal,” and "shell” are sometimes used interchangeably, each has a slightly different denotation.
 
-“**Command line**” has the broadest scope, referring to a style of interface. A command-line interface, also known as a command-line interpreter (CLI) is any system in which all interaction occurs via text-based commands issued through a keyboard.
+"**Command line**” has the broadest scope, referring to a style of interface. A command-line interface, also known as a command-line interpreter (CLI) is any system in which all interaction occurs via text-based commands issued through a keyboard.
 
-A **terminal**, also known as a terminal emulator, is an application in your local operating system that provides a window to type in. We’ll be using the built-in macOS terminal emulator, called **Terminal**, which you can find under “Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return. (Note that there is a space after `echo`.)
+A **terminal**, also known as a terminal emulator, is an application in your local operating system that provides a window to type in. We’ll be using the built-in macOS terminal emulator, called **Terminal**, which you can find under "Utilities” in your Applications folder (`/Applications/Utilities/Terminal.app`). Open Terminal, then type the following and press return. (Note that there is a space after `echo`.)
 
 ```
 echo $SHELL
 ```
 
-A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to “the shell” they typically mean a command-line interpreter like [Bash](#). The command you entered above should have returned `/bin/bash`, which is the location of Bash’s “binary,” or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
+A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to "the shell” they typically mean a command-line interpreter like [Bash](#). The command you entered above should have returned `/bin/bash`, which is the location of Bash’s "binary,” or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
 
 It is important to understand that both Mac’s GUI (known as [Aqua](#)) and Bash are rooted in the same set of underlying OS services. Since the introduction of OS X, and now in iOS as well, these core utilities have been handled by a Unix-like operating system called [Darwin](#), which is based on the famously stable [Berkeley Software Distribution (BSD)](#) Unix clone.
 
@@ -27,7 +27,7 @@ Interacting with the Mac file system from the shell: Create a new terminal windo
 
 Unix-like operating systems are based on a metaphor: a nested set of directories and data files, forming a tree structure that begins at the root directory `/`. A benefit of this arrangement is that each file can be uniquely identified using a pathname of the following format:`/Users/yourname/Desktop/file.txt`.
 
-At any given moment in a shell session, the user occupies a particular “working directory” within this tree structure. Enter the command `pwd` (“print working directory”) to see your current location.
+At any given moment in a shell session, the user occupies a particular "working directory” within this tree structure. Enter the command `pwd` ("print working directory”) to see your current location.
 
     pwd
 
@@ -41,7 +41,7 @@ You can view the contents of the current directory with the `ls` command.
 
 ![](week/1/Image-5.png)
 
-You should see a list of directories including “Library,” “Users,” “bin,” “dev” and so on. Add the `-a` option and you’ll see a longer list that may include hidden files beginning with `.`. You can find dozens of other options in the `ls` manual, which you can read using the following line. Press “q” to return to the shell.
+You should see a list of directories including "Library,” "Users,” "bin,” "dev” and so on. Add the `-a` option and you’ll see a longer list that may include hidden files beginning with `.`. You can find dozens of other options in the `ls` manual, which you can read using the following line. Press "q” to return to the shell.
 
     man ls
 
@@ -193,7 +193,7 @@ Enter `wget` followed by any URL to download the web page or file at that URL. T
 
 ![](week/1/Image-9.png)
 
-If you’re connected to the Internet, you should see feedback in the shell that looks something like the above. In this case, Wget has saved Google’s “index.html” file to the desktop. Either view the file in the shell using `less` or open it in your text editor.
+If you’re connected to the Internet, you should see feedback in the shell that looks something like the above. In this case, Wget has saved Google’s "index.html” file to the desktop. Either view the file in the shell using `less` or open it in your text editor.
 
 ![](week/1/Image-10.png)
 
@@ -249,7 +249,7 @@ To get started using Python, simply enter `python` in the shell.
 
     python
 
-We’ve just switched from the standard shell to the Python environment, which you can tell at a glance by the “\>\>\>” to the left of your cursor. We’re in what’s known as a language shell or a read-eval-print loop (REPL), in which any commands we enter will be interpreted as Python code. You can leave Python at any time by entering the `quit()` command.
+We’ve just switched from the standard shell to the Python environment, which you can tell at a glance by the "\>\>\>” to the left of your cursor. We’re in what’s known as a language shell or a read-eval-print loop (REPL), in which any commands we enter will be interpreted as Python code. You can leave Python at any time by entering the `quit()` command.
 
 We’ll begin by assigning some data to variables.
 
@@ -287,7 +287,7 @@ We can now refer to individual list members using bracket annotation.
 
     eu_countries[3]
 
-The command above returns the string “Croatia,” which is located at index 3. As in most programming languages, we begin counting from 0 when working with ordered data.
+The command above returns the string "Croatia,” which is located at index 3. As in most programming languages, we begin counting from 0 when working with ordered data.
 
 If you try to access an out-of-range index value you’ll get an error.
 
@@ -302,11 +302,11 @@ Leaving one side of the colon blank will include all items on that end of the li
     eu_countries[5:]
     eu_countries[:10]
 
-We can also use negative numbers to count backwards from the end of a list. The following will return “UK,” the final string in the list.
+We can also use negative numbers to count backwards from the end of a list. The following will return "UK,” the final string in the list.
 
     eu_countries[-1]
 
-Under the hood, every string in Python is actually a list of individual characters. In the example below, `word[7]` returns the letter “e,” while `word[7:20]` returns “establishment.”
+Under the hood, every string in Python is actually a list of individual characters. In the example below, `word[7]` returns the letter "e,” while `word[7:20]` returns "establishment.”
 
     word="antidisestablishmentarianism"
     word[7]
