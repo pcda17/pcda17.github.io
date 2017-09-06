@@ -89,13 +89,6 @@ Week 1 (9/11): Introductions & Command Line Basics
 
 To Do Before Class
 ------------------
-To access Lynda videos, follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.
-
-- Optional: Allardice, Simon. “Foundations of Programming: Fundamentals.” Lynda.com. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html)
-
-- Optional: Marini, Joe. “Up and Running with Python.” Lynda.com.
-            [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
-
 
 Readings
 -------
@@ -142,6 +135,16 @@ Week 3 (9/25): Collections as Data: Meaning making
 To Do Before Class
 ------------------
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
+
+-   Optional: Lynda videos [To access follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
+
+Allardice, Simon. “Foundations of Programming: Fundamentals, parts 1-3; part 5, just "part 5, Breaking your code apart"; and part 14, just “Python” and “Libraries and frameworks”.
+
+Lynda.com. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html)
+
+Marini, Joe. “Up and Running with Python.” Lynda.com.
+            [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
+
 
 Readings
 --------
