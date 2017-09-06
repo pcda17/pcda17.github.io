@@ -18,17 +18,17 @@ sentence
 
     A green hunting cap squeezed the top of a fleshy balloon of a head.
 
-We’ll be using lists (which are indicated by brackets [] a lot in the coming weeks. To review Python’s slice notation, we'll create a a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable “words2”, shows the result.
+We’ll be using lists (which are indicated by brackets [] a lot in the coming weeks. To review Python’s slice notation, we'll create a a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable "words2", shows the result.
 
     words=['A', 'green', 'hunting', 'cap', 'squeezed']
     words2=words[2:4]
     words2
 
-The Python shell should print `['hunting', 'cap']`, i.e., the subset of the list “words” from index 2 to index 3. An *index* refers to a position within an ordered list.In general, `list_name[start:end]`, where “start” and “end” are integers, returns a subset of “list-name” from index `start` to `end-1`. The “end minus 1” bit may seem odd, but in practice it makes slice notation more readable. The snippet above, for instance, gives us a list containing 2 items, equal to 4-2. And if we want to excerpt the first three items in a list, the following notation will do the trick.
+The Python shell should print `['hunting', 'cap']`, i.e., the subset of the list "words" from index 2 to index 3. An *index* refers to a position within an ordered list.In general, `list_name[start:end]`, where "start" and "end" are integers, returns a subset of "list-name" from index `start` to `end-1`. The "end minus 1" bit may seem odd, but in practice it makes slice notation more readable. The snippet above, for instance, gives us a list containing 2 items, equal to 4-2. And if we want to excerpt the first three items in a list, the following notation will do the trick.
 
     words[:3]
 
-Recall that omitting an index number before or after the colon means you want to include all items on that end of the list. The following returns everything from index 2 to the end of “words”: `['hunting', 'cap', 'squeezed']`.
+Recall that omitting an index number before or after the colon means you want to include all items on that end of the list. The following returns everything from index 2 to the end of "words": `['hunting', 'cap', 'squeezed']`.
 
     words[2:]
 
@@ -40,7 +40,7 @@ Likewise, the following will slice off the final 3 items in our list, returning 
 
     words[:-3]
 
-To reverse the order of a list, add an extra colon and “-1.”
+To reverse the order of a list, add an extra colon and "-1."
 
     words[::-1]
 
@@ -54,7 +54,7 @@ If want to break our sentence into words, we can use the `split()` function to c
     words=sentence.split(' ')
     words
 
-The `join()` function reverses the process, inserting a chosen string (here, a space) between each item in a list. Note that “sentence2” below is identical to our original “sentence” string.
+The `join()` function reverses the process, inserting a chosen string (here, a space) between each item in a list. Note that "sentence2" below is identical to our original "sentence" string.
 
     sentence2=' '.join(words)
     sentence2
@@ -130,7 +130,7 @@ Finally, we’ll close our file stream and view a line from our list.
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose.
 
-> **Tip:** While the term “newline” refers to any character or character combination used to mark the end of a line, when we say “newline character” for the rest of the course we’ll mean `\n` (formally called “line feed”) unless otherwise noted.
+> **Tip:** While the term "newline" refers to any character or character combination used to mark the end of a line, when we say "newline character" for the rest of the course we’ll mean `\n` (formally called "line feed") unless otherwise noted.
 
 ![](week/2/Image-1.png)
 
@@ -255,7 +255,7 @@ def pluralize(string):
 pluralize("eagle")
 ```
 
-> **Tip:** There’s a difference between ending a function with `return` as opposed to `print`. Using “return” allows you to assign function output to a variable or pass it to another function, while “print” simply displays text in the Python shell.
+> **Tip:** There’s a difference between ending a function with `return` as opposed to `print`. Using "return" allows you to assign function output to a variable or pass it to another function, while "print" simply displays text in the Python shell.
 
 Python is weakly typed, meaning intended data types don’t need to be specified in advance when we create a function. Applying an operation to a value of the wrong type will produce an error.
 
@@ -272,7 +272,7 @@ pluralize(1960)
 ```
 
 #### Generating pseudorandom numbers
-It is often useful to generate random numbers or make random selections from a set of data. Note that Python can’t generate a mathematically pure sequence of random values; instead, it creates what are called “pseudorandom” values. Details of the difference are beyond the scope of this course, but when we use the term “random” below we really mean “pseudorandom.”
+It is often useful to generate random numbers or make random selections from a set of data. Note that Python can’t generate a mathematically pure sequence of random values; instead, it creates what are called "pseudorandom" values. Details of the difference are beyond the scope of this course, but when we use the term "random" below we really mean "pseudorandom."
 
 Import the `random` module and generate a random float X, where 0 \<= X \< 1.
 
@@ -315,7 +315,7 @@ _Assignment:_ Create a new function that returns a list of 3 randomly chosen str
 >     
 >     random_three(foods)
 
-_Assignment:_ Modify the function to return a list of 3 random strings containing the letter “a.” Don’t worry about repetitions.
+_Assignment:_ Modify the function to return a list of 3 random strings containing the letter "a." Don’t worry about repetitions.
     def random_three_with_a(list):
          temp_list=[]
          while(len(temp_list)<3):
@@ -358,7 +358,7 @@ Is there anything notable about the words in this random list? If so, how might 
 
 By this point you’ve likely noticed that text strings can be enclosed in single quotes (`'Miss Trixie'`) or double (`"Patrolman Mancuso"`) at the coder’s discretion.
 
-If we use double quotes, our string can contain single quote characters without ambiguity. Note that the first line below returns an “invalid syntax” error, while the second is successful.
+If we use double quotes, our string can contain single quote characters without ambiguity. Note that the first line below returns an "invalid syntax" error, while the second is successful.
 
     some_text='How I'm supposed to know who's a cop? Everybody looks the same to me.'
     some_text="How I'm supposed to know who's a cop? Everybody looks the same to me."
@@ -373,7 +373,7 @@ To include newline characters and/or any combination of single and double quotes
 
     "Rubber, cereal, tripe. Who knows? I wouldn't touch one of them myself."
 
-    “They're curiously appealing,” Ignatius said, clearing his throat. "I thought that the vibrissae about my nostrils detected something unique while I was outside."
+    "They're curiously appealing," Ignatius said, clearing his throat. "I thought that the vibrissae about my nostrils detected something unique while I was outside."
 
     Ignatius chewed with a blissful savagery, studying the scar on the man's nose and listening to his whistling.'''
 
@@ -439,7 +439,7 @@ _Exercise:_ Try using a different text and compare the results.
 
 
 #### Installing and Launching Jupyter
-Beginning next week, we’ll be using “notebook” files in Jupyter to write, run, and store code for class exercises. You should have installed it last week; if not, do so now using `pip`.
+Beginning next week, we’ll be using "notebook" files in Jupyter to write, run, and store code for class exercises. You should have installed it last week; if not, do so now using `pip`.
 
     pip install -U jupyter
 
@@ -449,15 +449,15 @@ To launch Jupyter, open a terminal window and enter the following line. Jupyter�
 
 ![](week/2/Image-1.png)
 
-In the Jupyter window, navigate to Desktop or wherever you’d like to create your first Jupyter notebook. Click the “New” in the upper right, then choose “Python 2” from the drop-down menu.
+In the Jupyter window, navigate to Desktop or wherever you’d like to create your first Jupyter notebook. Click the "New" in the upper right, then choose "Python 2" from the drop-down menu.
 
 ![](week/2/Image-2.png)
 
 ![](week/2/Image-3.png)
 
-You’re now in the Jupyter environment. Here, you can create a series of “cells” for individual chunks of code, which can be saved and run repeatedly. Click the ✚ icon on the top left to add a new cell.
+You’re now in the Jupyter environment. Here, you can create a series of "cells" for individual chunks of code, which can be saved and run repeatedly. Click the ✚ icon on the top left to add a new cell.
 
-Type a line of code that prints a string. To run the current cell, either click the `►❙` icon or go to the “Cell” menu and choose “Run Cells.”
+Type a line of code that prints a string. To run the current cell, either click the `►❙` icon or go to the "Cell" menu and choose "Run Cells."
 
     print "Hello Jupyter!"
 
@@ -497,7 +497,7 @@ To view a pared-down list of module resources, use the `dir()` function instead.
 
 ![](week/2/Image-6.png)
 
-The result is a challenge to read through, so let’s introduce the `pprint`, or “pretty-print” module.
+The result is a challenge to read through, so let’s introduce the `pprint`, or "pretty-print" module.
 
     import pprint
     pp = pprint.PrettyPrinter()
@@ -542,11 +542,11 @@ page=urllib2.urlopen(url).read()
 print page
 ```
 
-To make things simple, let’s skip the reviews at the top of the page and only process the ten that appear below. Find a piece of text that only appears between the two sections — “Filter by:” is a good example — and use `split()` to make a list with two elements. Then assign the second chunk (at index 1) to the `page` variable.
+To make things simple, let’s skip the reviews at the top of the page and only process the ten that appear below. Find a piece of text that only appears between the two sections — "Filter by:" is a good example — and use `split()` to make a list with two elements. Then assign the second chunk (at index 1) to the `page` variable.
 
     page=page.split("Filter by:")[1]
 
-Next we’ll split the remaining text into individual reviews. Note that the “review rating” HTML class is used at the beginning of each review. We’ll split our page
+Next we’ll split the remaining text into individual reviews. Note that the "review rating" HTML class is used at the beginning of each review. We’ll split our page
 at those points, using triple quotes to include the end of the HTML tag.
 
     segs=page.split('''review-rating">''')
@@ -560,7 +560,7 @@ Now the first element of our list should begin with a review.
 
     print segs[0]
 
-Now let’s remove the code following each review. Since the text “Was this review helpful to you?” appears after every review, let’s use that as our delimiter. We’ll split each segment at that point and discard everything that follows it using list bracket notation.
+Now let’s remove the code following each review. Since the text "Was this review helpful to you?" appears after every review, let’s use that as our delimiter. We’ll split each segment at that point and discard everything that follows it using list bracket notation.
 
 ```python
 segs2=[]
@@ -655,7 +655,7 @@ You can use the `html_stripper` function above or modify it at will.
 
 
 ## Demonstrate server-side Python script
-- Create a text file containing Python code to print “Hello world!”
+- Create a text file containing Python code to print "Hello world!"
 - Add shebang line at top of file:
 ```
   #!/usr/bin/env python
