@@ -534,7 +534,7 @@ The result is a challenge to read through, so let’s introduce the `pprint`, or
 The `os` library contains many useful tools for working with local files and even issuing commands directly to the system shell. We’ll start by importing the `os` module, navigating to the desktop, and creating a list of the directory’s contents.
 
     import os
-    os.chdir("/Users/yourname/Desktop/")
+    os.chdir("/sharedfolder/")
     file_list=os.listdir("./")
     file_list
 
@@ -542,7 +542,7 @@ The `os` library contains many useful tools for working with local files and eve
 
 The `os.system` function lets us issue commands at the level of the system shell. The following example will print the contents of your desktop. Note that whereas `os.listdir()` returns a list object containing filenames, the following simply displays a list of files as if you were using the Bash shell.
 
-    os.system("ls /Users/yourname/Desktop/")
+    os.system("ls /sharedfolder/")
 
 > **Tip:** Spaces in filenames are handled differently in `os.chdir` and `os.system`. In the latter case they must be escaped (preceded by a backslash) in keeping with Unix conventions, while in the former escaped spaces will generate errors. For convenience, it’s helpful to avoid spaces in filenames.
 
@@ -550,9 +550,7 @@ The `os.system` function lets us issue commands at the level of the system shell
 
 #### Downloading Reviews from Amazon (the hard way)
 
-Open Jupyter and start a new notebook.
-
-    jupyter notebook.
+Start a new Python 3 notebook by going to File/New Notebook in the browser window.
 
 Enter the following in a cell.
 
@@ -668,7 +666,7 @@ You can use the `html_stripper` function above or modify it at will.
 
 
 
-    outpath="/Users/yourname/Desktop/amazon.csv"
+    outpath="/sharedfolder/amazon.csv"
     o = open(outpath, 'w')
     a = csv.writer(o)
     a.writerows(review_table)
@@ -695,4 +693,3 @@ Working in pairs, create a server-side script that detects mp3 files in a given 
 - Example solution: [Link](#)
 -->
 
-#### Discussion and review of key points from reading

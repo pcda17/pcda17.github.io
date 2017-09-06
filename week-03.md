@@ -1,6 +1,6 @@
 ## Week 3 Outline: Data Modeling Outline
 
-Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github.com/MuseumofModernArt/collection). Download these files to your /sharedfolder on your desktop.
+Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github.com/MuseumofModernArt/collection). Download these files to your /sharedfolder/ on your desktop.
 - [Artists.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artists.csv)
 - [Artworks.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artworks.csv)
 
@@ -17,18 +17,18 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 ```
 docker rm -f pcda_ubuntu
 docker pull pcda17/ubuntu-container
-docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
 
 ```
-#### Open Jupyter Notebook
+#### Open Jupyter Notebook (see notes in week 2)
 
 #### CSV I/O in Python
-Paste the following code snippet into a new Jupyter notebook, change "yourname" to your username on your computer (e.g. "tclement"), run the cell. 
+Paste the following code snippet into a new Jupyter notebook. 
 
 ```python
     import csv
 
-    csv_path="/Users/yourname/Desktop/Artists.csv"
+    csv_path="/sharedfolder/Artists.csv"
     artist_table=[]
     
     o = open(csv_path,'rU')
@@ -64,7 +64,7 @@ import csv
 Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing `yourname` with your user name.
 
 ```python
-   artwork_path="/Users/yourname/Desktop/Artworks.csv"
+   artwork_path="/sharedfolder/Artworks.csv"
    artwork_table=[]
 ```
 
@@ -329,7 +329,7 @@ It’s impossible to memorize the details of every specialized tool available in
 Now that we’ve filtered and sorted our metadata, let’s export it to a new CSV file called `art_1960s.csv`.
 
 ```python
-    outpath="/Users/yourname/Desktop/art_1960s.csv"
+    outpath="/sharedfolder/art_1960s.csv"
     o = open(outpath, 'w')
     a = csv.writer(o)
     a.writerows([artwork_header])
@@ -338,7 +338,7 @@ Now that we’ve filtered and sorted our metadata, let’s export it to a new CS
 ```
 Note that we call use `writerows` function twice, first writing the column headers and then the actual data. Because `writerows` only accepts lists of lists, we’ve enclosed the `header` list object in brackets to create a new list that only contains `header`.
 
-Find the new file on your desktop and open it in Excel or Calc. Take a few moments to explore the collection.
+Find the new file on your sharedfolder and open it in Excel or Calc. Take a few moments to explore the collection.
 ![](week/3/Image-6.png)
 
 #### The Dictionary Data Type
@@ -393,7 +393,7 @@ Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a
 
 ```python
     import csv
-    csv_path="/Users/yourname/Desktop/Artists.csv"
+    csv_path="/sharedfolder/Artists.csv"
     artist_table=[]
     
     o = open(csv_path,'rU')
@@ -442,9 +442,3 @@ And we can use one of our standard key names to get a particular value.
 ![](week/3/Image-7.png)
 
 If we want to create a list of artist names, birth years, etc., we can thus iterate through the `artists_dicts` list and specify the field we want by name.
-
-
-
-Talk about strengths and weaknesses of CSV, JSON, XML, and RDF models for various applications.
-
-#### Discussion and review of key points from reading
