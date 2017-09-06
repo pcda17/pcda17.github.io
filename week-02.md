@@ -602,7 +602,7 @@ print review_list
 
 #### In-Class Exercise
 
-Open TextWrangler or your text editor of choice. Drawing on the code examples above, create a script that accepts a URL and produces a list of lists, one for each review on the page. A good strategy is to split the work between two functions: one that accepts a segment of the text and code (such as `test_seg` above) and returns a cleaned-up list of fields, and a second that
+Open your text editor of choice. Drawing on the code examples above, create a script that accepts a URL and produces a list of lists, one for each review on the page. A good strategy is to split the work between two functions: one that accepts a segment of the text and code (such as `test_seg` above) and returns a cleaned-up list of fields, and a second that
 
 You can use the `html_stripper` function above or modify it at will.
 
@@ -664,10 +664,11 @@ You can use the `html_stripper` function above or modify it at will.
 - Upload file to server and set file permissions to 755.
 - Open URL in browser.
 
-
+<!--
 #### Optional Exercise: Podcast this Directory
 Working in pairs, create a server-side script that detects mp3 files in a given directory and creates an podcast RSS feed from the list.
 - Example podcast feed: [https://www.dropbox.com/s/x5ubi18086eod9n/simple\_podcast.rss?dl=0](#)
 - Example solution: [Link](#)
+-->
 
 #### Discussion and review of key points from reading

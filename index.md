@@ -3,7 +3,7 @@ Syllabus: Programming for Cultural Data Analysis
 ====================================================
 Fall 2017, Mondays 3-6pm
 
-Instructor: Tanya Clement 
+Instructor: Tanya Clement
 TA: Steve McLaughlin
 
 University of Texas at Austin School of Information
@@ -15,16 +15,16 @@ University of Texas at Austin School of Information
 
 ### Course Objectives
 
-Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred; 
+Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred;
 
-In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, *data* appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, *data* is “raw” and lacking in meaning, while *information*, the next higher level of the pyramid---just below *knowledge* and then *wisdom*---represents the presence of added links and relationships; *information* is higher up on the wisdom chain because it is *data* made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (*Where* is the data?); media, format, and technology constraints (*How* is the data?); and perspectives (*What* is the data? *Who* is involved in and impacted by its creation and use?). 
+In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, *data* appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, *data* is “raw” and lacking in meaning, while *information*, the next higher level of the pyramid---just below *knowledge* and then *wisdom*---represents the presence of added links and relationships; *information* is higher up on the wisdom chain because it is *data* made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (*Where* is the data?); media, format, and technology constraints (*How* is the data?); and perspectives (*What* is the data? *Who* is involved in and impacted by its creation and use?).
 
-Learning to think critically about data as *information* means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about *information* from this more critical perspective means first understanding how a culture tends to understand what is informative. 
+Learning to think critically about data as *information* means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about *information* from this more critical perspective means first understanding how a culture tends to understand what is informative.
 
-Towards these ends, this course takes on "data wrangling" in the context of humanist perspectives. 
+Towards these ends, this course takes on "data wrangling" in the context of humanist perspectives.
 
-Goals: 
- 
+Goals:
+
 -   Teach scripting-style programming in Python and Unix-like systems, emphasizing literacy in finding and using free and open source software.
 
 -   Familiarize students with techniques for collecting, transforming, and analyzing media and metadata available on the Web.
@@ -42,7 +42,7 @@ Goals:
 
 ### Course Principles
 
--  Writing critically about data requires both a level of knowldege about data and data wrangling as it requires a level of knowledge about thinking and writing from critical perspectives learned in cultural studies. While this course does not *teach* cultural studies, an understanding of and experience in humanities theory and research and the principles of cultural studies are essential. 
+-  Writing critically about data requires both a level of knowldege about data and data wrangling as it requires a level of knowledge about thinking and writing from critical perspectives learned in cultural studies. While this course does not *teach* cultural studies, an understanding of and experience in humanities theory and research and the principles of cultural studies are essential.
 
 -  Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
 
@@ -74,7 +74,7 @@ Your final project will include the following elements:
 
 Except when indicated, there will be required readings each week. The required readings will either be available online and linked below or posted on Canvas, so there are no books to buy or papers to acquire for the class.
 
-Assignments should be posted on Canvas by midnight the day before class. 
+Assignments should be posted on Canvas by midnight the day before class.
 
 ### Resources
 
@@ -95,19 +95,6 @@ To access Lynda videos, follow links below, click “Log in,” then “Organiza
 
 - Optional: Marini, Joe. “Up and Running with Python.” Lynda.com.
             [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
-
-## Software to install before class
-
-- Text editor: Atom or Geany
-    - [https://atom.io](https://atom.io)
-    - [https://www.geany.org](https://www.geany.org)
-
-- Docker Community Edition or Docker Toolbox
-    - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux)
-    - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows)
-
-- VLC Media Player
-    - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
 
 Readings
@@ -183,7 +170,7 @@ Readings
 [Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
--   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014. 
+-   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014.
 
 -   Zhuang, Atima Han, Ishita Vedvyas, and Rishikesh Dole. “Tutorial: OpenRefine,” 2013. [http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf](http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf)
 
@@ -301,7 +288,7 @@ Optional Readings
 
 Asssignment
 --------
-[WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926) 
+[WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
 
 ##### ▸ In-Class Outline
 
@@ -321,7 +308,7 @@ Readings
 
 Asssignment
 --------
-[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696) 
+[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
 
 
 ##### ▸ In-Class Outline
