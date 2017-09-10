@@ -1,5 +1,7 @@
 ## Week 4: Collections as Data: Data Models
 
+Launch your Docker Container and open a new Jupyter Notebook. 
+
 #### Working with JSON
 JSON data is a representation of key-value pairs, very much like a dictionary in Python. For the following example we’ll download a JSON version of the artwork metadata we’ve been working with.
 
