@@ -117,7 +117,7 @@ Finally, we’ll write our metadata collection as a CSV.
 
 ```python
     import csv
-    outpath="/Users/yourname/Desktop/V_and_A_ivory.csv"
+    outpath="/sharedfolder/V_and_A_ivory.csv"
     o = open(outpath, 'w')
     a = csv.writer(o)
     a.writerows([header_string])
@@ -147,3 +147,7 @@ Note that several “place” records are listed as “Germany,” while others 
 
 
 #### Discussion and review of key points from reading
+
+
+
+>>>>>>> 30ccb85bc43cd914795ae26354507facd0ba97eb
