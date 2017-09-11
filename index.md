@@ -92,11 +92,11 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 ### Readings
 
-**[Readings on Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
 
--   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016.
+-   Nick Montfort (2016) “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press.
 
--   danah boyd & Kate Crawford (2012) CRITICAL QUESTIONS FOR BIG DATA, Information, Communication & Society, 15:5, 662-679
+-   danah boyd & Kate Crawford (2012) "Critical Questions for Big Data," *Information, Communication & Society*, 15:5, 662-679.
 
 To start for next week:
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
@@ -113,9 +113,10 @@ To start for next week:
 # Week 2 (9/18): The Operating System in Context
 
 
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
+
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
 
 Work through Chris Albon’s tutorial on Python string operations.
@@ -181,7 +182,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ### Readings
 
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
@@ -211,7 +212,8 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ### Readings
 
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)**
+
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
 -   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014.
@@ -252,6 +254,7 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 
 ### Readings
 
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_5)**
 
 -   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
 
@@ -285,6 +288,8 @@ Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library
 Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_6)**
 
 -   Pomerantz, Jeffrey. “The Future of Metadata.” In *Metadata*. The MIT Press Essential Knowledge Series. Cambridge, MA ; London, England: The MIT Press, 2015. [PDF](https://www.dropbox.com/s/hj3i12cinl3ublj/Pomerantz%202015%20-%20Ch.%208%20-%20The%20Future%20of%20Metadata.pdf?dl=0).
 
@@ -322,6 +327,8 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
+
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
 -   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016. [PDF](https://www.dropbox.com/s/fg195av2ayiwc31/Peters%202016%20-%20The%20Idealist%20-%20Chs.%206-7.pdf?dl=0).
@@ -352,6 +359,8 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 # Week 8 (10/30): Your Data, Your culture
 
 ### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
 
 -   Winner, Langdon. “Do Artifacts Have Politics?” *Daedalus* 109, no. 1 (1980): 121–36. [PDF](https://www.dropbox.com/s/ttr620gqbv4tj48/Winner%201980%20-%20Do%20Artifacts%20Have%20Politics%3F.pdf?dl=0).
 
@@ -389,6 +398,9 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
+
 -   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/7ihzxmrcq2997e4/Montfort%202016%20-%20Statistics%20and%20Visualization.pdf?dl=0).
 
 -   Krumme, Coco. “What Data Doesn’t Do.” In *Beautiful Data: The Stories behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009. [PDF](https://www.dropbox.com/s/b751c7noglf5nu0/Krumme%202009%20-%20What%20Data%20Doesn%27t%20Do.pdf?dl=0).
@@ -421,6 +433,8 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 # Week 10 (11/13): Machine Learning
 
 ### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_10)**
 
 -   Berendt, Bettina, Preibusch, Soren. Toward Accountable Discrimination-Aware Data Mining:The Importance of Keeping the Human in the Loop—and Under the Looking Glass.Big DataVolume 5, Number 2, 2017.
 
@@ -458,6 +472,9 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ### Readings
 
 
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_11)**
+
+
 -   Hall, Gary. “Toward a Postdigital Humanities: Cultural Analytics and the Computational Turn to Data-Driven Scholarship.” *American Literature* 85, no. 4 (January 1, 2013): 781–809. [PDF](https://www.dropbox.com/s/d8ty5fcwm0afdtz/Hall%202013%20-%20Toward%20a%20Postdigital%20Humanities.pdf?dl=0).
 
 -   Jockers, Matthew Lee. “Chapter 8: Theme.” In *Macroanalysis: Digital Methods and Literary History*, 118–53. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2013. [PDF](https://www.dropbox.com/s/zsombfvplf5bh8f/Jockers%202013%20-%20Macroanalysis%20-%20Ch.%208%20-%20Theme.pdf?dl=0).
@@ -484,6 +501,8 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 # Week 12 (11/27): Copyright and the Information Commons
 
 ### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_12)**
 
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
 
@@ -516,6 +535,8 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 # Week 13 (12/4): Peer Production & Crowdsourcing
 
 ### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
 
 -   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
 
