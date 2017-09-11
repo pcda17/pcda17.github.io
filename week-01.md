@@ -39,7 +39,7 @@ You can view the contents of the current directory with the `ls` command.
 
     ls
 
-<img src = "week/1/Image-5.png" width=600>
+<img src="week/1/Image-5.png" width=600>
 
 You should see a list of directories including "Library," "Users," "bin," "dev" and so on. Add the `-a` option and you’ll see a longer list that may include hidden files beginning with `.`. You can find dozens of other options in the `ls` manual, which you can read using the following line. Press "q" to return to the shell.
 
@@ -111,7 +111,7 @@ If we want to view our new text file, we have lots of options to choose from. By
     head note.txt
     head -n 1 note.txt
 
-<img src = "week/1/Image-6.png" width=600>
+<img src="week/1/Image-6.png" width=600>
 
 **tail** is similar, printing a file’s final lines instead.
 
@@ -122,13 +122,13 @@ If we want to view our new text file, we have lots of options to choose from. By
 
     less note.txt
 
-<img src = "week/1/Image-7.png" width=600>
+<img src="week/1/Image-7.png" width=600>
 
 **Nano** is a simple text editor that is available in most Unix-like systems.
 
     nano note.txt
 
-<img src = "week/1/Image-8.png" width=600>
+<img src="week/1/Image-8.png" width=600>
 
 Use the arrow keys to move your cursor around in the document. Add another line to the file and save it by pressing `ctrl+O` (the letter 'O'), followed by `return` to confirm the filename. Press `ctrl+X` to exit Nano.
 
