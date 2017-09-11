@@ -1,15 +1,17 @@
 
 # Syllabus: Programming for Cultural Data Analysis
 
+University of Texas at Austin School of Information
+
 Fall 2017, Mondays 3-6pm
 
 Instructor: Tanya Clement
 
 TA: Steve McLaughlin
 
-University of Texas at Austin School of Information
 
-- In-Class Outlines:
+
+##### In-Class Outlines:
 
 [Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md)
 [Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md)
@@ -102,7 +104,7 @@ Assignments should be posted on Canvas by midnight the day before class.
 -   danah boyd & Kate Crawford (2012) "Critical Questions for Big Data," *Information, Communication & Society*, 15:5, 662-679.
 
 To start for next week:
--   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
+-   Neal Stephenson (1999) “In the Beginning Was the Command Line.” Cryptonomicon. [Note: This reading is due the second week of the course but it's quite long.] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
 
 ##### [▸ In-class outline](week-01.md)
