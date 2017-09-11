@@ -4,12 +4,12 @@
 University of Texas at Austin School of Information
 
 Fall 2017, Mondays 3-6pm
-Office hours: Mondays 1-3pm or by appointment
 
 Instructor: Tanya Clement
 
 TA: Steve McLaughlin
 
+Office hours: Mondays 1–3 p.m., UTA 5.558
 
 
 ##### In-Class Outlines:
@@ -61,20 +61,19 @@ Goals:
 
 ### Final Project: Critical Data Analysis (50%)
 
-For your final project, you will use a dataset drawn from cultural heritage sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community, for example). You should conceive and execute your project with a specific audience in mind, such as literary scholars, historians, art critics, policy advocates.
+For your final project, you will use a dataset drawn from online sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community). You should conceive and execute your project with a specific audience in mind, such as literary scholars, newspaper readers, or policy advocates.
 
-Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records from an established cultural heritage institution such as a library, an archive, or a museum. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
-
+Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
 
 Your final project will include the following elements:
 
--   Proposal (10%)
+-   Proposal (7%)
 
--   Proposal Peer Review (5%)
+-   Proposal Peer Review (3%)
 
 -   In-class presentation (week 14) (10%)
 
--   12 page critical essay, with an appendix of 3–4 data visualizations (25%)
+-   12 page critical essay, with an appendix of 3–4 data visualizations (30%)
 
 ### Weekly Assignments (WA) (50%)
 
@@ -90,6 +89,8 @@ Assignments should be posted on Canvas by midnight the day before class.
 -   Sample Data Sources
 -->
 
+
+
 ----------------------------------------------------------------
 
 
@@ -97,7 +98,7 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
 
 -   Nick Montfort (2016) “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press.
 
@@ -116,13 +117,13 @@ To start for next week:
 
 
 # Week 2 (9/18): The Operating System in Context
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
-<!-- Complete the [week 2 software assignment](week-02-assignment.md).
+
+Complete the [week 2 software assignment](week-02-assignment.md).
 - [Install Docker for macOS](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
 - [Install Docker for Windows 10](tutorials/Docker_install_Windows.md)
-- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)-->
-### Readings
+- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)
+
 
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 
@@ -131,6 +132,10 @@ Read pages 1–28 of Shieber’s Python tutorial and work through the code examp
 Work through Chris Albon’s tutorial on Python string operations.
 -   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 -   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
@@ -141,6 +146,22 @@ Work through Chris Albon’s tutorial on Python string operations.
 -   Piper, Andrew. "There will be Numbers." *Journal of Cultural Analytics* 1, no. 1 (May 23, 2016). [http://culturalanalytics.org/2016/05/there-will-be-numbers/](http://culturalanalytics.org/2016/05/there-will-be-numbers/)
 
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
+
+
+
+### Software to install on your laptop or home computer
+
+
+- Text editor: Atom or Geany
+    - [https://atom.io](https://atom.io)
+    - [https://www.geany.org](https://www.geany.org)
+
+- Docker Community Edition or Docker Toolbox
+    - [Docker CE](https://store.docker.com/search?type=edition&offering=community) (macOS/Linux/Windows 10)
+    - [Docker Toolbox](https://www.docker.com/products/docker-toolbox) (Windows 7 or 8)
+
+- VLC Media Player (optional)
+    - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
 
 ### Assignment
@@ -172,7 +193,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
@@ -202,7 +223,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)**
 
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
@@ -216,7 +237,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 -   Fortune, Stephen. “A Brief History of Databases.” *Avant*, February 27th 2014. [https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases](https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases)
 
--   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) [Python XML tutorial]
+-   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) [Python XML tutorial]
 
 -   Beazley, David, and Brian K. Jones. “Chapter 6: Data Encoding and Processing.” In Python Cookbook: *recipes for Mastering Python 3*, 3. ed., 175–216. Bejing: O’Reilly, 2013. [PDF](https://www.dropbox.com/s/2dp0ylqlpsp6czr/Python_Cookbook_3rd-ed_Ch-6.pdf?dl=1)
 
@@ -244,7 +265,7 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_5)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_5)**
 
 -   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
 
@@ -279,7 +300,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_6)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_6)**
 
 -   Pomerantz, Jeffrey. “The Future of Metadata.” In *Metadata*. The MIT Press Essential Knowledge Series. Cambridge, MA ; London, England: The MIT Press, 2015. [PDF](https://www.dropbox.com/s/hj3i12cinl3ublj/Pomerantz%202015%20-%20Ch.%208%20-%20The%20Future%20of%20Metadata.pdf?dl=0).
 
@@ -317,7 +338,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
@@ -350,7 +371,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
 
 -   Winner, Langdon. “Do Artifacts Have Politics?” *Daedalus* 109, no. 1 (1980): 121–36. [PDF](https://www.dropbox.com/s/ttr620gqbv4tj48/Winner%201980%20-%20Do%20Artifacts%20Have%20Politics%3F.pdf?dl=0).
 
@@ -389,7 +410,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ### Readings
 
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
 
 -   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/7ihzxmrcq2997e4/Montfort%202016%20-%20Statistics%20and%20Visualization.pdf?dl=0).
 
@@ -424,7 +445,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_10)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_10)**
 
 -   Berendt, Bettina, Preibusch, Soren. Toward Accountable Discrimination-Aware Data Mining:The Importance of Keeping the Human in the Loop—and Under the Looking Glass.Big DataVolume 5, Number 2, 2017.
 
@@ -462,7 +483,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ### Readings
 
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_11)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_11)**
 
 
 -   Hall, Gary. “Toward a Postdigital Humanities: Cultural Analytics and the Computational Turn to Data-Driven Scholarship.” *American Literature* 85, no. 4 (January 1, 2013): 781–809. [PDF](https://www.dropbox.com/s/d8ty5fcwm0afdtz/Hall%202013%20-%20Toward%20a%20Postdigital%20Humanities.pdf?dl=0).
@@ -492,7 +513,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_12)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_12)**
 
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
 
@@ -526,7 +547,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
 
 -   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
 
