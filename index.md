@@ -87,7 +87,7 @@ Week 1 (9/11): Introductions & Command Line Basics
 ===========================================
 Readings
 -------
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
+[Canvas Week 1 Readings](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
 -   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016.
 
 -   danah boyd & Kate Crawford (2012) CRITICAL QUESTIONS FOR BIG DATA, Information, Communication & Society, 15:5, 662-679
@@ -163,7 +163,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 Readings
 --------
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)
+[Canvas  Week 2 Readings](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
