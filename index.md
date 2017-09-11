@@ -4,6 +4,7 @@
 Fall 2017, Mondays 3-6pm
 
 Instructor: Tanya Clement
+
 TA: Steve McLaughlin
 
 University of Texas at Austin School of Information
