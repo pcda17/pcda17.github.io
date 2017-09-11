@@ -364,10 +364,10 @@ def random_start():
 
 os.chdir('/sharedfolder/')
 
-for i in range(10):
-    os.system("ffmpeg -i A_Bucket_of_Blood.mp4 -ss " + str(random_start()) + " -t 4 clip" + str(i) + ".mp4")
+for i in range(5):
+    os.system("ffmpeg -i A_Bucket_of_Blood.mp4 -ss " + str(random_start()) + " -t 4 clip" + str(i) + ".ts")
 
-os.system('''ffmpeg -i "concat:clip0.mp4|clip1.mp4|clip2.mp4|clip3.mp4|clip4.mp4|clip5.mp4|clip6.mp4|clip7.mp4|clip8.mp4|clip9.mp4" -c copy Bucket_collage.mp4''')
+os.system('''ffmpeg -i "concat:clip0.ts|clip1.ts|clip2.ts|clip3.ts|clip4.ts" -c copy Bucket_collage.mp4''')
 ```
 
 #### **12.** Closing Docker
