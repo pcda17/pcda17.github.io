@@ -156,7 +156,12 @@ docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
 ```
 
-The command above includes several options. The `--name` flag sets the name of our container as `pcda_ubuntu`, while `-ti` tells Docker that we want to use an interactive terminal. `-p` maps port 8889 in our container to port 8889 in our local OS (more on this later). The `--volume` option defines a "shared volume" between the container and our local machine, a directory called `sharedfolder`. `pcda17/ubuntu-container` identifies the container we want to download, which is hosted on the Dockerhub website. Finally, `bash` specifies that we want to enter the bash shell.
+The command above includes several options: 
+- The `--name` flag sets the name of our container as `pcda_ubuntu`, while `-ti` tells Docker that we want to use an interactive terminal. 
+- `-p` maps port 8889 in our container to port 8889 in our local OS (more on this later). 
+- The `--volume` option defines a "shared volume" between the container and our local machine, a directory called `sharedfolder`. 
+- `pcda17/ubuntu-container` identifies the image we want to download, which is hosted on the website Docker Hub. 
+- Finally, `bash` specifies that we want to enter the bash shell.
 
 You should now be in an interactive bash session in your new Ubuntu container. To make sure, type the following command and press enter to see your username. The response should be `root`.
 
