@@ -4,7 +4,7 @@
 #### Student and instructor introductions
 
 
-#### Command Line basics
+#### Command Line Basics
 
 While the terms "command line," "terminal," and "shell" are sometimes used interchangeably, each has a slightly different denotation.
 
