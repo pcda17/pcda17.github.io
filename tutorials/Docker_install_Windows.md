@@ -1,10 +1,11 @@
 ## Installing Docker for Windows 10
 
 <!--
-[https://docs.docker.com/docker-for-windows/install/](Docker for Windows installation guide)
+https://docs.docker.com/docker-for-windows/install/
+Docker for Windows installation guide
 -->
 
-Download [https://store.docker.com/search?type=edition&offering=community](Docker Community Edition for Windows).
+Download [Docker Community Edition for Windows](https://store.docker.com/search?type=edition&offering=community).
 
 Double click the Docker installer file when it's finished downloading.
 
