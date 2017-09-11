@@ -253,17 +253,18 @@ We’ll begin by assigning some data to variables.
 
 If you type `x` and hit return, you’ll notice the variable’s current value is output on the line below. Trying the same with `x+2` will return 7.
 
-    x+2
+    x + 2
 
 > *Output:*
 >
 >     7
 
-Note that `x+x` gives a result of 10, while `x+y` returns 10.0. That’s because 5 and 5.0 are different data types in Python. The former is an **int**, or integer, while the latter is a **float**, or floating point value.
+Note that `x + x` gives a result of 10, while `x + y` returns 10.0. That’s because 5 and 5.0 are different data types in Python. The former is an **int**, or integer, while the latter is a **float**, or floating point value.
 
 
 Now try using the `+` operator on two strings.
-    z+" world"
+
+    z + " world"
 
 > *Output:*
 >
@@ -379,8 +380,14 @@ To view all current Docker containers, enter the following command:
 docker ps -a
 ```
 
-To close and remove a container, use the `docker rm -f command` followed by its name, like so:
+To close and remove a container, use `docker rm -f` followed by its name, like so:
 
 ```
 docker rm -f pcda_ubuntu
+```
+
+To close and remove all current Docker containers, enter the following command:
+
+```
+docker rm $(docker ps -aq)
 ```
