@@ -367,7 +367,7 @@ os.chdir('/sharedfolder/')
 for i in range(5):
     os.system("ffmpeg -i A_Bucket_of_Blood.mp4 -ss " + str(random_start()) + " -t 4 clip" + str(i) + ".ts")
 
-os.system('''ffmpeg -i "concat:clip0.ts|clip1.ts|clip2.ts|clip3.ts|clip4.ts" -c copy Bucket_collage.mp4''')
+os.system('''ffmpeg -i "concat:clip0.ts|clip1.ts|clip2.ts|clip3.ts|clip4.ts" Bucket_collage.mp4''')
 ```
 
 #### **12.** Closing Docker
