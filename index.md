@@ -4,6 +4,7 @@
 University of Texas at Austin School of Information
 
 Fall 2017, Mondays 3-6pm
+Office hours: Mondays 1-3pm or by appointment
 
 Instructor: Tanya Clement
 
@@ -89,8 +90,6 @@ Assignments should be posted on Canvas by midnight the day before class.
 -   Sample Data Sources
 -->
 
-
-
 ----------------------------------------------------------------
 
 
@@ -117,13 +116,13 @@ To start for next week:
 
 
 # Week 2 (9/18): The Operating System in Context
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
-
-Complete the [week 2 software assignment](week-02-assignment.md).
+<!-- Complete the [week 2 software assignment](week-02-assignment.md).
 - [Install Docker for macOS](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
 - [Install Docker for Windows 10](tutorials/Docker_install_Windows.md)
-- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)
-
+- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)-->
+### Readings
 
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 
@@ -132,10 +131,6 @@ Read pages 1–28 of Shieber’s Python tutorial and work through the code examp
 Work through Chris Albon’s tutorial on Python string operations.
 -   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
-
-### Readings
-
-**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 -   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
@@ -147,9 +142,6 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
-
-
-### Software to install on your laptop or home computer
 
 ### Assignment
 
