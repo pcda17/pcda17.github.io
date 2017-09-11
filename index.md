@@ -60,19 +60,20 @@ Goals:
 
 ### Final Project: Critical Data Analysis (50%)
 
-For your final project, you will use a dataset drawn from online sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community). You should conceive and execute your project with a specific audience in mind, such as literary scholars, newspaper readers, or policy advocates.
+For your final project, you will use a dataset drawn from cultural heritage sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community, for example). You should conceive and execute your project with a specific audience in mind, such as literary scholars, historians, art critics, policy advocates.
 
-Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
+Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records from an established cultural heritage institution such as a library, an archive, or a museum. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
+
 
 Your final project will include the following elements:
 
--   Proposal (7%)
+-   Proposal (10%)
 
--   Proposal Peer Review (3%)
+-   Proposal Peer Review (5%)
 
 -   In-class presentation (week 14) (10%)
 
--   12 page critical essay, with an appendix of 3–4 data visualizations (30%)
+-   12 page critical essay, with an appendix of 3–4 data visualizations (25%)
 
 ### Weekly Assignments (WA) (50%)
 
