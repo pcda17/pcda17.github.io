@@ -10,7 +10,9 @@ University of Texas at Austin School of Information
 
 - In-Class Outlines:
 
-[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md) | [Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md) | [Week 9](week-09.md) | [Week 10](week-10.md) | [Week 11](week-11.md) | [Week 12](week-12.md)
+[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md)
+[Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md)
+[Week 9](week-09.md) | [Week 10](week-10.md) | [Week 11](week-11.md) | [Week 12](week-12.md)
 
 ### Course Objectives
 
@@ -113,8 +115,6 @@ To start for next week:
 # Week 2 (9/18): The Operating System in Context
 
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
-
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
@@ -125,6 +125,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 ### Readings
 
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 -   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
