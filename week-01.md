@@ -16,9 +16,9 @@ A **terminal**, also known as a terminal emulator, is an application in your loc
 echo $SHELL
 ```
 
-A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to "the shell" they typically mean a command-line interpreter like [Bash](#). The command you entered above should have returned `/bin/bash`, which is the location of Bash’s "binary," or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
+A **shell** is the software layer between user input and the rote world of file system maintenance. The graphical user interface (GUI) provided by Mac OS X is itself technically considered a shell, but if someone refers to "the shell" they typically mean a command-line interpreter like [Bash](https://en.wikipedia.org/wiki/Bourne_shell). The command you entered above should have returned `/bin/bash`, which is the location of Bash’s "binary," or machine-readable application file. If you open a command-line session on a remote server, your text input will be handled by the shell installed on that server.
 
-It is important to understand that both Mac’s GUI (known as [Aqua](#)) and Bash are rooted in the same set of underlying OS services. Since the introduction of OS X, and now in iOS as well, these core utilities have been handled by a Unix-like operating system called [Darwin](#), which is based on the famously stable [Berkeley Software Distribution (BSD)](#) Unix clone.
+It is important to understand that both Mac’s GUI (known as [Aqua](https://en.wikipedia.org/wiki/Aqua_(user_interface))) and Bash are rooted in the same set of underlying OS services. Since the introduction of OS X, and now in iOS as well, these core utilities have been handled by a Unix-like operating system called [Darwin](https://en.wikipedia.org/wiki/Darwin_(operating_system)), which is based on the famously stable [Berkeley Software Distribution (BSD)](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) version of Unix.
 
 
 #### Exploring the File System
