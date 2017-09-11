@@ -10,8 +10,7 @@ University of Texas at Austin School of Information
 
 - In-Class Outlines:
 
-[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md) | [Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md) | [Week 9](week-09.md) | [Week 10](week-10.md)
-| [Week 11](week-11.md) | [Week 12](week-12.md)
+[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md) | [Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md) | [Week 9](week-09.md) | [Week 10](week-10.md) | [Week 11](week-11.md) | [Week 12](week-12.md)
 
 ### Course Objectives
 
@@ -76,18 +75,21 @@ Except when indicated, there will be required readings each week. The required r
 
 Assignments should be posted on Canvas by midnight the day before class.
 
+<!--
 ### Resources
 
 -   Software Tools
 
 -   Sample Data Sources
-
+-->
 
 Week 1 (9/11): Introductions & Command Line Basics
 ===========================================
-Readings
--------
+
+## Readings
+
 [Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
+
 -   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016.
 
 -   danah boyd & Kate Crawford (2012) CRITICAL QUESTIONS FOR BIG DATA, Information, Communication & Society, 15:5, 662-679
@@ -95,11 +97,20 @@ Readings
 To start for next week:
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
+
 #### [▸ In-Class Outline](week-01.md)
+
+
+
+-------------------------------------------------------------------
+
 
 
 Week 2 (9/18): The Operating System in Context
 ==========================================
+
+[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)
+
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
 
