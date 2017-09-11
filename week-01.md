@@ -39,7 +39,7 @@ You can view the contents of the current directory with the `ls` command.
 
     ls
 
-![](week/1/Image-5.png)
+<img src = "week/1/Image-5.png" width=580>
 
 You should see a list of directories including "Library," "Users," "bin," "dev" and so on. Add the `-a` option and you’ll see a longer list that may include hidden files beginning with `.`. You can find dozens of other options in the `ls` manual, which you can read using the following line. Press "q" to return to the shell.
 
