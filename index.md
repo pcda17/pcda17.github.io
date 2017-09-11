@@ -83,12 +83,11 @@ Assignments should be posted on Canvas by midnight the day before class.
 -   Sample Data Sources
 -->
 
-Week 1 (9/11): Introductions & Command Line Basics
-===========================================
+# Week 1 (9/11): Introductions & Command Line Basics
 
-## Readings
+### Readings
 
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
+**[Readings on Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
 
 -   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016.
 
