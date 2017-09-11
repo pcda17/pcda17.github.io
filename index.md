@@ -97,7 +97,7 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
 
 -   Nick Montfort (2016) “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press.
 
@@ -134,7 +134,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 -   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
@@ -192,7 +192,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
@@ -222,7 +222,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)**
 
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
@@ -264,7 +264,7 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_5)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_5)**
 
 -   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
 
@@ -299,7 +299,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_6)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_6)**
 
 -   Pomerantz, Jeffrey. “The Future of Metadata.” In *Metadata*. The MIT Press Essential Knowledge Series. Cambridge, MA ; London, England: The MIT Press, 2015. [PDF](https://www.dropbox.com/s/hj3i12cinl3ublj/Pomerantz%202015%20-%20Ch.%208%20-%20The%20Future%20of%20Metadata.pdf?dl=0).
 
@@ -337,7 +337,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
@@ -370,7 +370,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
 
 -   Winner, Langdon. “Do Artifacts Have Politics?” *Daedalus* 109, no. 1 (1980): 121–36. [PDF](https://www.dropbox.com/s/ttr620gqbv4tj48/Winner%201980%20-%20Do%20Artifacts%20Have%20Politics%3F.pdf?dl=0).
 
@@ -409,7 +409,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ### Readings
 
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
 
 -   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/7ihzxmrcq2997e4/Montfort%202016%20-%20Statistics%20and%20Visualization.pdf?dl=0).
 
@@ -444,7 +444,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_10)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_10)**
 
 -   Berendt, Bettina, Preibusch, Soren. Toward Accountable Discrimination-Aware Data Mining:The Importance of Keeping the Human in the Loop—and Under the Looking Glass.Big DataVolume 5, Number 2, 2017.
 
@@ -482,7 +482,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ### Readings
 
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_11)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_11)**
 
 
 -   Hall, Gary. “Toward a Postdigital Humanities: Cultural Analytics and the Computational Turn to Data-Driven Scholarship.” *American Literature* 85, no. 4 (January 1, 2013): 781–809. [PDF](https://www.dropbox.com/s/d8ty5fcwm0afdtz/Hall%202013%20-%20Toward%20a%20Postdigital%20Humanities.pdf?dl=0).
@@ -512,7 +512,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_12)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_12)**
 
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
 
@@ -546,7 +546,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
 
 -   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
 
