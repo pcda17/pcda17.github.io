@@ -118,6 +118,12 @@ To start for next week:
 # Week 2 (9/18): The Operating System in Context
 
 
+Complete the [week 2 software assignment](week-02-assignment.md).
+- [Install Docker for macOS](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
+- [Install Docker for Windows 10](tutorials/Docker_install_Windows.md)
+- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)
+
+
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
