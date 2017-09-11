@@ -102,7 +102,7 @@ To start for next week:
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
 
-##### *[▸ In-Class Outline](week-01.md)*
+##### [▸ In-class outline](week-01.md)
 
 
 
@@ -159,7 +159,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 [WA #1](https://utexas.instructure.com/courses/1204381/discussion_topics/2826310)
 
 
-#### [▸ In-Class Outline](week-02.md)
+##### [▸ In-class outline](week-02.md)
 
 
 
@@ -202,7 +202,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 [WA #2](https://utexas.instructure.com/courses/1204381/discussion_topics/2840058)
 
 
-#### [▸ In-Class Outline](week-03.md)
+##### [▸ In-class outline](week-03.md)
 
 
 
@@ -234,7 +234,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 [WA #3](https://utexas.instructure.com/courses/1204381/discussion_topics/2841839)
 
-#### [▸ In-Class Outline](week-04.md)
+##### [▸ In-class outline](week-04.md)
 
 
 
@@ -272,7 +272,7 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 
 [WA #4](https://utexas.instructure.com/courses/1204381/discussion_topics/2841813)
 
-#### [▸ In-Class Outline](week-05.md)
+##### [▸ In-class outline](week-05.md)
 
 
 
@@ -316,7 +316,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 [WA #5](https://utexas.instructure.com/courses/1204381/discussion_topics/2841854)
 
-#### [▸ In-Class Outline](week-06.md)
+##### [▸ In-class outline](week-06.md)
 
 
 
@@ -349,7 +349,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
 
-#### [▸ In-Class Outline](week-07.md)
+##### [▸ In-class outline](week-07.md)
 
 
 
@@ -374,7 +374,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 [Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
 
 
-#### [▸ In-Class Outline](week-08.md)
+##### [▸ In-class outline](week-08.md)
 
 
 
@@ -423,7 +423,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 [Due: Proposal Peer Review](https://utexas.instructure.com/courses/1204381/assignments/4166696).
 
 
-#### [▸ In-Class Outline](week-09.md)
+##### [▸ In-class outline](week-09.md)
 
 
 
@@ -460,7 +460,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 [WA #7](https://utexas.instructure.com/courses/1204381/discussion_topics/2842235)
 
-#### [▸ In-Class Outline](week-10.md)
+##### [▸ In-class outline](week-10.md)
 
 
 
@@ -492,7 +492,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 [WA #8](https://utexas.instructure.com/courses/1204381/discussion_topics/2842240)
 
 
-#### [▸ In-Class Outline](week-11.md)
+##### [▸ In-class outline](week-11.md)
 
 
 ----------------------------------------------------------------
@@ -525,7 +525,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 [WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
 
 
-#### [▸ In-Class Outline](week-12.md)
+##### [▸ In-class outline](week-12.md)
 
 
 
@@ -554,7 +554,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 [WA #10]()
 
-#### [▸ In-Class Outline](week-13.md)
+##### [▸ In-class outline](week-13.md)
 
 
 
