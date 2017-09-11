@@ -119,10 +119,9 @@ To start for next week:
 # Week 2 (9/18): The Operating System in Context
 
 
-Complete the [week 2 software assignment](week-02-assignment.md).
-- [Install Docker for macOS](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
-- [Install Docker for Windows 10](tutorials/Docker_install_Windows.md)
-- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)
+### Readings
+
+**[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
@@ -132,10 +131,6 @@ Read pages 1–28 of Shieber’s Python tutorial and work through the code examp
 Work through Chris Albon’s tutorial on Python string operations.
 -   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
-
-### Readings
-
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 -   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
