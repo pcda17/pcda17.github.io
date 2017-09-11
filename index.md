@@ -1,9 +1,9 @@
 
 # Syllabus: Programming for Cultural Data Analysis
 
-University of Texas at Austin School of Information
+#### University of Texas at Austin School of Information
 
-Fall 2017, Mondays 3-6pm
+Fall 2017, Mondays 3–6 p.m.
 
 Instructor: Tanya Clement
 
