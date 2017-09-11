@@ -48,7 +48,7 @@ Goals:
 
 -  Writing critically about data requires both a level of knowldege about data and data wrangling as it requires a level of knowledge about thinking and writing from critical perspectives learned in cultural studies. While this course does not *teach* cultural studies, an understanding of and experience in humanities theory and research and the principles of cultural studies are essential.
 
--  Imitating and modifying others’ code is essential in learning to program. You can find many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
+-  Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
 
 -   Begin assignments early. If you realize what you had in mind is more difficult than expected, talk to the instructor about choosing an alternative.
 
@@ -60,21 +60,19 @@ Goals:
 
 ### Final Project: Critical Data Analysis (50%)
 
-For your final project, you will use a dataset drawn from cultural heritage sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community, for example). You should conceive and execute your project with a specific audience in mind, such as literary scholars, historians, art critics, policy advocates.
+For your final project, you will use a dataset drawn from online sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community). You should conceive and execute your project with a specific audience in mind, such as literary scholars, newspaper readers, or policy advocates.
 
-Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records from an established cultural heritage institution such as a library, an archive, or a museum. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
-
+Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
 
 Your final project will include the following elements:
 
--   Proposal (10%)
+-   Proposal (7%)
 
--   Proposal Peer Review (5%)
+-   Proposal Peer Review (3%)
 
 -   In-class presentation (week 14) (10%)
 
--   12 page critical essay, with an appendix of 3–4 data visualizations (25%)
-
+-   12 page critical essay, with an appendix of 3–4 data visualizations (30%)
 
 ### Weekly Assignments (WA) (50%)
 
@@ -89,21 +87,12 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 -   Sample Data Sources
 -->
-<<<<<<< HEAD
-=======
 
 
->>>>>>> origin/master
 
 ----------------------------------------------------------------
 
 
-<<<<<<< HEAD
-----------------------------------------------------------------
-
-
-=======
->>>>>>> origin/master
 # Week 1 (9/11): Introductions & Command Line Basics
 
 ### Readings
@@ -117,17 +106,10 @@ Assignments should be posted on Canvas by midnight the day before class.
 To start for next week:
 -   Neal Stephenson (1999) “In the Beginning Was the Command Line.” Cryptonomicon. [Note: This reading is due the second week of the course but it's quite long.] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
-<<<<<<< HEAD
 
 ##### [▸ In-class outline](week-01.md)
 
 
-=======
-
-##### [▸ In-class outline](week-01.md)
-
-
->>>>>>> origin/master
 
 ----------------------------------------------------------------
 
@@ -189,23 +171,13 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 ##### [▸ In-class outline](week-02.md)
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 
 
 ----------------------------------------------------------------
 
 # Week 3 (9/25): Collections as Data: Meaning making
 
-<<<<<<< HEAD
-=======
-----------------------------------------------------------------
-
-# Week 3 (9/25): Collections as Data: Meaning making
-
->>>>>>> origin/master
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 -   Optional: Lynda videos [To access follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
@@ -264,7 +236,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 -   Fortune, Stephen. “A Brief History of Databases.” *Avant*, February 27th 2014. [https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases](https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases)
 
--   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) [Python XML tutorial]
+-   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) [Python XML tutorial]
 
 -   Beazley, David, and Brian K. Jones. “Chapter 6: Data Encoding and Processing.” In Python Cookbook: *recipes for Mastering Python 3*, 3. ed., 175–216. Bejing: O’Reilly, 2013. [PDF](https://www.dropbox.com/s/2dp0ylqlpsp6czr/Python_Cookbook_3rd-ed_Ch-6.pdf?dl=1)
 
@@ -277,15 +249,9 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 
 ----------------------------------------------------------------
-<<<<<<< HEAD
 
 
 
-=======
-
-
-
->>>>>>> origin/master
 # Week 5 (10/9): Word-Level Text Analysis
 
 
@@ -319,22 +285,12 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 ##### [▸ In-class outline](week-05.md)
 
 
-<<<<<<< HEAD
-=======
-
-----------------------------------------------------------------
->>>>>>> origin/master
 
 ----------------------------------------------------------------
 
 
 # Week 6 (10/16): Web Scraping & APIs
 
-<<<<<<< HEAD
-=======
-# Week 6 (10/16): Web Scraping & APIs
-
->>>>>>> origin/master
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.
 
 > pip install -U --user beautifulsoup
@@ -372,10 +328,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ##### [▸ In-class outline](week-06.md)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 
 ----------------------------------------------------------------
 
@@ -386,18 +339,6 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
-<<<<<<< HEAD
-----------------------------------------------------------------
-
-
-# Week 7 (10/23) The Politics of Data
-
-### Readings
-
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
-
-=======
->>>>>>> origin/master
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
 -   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016. [PDF](https://www.dropbox.com/s/fg195av2ayiwc31/Peters%202016%20-%20The%20Idealist%20-%20Chs.%206-7.pdf?dl=0).
