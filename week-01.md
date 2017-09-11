@@ -142,9 +142,9 @@ For a more details on how Docker works, see this [overview](https://docs.docker.
 
 How to use Docker from the iSchool Macs (in the classroom and in the lab):
 
-1. Download the files we need for our Docker container by opening a new terminal window.
+1. Open a new terminal window.
 
-2. Through Terminal, enter the following command to download the image files we'll be using. This could take several minutes.
+2. Enter the following command in the terminal window to download the Docker image files we'll be using. This could take several minutes.
 
 ```
 docker pull pcda17/ubuntu-container
