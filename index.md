@@ -14,10 +14,10 @@ Office hours: Mondays 1–3 p.m., UTA 5.558
 
 ##### In-Class Outlines:
 
-[Week 1](#week1) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md)
-[Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md)
-[Week 9](week-09.md) | [Week 10](week-10.md) | [Week 11](week-11.md) | [Week 12](week-12.md)
-
+[Week 1](#week1) | [Week 2](#week2) | [Week 3](#week3) | [Week 4](#week4)
+[Week 5](#week5) | [Week 6](#week6) | [Week 7](#week7) | [Week 8](#week8)
+[Week 9](#week9) | [Week 10](#week10) | [Week 11](#week11) | [Week 12](#week12)
+ | [Week 13](#week13) | [Week 14](#week14)
 ### Course Objectives
 
 Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred;
@@ -116,7 +116,7 @@ To start for next week:
 
 
 
-# Week 2 (9/18): The Operating System in Context
+# <a name="week2"></a>Week 2 (9/18): The Operating System in Context
 
 
 ### Readings
@@ -158,7 +158,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 ----------------------------------------------------------------
 
-# Week 3 (9/25): Collections as Data: Meaning making
+# <a name="week3"></a>Week 3 (9/25): Collections as Data: Meaning making
 
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
@@ -200,7 +200,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 ----------------------------------------------------------------
 
-# Week 4 (10/2): Collections as Data: Data Models
+# <a name="week4"></a>Week 4 (10/2): Collections as Data: Data Models
 
 ### Readings
 
@@ -234,7 +234,7 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 
 
-# Week 5 (10/9): Word-Level Text Analysis
+# <a name="week5"></a>Week 5 (10/9): Word-Level Text Analysis
 
 
 Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
@@ -271,7 +271,7 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 ----------------------------------------------------------------
 
 
-# Week 6 (10/16): Web Scraping & APIs
+# <a name="week6"></a>Week 6 (10/16): Web Scraping & APIs
 
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.
 
@@ -315,7 +315,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 ----------------------------------------------------------------
 
 
-# Week 7 (10/23) The Politics of Data
+# <a name="week7"></a>Week 7 (10/23) The Politics of Data
 
 ### Readings
 
@@ -348,7 +348,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 ----------------------------------------------------------------
 
 
-# Week 8 (10/30): Your Data, Your culture
+# <a name="week8"></a>Week 8 (10/30): Your Data, Your culture
 
 ### Readings
 
@@ -373,7 +373,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 ----------------------------------------------------------------
 
 
-# Week 9 (11/6): Statistics and Visualization
+# <a name="week9"></a>Week 9 (11/6): Statistics and Visualization
 
 
 Install [numpy](http://www.numpy.org/) scientific computing library for Python.
@@ -422,7 +422,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ----------------------------------------------------------------
 
 
-# Week 10 (11/13): Machine Learning
+# <a name="week10"></a>Week 10 (11/13): Machine Learning
 
 ### Readings
 
@@ -459,7 +459,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ----------------------------------------------------------------
 
 
-# Week 11 (11/20): Critical Text Analysis
+# <a name="week11"></a>Week 11 (11/20): Critical Text Analysis
 
 ### Readings
 
@@ -490,7 +490,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ----------------------------------------------------------------
 
 
-# Week 12 (11/27): Copyright and the Information Commons
+# <a name="week12"></a>Week 12 (11/27): Copyright and the Information Commons
 
 ### Readings
 
@@ -524,7 +524,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ----------------------------------------------------------------
 
 
-# Week 13 (12/4): Peer Production & Crowdsourcing
+# <a name="week13"></a>Week 13 (12/4): Peer Production & Crowdsourcing
 
 ### Readings
 
@@ -552,7 +552,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ----------------------------------------------------------------
 
-# Week 14 (12/11): Final Presentations
+# <a name="week14"></a>Week 14 (12/11): Final Presentations
 
 [Final Presentation due](https://utexas.instructure.com/courses/1204381/assignments/4166564)
 
