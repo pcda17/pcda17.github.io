@@ -239,9 +239,9 @@ As usual, the command `man ffmpeg` will display FFmpeg’s manual.
 
 
 #### Programming basics in Python (as much as time permits)
-To get started using Python, simply enter `python` in the shell.
+To get started using Python, simply enter `python3` in the shell.
 
-    python
+    python3
 
 We’ve just switched from the standard shell to the Python environment, which you can tell at a glance by the "\>\>\>" to the left of your cursor. We’re in what’s known as a language shell or a read-eval-print loop (REPL), in which any commands we enter will be interpreted as Python code. You can leave Python at any time by entering the `quit()` command.
 
