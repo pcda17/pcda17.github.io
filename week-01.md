@@ -148,7 +148,6 @@ How to use Docker from the iSchool Macs (in the classroom and in the lab):
 
 ```
 docker pull pcda17/ubuntu-container
-
 ```
 
 3. When the download is complete, enter the following command to run the container. This will create a new directory called `sharedfolder` on your desktop.
@@ -165,7 +164,7 @@ You should now be in an interactive bash session in your new Ubuntu container. T
 whoami
 ```
 
-Now enter the command `pwd` to print the current working directory. You should be in `/sharedfolder`.
+Now enter the command `pwd` to print the current working directory. You should be in `/sharedfolder/`.
 
 ```
 pwd
@@ -200,15 +199,15 @@ Wget is an amazingly versatile tool, and we will use it many times in this cours
 
 #### Download a video with youtube-dl and create an excerpt with FFmpeg
 
-Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Try it with _A Bucket of Blood_, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so this may take a few minutes. You can substitute a shorter video if you prefer.
+Another useful program is `youtube-dl`, which allows us to download just about any video from YouTube. Try it with *A Bucket of Blood*, Roger Corman’s 1959 black comedy about beatnik culture (which happens to be in the public domain). The file will be around 300 MB, so this may take a few minutes. You can substitute a shorter video if you prefer.
 
-    youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0
+    youtube-dl https://www.youtube.com/watch?v=PEzoCoIolJ0 --output A_Bucket_of_Blood.mp4
 
 ![](week/1/Image-11.png)
 
-To simplify things, locate the video file in `sharedfolder` and change its name to `Bucket.mp4`. Now view the file’s metadata with ExifTool.
+Now view the file’s metadata with ExifTool.
 
-    exiftool Bucket.mp4
+    exiftool A_Bucket_of_Blood.mp4
 
 ![](week/1/Image-12.png)
 
@@ -218,18 +217,18 @@ Take a moment to view ExifTool’s man page, which you can also find [here](http
 
 Next, we will extract a 90-second segment from the video using [FFmpeg](https://www.ffmpeg.org/). The `-ss` option specifies start time and `-t` is the length of our new excerpt. In this case we’re creating a 90-second clip beginning 10 minutes, 11 seconds into the film.  This may take a few minutes.
 
-    ffmpeg -i Bucket.mp4 -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
+    ffmpeg -i A_Bucket_of_Blood.mp4 -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
 
 ![](week/1/Image-13.png)
 
 Instead of HH:MM:SS.S notation, we can also specify start time and/or length using seconds. The following command produces the same output as the one above.
 
-    ffmpeg -i Bucket.mp4 -ss 701 -t 90 Bucket_clip.mp4
+    ffmpeg -i A_Bucket_of_Blood.mp4 -ss 701 -t 90 Bucket_clip.mp4
 
 <!--
 To re-encode a video clip when you make an excerpt, you can include the `-c copy` option.
 
-    ffmpeg -i Bucket.mp4 -c copy -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
+    ffmpeg -i A_Bucket_of_Blood.mp4 -c copy -ss 00:10:11.0 -t 00:01:30.0 Bucket_clip.mp4
 -->
 
 When FFmpeg is finished, open `Bucket_clip.mp4` in VLC Media Player and see how it turned out. You may notice missing video frames or other errors.
@@ -248,9 +247,9 @@ We’ve just switched from the standard shell to the Python environment, which y
 
 We’ll begin by assigning some data to variables.
 
-    x=5
-    y=5.0
-    z="Hello"
+    x = 5
+    y = 5.0
+    z = "Hello"
 
 If you type `x` and hit return, you’ll notice the variable’s current value is output on the line below. Trying the same with `x+2` will return 7.
 
@@ -276,7 +275,7 @@ By the way, you can use single or double quotes to enclose string text in Python
 
 Next we’ll link a series of values using Python’s list data type. There several ways to represent an ordered sequence of items in Python, but we’ll be using list most frequently.
 
-    eu_countries=['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Republic of Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'UK']
+    eu_countries = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Republic of Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'UK']
 
 We can now refer to individual list members using bracket annotation.
 
@@ -303,7 +302,7 @@ We can also use negative numbers to count backwards from the end of a list. The 
 
 Under the hood, every string in Python is actually a list of individual characters. In the example below, `word[7]` returns the letter "e," while `word[7:20]` returns "establishment."
 
-    word="antidisestablishmentarianism"
+    word = "antidisestablishmentarianism"
     word[7]
     word[7:20]
 
@@ -314,14 +313,14 @@ If we need to know the length of a list or string, the `len` function can tell u
 
 Conditional statements are a fundamental part of all programming languages. We use the `if` operator to evaluate conditionals.
 
-    number=12
-    if number==12:
+    number = 12
+    if number == 12:
          print("The value is 12, an integer.")
 
 By adding `else`, we can tell Python to do something if the conditional isn’t true.
 
-    number=10
-    if number==12:
+    number = 10
+    if number == 12:
          print("The value is 12, an integer.")
     else:
          print("The value is not 12.")
@@ -348,7 +347,7 @@ The next section is intended as an instructor demonstration, to be included if t
 
 First, check the length of the film with `exiftool`. Open a new terminal window and enter the following.
     cd /sharedfolder
-    exiftool Bucket.mp4
+    exiftool A_Bucket_of_Blood.mp4
 
 The file comes to 1:05:57, or 3907 seconds. Extract 10 5-second clips at random and combine them to create a new video.
 
@@ -356,20 +355,18 @@ The file comes to 1:05:57, or 3907 seconds. Extract 10 5-second clips at random 
 import os
 import random
 
-total_time=3907
-clip_time=5
+total_time = 3907
+clip_time = 5
 
 def random_start():
-    return random.random()*(total_time-clip_time)
+    return random.random()*(total_time - clip_time)
 
-os.system('cd /Users/yourname/Desktop/')
+os.chdir('/sharedfolder/')
 
 for i in range(10):
-    os.system("ffmpeg -i Bucket.mp4 -ss "+str(random_start())+" -t 4 clip"+str(i)+".mpg")
+    os.system("ffmpeg -i A_Bucket_of_Blood.mp4 -ss " + str(random_start()) + " -t 4 clip" + str(i) + ".mp4")
 
-os.system('''ffmpeg -i "concat:clip0.mpg|clip1.mpg|clip2.mpg|clip3.mpg|clip4.mpg|clip5.mpg|clip6.mpg|clip7.mpg|clip8.mpg|clip9.mpg" -c copy collage.mpg''')
+os.system('''ffmpeg -i "concat:clip0.mp4|clip1.mp4|clip2.mp4|clip3.mp4|clip4.mp4|clip5.mp4|clip6.mp4|clip7.mp4|clip8.mp4|clip9.mp4" -c copy Bucket_collage.mp4''')
 ```
 
 #### **12.** Closing Docker
-
-

@@ -89,12 +89,21 @@ Assignments should be posted on Canvas by midnight the day before class.
 
 -   Sample Data Sources
 -->
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/master
 
 ----------------------------------------------------------------
 
 
+<<<<<<< HEAD
+----------------------------------------------------------------
+
+
+=======
+>>>>>>> origin/master
 # Week 1 (9/11): Introductions & Command Line Basics
 
 ### Readings
@@ -108,10 +117,17 @@ Assignments should be posted on Canvas by midnight the day before class.
 To start for next week:
 -   Neal Stephenson (1999) “In the Beginning Was the Command Line.” Cryptonomicon. [Note: This reading is due the second week of the course but it's quite long.] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
+<<<<<<< HEAD
 
 ##### [▸ In-class outline](week-01.md)
 
 
+=======
+
+##### [▸ In-class outline](week-01.md)
+
+
+>>>>>>> origin/master
 
 ----------------------------------------------------------------
 
@@ -173,13 +189,23 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 ##### [▸ In-class outline](week-02.md)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
 
 ----------------------------------------------------------------
 
 # Week 3 (9/25): Collections as Data: Meaning making
 
+<<<<<<< HEAD
+=======
+----------------------------------------------------------------
+
+# Week 3 (9/25): Collections as Data: Meaning making
+
+>>>>>>> origin/master
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 -   Optional: Lynda videos [To access follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
@@ -251,9 +277,15 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
 
 
 ----------------------------------------------------------------
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> origin/master
 # Week 5 (10/9): Word-Level Text Analysis
 
 
@@ -287,12 +319,22 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 ##### [▸ In-class outline](week-05.md)
 
 
+<<<<<<< HEAD
+=======
+
+----------------------------------------------------------------
+>>>>>>> origin/master
 
 ----------------------------------------------------------------
 
 
 # Week 6 (10/16): Web Scraping & APIs
 
+<<<<<<< HEAD
+=======
+# Week 6 (10/16): Web Scraping & APIs
+
+>>>>>>> origin/master
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.
 
 > pip install -U --user beautifulsoup
@@ -330,7 +372,10 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ##### [▸ In-class outline](week-06.md)
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/master
 
 ----------------------------------------------------------------
 
@@ -341,6 +386,18 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
+<<<<<<< HEAD
+----------------------------------------------------------------
+
+
+# Week 7 (10/23) The Politics of Data
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
+
+=======
+>>>>>>> origin/master
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
 -   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016. [PDF](https://www.dropbox.com/s/fg195av2ayiwc31/Peters%202016%20-%20The%20Idealist%20-%20Chs.%206-7.pdf?dl=0).
