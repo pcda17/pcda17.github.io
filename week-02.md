@@ -1,8 +1,8 @@
 ## Week 2 Outline: Python Intro and Text Manipulation
 
-**Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) and then move on to Jupyter notebooks. 
+**Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) and then move on to Jupyter notebooks.
 
-Open Terminal and run our docker container: 
+Open Terminal and run our docker container:
 
 ```
 docker rm -f pcda_ubuntu
@@ -137,12 +137,12 @@ Finally, we’ll close our file stream and view a line from our list.
 >     'flung by the assistance of so foul a goddess should pollute his fountain,\r\n'
 
 **Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
-> Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames. 
+> Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames.
 
-If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder directory. For example: 
-Instead of this pathname: 
+If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder directory. For example:
+Instead of this pathname:
 "/Users/yourname/Desktop/Artists.csv"
-You would have this pathname: 
+You would have this pathname:
  "/sharedfolder/Artists.csv"
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose.
@@ -456,7 +456,7 @@ _Exercise:_ Try using a different text and compare the results.
 
 
 #### Launching Jupyter
-First, leave the Docker terminal (like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter: 
+First, leave the Docker terminal (like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter:
 
 ```
 docker rm -f pcda_ubuntu
@@ -464,7 +464,7 @@ docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
 ```
 
-Open any browser and type (your Juypter Notebook will launch): 
+Open any browser and type (your Juypter Notebook will launch):
 ```
 localhost:8889
 
@@ -550,7 +550,7 @@ The `os.system` function lets us issue commands at the level of the system shell
 
 #### Downloading Reviews from Amazon (the hard way)
 
-Start a new Python 3 notebook by going to File/New Notebook in the browser window.
+Start a new Python 3 notebook by going to `File/New Notebook` in the Jupyter window.
 
 Enter the following in a cell.
 

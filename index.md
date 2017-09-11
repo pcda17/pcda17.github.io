@@ -1,17 +1,21 @@
 
-Syllabus: Programming for Cultural Data Analysis
-====================================================
-Fall 2017, Mondays 3-6pm
-
-Instructor: Tanya Clement
-TA: Steve McLaughlin
+# Syllabus: Programming for Cultural Data Analysis
 
 University of Texas at Austin School of Information
 
-- In-Class Outlines:
+Fall 2017, Mondays 3-6pm
 
-[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md) | [Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md) | [Week 9](week-09.md) | [Week 10](week-10.md)
-| [Week 11](week-11.md) | [Week 12](week-12.md)
+Instructor: Tanya Clement
+
+TA: Steve McLaughlin
+
+
+
+##### In-Class Outlines:
+
+[Week 1](week-01.md) | [Week 2](week-02.md) | [Week 3](week-03.md) | [Week 4](week-04.md)
+[Week 5](week-05.md) | [Week 6](week-06.md) | [Week 7](week-07.md) | [Week 8](week-08.md)
+[Week 9](week-09.md) | [Week 10](week-10.md) | [Week 11](week-11.md) | [Week 12](week-12.md)
 
 ### Course Objectives
 
@@ -44,7 +48,7 @@ Goals:
 
 -  Writing critically about data requires both a level of knowldege about data and data wrangling as it requires a level of knowledge about thinking and writing from critical perspectives learned in cultural studies. While this course does not *teach* cultural studies, an understanding of and experience in humanities theory and research and the principles of cultural studies are essential.
 
--  Imitating and modifying others’ code is essential in learning to program. You can many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
+-  Imitating and modifying others’ code is essential in learning to program. You can find many examples and explanations on [Stack Exchange](http://stackexchange.com) and similar online forums. Taking one or two lines without attribution is OK; if you use a longer chunk of code found online, add a #comment with the source’s URL.
 
 -   Begin assignments early. If you realize what you had in mind is more difficult than expected, talk to the instructor about choosing an alternative.
 
@@ -56,19 +60,21 @@ Goals:
 
 ### Final Project: Critical Data Analysis (50%)
 
-For your final project, you will use a dataset drawn from online sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community). You should conceive and execute your project with a specific audience in mind, such as literary scholars, newspaper readers, or policy advocates.
+For your final project, you will use a dataset drawn from cultural heritage sources and analyze those data in a critical essay. You may either present an argument about the data (e.g., describing bias in the way the data were chosen and arranged) or you may use your dataset as the basis for an argument about culture (e.g., tracing a stylistic shift in a literary community, for example). You should conceive and execute your project with a specific audience in mind, such as literary scholars, historians, art critics, policy advocates.
 
-Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
+Your dataset should comprise at least 200 texts or other media files, or at least 2000 metadata records from an established cultural heritage institution such as a library, an archive, or a museum. The size of your collection should be appropriate to your technical skills and the complexity of each record. Rather than using an entire pre-existing dataset, you may choose to extend or limit the dataset in some way. This might mean curating material from multiple sources, mashing up two or more datasets, augmenting records using machine learning or natural language processing, or using a creative technique to organize messy data.
+
 
 Your final project will include the following elements:
 
--   Proposal (7%)
+-   Proposal (10%)
 
--   Proposal Peer Review (3%)
+-   Proposal Peer Review (5%)
 
 -   In-class presentation (week 14) (10%)
 
--   12 page critical essay, with an appendix of 3–4 data visualizations (30%)
+-   12 page critical essay, with an appendix of 3–4 data visualizations (25%)
+
 
 ### Weekly Assignments (WA) (50%)
 
@@ -76,39 +82,61 @@ Except when indicated, there will be required readings each week. The required r
 
 Assignments should be posted on Canvas by midnight the day before class.
 
+<!--
 ### Resources
 
 -   Software Tools
 
 -   Sample Data Sources
+-->
 
 
-Week 1 (9/11): Introductions & Command Line Basics
-===========================================
-Readings
--------
-[Canvas Week 1 Readings](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)
--   Montfort, Nick. “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press, 2016.
 
--   danah boyd & Kate Crawford (2012) CRITICAL QUESTIONS FOR BIG DATA, Information, Communication & Society, 15:5, 662-679
+----------------------------------------------------------------
+
+
+# Week 1 (9/11): Introductions & Command Line Basics
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_1)**
+
+-   Nick Montfort (2016) “Why Program?” In *Exploratory Programming for the Arts and Humanities*, 267–77. Cambridge, MA: The MIT Press.
+
+-   danah boyd & Kate Crawford (2012) "Critical Questions for Big Data," *Information, Communication & Society*, 15:5, 662-679.
 
 To start for next week:
--   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. [Note: This reading is due the second week of the course but it's quite long] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
-
-#### [▸ In-Class Outline](week-01.md)
+-   Neal Stephenson (1999) “In the Beginning Was the Command Line.” Cryptonomicon. [Note: This reading is due the second week of the course but it's quite long.] <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
 
-Week 2 (9/18): The Operating System in Context
-==========================================
+##### [▸ In-class outline](week-01.md)
+
+
+
+----------------------------------------------------------------
+
+
+
+# Week 2 (9/18): The Operating System in Context
+
+
+Complete the [week 2 software assignment](week-02-assignment.md).
+- [Install Docker for macOS](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
+- [Install Docker for Windows 10](tutorials/Docker_install_Windows.md)
+- [Install Docker Toolbox for Windows 7 or 8](https://docs.docker.com/toolbox/toolbox_install_windows/)
+
+
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
+
 -   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
 
 Work through Chris Albon’s tutorial on Python string operations.
 -   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
 
 
-Readings
--------
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
 -   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
@@ -122,8 +150,8 @@ Readings
 
 
 
-Software to install on your laptop or home computer
----------------------------------------------------
+### Software to install on your laptop or home computer
+
 
 - Text editor: Atom or Geany
     - [https://atom.io](https://atom.io)
@@ -137,18 +165,21 @@ Software to install on your laptop or home computer
     - [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
 
-Assignment
-----------
+### Assignment
+
 
 [WA #1](https://utexas.instructure.com/courses/1204381/discussion_topics/2826310)
 
 
-#### [▸ In-Class Outline](week-02.md)
+##### [▸ In-class outline](week-02.md)
 
 
 
-Week 3 (9/25): Collections as Data: Meaning making
-================================
+
+----------------------------------------------------------------
+
+# Week 3 (9/25): Collections as Data: Meaning making
+
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 -   Optional: Lynda videos [To access follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
@@ -161,9 +192,9 @@ Marini, Joe. “Up and Running with Python.” Lynda.com.
             [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
 
 
-Readings
---------
-[Canvas  Week 2 Readings](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
@@ -172,24 +203,29 @@ Readings
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 
 
-Optional
---------
+### Optional
+
 -  Gallinger, M. and Daniel Chudnov "Library of Congress Lab: Library of Congress Digital Scholars Lab Pilot Project Report."
 -  Posner, Miriam. “Humanities Data: A Necessary Contradiction.” *Miriam Posner’s Blog*, June 25, 2015. [http://miriamposner.com/blog/humanities-data-a-necessary-contradiction](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction)
 
 
-Asssignment
---------
+### Assignment
+
 [WA #2](https://utexas.instructure.com/courses/1204381/discussion_topics/2840058)
 
 
-#### [▸ In-Class Outline](week-03.md)
+##### [▸ In-class outline](week-03.md)
 
-Week 4 (10/2): Collections as Data: Data Models
-===================
-Readings
---------
-[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)
+
+
+----------------------------------------------------------------
+
+# Week 4 (10/2): Collections as Data: Data Models
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_4)**
+
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
 -   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014.
@@ -197,8 +233,8 @@ Readings
 -   Zhuang, Atima Han, Ishita Vedvyas, and Rishikesh Dole. “Tutorial: OpenRefine,” 2013. [http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf](http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf)
 
 
-Optional Readings
------------------
+### Optional Readings
+
 
 -   Fortune, Stephen. “A Brief History of Databases.” *Avant*, February 27th 2014. [https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases](https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases)
 
@@ -206,15 +242,20 @@ Optional Readings
 
 -   Beazley, David, and Brian K. Jones. “Chapter 6: Data Encoding and Processing.” In Python Cookbook: *recipes for Mastering Python 3*, 3. ed., 175–216. Bejing: O’Reilly, 2013. [PDF](https://www.dropbox.com/s/2dp0ylqlpsp6czr/Python_Cookbook_3rd-ed_Ch-6.pdf?dl=1)
 
-Asssignment
---------
+### Assignment
+
 [WA #3](https://utexas.instructure.com/courses/1204381/discussion_topics/2841839)
 
-#### [▸ In-Class Outline](week-04.md)
+##### [▸ In-class outline](week-04.md)
 
 
-Week 5 (10/9): Word-Level Text Analysis
-================================
+
+----------------------------------------------------------------
+
+
+
+# Week 5 (10/9): Word-Level Text Analysis
+
 
 Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
 
@@ -223,8 +264,9 @@ Install textblob package before class (a wrapper for NLTK and pattern) and work 
 > python -m textblob.download_corpora
 
 
-Readings
---------
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_5)**
 
 -   Burrows, John. “Textual Analysis.” In *Companion to Digital Humanities*, edited by Susan Schreibman, Ray Siemens, and John Unsworth. [Link](http://digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&doc.view=print&chunk.id=ss1-4-4&toc.depth=1&toc.id=0).
 
@@ -237,23 +279,30 @@ Readings
 -   “Alphabetical list of part-of-speech tags used in the Penn Treebank Project.” [https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
 
-Asssignment
---------
+### Assignment
+
+
 [WA #4](https://utexas.instructure.com/courses/1204381/discussion_topics/2841813)
 
-#### [▸ In-Class Outline](week-05.md)
+##### [▸ In-class outline](week-05.md)
 
 
-Week 6 (10/16): Web Scraping & APIs
-=============================
+
+----------------------------------------------------------------
+
+
+# Week 6 (10/16): Web Scraping & APIs
+
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.
 
 > pip install -U --user beautifulsoup
 
 Work through Chris Albon’s Beautiful Soup tutorial.
 
-Readings
---------
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_6)**
+
 -   Pomerantz, Jeffrey. “The Future of Metadata.” In *Metadata*. The MIT Press Essential Knowledge Series. Cambridge, MA ; London, England: The MIT Press, 2015. [PDF](https://www.dropbox.com/s/hj3i12cinl3ublj/Pomerantz%202015%20-%20Ch.%208%20-%20The%20Future%20of%20Metadata.pdf?dl=0).
 
 -   Swartz, Aaron. “Building a Platform: Providing APIs.” In *Aaron Swartz’s ‘A Programmable Web’: An Unfinished Work*, 31–39. San Rafael, CA: Morgan & Claypool Publishers, 2013. [PDF](https://www.dropbox.com/s/wmgtcko0u9q59aw/Swartz%202013%20-%20Building%20a%20Platform-%20Providing%20APIs.pdf?dl=0).
@@ -269,23 +318,29 @@ Readings
 -   Albon, Chris. “Beautiful Soup Basic HTML Scraping.” [http://chrisalbon.com/python/beautiful_soup_html_basics.html](http://chrisalbon.com/python/beautiful_soup_html_basics.html)
 
 
-Optional Readings
------------------
+### Optional Readings
+
 -   Sanger, David E., and Eric Schmitt. “Snowden Used Low-Cost Tool to Best N.S.A.” The New York Times. February 8, 2014. [http://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html](http://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html)
 
 -   Kazil, Jacqueline, and Katharine Jarmul. “PDFs and Problem Solving in Python.” In *Data Wrangling with Python: Tips and Tools to Make Your Life Easier*, 91–126. O’Reilly, 2016. [PDF](https://www.dropbox.com/s/hfc8m731eiik0g8/Kazil%20and%20Jarmul%202016%20-%20PDFs%20and%20Problem%20Solving%20in%20Python.pdf?dl=0).
 
-Asssignment
---------
+### Assignment
+
 [WA #5](https://utexas.instructure.com/courses/1204381/discussion_topics/2841854)
 
-#### [▸ In-Class Outline](week-06.md)
+##### [▸ In-class outline](week-06.md)
 
 
-Week 7 (10/23) The Politics of Data
-=========================
-Readings
---------
+
+----------------------------------------------------------------
+
+
+# Week 7 (10/23) The Politics of Data
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
+
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
 
 -   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016. [PDF](https://www.dropbox.com/s/fg195av2ayiwc31/Peters%202016%20-%20The%20Idealist%20-%20Chs.%206-7.pdf?dl=0).
@@ -296,23 +351,29 @@ Readings
 
 -   American Civil Liberties Union. "First Amendment Lawsuit Brought on Behalf of Academic Researchers and Journalists Who Fear Prosecution Under the Computer Fraud and Abuse Act." [https://www.aclu.org/news/aclu-challenges-law-preventing-studies-big-data-discrimination](https://www.aclu.org/news/aclu-challenges-law-preventing-studies-big-data-discrimination)
 
-Optional Readings
------------------
+### Optional Readings
+
 -   Day, Ronald E. “Governing Expression: Social Big Data and Neoliberalism.” In *Indexing It All: The Subject in the Age of Documentation*, Information, and Data, 123–44. History and Foundations of Information Science. Cambridge, Massachusetts: The MIT Press, 2014. [PDF](https://www.dropbox.com/s/mab080ymg2pqjon/Day%202014%20-%20Indexing%20it%20All%20-%20Ch.%206%20-%20Governing%20Expression-%20Social%20Big%20Data%20and%20Neoliberalism.pdf?dl=0).
 
 -   Hitchcock, Tim. “Digital Searching and the Re-formulation of Historical Knowledge” 2008. In *The Virtual Representation of the Past*, edited by Mark Greenglass and Lorna Hughes, 81-90. Ashgate: 2008. [PDF](https://www.dropbox.com/s/ht8si4vygm3bkh4/Hitchcock%202008%20-%20Digital%20Searching%20and%20the%20Re-formulation%20of%20Historical%20Knowledge.pdf?dl=0).
 
-Asssignment
---------
+### Assignment
+
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
 
-#### [▸ In-Class Outline](week-07.md)
+##### [▸ In-class outline](week-07.md)
 
 
-Week 8 (10/30): Your Data, Your culture
-=========================
-Readings
---------
+
+----------------------------------------------------------------
+
+
+# Week 8 (10/30): Your Data, Your culture
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
+
 -   Winner, Langdon. “Do Artifacts Have Politics?” *Daedalus* 109, no. 1 (1980): 121–36. [PDF](https://www.dropbox.com/s/ttr620gqbv4tj48/Winner%201980%20-%20Do%20Artifacts%20Have%20Politics%3F.pdf?dl=0).
 
 -   Joerges, B. “Do Politics Have Artefacts?” *Social Studies of Science* 29, no. 3 (June 1, 1999): 411–31. [PDF](https://www.dropbox.com/s/mb8cn5trvphm3oz/Joerges%201999%20-%20Do%20Politics%20Have%20Artefacts.pdf?dl=0).
@@ -320,15 +381,20 @@ Readings
 -   Sacasas, Michael. “Do Artifacts Have Ethics?” *The Frailest Thing*, November 29, 2014. [http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics](http://thefrailestthing.com/2014/11/29/do-artifacts-have-ethics/)
 
 
-Asssignment
---------
+### Assignment
+
 [Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
 
 
-#### [▸ In-Class Outline](week-08.md)
+##### [▸ In-class outline](week-08.md)
 
-Week 9 (11/6): Statistics and Visualization
-====================================
+
+
+----------------------------------------------------------------
+
+
+# Week 9 (11/6): Statistics and Visualization
+
 
 Install [numpy](http://www.numpy.org/) scientific computing library for Python.
 
@@ -342,8 +408,11 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 > pip install --user -U matplotlib
 
-Readings
---------
+### Readings
+
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
+
 -   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016. [PDF](https://www.dropbox.com/s/7ihzxmrcq2997e4/Montfort%202016%20-%20Statistics%20and%20Visualization.pdf?dl=0).
 
 -   Krumme, Coco. “What Data Doesn’t Do.” In *Beautiful Data: The Stories behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009. [PDF](https://www.dropbox.com/s/b751c7noglf5nu0/Krumme%202009%20-%20What%20Data%20Doesn%27t%20Do.pdf?dl=0).
@@ -355,24 +424,29 @@ Readings
 -   McCandles, David. *Information is Beautiful*. *http://www.informationisbeautiful.net*
 
 
-Optional Readings
------------------
+### Optional Readings
+
 -   Gries, Stefan. “Useful statistics for corpus linguistics.” <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.9846&rep=rep1&type=pdf>
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
 
-Asssignment
---------
+### Assignment
+
 [Due: Proposal Peer Review](https://utexas.instructure.com/courses/1204381/assignments/4166696).
 
 
-#### [▸ In-Class Outline](week-09.md)
+##### [▸ In-class outline](week-09.md)
 
 
-Week 10 (11/13): Machine Learning
-==========================
-Readings
---------
+
+----------------------------------------------------------------
+
+
+# Week 10 (11/13): Machine Learning
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_10)**
 
 -   Berendt, Bettina, Preibusch, Soren. Toward Accountable Discrimination-Aware Data Mining:The Importance of Keeping the Human in the Loop—and Under the Looking Glass.Big DataVolume 5, Number 2, 2017.
 
@@ -387,24 +461,31 @@ Readings
 
 
 
-Optional Readings
------------------
+### Optional Readings
+
 -   Norvig, Peter. “Natural Language Corpus Data.” In *Beautiful Data: The Stories Behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009. [PDF](https://www.dropbox.com/s/6m8n6wzzd7887jp/Norvig%202009%20-%20Natural%20Language%20Corpus%20Data.pdf?dl=0).
 
 -   Baharudin, Baharum, Lam Hong Lee, and Khairullah Khan. “A Review of Machine Learning Algorithms for Text-Documents Classification.” *Journal of Advances in Information Technology* 1, no. 1 (February 1, 2010). [PDF](https://www.dropbox.com/s/iljelruc17gvj0g/Khan%20et%20al.%202010%20-%20A%20Review%20of%20Machine%20Learning%20Algorithms%20for%20Text-Documents%20Classification.pdf?dl=0).
 
 
-Asssignment
---------
+### Assignment
+
 [WA #7](https://utexas.instructure.com/courses/1204381/discussion_topics/2842235)
 
-#### [▸ In-Class Outline](week-10.md)
+##### [▸ In-class outline](week-10.md)
 
 
-Week 11 (11/20): Critical Text Analysis
-================================
-Readings
---------
+
+----------------------------------------------------------------
+
+
+# Week 11 (11/20): Critical Text Analysis
+
+### Readings
+
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_11)**
+
 
 -   Hall, Gary. “Toward a Postdigital Humanities: Cultural Analytics and the Computational Turn to Data-Driven Scholarship.” *American Literature* 85, no. 4 (January 1, 2013): 781–809. [PDF](https://www.dropbox.com/s/d8ty5fcwm0afdtz/Hall%202013%20-%20Toward%20a%20Postdigital%20Humanities.pdf?dl=0).
 
@@ -413,24 +494,28 @@ Readings
 -   Marche, Stephen. “Literature Is not Data: Against Digital Humanities.” *Los Angeles Review of Books*, October 28th, 2012.
                       [https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities](https://lareviewofbooks.org/essay/literature-is-not-data-against-digital-humanities)
 
-Optional Reading
-----------------
+### Optional Reading
+
 -   Ramsay, Stephen. “Chapter 3: Potential Readings.” In *Reading Machines: Toward an Algorithmic Criticism*, 33–57. Topics in the Digital Humanities. Urbana: University of Illinois Press, 2011. [PDF](https://www.dropbox.com/s/bo8dpeaodymk9d2/Ramsay%202011%20-%20Reading%20Machines%20-%20Ch.%203.pdf?dl=0).
 
 
-Asssignment
---------
+### Assignment
+
 [WA #8](https://utexas.instructure.com/courses/1204381/discussion_topics/2842240)
 
 
-#### [▸ In-Class Outline](week-11.md)
+##### [▸ In-class outline](week-11.md)
 
 
-Week 12 (11/27): Copyright and the Information Commons
-======================================================
+----------------------------------------------------------------
 
-Readings
---------
+
+# Week 12 (11/27): Copyright and the Information Commons
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_12)**
+
 -   Sims, Nancy. “Library Licensing and Criminal Law: The Aaron Swartz Case.” *College & Research Libraries News* 72, no. 9 (2011): 534–37. [http://crln.acrl.org/content/72/9/534.short](http://crln.acrl.org/content/72/9/534.short).
 
 -   O’Sullivan, Michael. “Aaron Swartz, New Technologies, and the Myth of Open Access.” In *Academic Barbarism, Universities and Inequality*. Palgrave Critical University Studies. Houndmills, Basingstoke, Hampshire ; New York, NY: Palgrave Macmillan, 2016. [Link](https://www.dropbox.com/s/xawj4hi4fpyj5mw/Aaron_Swartz_New_Technologies_and_the_My.docx?dl=0).
@@ -442,44 +527,53 @@ Readings
 -   DRM article: [http://infojustice.org/wp-content/uploads/2015/03/band03102015.pdf](http://infojustice.org/wp-content/uploads/2015/03/band03102015.pdf)
 
 
-Optional Readings
------------------
+### Optional Readings
+
 -   Code of Best Practices in Fair Use for Academic and Research Libraries*. Association of Research Libraries, 2012*. [http://www.arl.org/storage/documents/publications/code-of-best-practices-fair-use.pdf](http://www.arl.org/storage/documents/publications/code-of-best-practices-fair-use.pdf)
 
 
-Asssignment
---------
+### Assignment
+
 [WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
 
 
-#### [▸ In-Class Outline](week-12.md)
+##### [▸ In-class outline](week-12.md)
 
 
-Week 13 (12/4): Peer Production & Crowdsourcing
-========================================
-Readings
---------
+
+----------------------------------------------------------------
+
+
+# Week 13 (12/4): Peer Production & Crowdsourcing
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
+
 -   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
 
 -   Manzo, Christina, Geoff Kaufman, Sukdith Punjasthitkul, and Mary Flanagan. “‘By the People, For the People’: Assessing the Value of Crowdsourced, User-Generated Metadata.” *Digital Humanities Quarterly* 9, no. 1 (2015). [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html)
 
 -   Bodó, Balázs. “Set the Fox to Watch the Geese: Voluntary IP Regimes in Piratical File-sharing Communities.” In Piracy: Leakages from Modernity, edited by James Arvanitakis and Martin Fredriksson, 241–63. Sacramento, CA: Litwin Books, 2014. [PDF](https://www.dropbox.com/s/3e2zrjiafp77pt9/Bodo%202014%20-%20Set%20the%20Fox%20to%20Watch%20the%20Geese.pdf?dl=0).
 
-Optional Readings
---------
+### Optional Readings
+
 -   Benkler, Yochai, and Helen Nissenbaum. “Commons-Based Peer Production and Virtue.” Journal of Political Philosophy 14, no. 4 (2006): 394–419. [https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf](https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf).
 
 -   Kreiss, D., M. Finn, and F. Turner. “The Limits of Peer Production: Some Reminders from Max Weber for the Network Society.” New Media & Society 13, no. 2 (March 1, 2011): 243–59. [PDF](https://www.dropbox.com/s/mwhm10hz0nnania/Kreiss%20et%20al.%202011%20-%20The%20limits%20of%20peer%20production.pdf?dl=0).
 
-Asssignment
---------
+### Assignment
+
 [WA #10]()
 
-#### [▸ In-Class Outline](week-13.md)
+##### [▸ In-class outline](week-13.md)
 
 
-*Week 14 (12/11): Final Presentations*
-========================================
+
+----------------------------------------------------------------
+
+# Week 14 (12/11): Final Presentations
+
 [Final Presentation due](https://utexas.instructure.com/courses/1204381/assignments/4166564)
 
 12/18: [Final Project due](https://utexas.instructure.com/courses/1204381/assignments/4166548)

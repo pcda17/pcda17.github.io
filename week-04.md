@@ -50,7 +50,7 @@ A record, in turn, contains three keys: “pk,” “model,” and “fields.”
      model
      fields
 ```
-The metadata we’re interested in is under “fields.” 
+The metadata we’re interested in is under “fields.”
 ```python
     for key in json_data['records'][0]['fields']:
         print key
@@ -89,7 +89,7 @@ Next we’ll transfer these metadata fields to CSV format. First, let’s create
 
     for key in json_data['records'][0]['fields']:
         header.append(key)
-    
+
     print header
 ```
 Then we’ll use our column titles (which are also keys in the “fields” key-value set) to create a list of rows for our CSV. Since the CSV writer prefers working with non-Unicode strings, we’ll use the `str()` function to reformat each metadata item as we add it to the table.
@@ -102,7 +102,7 @@ Then we’ll use our column titles (which are also keys in the “fields” key-
         for key in header:
             row.append(unidecode(record['fields'][key]))
         meta_table.append(row)
-    
+
     print meta_table[0]
 ```
 Now let’s make a string version of our header.
@@ -126,11 +126,18 @@ Finally, we’ll write our metadata collection as a CSV.
 ```
 Open your CSV in Excel or Calc.
 
-#### OpenRefine
-We will use OpenRefine in the regular file system. 
 
-Launch the OpenRefine application and enter the following in your browser’s URL bar to access the interface.
-- [http://127.0.0.1:3333/](http://127.0.0.1:3333/)
+#### OpenRefine
+
+Open a new terminal window and runt the following command to download and run a Dockerized copy of the tabluar data cleaning program OpenRefine.
+
+```
+docker run --name openrefine -d -p 3334:3333 psychemedia/docker-openrefine
+```
+
+Enter the following address in your browser’s URL bar to open the application.
+
+- [http://127.0.0.1:3334/](http://127.0.0.1:3334/)
 
 Click “Create Project” then “Choose Files” and choose “V\_and\_A\_ivory.csv.” Click “Next.” In the following window, click “Create Project” in the upper right corner.
 
@@ -139,5 +146,8 @@ At the top of the “place” column, click the dropdown button and choose “Te
 Note that several “place” records are listed as “Germany,” while others are German cities. Let’s group them under a single facet.
 
 
+#### Discussion and review of key points from reading
 
 
+
+>>>>>>> 30ccb85bc43cd914795ae26354507facd0ba97eb
