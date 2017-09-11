@@ -378,3 +378,9 @@ To view all current Docker containers, enter the following command:
 ```
 docker ps -a
 ```
+
+To close and remove a container, use the `docker rm -f command` followed by its name, like so:
+
+```
+docker rm -f pcda_ubuntu
+```
