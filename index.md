@@ -111,7 +111,7 @@ To start for next week:
 ##### [▸ In-class outline](week-01.md)
 
 
-- [macOS command line setup steps](tutorials/mac_OS_command_line_setup.md)
+- **[macOS command line setup steps](tutorials/mac_OS_command_line_setup.md)**
 
 
 ----------------------------------------------------------------
