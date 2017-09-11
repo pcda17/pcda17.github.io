@@ -370,3 +370,11 @@ os.system('''ffmpeg -i "concat:clip0.mp4|clip1.mp4|clip2.mp4|clip3.mp4|clip4.mp4
 ```
 
 #### **12.** Closing Docker
+
+To leave a Docker interactive terminal session and return to your main operating system's shell, press `ctrl + p` followed by `ctrl + q`.
+
+To view all current Docker containers, enter the following command:
+
+```
+docker ps -a
+```
