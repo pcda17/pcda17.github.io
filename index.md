@@ -12,7 +12,7 @@ TA: Steve McLaughlin
 Office hours: Mondays 1–3 p.m., UTA 5.558
 
 
-##### In-Class Outlines:
+##### Course Schedule
 
 [Week 1](#week1) | [Week 2](#week2) | [Week 3](#week3) | [Week 4](#week4) | 
 [Week 5](#week5) | [Week 6](#week6) | [Week 7](#week7) | [Week 8](#week8) | 
