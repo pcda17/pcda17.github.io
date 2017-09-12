@@ -18,6 +18,7 @@ Office hours: Mondays 1–3 p.m., UTA 5.558
 [Week 5](#week5) | [Week 6](#week6) | [Week 7](#week7) | [Week 8](#week8) | 
 [Week 9](#week9) | [Week 10](#week10) | [Week 11](#week11) | [Week 12](#week12)
  | [Week 13](#week13) | [Week 14](#week14)
+
 ### Course Objectives
 
 Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred;
@@ -110,8 +111,6 @@ To start for next week:
 
 ##### [▸ In-class outline](week-01.md)
 
-
-- **[macOS command line setup steps](tutorials/mac_OS_command_line_setup.md)**
 
 
 ----------------------------------------------------------------
@@ -549,11 +548,12 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ##### [▸ In-class outline](week-13.md)
 
 
-
 ----------------------------------------------------------------
 
 # <a name="week14"></a>Week 14 (12/11): Final Presentations
 
 [Final Presentation due](https://utexas.instructure.com/courses/1204381/assignments/4166564)
+
+-- **[Installation Tutorials](tutorials/)**
 
 12/18: [Final Project due](https://utexas.instructure.com/courses/1204381/assignments/4166548)
