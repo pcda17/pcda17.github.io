@@ -94,7 +94,7 @@ Assignments should be posted on Canvas by midnight the day before class.
 ----------------------------------------------------------------
 
 
-# <a name="week1"></a>Week 1 (9/11): Introductions & Command Line Basics 
+# <a name="week1"></a>Week 1 (9/11): Introductions & Command Line Basics
 
 ### Readings
 
@@ -110,6 +110,8 @@ To start for next week:
 
 ##### [▸ In-class outline](week-01.md)
 
+
+- **[macOS command line setup steps](tutorials/mac_OS_command_line_setup.md)**
 
 
 ----------------------------------------------------------------
