@@ -14,8 +14,8 @@ Office hours: Mondays 1–3 p.m., UTA 5.558
 
 ##### In-Class Outlines:
 
-[Week 1](#week1) | [Week 2](#week2) | [Week 3](#week3) | [Week 4](#week4)
-[Week 5](#week5) | [Week 6](#week6) | [Week 7](#week7) | [Week 8](#week8)
+[Week 1](#week1) | [Week 2](#week2) | [Week 3](#week3) | [Week 4](#week4) | 
+[Week 5](#week5) | [Week 6](#week6) | [Week 7](#week7) | [Week 8](#week8) | 
 [Week 9](#week9) | [Week 10](#week10) | [Week 11](#week11) | [Week 12](#week12)
  | [Week 13](#week13) | [Week 14](#week14)
 ### Course Objectives
@@ -123,17 +123,6 @@ To start for next week:
 
 **[Readings in Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_2)**
 
-
-Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
-
--   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
-
-Work through Chris Albon’s tutorial on Python string operations.
--   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
-
-
--   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
-
 -   Noria, Xavier. “Understanding Newlines.” *O’Reilly ONLamp*, August 17, 2006. [http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html](http://www.onlamp.com/pub/a/onlamp/2006/08/17/understanding-newlines.html)
 
 -   Oualline, Steve. “The End of Line Puzzle.” *The Practical Programmer*. [http://www.oualline.com/practical.programmer/eol.html](http://www.oualline.com/practical.programmer/eol.html)
@@ -142,7 +131,15 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip). [PDF](https://www.dropbox.com/s/kbpvllkmlb7u5uh/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.pdf?dl=1). [EPUB](https://www.dropbox.com/s/sisnsmw0m0b6vci/Neal%20Stephenson%201999%20-%20In%20the%20Beginning%20was%20the%20Command%20Line.epub?dl=0).
 
+### Optional
+Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 
+-   Shieber, Stuart M., *Programming for Humanists* pages 1–28, 2014. [http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf](http://blogs.harvard.edu/programmingforhumanists/files/2014/12/proghum.pdf)
+
+Work through Chris Albon’s tutorial on Python string operations.
+-   Albon, Chris. “String Operations.” [http://chrisalbon.com/python/string_operations.html](http://chrisalbon.com/python/string_operations.html)
+
+-   Neff, Gina, Tanweer, Anissa, Fiore-Gartland, Brittany, Osburn, Laura  Critique and Contribute: A Practice-Based Framework for Improving Critical Data Studies and Data Science. *Big Data* 5, no. 2, 2017.
 
 
 ### Assignment
@@ -447,6 +444,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 -   Baharudin, Baharum, Lam Hong Lee, and Khairullah Khan. “A Review of Machine Learning Algorithms for Text-Documents Classification.” *Journal of Advances in Information Technology* 1, no. 1 (February 1, 2010). [PDF](https://www.dropbox.com/s/iljelruc17gvj0g/Khan%20et%20al.%202010%20-%20A%20Review%20of%20Machine%20Learning%20Algorithms%20for%20Text-Documents%20Classification.pdf?dl=0).
 
+-   Wolfram, S. Machine Learning for Middle Schoolers. Stephen Wolfram Blog. 11 May 2017. [http://blog.stephenwolfram.com/2017/05/machine-learning-for-middle-schoolers/#comments](http://blog.stephenwolfram.com/2017/05/machine-learning-for-middle-schoolers/#comments) 
 
 ### Assignment
 
