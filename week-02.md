@@ -126,7 +126,7 @@ Now we’ll review reading and writing text files from the Python environment. V
 First we’ll assign the file’s pathname to the variable `filepath` and create the file stream object we’ll use to read its contents. Open the Python shell and enter the following lines.
 
     filepath = "/sharedfolder/pg623.txt"
-    file = open(filepath)
+    file = open(filepath, encoding='utf-8')
 
 Then we’ll make an empty list called `swift_lines` and iterate through our file stream using a for loop, adding each line to the list as we go.
 
