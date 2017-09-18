@@ -22,7 +22,7 @@ docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\mclaugh\Desktop
 And enter the following line to launch the Python shell.
 
 ```
-python
+python3
 
 ```
 
@@ -209,7 +209,7 @@ If we’d like to convert our list of lines to a block of flowable text, we can 
 
 #### Accessing Text Files on the Web
 
-The Python module `urllib`  makes grabbing text from the Web as easy as working with local files. Let’s download the first two chapters of _A Confederacy of Dunces_ in plain ASCII format.
+The Python module `urllib.request`  makes grabbing text from the Web as easy as working with local files. Let’s download the first two chapters of _A Confederacy of Dunces_ in plain ASCII format.
 
 ```
 from urllib.request import urlopen
@@ -423,7 +423,7 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 
 > _A possible solution:_
 >
->     url = "http://www.gutenberg.org/cache/epub/623/pg623.txt"
+>     url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt"
 >     swift_lines = urlopen(url).read().splitlines()
 >     
 >     random_lines = random.sample(lines,14)
@@ -431,13 +431,12 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 >     for line in random_lines:
 >          print line
 
-> **Tip:** If you have trouble downloading a file from Project Gutenberg, open the [URL](http://www.gutenberg.org/cache/epub/623/pg623.txt) in your browser and complete a CAPTCHA to prove you’re human.
 
 _Exercise:_ Modify your code to return 14 random lines containing a chosen word or phrase.
 
 > _A possible solution:_
 >
->     url="http://www.gutenberg.org/cache/epub/623/pg623.txt"
+>     url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt"
 >     swift_lines = urlopen(url).read().splitlines()
 >     
 >     swift_she=[]
@@ -454,7 +453,7 @@ _Exercise:_ Try using a different text and compare the results.
 > _A possible solution:_
 >
 >     url="http://www.gutenberg.org/cache/epub/14328/pg14328.txt"
->     boethius_lines = urllib2.urlopen(url).read().splitlines()
+>     boethius_lines = urlopen(url).read().splitlines()
 >     
 >     boethius_she=[]
 >     
