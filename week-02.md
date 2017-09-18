@@ -29,7 +29,7 @@ python
 Assign a sentence to the variable `sentence` — in this case the opening line from John Kennedy Toole’s  _A Confederacy of Dunces_. Type the name of the variable and hit return to view your new string.
 
 ```    
-sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
+sentence = "A green hunting cap squeezed the top of a fleshy balloon of a head."
 
 sentence
 ```
