@@ -209,11 +209,13 @@ If we’d like to convert our list of lines to a block of flowable text, we can 
 
 #### Accessing Text Files on the Web
 
-The Python module `urllib2`  makes grabbing text from the Web as easy as working with local files. Let’s download the first two chapters of _A Confederacy of Dunces_ in plain ASCII format.
+The Python module `urllib`  makes grabbing text from the Web as easy as working with local files. Let’s download the first two chapters of _A Confederacy of Dunces_ in plain ASCII format.
 
-    import urllib2
-    url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
-    toole_lines = urllib2.urlopen(url).read().splitlines()
+```
+from urllib.request import urlopen
+url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
+toole_lines = urlopen(url).read().splitlines()
+```
 
 Let’s look at the 200th line in the file.
 
@@ -255,7 +257,7 @@ Here is a simple function that multiplies a number (float or int) by itself.
 
 ```python
 def square(number):
-     return number*number
+     return number * number
 
 square(11)
 ```
@@ -267,7 +269,7 @@ We can also create functions that take two or more arguments.
 
 ```python
 def multiply(x,y):
-    return x*y
+    return x * y
 
 multiply(4,6)
 ```
@@ -307,7 +309,7 @@ Import the `random` module and generate a random float X, where 0 \<= X \< 1.
 
 Return a random integer from 0 to 49.
 
-    int(random.random()*50)
+    int(random.random() * 50)
 
 This is equivalent to the following:
 
@@ -421,10 +423,10 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 
 > _A possible solution:_
 >
->     url="http://www.gutenberg.org/cache/epub/623/pg623.txt"
->     swift_lines=urllib2.urlopen(url).read().splitlines()
+>     url = "http://www.gutenberg.org/cache/epub/623/pg623.txt"
+>     swift_lines = urlopen(url).read().splitlines()
 >     
->     random_lines=random.sample(lines,14)
+>     random_lines = random.sample(lines,14)
 >     
 >     for line in random_lines:
 >          print line
@@ -436,7 +438,7 @@ _Exercise:_ Modify your code to return 14 random lines containing a chosen word 
 > _A possible solution:_
 >
 >     url="http://www.gutenberg.org/cache/epub/623/pg623.txt"
->     swift_lines=urllib2.urlopen(url).read().splitlines()
+>     swift_lines = urlopen(url).read().splitlines()
 >     
 >     swift_she=[]
 >     
@@ -452,7 +454,7 @@ _Exercise:_ Try using a different text and compare the results.
 > _A possible solution:_
 >
 >     url="http://www.gutenberg.org/cache/epub/14328/pg14328.txt"
->     boethius_lines=urllib2.urlopen(url).read().splitlines()
+>     boethius_lines = urllib2.urlopen(url).read().splitlines()
 >     
 >     boethius_she=[]
 >     
@@ -570,10 +572,10 @@ Start a new Python 3 notebook by going to `File/New Notebook` in the Jupyter win
 
 Enter the following in a cell.
 
-```python
-import urllib2
-url="http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
-page=urllib2.urlopen(url).read()
+```python3
+from urllib.request import urlopen
+url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
+page = urlopen(url).read()
 
 print page
 ```
@@ -598,7 +600,7 @@ Now the first element of our list should begin with a review.
 
 Now let’s remove the code following each review. Since the text "Was this review helpful to you?" appears after every review, let’s use that as our delimiter. We’ll split each segment at that point and discard everything that follows it using list bracket notation.
 
-```python
+```python3
 segs2=[]
 for segment in segs:
      segs2.append(segment.split("Was this review helpful to you?")[0])
@@ -645,7 +647,7 @@ You can use the `html_stripper` function above or modify it at will.
 
 > _A possible solution:_
 >
->     import urllib2
+>     from urllib.request import urlopen
 >     import pprint
 >     pp = pprint.PrettyPrinter()
 >     
@@ -656,18 +658,18 @@ You can use the `html_stripper` function above or modify it at will.
 >     
 >     def review_to_list(segment):
 >          temp_list=striphtml(s_egment).split('\n\n')
->          review_list=[]
+>          review_list = []
 >          for item in temp_list:
 >                if item!='':
 >                review_list.append(item.strip())
 >          return review_list
 >     
 >     def page_to_table(url):
->          page=rllib2.urlopen(url).read()
->          page=page.split("Filter by:")[1]
->          segs=page.split('''review-rating">''')
->          segs=segs[1:]
->          segs2=[]
+>          page = urlopen(url).read()
+>          page = page.split("Filter by:")[1]
+>          segs = page.split('''review-rating">''')
+>          segs = segs[1:]
+>          segs2 = []
 >          for segment in segs:
 >                segs2.append(segment.split("Was this review helpful to you?")[0])
 >          table=[]
@@ -682,7 +684,7 @@ You can use the `html_stripper` function above or modify it at will.
 
 
 
-    outpath="/sharedfolder/amazon.csv"
+    outpath = "/sharedfolder/amazon.csv"
     o = open(outpath, 'w')
     a = csv.writer(o)
     a.writerows(review_table)
@@ -695,7 +697,7 @@ You can use the `html_stripper` function above or modify it at will.
 - Add shebang line at top of file:
 
 ```
-  #!/usr/bin/env python
+  #!/usr/bin/env python3
 ```
 
 - Name the file `page.html.py`
