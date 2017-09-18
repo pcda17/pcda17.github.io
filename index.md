@@ -165,9 +165,9 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 - Allardice, Simon. “Foundations of Programming: Fundamentals, parts 1-3; part 5, just "part 5, Breaking your code apart"; and part 14, just “Python” and “Libraries and frameworks”. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html) [To access Lynda.com. follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
 
-- Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
-
 - Clement, T. and McLaughlin, S. “Measured Applause: Toward a Cultural Analysis of Audio Collections.” Cultural Analytics, vol. 1, no. 1, 2016. [http://culturalanalytics.org/2016/05/measured-applause-toward-a-cultural-analysis-of-audio-collections/](http://culturalanalytics.org/2016/05/measured-applause-toward-a-cultural-analysis-of-audio-collections/)
+
+- Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
 - Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23.
 
@@ -202,15 +202,14 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 -   Albon, Chris. “Parse JSON File.” [http://chrisalbon.com/python/json_parse_file.html](http://chrisalbon.com/python/json_parse_file.html)
 
+-   Fortune, Stephen. “A Brief History of Databases.” *Avant*, February 27th 2014. [https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases](https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases)
+
 -   van Hooland, Seth, and Ruben Verborgh. “Modelling.” In *Linked Data for Libraries, Archives and Museums: How to Clean, Link and Publish Your Metadata*, 11–70. Chicago: Neal-Schuman, 2014.
 
 -   Zhuang, Atima Han, Ishita Vedvyas, and Rishikesh Dole. “Tutorial: OpenRefine,” 2013. [http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf](http://casci.umd.edu/wp-content/uploads/2013/12/OpenRefine-tutorial-v1.5.pdf)
 
 
 ### Optional Readings
-
-
--   Fortune, Stephen. “A Brief History of Databases.” *Avant*, February 27th 2014. [https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases](https://web.archive.org/web/20150220031213/http://avant.org/media/history-of-databases)
 
 -   Lundh, Fredrik. “Elements and Element Trees.” [http://effbot.org/zone/element.htm](http://effbot.org/zone/element.htm) [Python XML tutorial]
 
@@ -231,11 +230,12 @@ Work through Chris Albon’s tutorial on Python string operations.
 # <a name="week5"></a>Week 5 (10/9): Word-Level Text Analysis
 
 
-Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
+<! -- Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
 
-> pip install --user -U textblob
->
-> python -m textblob.download_corpora
+pip install --user -U textblob
+
+python -m textblob.download_corpora
+-->
 
 
 ### Readings
