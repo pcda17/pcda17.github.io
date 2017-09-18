@@ -5,14 +5,6 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 - [Artworks.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artworks.csv)
 
 
-## Topics to Cover
-- Opening and editing CSV, JSON, and XML files in Python
-- Sorting a table by key
-  - [https://docs.python.org/2/howto/sorting.html#key-functions](https://docs.python.org/2/howto/sorting.html#key-functions)
-- Discuss strengths and weaknesses of CSV, JSON, XML, and RDF models for various applications.
-- Cleaning data using OpenRefine
-  - Provide several data sets and work through OpenRefine tools as a class.
-
 #### Run Docker through Terminal
 ```
 docker rm -f pcda_ubuntu

@@ -145,9 +145,3 @@ At the top of the “place” column, click the dropdown button and choose “Te
 
 Note that several “place” records are listed as “Germany,” while others are German cities. Let’s group them under a single facet.
 
-
-#### Discussion and review of key points from reading
-
-
-
->>>>>>> 30ccb85bc43cd914795ae26354507facd0ba97eb
