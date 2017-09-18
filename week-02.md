@@ -8,7 +8,6 @@ Open Terminal in macOS and launch our Docker container:
 docker rm -f pcda_ubuntu
 docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
-
 ```
 
 In Windows 10, open PowerShell and enter the following to launch the Docker container:
@@ -23,7 +22,6 @@ And enter the following line to launch the Python shell.
 
 ```
 python3
-
 ```
 
 Assign a sentence to the variable `sentence` — in this case the opening line from John Kennedy Toole’s  _A Confederacy of Dunces_. Type the name of the variable and hit return to view your new string.
@@ -237,7 +235,7 @@ To do a case-insensitive substring search, use the `lower()` function to convert
 
 Try creating a simple text filter or two, printing all lines that contain a given substring. Run these examples one at a time, then search for a word of your choice.
 
-```python
+```python3
 for line in toole_lines:
     if "orleans" in line.lower():
         print(line)
@@ -255,7 +253,7 @@ We talked a bit about functions last week, but let’s review. Note that when yo
 
 Here is a simple function that multiplies a number (float or int) by itself.
 
-```python
+```python3
 def square(number):
      return number * number
 
@@ -267,7 +265,7 @@ Note that functions can be nested within one another. The following will call th
 
 We can also create functions that take two or more arguments.
 
-```python
+```python3
 def multiply(x,y):
     return x * y
 
@@ -276,7 +274,7 @@ multiply(4,6)
 
 And here’s an example of a function that manipulates string data.
 
-```python
+```python3
 def pluralize(string):
      return string + 's'
 
@@ -292,7 +290,7 @@ Python is weakly typed, meaning intended data types don’t need to be specified
 
 Using the `str`, `int`, and `float` functions, we can cast values as string, int, or float data types (when doing so is possible).
 
-```python
+```python3
 def pluralize(string):
      print(str(string) + 's')
 
@@ -555,13 +553,13 @@ The `os` library contains many useful tools for working with local files and eve
     file_list=os.listdir("./")
     file_list
 
-> **Tip:** The `os` library won’t recognize the `~/` shortcut for a user’s local files.
+> **Tip:** In macOS, the `os` library won’t recognize the `~/` shortcut for a user’s local files. Instead, use os.path.expanduser('~/path/to/file.txt').
 
 The `os.system` function lets us issue commands at the level of the system shell. The following example will print the contents of your desktop. Note that whereas `os.listdir()` returns a list object containing filenames, the following simply displays a list of files as if you were using the Bash shell.
 
     os.system("ls /sharedfolder/")
 
-> **Tip:** Spaces in filenames are handled differently in `os.chdir` and `os.system`. In the latter case they must be escaped (preceded by a backslash) in keeping with Unix conventions, while in the former escaped spaces will generate errors. For convenience, it’s helpful to avoid spaces in filenames.
+> **Tip:** Spaces in filenames are handled differently in `os.chdir()` and `os.system()`. In the latter case they must be escaped (preceded by a backslash) in keeping with Unix conventions, while in the former escaped spaces will generate errors. For convenience, it’s helpful to avoid spaces in filenames.
 
 
 
@@ -627,7 +625,7 @@ Note that there are multiple newlines between fields of interest, each one corre
 
 We’re getting there, but our list contains some empty strings and several entries may begin with newline characters. We can take care of these issues with a for loop, creating a new list that excludes empty strings and applies `strip()` to remove whitespace from each field we add.
 
-```python
+```python3
 review_list=[]
 for item in temp_list:
      if item!='':
