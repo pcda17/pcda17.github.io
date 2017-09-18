@@ -228,23 +228,23 @@ Let’s look at the 200th line in the file.
 Since we’ll be doing a lot of text filtering this semester, you should get used to checking whether a string includes a specified substring. Enter the following lines and press return twice. The first return brings us to a new line and lets us add more indented code if we choose to. The second confirms we've finished our conditional statement and runs it.
 
     if "Reilly" in "Ignatius J. Reilly":
-         print "yes"
+         print("yes")
 
 To do a case-insensitive substring search, use the `lower()` function to convert your original string to lowercase. If your search term contains any capital letters, you’ll want to convert it to lowercase as well.
 
     if "reilly" in "Ignatius J. Reilly".lower():
-         print "yes"
+         print("yes")
 
 Try creating a simple text filter or two, printing all lines that contain a given substring. Run these examples one at a time, then search for a word of your choice.
 
 ```python
 for line in toole_lines:
     if "orleans" in line.lower():
-        print line
+        print(line)
 
 for line in toole_lines:
     if "doughnut" in line.lower():
-        print line
+        print(line)
 ```
 
 While you’re at it, use a for loop to identify the sentence by Jonathan Swift (in `swift_lines`) that Toole references in his title _A Confederacy of Dunces_. Try to resist the urge to use ⌘+F in TextWrangler.
@@ -294,7 +294,7 @@ Using the `str`, `int`, and `float` functions, we can cast values as string, int
 
 ```python
 def pluralize(string):
-     print str(string) + 's'
+     print(str(string) + 's')
 
 pluralize(1960)
 ```
@@ -429,7 +429,7 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 >     random_lines = random.sample(lines,14)
 >     
 >     for line in random_lines:
->          print line
+>          print(line)
 
 
 _Exercise:_ Modify your code to return 14 random lines containing a chosen word or phrase.
@@ -446,7 +446,7 @@ _Exercise:_ Modify your code to return 14 random lines containing a chosen word 
 >                swift_she.append(line)
 >     
 >     for line in random.sample(swift_she,14):
->         print line
+>         print(line)
 
 _Exercise:_ Try using a different text and compare the results.
 
@@ -462,7 +462,7 @@ _Exercise:_ Try using a different text and compare the results.
 >                boethius_she.append(line)
 >     
 >     for line in random.sample(boethius_she,14):
->         print line
+>         print(line)
 
 
 #### Launching Jupyter
@@ -498,7 +498,7 @@ You’re now in the Jupyter environment. Here, you can create a series of "cells
 
 Type a line of code that prints a string. To run the current cell, either click the `►❙` icon or go to the "Cell" menu and choose "Run Cells."
 
-    print "Hello Jupyter!"
+    print("Hello Jupyter!")
 
 ![](week/2/Image-4.png)
 
@@ -576,7 +576,7 @@ from urllib.request import urlopen
 url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
 page = urlopen(url).read()
 
-print page
+print(page)
 ```
 
 To make things simple, let’s skip the reviews at the top of the page and only process the ten that appear below. Find a piece of text that only appears between the two sections — "Filter by:" is a good example — and use `split()` to make a list with two elements. Then assign the second chunk (at index 1) to the `page` variable.
@@ -587,7 +587,7 @@ Next we’ll split the remaining text into individual reviews. Note that the "re
 at those points, using triple quotes to include the end of the HTML tag.
 
     segs=page.split('''review-rating">''')
-    print segs[0]
+    print(segs[0])
 
 Since the first item in our list of segments comes before the first review, we’ll remove it using list index notation.
 
@@ -595,7 +595,7 @@ Since the first item in our list of segments comes before the first review, we�
 
 Now the first element of our list should begin with a review.
 
-    print segs[0]
+    print(segs[0])
 
 Now let’s remove the code following each review. Since the text "Was this review helpful to you?" appears after every review, let’s use that as our delimiter. We’ll split each segment at that point and discard everything that follows it using list bracket notation.
 
@@ -605,7 +605,7 @@ for segment in segs:
      segs2.append(segment.split("Was this review helpful to you?")[0])
 
 test_seg=segs2[0]
-print test_seg
+print(test_seg)
 ```
 
 Now that our reviews are roughly cut down to size, let’s clean them up by removing HTML tags. The following function uses Python’s `re` module for working with regular expressions to replace any text between `<` and `>` with a newline. We’ll talk more about regular expressions later in the course.
@@ -623,7 +623,7 @@ Let’s see an HTML-free version of the segment we looked at above.
 Note that there are multiple newlines between fields of interest, each one corresponding to a tag that’s been removed. Since we’d like to create a list of fields, we could use `split('\n')` to divide the text at each newline character — but then we’d also break up reviews with multiple paragraphs. Instead we’ll use pairs of newlines as our delimiter.
 
     temp_list=strip_html(test_seg).split('\n\n')
-    print temp_list
+    print(temp_list)
 
 We’re getting there, but our list contains some empty strings and several entries may begin with newline characters. We can take care of these issues with a for loop, creating a new list that excludes empty strings and applies `strip()` to remove whitespace from each field we add.
 
@@ -633,7 +633,7 @@ for item in temp_list:
      if item!='':
            review_list.append(item.strip())
 
-print review_list
+print(review_list)
 ```
 
 
@@ -709,4 +709,3 @@ Working in pairs, create a server-side script that detects mp3 files in a given 
 - Example podcast feed: [https://www.dropbox.com/s/x5ubi18086eod9n/simple\_podcast.rss?dl=0](#)
 - Example solution: [Link](#)
 -->
-
