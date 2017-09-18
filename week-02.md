@@ -143,14 +143,12 @@ Finally, we’ll close our file stream and view a line from our list.
 >
 >     'flung by the assistance of so foul a goddess should pollute his fountain,\r\n'
 
-**Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
+**Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (i.e., preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
 > Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames.
-
-If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder directory. For example:
-Instead of this pathname:
-"/Users/yourname/Desktop/Artists.csv"
-You would have this pathname:
- "/sharedfolder/Artists.csv"
+> If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder/ directory. For example, instead of this pathname:
+>   "/Users/yourname/Desktop/Artists.csv"
+> You would use this pathname:
+>   "/sharedfolder/Artists.csv"
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose.
 
@@ -386,16 +384,16 @@ By this point you’ve likely noticed that text strings can be enclosed in singl
 
 If we use double quotes, our string can contain single quote characters without ambiguity. Note that the first line below returns an "invalid syntax" error, while the second is successful.
 
-    some_text='How I'm supposed to know who's a cop? Everybody looks the same to me.'
-    some_text="How I'm supposed to know who's a cop? Everybody looks the same to me."
+    some_text = 'How I'm supposed to know who's a cop? Everybody looks the same to me.'
+    some_text = "How I'm supposed to know who's a cop? Everybody looks the same to me."
 
 Likewise, single quotes can be used to assign a string containing double quotes.
 
-    some_more='"We goin back to the factory," the spokesman for the choir, the intense lady, said angrily to Ignatius. "You a bad man. I believe a po-lice looking for you."'
+    some_more = '"We goin back to the factory," the spokesman for the choir, the intense lady, said angrily to Ignatius. "You a bad man. I believe a po-lice looking for you."'
 
 To include newline characters and/or any combination of single and double quotes, Python lets us bound strings with triple quotes (i.e., three single quotes in a row). Copy the entire code block below and paste it into the Python shell.
 
-    even_more_text='''"My," Ignatius said to the old man after having taken his first bite. "These are rather strong. What are the ingredients in these?"
+    even_more_text = '''"My," Ignatius said to the old man after having taken his first bite. "These are rather strong. What are the ingredients in these?"
 
     "Rubber, cereal, tripe. Who knows? I wouldn't touch one of them myself."
 
@@ -405,8 +403,8 @@ To include newline characters and/or any combination of single and double quotes
 
 By default, Python string objects represent text via 8-bit ASCII, a version of a bare-bones text encoding format dating back to the 1960s. Python also supports 16-bit Unicode (UTF-16), a more recent standard that includes ~120,000 characters from a vast array of contemporary and historical scripts, as well as symbol sets including abstract shapes and every emoji. In Python, Unicode strings are immediately preceded by the letter `u`.
 
-    ascii_text="This is an ASCII string."
-    unicode_text=u"This is a Unicode string."
+    ascii_text = "This is an ASCII string."
+    unicode_text = u"This is a Unicode string."
     ascii_text
     unicode_text
 
@@ -437,7 +435,7 @@ _Exercise:_ Modify your code to return 14 random lines containing a chosen word 
 >     url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt"
 >     swift_lines = urlopen(url).read().splitlines()
 >     
->     swift_she=[]
+>     swift_she = []
 >     
 >     for line in swift_lines:
 >          if "she" in line.lower():
@@ -450,10 +448,10 @@ _Exercise:_ Try using a different text and compare the results.
 
 > _A possible solution:_
 >
->     url="http://www.gutenberg.org/cache/epub/14328/pg14328.txt"
+>     url = "http://www.gutenberg.org/cache/epub/14328/pg14328.txt"
 >     boethius_lines = urlopen(url).read().splitlines()
 >     
->     boethius_she=[]
+>     boethius_she = []
 >     
 >     for line in boethius_lines:
 >          if "she" in line.lower():
@@ -550,10 +548,12 @@ The `os` library contains many useful tools for working with local files and eve
 
     import os
     os.chdir("/sharedfolder/")
-    file_list=os.listdir("./")
+    file_list = os.listdir("./")
     file_list
 
-> **Tip:** In macOS, the `os` library won’t recognize the `~/` shortcut for a user’s local files. Instead, use os.path.expanduser('~/path/to/file.txt').
+<!--
+> **Tip:** The `os` library won’t recognize the `~/` shortcut for a user’s local files. Instead, we can use `os.path.expanduser('~/path/to/file.txt')`.
+-->
 
 The `os.system` function lets us issue commands at the level of the system shell. The following example will print the contents of your desktop. Note that whereas `os.listdir()` returns a list object containing filenames, the following simply displays a list of files as if you were using the Bash shell.
 
@@ -579,17 +579,17 @@ print(page)
 
 To make things simple, let’s skip the reviews at the top of the page and only process the ten that appear below. Find a piece of text that only appears between the two sections — "Filter by:" is a good example — and use `split()` to make a list with two elements. Then assign the second chunk (at index 1) to the `page` variable.
 
-    page=page.split("Filter by:")[1]
+    page = page.split("Filter by:")[1]
 
 Next we’ll split the remaining text into individual reviews. Note that the "review rating" HTML class is used at the beginning of each review. We’ll split our page
 at those points, using triple quotes to include the end of the HTML tag.
 
-    segs=page.split('''review-rating">''')
+    segs = page.split('''review-rating">''')
     print(segs[0])
 
 Since the first item in our list of segments comes before the first review, we’ll remove it using list index notation.
 
-    segs=segs[1:]
+    segs = segs[1:]
 
 Now the first element of our list should begin with a review.
 
@@ -598,11 +598,11 @@ Now the first element of our list should begin with a review.
 Now let’s remove the code following each review. Since the text "Was this review helpful to you?" appears after every review, let’s use that as our delimiter. We’ll split each segment at that point and discard everything that follows it using list bracket notation.
 
 ```python3
-segs2=[]
+segs2 = []
 for segment in segs:
      segs2.append(segment.split("Was this review helpful to you?")[0])
 
-test_seg=segs2[0]
+test_seg = segs2[0]
 print(test_seg)
 ```
 
@@ -620,15 +620,15 @@ Let’s see an HTML-free version of the segment we looked at above.
 
 Note that there are multiple newlines between fields of interest, each one corresponding to a tag that’s been removed. Since we’d like to create a list of fields, we could use `split('\n')` to divide the text at each newline character — but then we’d also break up reviews with multiple paragraphs. Instead we’ll use pairs of newlines as our delimiter.
 
-    temp_list=strip_html(test_seg).split('\n\n')
+    temp_list = strip_html(test_seg).split('\n\n')
     print(temp_list)
 
 We’re getting there, but our list contains some empty strings and several entries may begin with newline characters. We can take care of these issues with a for loop, creating a new list that excludes empty strings and applies `strip()` to remove whitespace from each field we add.
 
 ```python3
-review_list=[]
+review_list = []
 for item in temp_list:
-     if item!='':
+     if item != '':
            review_list.append(item.strip())
 
 print(review_list)
@@ -654,7 +654,7 @@ You can use the `html_stripper` function above or modify it at will.
 >          return p.sub('\n', data)
 >     
 >     def review_to_list(segment):
->          temp_list=striphtml(s_egment).split('\n\n')
+>          temp_list = striphtml(s_egment).split('\n\n')
 >          review_list = []
 >          for item in temp_list:
 >                if item!='':
@@ -669,12 +669,12 @@ You can use the `html_stripper` function above or modify it at will.
 >          segs2 = []
 >          for segment in segs:
 >                segs2.append(segment.split("Was this review helpful to you?")[0])
->          table=[]
+>          table = []
 >          for segment in segs2:
 >                table.append(review_to_list(segment))
 >          return table
 >     
->     url="http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/product-reviews/0802130208/ref=cm_cr_dp_see_all_btm?ie=UTF8&showViewpoints=1&sortBy=recent"
+>     url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/product-reviews/0802130208/ref=cm_cr_dp_see_all_btm?ie=UTF8&showViewpoints=1&sortBy=recent"
 >     review_table=page_to_table(url)
 >     
 >     pp.pprint(review_table)
