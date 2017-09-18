@@ -143,14 +143,12 @@ Finally, we’ll close our file stream and view a line from our list.
 >
 >     'flung by the assistance of so foul a goddess should pollute his fountain,\r\n'
 
-**Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
+**Tip:** In macOS you can drag a file from Finder to a Terminal window instead of entering the pathname by hand. If the path contains any spaces, these will be escaped (i.e., preceded by a backslash) in keeping with the conventions of Unix-like interfaces.
 > Python’s `os` module, however, doesn’t recognize escaped characters. In order to avoid confusion, it’s probably best to avoid using spaces in filenames.
-
-If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder directory. For example:
-Instead of this pathname:
-"/Users/yourname/Desktop/Artists.csv"
-You would have this pathname:
- "/sharedfolder/Artists.csv"
+> If you are in our Docker Container, you will have to edit the pathname to reflect the /sharedfolder/ directory. For example, instead of this pathname:
+>   "/Users/yourname/Desktop/Artists.csv"
+> You would use this pathname:
+>   "/sharedfolder/Artists.csv"
 
 Each line ends with `\r\n` , a carriage return followed by a line feed character, suggesting the file was created in a Windows text editor. As Oualline and Noria discuss in this week’s readings, Unix-like systems generally use `\n` to indicate newlines, while `\r\n` is standard in Windows and DOS. To complicate matters, early Apple computers used `\r` on its own for the same purpose.
 
@@ -553,7 +551,9 @@ The `os` library contains many useful tools for working with local files and eve
     file_list=os.listdir("./")
     file_list
 
-> **Tip:** In macOS, the `os` library won’t recognize the `~/` shortcut for a user’s local files. Instead, use os.path.expanduser('~/path/to/file.txt').
+<!--
+> **Tip:** The `os` library won’t recognize the `~/` shortcut for a user’s local files. Instead, we can use `os.path.expanduser('~/path/to/file.txt')`. 
+-->
 
 The `os.system` function lets us issue commands at the level of the system shell. The following example will print the contents of your desktop. Note that whereas `os.listdir()` returns a list object containing filenames, the following simply displays a list of files as if you were using the Bash shell.
 
