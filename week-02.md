@@ -177,7 +177,7 @@ Closing a file stream with `close()` when you’re done with it is good style, t
 
 Or you can use this command, which does the same in one line.
 
-    swift_lines = open(filepath).readlines()
+    swift_lines = open(filepath, encoding='utf-8').readlines()
 
 Note that calling `readlines()` creates a list of all lines in a text file, including any newline characters (in this case, `\r\n` ). Let's take a look at 5 lines from our list.
 
