@@ -2,7 +2,7 @@
 
 **Note:** For this class we’ll start by using Python’s read-eval-print loop (REPL) and then move on to Jupyter notebooks.
 
-Open Terminal and run our docker container:
+Open Terminal in macOS and launch our Docker container:
 
 ```
 docker rm -f pcda_ubuntu
@@ -10,6 +10,15 @@ docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container bash
 
 ```
+
+In Windows 10, open PowerShell and enter the following to launch the Docker container:
+
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\mclaugh\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container bash
+```
+
 And enter the following line to launch the Python shell.
 
 ```
@@ -29,10 +38,10 @@ sentence
 
     A green hunting cap squeezed the top of a fleshy balloon of a head.
 
-We’ll be using lists (which are indicated by brackets [] a lot in the coming weeks. To review Python’s slice notation, we'll create a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable "words2", shows the result.
+We’ll be using lists (which are indicated by brackets []) a lot in the coming weeks. To review Python’s slice notation, we'll create a variable "words" and assign it a list of strings, then we'll assign a subset of the list to a new variable. Viewing the new variable "words2", shows the result.
 
-    words=['A', 'green', 'hunting', 'cap', 'squeezed']
-    words2=words[2:4]
+    words = ['A', 'green', 'hunting', 'cap', 'squeezed']
+    words2 = words[2:4]
     words2
 
 The Python shell should print `['hunting', 'cap']`, i.e., the subset of the list "words" from index 2 to index 3. An *index* refers to a position within an ordered list.In general, `list_name[start:end]`, where "start" and "end" are integers, returns a subset of "list-name" from index `start` to `end-1`. The "end minus 1" bit may seem odd, but in practice it makes slice notation more readable. The snippet above, for instance, gives us a list containing 2 items, equal to 4-2. And if we want to excerpt the first three items in a list, the following notation will do the trick.
@@ -57,17 +66,17 @@ To reverse the order of a list, add an extra colon and "-1."
 
 It’s important to note that in Python, every string is a list of characters under the hood. We can thus reverse the spelling of a sentence like so.
 
-    sentence="A green hunting cap squeezed the top of a fleshy balloon of a head."
+    sentence = "A green hunting cap squeezed the top of a fleshy balloon of a head."
     sentence[::-1]
 
 If want to break our sentence into words, we can use the `split()` function to create a list of substrings with the space character as delimiter.
 
-    words=sentence.split(' ')
+    words = sentence.split(' ')
     words
 
 The `join()` function reverses the process, inserting a chosen string (here, a space) between each item in a list. Note that "sentence2" below is identical to our original "sentence" string.
 
-    sentence2=' '.join(words)
+    sentence2 = ' '.join(words)
     sentence2
     sentence
 
@@ -81,31 +90,31 @@ Using the techniques outlined above, reverse the order of words in our sentence 
 #### Review Continued
 Another useful string function is `replace()`, which lets us swap out one substring for another.
 
-    sentence3=sentence.replace('hunting','baseball')
+    sentence3 = sentence.replace('hunting','baseball')
     sentence3
 
 Finally, note that a number can be represented as one of three data types: integer, float, or string.
 
-    sample_int=35
-    sample_float=35.4
-    sample_string='35'
+    sample_int = 35
+    sample_float = 35.4
+    sample_string = '35'
     sample_int
     sample_float
     sample_string
 
 We can convert among these formats using the `int()`, `float()`, and `str()` functions. After assigning the values below, enter each variable’s name and be sure you understand the result.
 
-    cast_int=int(35.4)
-    cast_float=float(35)
-    cast_string=str(35)
+    cast_int = int(35.4)
+    cast_float = float(35)
+    cast_string = str(35)
     cast_int
     cast_float
     cast_string
 
 A string that includes only numbers and possibly a decimal point — no commas or other characters — can also be cast to the int or float data type.
 
-    x=int('75')
-    y=float('107.5')
+    x = int('75')
+    y = float('107.5')
     x
     y
 
@@ -118,12 +127,12 @@ Now we’ll review reading and writing text files from the Python environment. V
 
 First we’ll assign the file’s pathname to the variable `filepath` and create the file stream object we’ll use to read its contents. Open the Python shell and enter the following lines.
 
-    filepath="/sharedfolder/pg623.txt"
-    file=open(filepath)
+    filepath = "/sharedfolder/pg623.txt"
+    file = open(filepath)
 
 Then we’ll make an empty list called `swift_lines` and iterate through our file stream using a for loop, adding each line to the list as we go.
 
-    swift_lines=[]
+    swift_lines = []
     for line in file:
          swift_lines.append(line)
 
@@ -155,7 +164,7 @@ Our text file from Project Gutenberg is broken into short lines, none longer tha
 
 Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll often find it helpful to get rid of whitespace characters (newlines, spaces, tabs) at the beginning and end of a given string. For a string named `line`, `line.strip()` will return a copy of the string with all newlines and other whitespace characters removed from either end.
 
-    line=swift_lines[1000]
+    line = swift_lines[1000]
     line
     line.strip()
 
@@ -163,14 +172,14 @@ Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll
 
 Closing a file stream with `close()` when you’re done with it is good style, though it’s not strictly required. If you want to keep your code compliant yet crisp, the following format closes a file stream automatically.
 
-    swift_lines=[]
+    swift_lines = []
     with open(filepath) as file:
          for line in file:
                swift_lines.append(line)
 
 Or you can use this command, which does the same in one line.
 
-    swift_lines=open(filepath).readlines()
+    swift_lines = open(filepath).readlines()
 
 Note that calling `readlines()` creates a list of all lines in a text file, including any newline characters (in this case, `\r\n` ). Let's take a look at 5 lines from our list.
 
@@ -182,7 +191,7 @@ Note that calling `readlines()` creates a list of all lines in a text file, incl
 
 We could easily use a for loop with the `strip()` function to remove newlines from each string in the list, but the following line does the same in a shorter form. Here `open()` creates a file stream and `read()` returns the file’s contents as a single string. Finally, `some_text.splitlines()` returns a list of lines in the string `some_text`, removing newline characters along the way. Let's load the file using `splitlines()` and compare the results.
 
-    swift_lines=open(filepath).read().splitlines()
+    swift_lines = open(filepath).read().splitlines()
     swift_lines[100:105]
 
 > _Output:_
@@ -191,7 +200,7 @@ We could easily use a for loop with the `strip()` function to remove newlines fr
 
 If we’d like to convert our list of lines to a block of flowable text, we can use `join()` to combine all items in the list `lines`, each separated by a space. Note that we end up losing the paragraph breaks we saw in the original file.
 
-    swift_text=' '.join(swift_lines)
+    swift_text = ' '.join(swift_lines)
     swift_text[10005:10223]
 
 > _Output:_
@@ -203,8 +212,8 @@ If we’d like to convert our list of lines to a block of flowable text, we can 
 The Python module `urllib2`  makes grabbing text from the Web as easy as working with local files. Let’s download the first two chapters of _A Confederacy of Dunces_ in plain ASCII format.
 
     import urllib2
-    url="https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
-    toole_lines=urllib2.urlopen(url).read().splitlines()
+    url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
+    toole_lines = urllib2.urlopen(url).read().splitlines()
 
 Let’s look at the 200th line in the file.
 
@@ -267,7 +276,7 @@ And here’s an example of a function that manipulates string data.
 
 ```python
 def pluralize(string):
-     return string+'s'
+     return string + 's'
 
 pluralize("eagle")
 ```
@@ -283,7 +292,7 @@ Using the `str`, `int`, and `float` functions, we can cast values as string, int
 
 ```python
 def pluralize(string):
-     print str(string)+'s'
+     print str(string) + 's'
 
 pluralize(1960)
 ```
@@ -309,7 +318,7 @@ Note that `randint` is inclusive, so it may output 49, the second argument we pa
 #### Quick Assignments
 Assign a list of strings to a variable — in this case, a collection of foods mentioned in Toole’s novel.
 
-    foods=['macaroon', 'hot dog', 'jelly doughnut', 'Dr. Nut', 'wine cake', 'Dutch cookies', 'stuffed eggplant', 'jumbalaya with shrimps', 'brownie']
+    foods = ['macaroon', 'hot dog', 'jelly doughnut', 'Dr. Nut', 'wine cake', 'Dutch cookies', 'stuffed eggplant', 'jumbalaya with shrimps', 'brownie']
 
 _Assignment:_ Write a function that accepts a list of strings and returns a randomly chosen value.
 
@@ -325,7 +334,7 @@ _Assignment:_ Create a new function that returns a list of 3 randomly chosen str
 > _A possible solution:_
 >
 >     def random_three(list):
->          temp_list=[]
+>          temp_list = []
 >          for i in range(3):
 >                temp_list.append(random_choice(list))
 >          return temp_list
@@ -334,9 +343,9 @@ _Assignment:_ Create a new function that returns a list of 3 randomly chosen str
 
 _Assignment:_ Modify the function to return a list of 3 random strings containing the letter "a." Don’t worry about repetitions.
     def random_three_with_a(list):
-         temp_list=[]
+         temp_list = []
          while(len(temp_list)<3):
-               temp_choice=random_choice(list)
+               temp_choice = random_choice(list)
                if 'a' in temp_choice:
                      temp_list.append(temp_choice)
          return temp_list
@@ -456,12 +465,19 @@ _Exercise:_ Try using a different text and compare the results.
 
 
 #### Launching Jupyter
-First, leave the Docker terminal (like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter:
+First, leave the Docker terminal (ctrl+p, then ctrl+q, like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter:
 
 ```
 docker rm -f pcda_ubuntu
 docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
+```
+
+Windows 10 version:
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\mclaugh\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
 ```
 
 Open any browser and type (your Juypter Notebook will launch):
