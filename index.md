@@ -158,25 +158,22 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 # <a name="week3"></a>Week 3 (9/25): Collections as Data: Meaning making
 
+### Readings
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
+
 -   “The Jupyter Notebook.” [http://jupyter-notebook.readthedocs.io/en/latest/notebook.html](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 
 -   Optional: Lynda videos [To access follow links below, click “Log in,” then “Organizational Login,” and enter your UT EID and password.]
 
-Allardice, Simon. “Foundations of Programming: Fundamentals, parts 1-3; part 5, just "part 5, Breaking your code apart"; and part 14, just “Python” and “Libraries and frameworks”.
+Lynda.com.
+  -- Allardice, Simon. “Foundations of Programming: Fundamentals, parts 1-3; part 5, just "part 5, Breaking your code apart"; and part 14, just “Python” and “Libraries and frameworks”. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html)
 
-Lynda.com. [http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html](http://www.lynda.com/JavaScript-tutorials/Foundations-of-Programming-Fundamentals/83603-2.html)
-
-Marini, Joe. “Up and Running with Python.” Lynda.com.
+  -- Marini, Joe. “Up and Running with Python.” Lynda.com.
             [http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html](http://www.lynda.com/Python-tutorials/Welcome/122467/142550-4.html)
-
-
-### Readings
-
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_3)**
 
 - Introna, L. D. “The Enframing of Code: Agency, Originality and the Plagiarist.” *Theory, Culture & Society* 28, no. 6 (November 1, 2011): 113–41.
 
-- Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23. [PDF](https://www.dropbox.com/s/avad81hqc5sp6iw/Liu%202013%20-%20The%20Meaning%20of%20the%20Digital%20Humanities.pdf?dl=0).
+- Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 
