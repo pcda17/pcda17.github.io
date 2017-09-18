@@ -16,7 +16,7 @@ In Windows 10, open PowerShell and enter the following to launch the Docker cont
 ```
 docker rm -f pcda_ubuntu
 docker pull pcda17/ubuntu-container
-docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\mclaugh\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container bash
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_here***\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container bash
 ```
 
 And enter the following line to launch the Python shell.
@@ -478,7 +478,7 @@ Windows 10 version:
 ```
 docker rm -f pcda_ubuntu
 docker pull pcda17/ubuntu-container
-docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\mclaugh\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_here***\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
 ```
 
 Open any browser and type (your Juypter Notebook will launch):
