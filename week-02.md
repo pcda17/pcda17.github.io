@@ -169,7 +169,7 @@ Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll
 Closing a file stream with `close()` when you’re done with it is good style, though it’s not strictly required. If you want to keep your code compliant yet crisp, the following format closes a file stream automatically.
 
     swift_lines = []
-    with open(filepath) as file:
+    with open(filepath, encoding='utf-8') as file:
          for line in file:
                swift_lines.append(line)
 
@@ -187,7 +187,7 @@ Note that calling `readlines()` creates a list of all lines in a text file, incl
 
 We could easily use a for loop with the `strip()` function to remove newlines from each string in the list, but the following line does the same in a shorter form. Here `open()` creates a file stream and `read()` returns the file’s contents as a single string. Finally, `some_text.splitlines()` returns a list of lines in the string `some_text`, removing newline characters along the way. Let's load the file using `splitlines()` and compare the results.
 
-    swift_lines = open(filepath).read().splitlines()
+    swift_lines = open(filepath, encoding='utf-8').read().splitlines()
     swift_lines[100:105]
 
 > _Output:_
