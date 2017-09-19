@@ -125,19 +125,25 @@ Now we’ll review reading and writing text files from the Python environment. V
 
 First we’ll assign the file’s pathname to the variable `filepath` and create the file stream object we’ll use to read its contents. Open the Python shell and enter the following lines.
 
-    filepath = "/sharedfolder/pg623.txt"
-    file = open(filepath, encoding='utf-8')
+```
+filepath = "/sharedfolder/pg623.txt"
+file = open(filepath, encoding='utf-8')
+```
 
 Then we’ll make an empty list called `swift_lines` and iterate through our file stream using a for loop, adding each line to the list as we go.
 
-    swift_lines = []
-    for line in file:
-         swift_lines.append(line)
+```
+swift_lines = []
+for line in file:
+    swift_lines.append(line)
+```
 
 Finally, we’ll close our file stream and view a line from our list.
 
-    file.close()
-    swift_lines[1000]
+```
+file.close()
+swift_lines[1000]
+```
 
 > _Output:_
 >
@@ -187,7 +193,7 @@ Note that calling `readlines()` creates a list of all lines in a text file, incl
 
 We could easily use a for loop with the `strip()` function to remove newlines from each string in the list, but the following line does the same in a shorter form. Here `open()` creates a file stream and `read()` returns the file’s contents as a single string. Finally, `some_text.splitlines()` returns a list of lines in the string `some_text`, removing newline characters along the way. Let's load the file using `splitlines()` and compare the results.
 
-    swift_lines = open(filepath, encoding='utf-8').read().splitlines()
+    swift_lines = open(filepath, encoding='utf8').read().splitlines()
     swift_lines[100:105]
 
 > _Output:_
@@ -210,7 +216,7 @@ The Python module `urllib.request`  makes grabbing text from the Web as easy as 
 ```
 from urllib.request import urlopen
 url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/Toole_A-Confederacy-of-Dunces_Ch1-2.txt"
-toole_lines = urlopen(url).read().splitlines()
+toole_lines =  urlopen(url).read().decode('utf8').splitlines()
 ```
 
 Let’s look at the 200th line in the file.
@@ -259,6 +265,7 @@ square(11)
 ```
 
 Note that functions can be nested within one another. The following will call the `square` function twice.
+
     square(square(11))
 
 We can also create functions that take two or more arguments.
@@ -327,6 +334,7 @@ _Assignment:_ Write a function that accepts a list of strings and returns a rand
 >     
 >     random_choice(foods)
 
+
 _Assignment:_ Create a new function that returns a list of 3 randomly chosen strings. Don’t worry about repetitions.
 
 > _A possible solution:_
@@ -340,41 +348,55 @@ _Assignment:_ Create a new function that returns a list of 3 randomly chosen str
 >     random_three(foods)
 
 _Assignment:_ Modify the function to return a list of 3 random strings containing the letter "a." Don’t worry about repetitions.
-    def random_three_with_a(list):
-         temp_list = []
-         while(len(temp_list)<3):
-               temp_choice = random_choice(list)
-               if 'a' in temp_choice:
-                     temp_list.append(temp_choice)
-         return temp_list
 
-    random_three_with_a(foods)
+> _A possible solution:_
+>   
+>    def random_three_with_a(list):
+>         temp_list = []
+>         while(len(temp_list)<3):
+>               temp_choice = random_choice(list)
+>               if 'a' in temp_choice:
+>                     temp_list.append(temp_choice)
+>         return temp_list
+>   
+>    random_three_with_a(foods)
 
 As you might expect, Python provides tools to speed up the work you just did by hand. The following returns a single randomly selected item from a list.
+
     random.choice(foods)
 
-This line returns a list of three random selections without repetition.
+This command returns a list of three random selections without repetition.
 
     random.sample(foods,3)
 
 And this one shuffles the order of a list’s contents, overwriting the original list.
 
-    random.shuffle(foods)
+```
+random.shuffle(foods)    
+
+foods
+```
 
 #### Random Word
 
 Now let’s choose a random word from the English lexicon. Most Unix-like systems include a standard word list called `words`, which some programs use  (or used to use) for spell checking. Let’s assign the pathname for `words` to the variable `word_path`, then load the file as a list of individual words.
 
-    word_path = "/usr/share/dict/words"
-    words = open(word_path).read().splitlines()
+```
+words_path = "/usr/share/dict/words"
+words = open(words_path).read().splitlines()
+```
 
-Let’s check the length of our lexicon. It should be well over 200,000 words.
+Let’s check the length of our lexicon. It should be over 150,000 words.
 
-    len(words)
+```
+len(words)
+```
 
 Enter the following to generate a list of 50 random words.
 
-    random.sample(words,50)
+```
+random.sample(words,50)
+```
 
 Is there anything notable about the words in this random list? If so, how might you explain the pattern?
 
@@ -384,8 +406,11 @@ By this point you’ve likely noticed that text strings can be enclosed in singl
 
 If we use double quotes, our string can contain single quote characters without ambiguity. Note that the first line below returns an "invalid syntax" error, while the second is successful.
 
-    some_text = 'How I'm supposed to know who's a cop? Everybody looks the same to me.'
-    some_text = "How I'm supposed to know who's a cop? Everybody looks the same to me."
+```
+some_text = 'How I'm supposed to know who's a cop? Everybody looks the same to me.'
+
+some_text = "How I'm supposed to know who's a cop? Everybody looks the same to me."
+```
 
 Likewise, single quotes can be used to assign a string containing double quotes.
 
@@ -393,15 +418,18 @@ Likewise, single quotes can be used to assign a string containing double quotes.
 
 To include newline characters and/or any combination of single and double quotes, Python lets us bound strings with triple quotes (i.e., three single quotes in a row). Copy the entire code block below and paste it into the Python shell.
 
-    even_more_text = '''"My," Ignatius said to the old man after having taken his first bite. "These are rather strong. What are the ingredients in these?"
+```
+even_more_text = '''"My," Ignatius said to the old man after having taken his first bite. "These are rather strong. What are the ingredients in these?"
 
-    "Rubber, cereal, tripe. Who knows? I wouldn't touch one of them myself."
+"Rubber, cereal, tripe. Who knows? I wouldn't touch one of them myself."
 
-    "They're curiously appealing," Ignatius said, clearing his throat. "I thought that the vibrissae about my nostrils detected something unique while I was outside."
+"They're curiously appealing," Ignatius said, clearing his throat. "I thought that the vibrissae about my nostrils detected something unique while I was outside."
 
-    Ignatius chewed with a blissful savagery, studying the scar on the man's nose and listening to his whistling.'''
+Ignatius chewed with a blissful savagery, studying the scar on the man's nose and listening to his whistling.'''
+```
 
-By default, Python string objects represent text via 8-bit ASCII, a version of a bare-bones text encoding format dating back to the 1960s. Python also supports 16-bit Unicode (UTF-16), a more recent standard that includes ~120,000 characters from a vast array of contemporary and historical scripts, as well as symbol sets including abstract shapes and every emoji. In Python, Unicode strings are immediately preceded by the letter `u`.
+<!--
+By default, Python 3 string objects represent text using 8-bit ascii, a version of a bare-bones text encoding format dating back to the 1960s. Python also supports 16-bit Unicode (UTF-16), a more recent standard that includes ~120,000 characters from a vast array of contemporary and historical scripts, as well as symbol sets including abstract shapes and every emoji. In Python, Unicode strings are immediately preceded by the letter `u`.
 
     ascii_text = "This is an ASCII string."
     unicode_text = u"This is a Unicode string."
@@ -411,7 +439,7 @@ By default, Python string objects represent text via 8-bit ASCII, a version of a
 Note that we can cast Unicode text to ASCII with the `str()` function.
 
     str(unicode_text)
-
+-->
 
 #### Quick Exercises
 
@@ -420,9 +448,9 @@ _Exercise:_ Download a text file from Project Gutenberg and print 14 randomly ch
 > _A possible solution:_
 >
 >     url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt"
->     swift_lines = urlopen(url).read().splitlines()
+>     swift_lines = urlopen(url).read().decode('utf8').splitlines()
 >     
->     random_lines = random.sample(lines,14)
+>     random_lines = random.sample(swift_lines,14)
 >     
 >     for line in random_lines:
 >          print(line)
@@ -433,7 +461,7 @@ _Exercise:_ Modify your code to return 14 random lines containing a chosen word 
 > _A possible solution:_
 >
 >     url = "https://raw.githubusercontent.com/pcda17/pcda-datasets/master/week-02/pg623.txt"
->     swift_lines = urlopen(url).read().splitlines()
+>     swift_lines = urlopen(url).read().decode('utf8').splitlines()
 >     
 >     swift_she = []
 >     
@@ -449,7 +477,7 @@ _Exercise:_ Try using a different text and compare the results.
 > _A possible solution:_
 >
 >     url = "http://www.gutenberg.org/cache/epub/14328/pg14328.txt"
->     boethius_lines = urlopen(url).read().splitlines()
+>     boethius_lines = urlopen(url).read().decode('utf8').splitlines()
 >     
 >     boethius_she = []
 >     
@@ -462,7 +490,7 @@ _Exercise:_ Try using a different text and compare the results.
 
 
 #### Launching Jupyter
-First, leave the Docker terminal (ctrl+p, then ctrl+q, like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter:
+First, leave the Docker terminal (ctrl+p, then ctrl+q, like we did at the end of last week). Restart the Docker container to run a browser instead of a Terminal applicationso that we can launch Jupyter.
 
 ```
 docker rm -f pcda_ubuntu
@@ -534,9 +562,10 @@ To view a pared-down list of module resources, use the `dir()` function instead.
 
 The result is a challenge to read through, so let’s introduce the `pprint`, or "pretty-print" module.
 
-    import pprint
-    pp = pprint.PrettyPrinter()
-    pp.pprint(dir(random))
+```
+from pprint import pprint
+pprint(dir(random))
+```
 
 ![](week/2/Image-7.png)
 
@@ -572,66 +601,80 @@ Enter the following in a cell.
 ```python3
 from urllib.request import urlopen
 url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
-page = urlopen(url).read()
+page = urlopen(url).read().decode('utf8')
 
 print(page)
 ```
 
-To make things simple, let’s skip the reviews at the top of the page and only process the ten that appear below. Find a piece of text that only appears between the two sections — "Filter by:" is a good example — and use `split()` to make a list with two elements. Then assign the second chunk (at index 1) to the `page` variable.
+To make things simple, let's chop off the top of the page. Find a piece of text that only appears between the product details and the reviews — "Top customer reviews" is a good example — and use `split()` to make a list with two elements. Then assign the second chunk (at index 1) to the `page` variable.
 
-    page = page.split("Filter by:")[1]
+```
+page_bottom = page.split("Top customer reviews")[1]
+```
 
 Next we’ll split the remaining text into individual reviews. Note that the "review rating" HTML class is used at the beginning of each review. We’ll split our page
 at those points, using triple quotes to include the end of the HTML tag.
 
-    segs = page.split('''review-rating">''')
-    print(segs[0])
+```
+review_list = page_bottom.split('''review-rating">''')
+
+print(review_list[0])
+```
 
 Since the first item in our list of segments comes before the first review, we’ll remove it using list index notation.
 
-    segs = segs[1:]
+    review_list = review_list[1:]
 
 Now the first element of our list should begin with a review.
 
-    print(segs[0])
+    print(review_list[0])
 
 Now let’s remove the code following each review. Since the text "Was this review helpful to you?" appears after every review, let’s use that as our delimiter. We’ll split each segment at that point and discard everything that follows it using list bracket notation.
 
 ```python3
-segs2 = []
-for segment in segs:
-     segs2.append(segment.split("Was this review helpful to you?")[0])
+review_list_2 = []
 
-test_seg = segs2[0]
-print(test_seg)
+for review in review_list:
+     review_list_2.append(review.split("Was this review helpful to you?")[0])
+
+test_review = review_list_2[0]
+print(test_review)
 ```
 
 Now that our reviews are roughly cut down to size, let’s clean them up by removing HTML tags. The following function uses Python’s `re` module for working with regular expressions to replace any text between `<` and `>` with a newline. We’ll talk more about regular expressions later in the course.
 
-    import re
-    def strip_html(data):
-         p = re.compile(r'<.*?>')
-         return p.sub('\n', data)
+```
+import re
 
+def strip_html(data):
+    p = re.compile(r'<.*?>')
+    return p.sub('\n', data)
+```
 
 Let’s see an HTML-free version of the segment we looked at above.
 
-    strip_html(test_seg)
+```
+strip_html(test_review)
+```
 
 Note that there are multiple newlines between fields of interest, each one corresponding to a tag that’s been removed. Since we’d like to create a list of fields, we could use `split('\n')` to divide the text at each newline character — but then we’d also break up reviews with multiple paragraphs. Instead we’ll use pairs of newlines as our delimiter.
 
-    temp_list = strip_html(test_seg).split('\n\n')
-    print(temp_list)
+```
+test_review_segments = strip_html(test_review).split('\n\n')
+    
+print(test_review_segments)
+```
 
 We’re getting there, but our list contains some empty strings and several entries may begin with newline characters. We can take care of these issues with a for loop, creating a new list that excludes empty strings and applies `strip()` to remove whitespace from each field we add.
 
 ```python3
-review_list = []
-for item in temp_list:
-     if item != '':
-           review_list.append(item.strip())
+final_review_segments = []
 
-print(review_list)
+for item in test_review_segments:
+     if item != '':
+           final_review_segments.append(item.strip())
+
+print(final_review_segments)
 ```
 
 
@@ -643,49 +686,48 @@ You can use the `html_stripper` function above or modify it at will.
 
 
 > _A possible solution:_
->
->     from urllib.request import urlopen
->     import pprint
->     pp = pprint.PrettyPrinter()
->     
->     import re
->     def striphtml(d_ata):
->          p = re.compile(r'<.*?>')
->          return p.sub('\n', data)
->     
->     def review_to_list(segment):
->          temp_list = striphtml(s_egment).split('\n\n')
->          review_list = []
->          for item in temp_list:
->                if item!='':
+>    
+>    from urllib.request import urlopen
+>    from pprint import pprint
+>    
+>    import re
+>    def strip_html(data):
+>        p = re.compile(r'<.*?>')
+>        return p.sub('\n', data)
+>    
+>    def review_to_list(review):
+>        temp_list = strip_html(review).split('\n\n')
+>        review_list = []
+>        for item in temp_list:
+>             if item != '':
 >                review_list.append(item.strip())
->          return review_list
->     
->     def page_to_table(url):
->          page = urlopen(url).read()
->          page = page.split("Filter by:")[1]
->          segs = page.split('''review-rating">''')
->          segs = segs[1:]
->          segs2 = []
->          for segment in segs:
->                segs2.append(segment.split("Was this review helpful to you?")[0])
->          table = []
->          for segment in segs2:
->                table.append(review_to_list(segment))
->          return table
->     
->     url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/product-reviews/0802130208/ref=cm_cr_dp_see_all_btm?ie=UTF8&showViewpoints=1&sortBy=recent"
->     review_table=page_to_table(url)
->     
->     pp.pprint(review_table)
-
-
-
-    outpath = "/sharedfolder/amazon.csv"
-    o = open(outpath, 'w')
-    a = csv.writer(o)
-    a.writerows(review_table)
-    o.close()
+>        return review_list
+>    
+>    def page_to_table(url):
+>        page = urlopen(url).read().decode('utf8')
+>        page_bottom = page.split("Top customer reviews")[1]
+>        review_list = page_bottom.split('''review-rating">''')
+>        review_list = review_list[1:-1]
+>        review_list_2 = []
+>        for review in review_list:
+>             review_list_2.append(review.split("Was this review helpful to you?")[0])
+>        table = []
+>        for review in review_list_2:
+>             table.append(review_to_list(review))
+>        return table
+>    
+>    url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
+>    review_table = page_to_table(url)
+>    
+>    pprint(review_table)
+>    
+>    import csv
+>    
+>    outpath = "/sharedfolder/amazon.csv"
+>    o = open(outpath, 'w')
+>    a = csv.writer(o)
+>    a.writerows(review_table)
+>    o.close()
 
 
 
