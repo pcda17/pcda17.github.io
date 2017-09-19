@@ -612,11 +612,17 @@ To make things simple, let's chop off the top of the page. Find a piece of text 
 page_bottom = page.split("Top customer reviews")[1]
 ```
 
+Now let's chop off the bottom of the page the same way.
+
+```
+page_middle = page_bottom.split("Set up an Amazon Giveaway")[0]
+```
+
 Next we’ll split the remaining text into individual reviews. Note that the "review rating" HTML class is used at the beginning of each review. We’ll split our page
 at those points, using triple quotes to include the end of the HTML tag.
 
 ```
-review_list = page_bottom.split('''review-rating">''')
+review_list = page_middle.split('''review-rating">''')
 
 print(review_list[0])
 ```
@@ -680,9 +686,9 @@ print(final_review_segments)
 
 #### In-Class Exercise
 
-Open your text editor of choice. Drawing on the code examples above, create a script that accepts a URL and produces a list of lists, one for each review on the page. A good strategy is to split the work between two functions: one that accepts a segment of the text and code (such as `test_seg` above) and returns a cleaned-up list of fields, and a second that
+Open your text editor of choice. Drawing on the code examples above, create a script that accepts a URL and produces a list of lists, one for each review on the page. A good strategy is to split the work between two functions: one that accepts a segment of the text and code (such as `test_review` above) and returns a cleaned-up list of fields, and a second that converts a review and its surrounding code to a list of segments.
 
-You can use the `html_stripper` function above or modify it at will.
+You can use the `html_stripper()` function above or modify it at will.
 
 
 > _A possible solution:_
@@ -706,7 +712,8 @@ You can use the `html_stripper` function above or modify it at will.
 >    def page_to_table(url):
 >        page = urlopen(url).read().decode('utf8')
 >        page_bottom = page.split("Top customer reviews")[1]
->        review_list = page_bottom.split('''review-rating">''')
+>        page_middle = page_bottom.split("Set up an Amazon Giveaway")[0]
+>        review_list = page_middle.split('''review-rating">''')
 >        review_list = review_list[1:-1]
 >        review_list_2 = []
 >        for review in review_list:
@@ -731,6 +738,8 @@ You can use the `html_stripper` function above or modify it at will.
 
 
 
+
+<!--
 ## Demonstrate server-side Python script
 - Create a text file containing Python code to print "Hello world!"
 - Add shebang line at top of file:
@@ -742,6 +751,7 @@ You can use the `html_stripper` function above or modify it at will.
 - Name the file `page.html.py`
 - Upload file to server and set file permissions to 755.
 - Open URL in browser.
+-->
 
 <!--
 #### Optional Exercise: Podcast this Directory
