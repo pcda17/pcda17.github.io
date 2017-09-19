@@ -667,7 +667,7 @@ Note that there are multiple newlines between fields of interest, each one corre
 
 ```
 test_review_segments = strip_html(test_review).split('\n\n')
-    
+
 print(test_review_segments)
 ```
 
@@ -693,48 +693,48 @@ You can use the `html_stripper()` function above or modify it at will.
 
 > _A possible solution:_
 >    
->    from urllib.request import urlopen
->    from pprint import pprint
+>     from urllib.request import urlopen
+>     from pprint import pprint
+>     
+>     import re
+>     def strip_html(data):
+>         p = re.compile(r'<.*?>')
+>         return p.sub('\n', data)
+>     
+>     def review_to_list(review):
+>         temp_list = strip_html(review).split('\n\n')
+>         review_list = []
+>         for item in temp_list:
+>              if item != '':
+>                 review_list.append(item.strip())
+>         return review_list
+>     
+>     def page_to_table(url):
+>         page = urlopen(url).read().decode('utf8')
+>         page_bottom = page.split("Top customer reviews")[1]
+>         page_middle = page_bottom.split("Set up an Amazon Giveaway")[0]
+>         review_list = page_middle.split('''review-rating">''')
+>         review_list = review_list[1:-1]
+>         review_list_2 = []
+>         for review in review_list:
+>              review_list_2.append(review.split("Was this review helpful to you?")[0])
+>         table = []
+>         for review in review_list_2:
+>              table.append(review_to_list(review))
+>         return table
 >    
->    import re
->    def strip_html(data):
->        p = re.compile(r'<.*?>')
->        return p.sub('\n', data)
+>     url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
+>     review_table = page_to_table(url)
 >    
->    def review_to_list(review):
->        temp_list = strip_html(review).split('\n\n')
->        review_list = []
->        for item in temp_list:
->             if item != '':
->                review_list.append(item.strip())
->        return review_list
+>     pprint(review_table)
 >    
->    def page_to_table(url):
->        page = urlopen(url).read().decode('utf8')
->        page_bottom = page.split("Top customer reviews")[1]
->        page_middle = page_bottom.split("Set up an Amazon Giveaway")[0]
->        review_list = page_middle.split('''review-rating">''')
->        review_list = review_list[1:-1]
->        review_list_2 = []
->        for review in review_list:
->             review_list_2.append(review.split("Was this review helpful to you?")[0])
->        table = []
->        for review in review_list_2:
->             table.append(review_to_list(review))
->        return table
+>     import csv
 >    
->    url = "http://www.amazon.com/Confederacy-Dunces-John-Kennedy-Toole/dp/0802130208"
->    review_table = page_to_table(url)
->    
->    pprint(review_table)
->    
->    import csv
->    
->    outpath = "/sharedfolder/amazon.csv"
->    o = open(outpath, 'w')
->    a = csv.writer(o)
->    a.writerows(review_table)
->    o.close()
+>     outpath = "/sharedfolder/amazon.csv"
+>     o = open(outpath, 'w')
+>     a = csv.writer(o)
+>     a.writerows(review_table)
+>     o.close()
 
 
 
