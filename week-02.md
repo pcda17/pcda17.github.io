@@ -127,7 +127,7 @@ First we’ll assign the file’s pathname to the variable `filepath` and create
 
 ```
 filepath = "/sharedfolder/pg623.txt"
-file = open(filepath, encoding='utf-8')
+file = open(filepath, encoding='utf8')
 ```
 
 Then we’ll make an empty list called `swift_lines` and iterate through our file stream using a for loop, adding each line to the list as we go.
@@ -175,13 +175,13 @@ Whether we’re adapting to quirks of history or fixing typing mistakes, we’ll
 Closing a file stream with `close()` when you’re done with it is good style, though it’s not strictly required. If you want to keep your code compliant yet crisp, the following format closes a file stream automatically.
 
     swift_lines = []
-    with open(filepath, encoding='utf-8') as file:
+    with open(filepath, encoding='utf8') as file:
          for line in file:
                swift_lines.append(line)
 
 Or you can use this command, which does the same in one line.
 
-    swift_lines = open(filepath, encoding='utf-8').readlines()
+    swift_lines = open(filepath, encoding='utf8').readlines()
 
 Note that calling `readlines()` creates a list of all lines in a text file, including any newline characters (in this case, `\r\n` ). Let's take a look at 5 lines from our list.
 
