@@ -15,25 +15,25 @@ docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:
 #### Open Jupyter Notebook (see notes in week 2)
 
 #### CSV I/O in Python
-Paste the following code snippet into a new Jupyter notebook. 
+Paste the following code snippet into a new Jupyter notebook.
 
 ```python
     import csv
 
     csv_path="/sharedfolder/Artists.csv"
     artist_table=[]
-    
+
     o = open(csv_path,'rU')
     mydata = csv.reader(o)
-    
+
     for row in mydata:
          artist_table.append(row)
-    
+
     o.close()
-    
+
     artist_header=artist_table[0]
     artist_table.remove(artist_table[0])
-    
+
     artist_header
 ```
 
@@ -46,7 +46,7 @@ len(artist_table)
 artist_table[6310]
 ```
 
-We’ve just copied all the data from a CSV-formatted spreadsheet and turned it into a format Python can easily work with: a list of lists of strings. Let’s walk through the above a step at a time, this time loading MoMa’s artwork metadata. 
+We’ve just copied all the data from a CSV-formatted spreadsheet and turned it into a format Python can easily work with: a list of lists of strings. Let’s walk through the above a step at a time, this time loading MoMa’s artwork metadata.
 
 We began by importing the `csv` module, Python’s built-in CSV input/output tool. Note, since you've already done it above, you don't have to do it again.
 
@@ -92,7 +92,7 @@ Finally, let’s look at our list of column titles …
      artwork_table[60946]
 ```
 
- **Tip:** Python will ignore any text following the “#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes. 
+ **Tip:** Python will ignore any text following the “#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes.
 
 ```python
      header=meta_table[0] #saves list of column titles to variable 'header'
@@ -109,9 +109,9 @@ Write a piece of code that prints each column label in `artist_header` and `artw
 
      for i in range(len(artist_header)):
            print str(i)+' '+artist_header[i]
-     
+
      print '\nArtworks\n'
-             
+
      for i in range(len(artwork_header)):
            print str(i)+' '+artwork_header[i]
 ```
@@ -121,73 +121,74 @@ Write a piece of code that creates a new table (i.e., list of lists) containing 
  _A possible solution:_
 
 ```python
-     born_1880s=[]
+born_1880s=[]
 
-     for row in artist_table:
-         if 1880<=int(row[5])<=1889:
-             born_1880s.append(row)
+for row in artist_table:
+    if 1880<=int(row[5])<=1889:
+        born_1880s.append(row)
 ```
 
 #### Average Artist Age
 Now that we’ve defined a meaningful subset of our data, let’s see what we can do with it. For instance, what was the mean life span of artists born in the 1880s (that happen to be represented at MoMA)?
 
 ```python
-    lifespans_1880s=[]
-    
-    for row in born_1880s:
-       lifespans_1880s.append(int(row[6])-int(row[5]))
-       
-    lifespans_1880s
+lifespans_1880s=[]
+
+for row in born_1880s:
+    lifespans_1880s.append(int(row[6])-int(row[5]))
+
+lifespans_1880s
 ```   
 ![](week/3/Image-1.png)
 
 If you scroll through your list of lifespans, you’ll see occasional negative numbers (e.g., “-1887”). Since missing values are represented by “0,” if no death date is listed we’ll end up subtracting an artist’s birth year from zero. Let’s amend our code to leave out these rows.
 
 ```python
-    lifespans_1880s=[]
-    
-    for row in born_1880s:
-       age=int(row[6])-int(row[5])
-       if age>0:
-           lifespans_1880s.append(age)
-        
-    lifespans_1880s
+lifespans_1880s = []
+
+for row in born_1880s:
+   age = int(row[6])-int(row[5])
+   if age > 0:
+       lifespans_1880s.append(age)
+
+lifespans_1880s
 ```
 Now that we have a list of valid integers, all we need to do is calculate the mean. Below we divide the sum of the list (which we cast as a float) by its length to get 72.65 years.
 
 ```python
-    float(sum(lifespans_1880s)) / len(lifespans_1880s)
+float(sum(lifespans_1880s)) / len(lifespans_1880s)
 ```
-That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways. 
-    
+That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways.
+
 First way to install numpy is to open a new terminal window and type the following
 
 ```python   
-    pip install -U --user numpy
+pip install -U --user numpy
 ```   
 Second way to install numpy is to type the same line but start with \! -- this tells the Jupyter notebook to run the command on the system.
 
 ```python  
-    !pip install -U --user numpy
+!pip install -U --user numpy
 ```
 Once it’s installed, switch back to Jupyter and try this alternative.
 
 ```python
-   import numpy
-       numpy.mean(lifespans_1880s)
+import numpy
+numpy.mean(lifespans_1880s)
 ```
 **Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
 
 ```python
-     from numpy import mean
-     mean(lifespans_1880s)
+from numpy import mean
+mean(lifespans_1880s)
 ```
 Another common convention is to rename `numpy` to `np` at the import step.
 
 ```python
-     import numpy as np
-     np.mean(lifespans_1880s)
+import numpy as np
+np.mean(lifespans_1880s)
 ```
+
 This guide will use to `numpy.mean()` for the sake of clarity, but feel free to set up your environment however you like.
 
 #### Quick Assignment
@@ -195,42 +196,46 @@ Write a piece of code that creates a new table containing all artworks that incl
 
  _A possible solution:_
 
- ```python
-     fluxus_table=[]
+```python
+fluxus_table=[]
 
-     for row in artwork_table:
-         for cell in row:
-             if 'fluxus' in cell.lower():
-                 if row not in fluxus_table:
-                     fluxus_table.append(row)
+for row in artwork_table:
+    for cell in row:
+        if 'fluxus' in cell.lower():
+            if row not in fluxus_table:
+                fluxus_table.append(row)
 ```
+
 #### Fluxus Metadata Continued
 Now let’s make a master list of entries under “medium” in our Fluxus metadata set.
 
 ```python
-   medium_list=[]
-   for row in fluxus_table:
-       medium_list.append(row[9])
-    
-   len(medium_list)
+medium_list=[]
+for row in fluxus_table:
+    medium_list.append(row[9])
+
+len(medium_list)
 ```
+
 Let’s look at 10 random samples from the collection, first importing the `sample()` function from `random`.
 
 ```python
-    from random import sample
-    sample(medium_list,10)
+from random import sample
+sample(medium_list,10)
 ```
+
 ![](week/3/Image-2.png)
 
 Let’s see what terms appear most frequently in our list of media.
 
 ```python
-    from collections import Counter
-    c = Counter(medium_list)
-    c.most_common(10)
+from collections import Counter
+c = Counter(medium_list)
+c.most_common(10)
 ```
+
 ![](week/3/Image-3.png)
-Note that 1605 artworks are missing an entry for “medium,” with the term “(CONFIRM)” appearing 99 times. 
+Note that 1605 artworks are missing an entry for “medium,” with the term “(CONFIRM)” appearing 99 times.
 
 #### Quick Assignment
 Returning to our original MoMA metadata table, write a piece of code that extracts only works created in the 1960s (or another decade of your choosing). Since the date field in MoMA’s metadata doesn’t follow a strictly defined numerical format, you’ll have to think about how to interpret values like “1963,” “1963-5“, “c. 1963,” “c. 1960s,” etc.
@@ -239,17 +244,18 @@ Returning to our original MoMA metadata table, write a piece of code that extrac
  _A simple solution with high recall and low precision:_
 
 ```python
-     art_1960s=[]
-     for row in artwork_table:
-         if '196' in row[8]:
-             art_1960s.append(row)
+art_1960s=[]
+    for row in artwork_table:
+        if '196' in row[8]:
+            art_1960s.append(row)
 ```
+
  _A way-too-elaborate solution with better precision but imperfect recall:_
 
 ```python
-     import string
+import string
 
-     def date_span(date_string):
+def date_span(date_string):
          if len(date_string)==0:return[-1,-1]
          temp_string=date_string
          if ', 1' in temp_string:
@@ -275,43 +281,44 @@ Returning to our original MoMA metadata table, write a piece of code that extrac
                      return [int(pair[0].strip()),int(pair[1].strip())]
                  else: print "error1: "+date_string + "- " + temp_string
          except: print "error2: "+date_string + " - " + temp_string
-                 
+
      art_temp=[]
      for row in artwork_table:
          if '196' in row[8]:
              art_temp.append(row)
-     
+
      art_1960s=[]
      for row in art_temp:
          years=date_span(row[8])
          art_1960s.append(row)
-     
-     art_1960s[:15]
+
+
+    at_1960s[:15]
 ```
- Note that the code above is an example of a decision tree, the absolute simplest kind of “artificial intelligence” algorithm.
+
+Note that the code above is an example of a decision tree, the absolute simplest kind of “artificial intelligence” algorithm.
 
 
 #### Sorting a Table by Column
 
-
 We can sort a table based on the values in a given column with the `sorted` function and and the `itemgetter` tool, which we use to specify the column we’re sorting by. The following sorts the table `art_1960s` by artist name.
 
 ```python
-    from operator import itemgetter
-    art_1960s_sorted=sorted(art_1960s, key=itemgetter(1))
+from operator import itemgetter
+art_1960s_sorted=sorted(art_1960s, key=itemgetter(1))
 ```
 Since each row is so long, let’s just look at our sorted set of authors. The following notation returns a list of  each row’s “Artist” cell, located at index 1.
 
 ```python
-    [row[1] for row in art_1960s_sorted]
+[row[1] for row in art_1960s_sorted]
 ```
 ![](week/3/Image-4.png)
 
 Here we’re once again using the `Counter` constructor from the `collections` module.
 
 ```python
-    c=Counter([row[4] for row in art_1960s_sorted])
-    c.most_common(20)
+c=Counter([row[4] for row in art_1960s_sorted])
+c.most_common(20)
 ```
 ![](week/3/Image-5.png)
 
@@ -321,12 +328,12 @@ It’s impossible to memorize the details of every specialized tool available in
 Now that we’ve filtered and sorted our metadata, let’s export it to a new CSV file called `art_1960s.csv`.
 
 ```python
-    outpath="/sharedfolder/art_1960s.csv"
-    o = open(outpath, 'w')
-    a = csv.writer(o)
-    a.writerows([artwork_header])
-    a.writerows(art_1960s_sorted)
-    o.close()
+outpath="/sharedfolder/art_1960s.csv"
+o = open(outpath, 'w')
+a = csv.writer(o)
+a.writerows([artwork_header])
+a.writerows(art_1960s_sorted)
+o.close()
 ```
 Note that we call use `writerows` function twice, first writing the column headers and then the actual data. Because `writerows` only accepts lists of lists, we’ve enclosed the `header` list object in brackets to create a new list that only contains `header`.
 
@@ -337,65 +344,63 @@ Find the new file on your sharedfolder and open it in Excel or Calc. Take a few 
 So far, when we want to access the “Artist” field in MoMA’s metadata, we’ve been referring to its position in a given row.
 
 ```python
-    row=art_1960s_sorted[7700]
-    row[1]
+row=art_1960s_sorted[7700]
+row[1]
 ```
  _Output:_
 
  ```python
-     'Helen Frankenthaler'
+'Helen Frankenthaler'
 ```
 
 This system is straightforward and well-suited for many jobs, but for large, complex projects it can be difficult to keep track of all those index numbers. Instead, we can use a dictionary to reference metadata fields by name rather than list index.
 
 
-
-
 Just like we can refer to a item in a list using brackets to enclose its position in the list, a dictionary, or dict, uses strings or numbers to identify each item in a collection. This data structure is known as a key-value pair. Here’s the simplest way to create a new dictionary.
 
 ```python
-    artist_meta={}
-    artist_meta['\xef\xbb\xbfConstituentID']=248
-    artist_meta['DisplayName']='Richard Avedon'
-    artist_meta['ArtistBio']='American, 1923–2004'
-    artist_meta['Nationality']='American'
-    artist_meta['Gender']='Male'
-    artist_meta['BeginDate']=1923
-    artist_meta['EndDate']=2004
-    artist_meta['Wiki QID']='Q305497'
-    artist_meta['ULAN']='500013773'
+artist_meta={}
+artist_meta['\xef\xbb\xbfConstituentID']=248
+artist_meta['DisplayName']='Richard Avedon'
+artist_meta['ArtistBio']='American, 1923–2004'
+artist_meta['Nationality']='American'
+artist_meta['Gender']='Male'
+artist_meta['BeginDate']=1923
+artist_meta['EndDate']=2004
+artist_meta['Wiki QID']='Q305497'
+artist_meta['ULAN']='500013773'
 ```
 The following is a more compact format for the same key-value assignment.
 
 ```python
-    artist_meta={'\xef\xbb\xbfConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923\xe2\x80\x932004', 'Nationality': 'American'}
+artist_meta={'\xef\xbb\xbfConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923\xe2\x80\x932004', 'Nationality': 'American'}
 ```
 To access a value, enter its key between brackets like so.
 
 ```python
-    artist_meta['DisplayName']
+artist_meta['DisplayName']
 ```
 And note that you can iterate over a dict to view and/or use its keys.
 
 ```python
-    for key in artist_meta:
-         print key + " - " + str(artist_meta[key])  
+for key in artist_meta:
+    print key + " - " + str(artist_meta[key])  
 ```
 Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a snippet (repeated from above) that loads `Artists.csv` as a list of lists called `artist_table`.
 
 ```python
-    import csv
-    csv_path="/sharedfolder/Artists.csv"
-    artist_table=[]
-    
-    o = open(csv_path,'rU')
-    mydata = csv.reader(o)
-    for row in mydata:
-         artist_table.append(row)
-    
-    o.close()
-    artist_header=artist_table[0]
-    artist_table.remove(artist_table[0])
+import csv
+csv_path="/sharedfolder/Artists.csv"
+artist_table=[]
+
+o = open(csv_path,'rU')
+mydata = csv.reader(o)
+for row in mydata:
+    artist_table.append(row)
+
+o.close()
+artist_header=artist_table[0]
+artist_table.remove(artist_table[0])
 ```
 Now we’ll use a for loop to iterate through `artist_table`, converting each list of cells to key-value format.
 
@@ -419,17 +424,17 @@ for row in artist_table:
 The list `artist_dicts` should now contain records for about 15,000 artists.
 
 ```python
-    len(artist_dicts)
+len(artist_dicts)
 ```
 Specifying an index in brackets will return a dict object.
 
 ```python
-    artist_dicts[12007]
+artist_dicts[12007]
 ```
 And we can use one of our standard key names to get a particular value.
 
 ```python
-    artist_dicts[12007]['DisplayName']
+artist_dicts[12007]['DisplayName']
 ```
 ![](week/3/Image-7.png)
 
