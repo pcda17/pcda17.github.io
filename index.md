@@ -231,7 +231,8 @@ Work through Chris Albon’s tutorial on Python string operations.
 # <a name="week5"></a>Week 5 (10/9): Word-Level Text Analysis
 
 
-<!-- Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
+<!-- 
+Install textblob package before class (a wrapper for NLTK and pattern) and work through Montfort’s code examples. The --user option lets us install a module for the current user only, without requiring an admin password.
 
 pip install --user -U textblob
 
