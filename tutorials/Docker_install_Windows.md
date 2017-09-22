@@ -6,6 +6,7 @@ Docker for Windows installation guide
 -->
 
 Download [Docker Community Edition for Windows](https://store.docker.com/search?type=edition&offering=community).
+*Docker does work with Windows 10 Home Edition, because it does not come with Hyper-V (Microsoft's virtual machine). You will need education edition or higher for it to install properly. The alternative is to download Docker Toolbox which installs an Oracle virtual machine (VMBox). However, there may be conflicts if there are existing virtual machines installed. 
 
 Double click the Docker installer file when it's finished downloading.
 
