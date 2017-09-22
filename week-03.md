@@ -53,7 +53,7 @@ We began by importing the `csv` module, Python’s built-in CSV input/output too
 ```python
 import csv
 ```
-Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook, again replacing `yourname` with your user name.
+Next we assign our pathname to the `artwork_path` variable and initialize an empty list called `artwork_table`. This will become our list of lists, Python’s version of a table. Add the below to your open notebook.
 
 ```python
    artwork_path="/sharedfolder/Artworks.csv"
@@ -105,15 +105,15 @@ Write a piece of code that prints each column label in `artist_header` and `artw
  _A possible solution:_
 
 ```python
-     print 'Artists\n'
+     print('Artists\n')
 
      for i in range(len(artist_header)):
-           print str(i)+' '+artist_header[i]
+           print(str(i)+' '+artist_header[i])
      
-     print '\nArtworks\n'
+     print('\nArtworks\n')
              
      for i in range(len(artwork_header)):
-           print str(i)+' '+artwork_header[i]
+           print(str(i)+' '+artwork_header[i])
 ```
 #### Quick Assignment
 Write a piece of code that creates a new table (i.e., list of lists) containing only artists born in the 1880s.
@@ -273,8 +273,8 @@ Returning to our original MoMA metadata table, write a piece of code that extrac
                      return [int(pair[0].strip()),int(pair[0][:2]+pair[1].strip())]
                  elif len(pair[1])==4:
                      return [int(pair[0].strip()),int(pair[1].strip())]
-                 else: print "error1: "+date_string + "- " + temp_string
-         except: print "error2: "+date_string + " - " + temp_string
+                 else: print("error1: "+date_string + "- " + temp_string)
+         except: print("error2: "+date_string + " - " + temp_string)
                  
      art_temp=[]
      for row in artwork_table:
@@ -379,7 +379,7 @@ And note that you can iterate over a dict to view and/or use its keys.
 
 ```python
     for key in artist_meta:
-         print key + " - " + str(artist_meta[key])  
+         print(key + " - " + str(artist_meta[key]))
 ```
 Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a snippet (repeated from above) that loads `Artists.csv` as a list of lists called `artist_table`.
 
