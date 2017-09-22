@@ -60,7 +60,7 @@ Next we assign our pathname to the `artwork_path` variable and initialize an emp
    artwork_table=[]
 ```
 
-Then we create a file stream object `o` that points to our spreadsheet, including the argument `rU` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
+Then we create a file stream object `o` that points to our spreadsheet, including the argument `r` to specify that we’ll be reading the file and expecting text. We pass our file object to `csv`’s constructor function and assign the new reader object to `mydata`.
 
 ```python
    second_csv = open(artwork_path,'rU')
@@ -158,19 +158,7 @@ Now that we have a list of valid integers, all we need to do is calculate the me
 ```python
     float(sum(lifespans_1880s)) / len(lifespans_1880s)
 ```
-That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. We can install NumPy in one of two ways. 
-    
-First way to install numpy is to open a new terminal window and type the following
-
-```python   
-    pip install -U --user numpy
-```   
-Second way to install numpy is to type the same line but start with \! -- this tells the Jupyter notebook to run the command on the system.
-
-```python  
-    !pip install -U --user numpy
-```
-Once it’s installed, switch back to Jupyter and try this alternative.
+That format is a bit verbose for a simple task like this, so to make life easier we’ll use the Python package `NumPy`. 
 
 ```python
    import numpy
@@ -388,7 +376,7 @@ Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a
     csv_path="/sharedfolder/Artists.csv"
     artist_table=[]
     
-    o = open(csv_path,'rU')
+    o = open(csv_path,'r')
     mydata = csv.reader(o)
     for row in mydata:
          artist_table.append(row)
