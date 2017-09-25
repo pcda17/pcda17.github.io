@@ -342,7 +342,8 @@ o.close()
 ```
 Note that we call use `writerow` function first to write the header row, then `writerows` to write the actual data.
 
-Find the new file on your sharedfolder and open it in Excel or Calc. Take a few moments to explore the collection.
+Find the new file in `sharedfolder` and open it in Excel or LibreOffice. Take a few moments to explore the collection.
+
 ![](week/3/Image-6.png)
 
 #### The Dictionary Data Type
