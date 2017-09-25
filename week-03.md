@@ -4,6 +4,11 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 - [Artists.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artists.csv)
 - [Artworks.csv](https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artworks.csv)
 
+#### Install LibreOffice
+
+Before we start class, download and install LibreOffice:
+- [https://www.libreoffice.org/]()https://www.libreoffice.org/)
+
 
 #### Run Docker container
 
@@ -205,17 +210,19 @@ Now let’s make a master list of entries under “medium” in our Fluxus metad
 
 ```python3
 medium_list = []
+
 for row in fluxus_table:
     medium_list.append(row[9])
 
 len(medium_list)
 ```
 
-Let’s look at 10 random samples from the collection, first importing the `sample()` function from `random`.
+Let’s look at 10 random samples from the collection, first importing the `random` package.
 
 ```python3
-from random import sample
-sample(medium_list,10)
+import random
+
+random.sample(medium_list, 10)
 ```
 
 ![](week/3/Image-2.png)
@@ -224,12 +231,13 @@ Let’s see what terms appear most frequently in our list of media.
 
 ```python3
 from collections import Counter
+
 c = Counter(medium_list)
 c.most_common(10)
 ```
 
 ![](week/3/Image-3.png)
-Note that 1605 artworks are missing an entry for “medium,” with the term “(CONFIRM)” appearing 99 times.
+Note that 1151 artworks are missing an entry for “medium,” with the term “(CONFIRM)” appearing 190 times.
 
 #### Quick Assignment
 Returning to our original MoMA metadata table, write a piece of code that extracts only works created in the 1960s (or another decade of your choosing). Since the date field in MoMA’s metadata doesn’t follow a strictly defined numerical format, you’ll have to think about how to interpret values like “1963,” “1963-5“, “c. 1963,” “c. 1960s,” etc.
@@ -239,11 +247,13 @@ Returning to our original MoMA metadata table, write a piece of code that extrac
 
 ```python3
 art_1960s = []
-    for row in artwork_table:
-        if '196' in row[8]:
-            art_1960s.append(row)
+
+for row in artwork_table:
+    if '196' in row[8]:
+        art_1960s.append(row)
 ```
 
+<!--
  _A way-too-elaborate solution with better precision but imperfect recall:_
 
 ```python3
@@ -292,7 +302,7 @@ def date_span(date_string):
 ```
 
 Note that the code above is an example of a decision tree, the absolute simplest kind of “artificial intelligence” algorithm.
-
+-->
 
 #### Sorting a Table by Column
 
@@ -309,7 +319,7 @@ Since each row is so long, let’s just look at our sorted set of authors. The f
 ```
 ![](week/3/Image-4.png)
 
-Here we’re once again using the `Counter` constructor from the `collections` module.
+Let's look at the most common nationalities in our table of 1960s artworks. Here we’re once again using the `Counter` constructor from the `collections` package.
 
 ```python3
 c = Counter([row[4] for row in art_1960s_sorted])
@@ -326,11 +336,11 @@ Now that we’ve filtered and sorted our metadata, let’s export it to a new CS
 outpath = "/sharedfolder/art_1960s.csv"
 o = open(outpath, 'w')
 a = csv.writer(o)
-a.writerows([artwork_header])
+a.writerow(artwork_header)
 a.writerows(art_1960s_sorted)
 o.close()
 ```
-Note that we call use `writerows` function twice, first writing the column headers and then the actual data. Because `writerows` only accepts lists of lists, we’ve enclosed the `header` list object in brackets to create a new list that only contains `header`.
+Note that we call use `writerow` function first to write the header row, then `writerows` to write the actual data.
 
 Find the new file on your sharedfolder and open it in Excel or Calc. Take a few moments to explore the collection.
 ![](week/3/Image-6.png)
@@ -355,7 +365,7 @@ Just like we can refer to a item in a list using brackets to enclose its positio
 
 ```python3
 artist_meta = {}
-artist_meta['\xef\xbb\xbfConstituentID'] = 248
+artist_meta['\ufeffConstituentID'] = 248
 artist_meta['DisplayName'] = 'Richard Avedon'
 artist_meta['ArtistBio'] = 'American, 1923–2004'
 artist_meta['Nationality'] = 'American'
@@ -368,7 +378,7 @@ artist_meta['ULAN'] = '500013773'
 The following is a more compact format for the same key-value assignment.
 
 ```python3
-artist_meta = {'\xef\xbb\xbfConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923\xe2\x80\x932004', 'Nationality': 'American'}
+artist_meta = {'\ufeffConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923–2004', 'Nationality': 'American'}
 ```
 To access a value, enter its key between brackets like so.
 
@@ -386,17 +396,19 @@ Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a
 
 ```python3
 import csv
-csv_path = "/sharedfolder/Artists.csv"
+
+artist_csv_path = "/sharedfolder/Artists.csv"
 artist_table = []
 
-o = open(csv_path)
-mydata = csv.reader(o)
-for row in mydata:
-    artist_table.append(row)
+with open(artist_csv_path) as fi:
+    csv_input = csv.reader(fi)
+    for row in csv_input:
+        artist_table.append(row)
 
-o.close()
 artist_header = artist_table[0]
 artist_table.remove(artist_table[0])
+
+artist_header
 ```
 
 Now we’ll use a for loop to iterate through `artist_table`, converting each list of cells to key-value format.
@@ -406,7 +418,7 @@ artist_dicts = []
 
 for row in artist_table:
     artist_meta = {}
-    artist_meta['\xef\xbb\xbfConstituentID'] = row[0]
+    artist_meta['\ufeffConstituentID'] = row[0]
     artist_meta['DisplayName'] = row[1]
     artist_meta['ArtistBio'] = row[2]
     artist_meta['Nationality'] = row[3]
