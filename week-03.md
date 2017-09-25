@@ -7,7 +7,7 @@ Sample datasets from The Museum of Modern Art (MoMA) [via GitHub](https://github
 #### Install LibreOffice
 
 Before we start class, download and install LibreOffice:
-- [https://www.libreoffice.org/]()https://www.libreoffice.org/)
+- [https://www.libreoffice.org/](https://www.libreoffice.org/)
 
 
 #### Run Docker container
