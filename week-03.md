@@ -95,15 +95,14 @@ artwork_header
 … as well as a row in our table.
 
 ```python3
-     artwork_table[60946]
+artwork_table[60946]
 ```
 
  **Tip:** Python will ignore any text following the “#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes.
 
-```python3
-     header = meta_table[0] #saves list of column titles to variable 'header'
-     meta_table.remove(meta_table[0]) #removes column titles from table
-```
+>     artwork_header = artwork_table[0] #saves list of column titles to variable 'header'
+>     artwork_table.remove(artwork_table[0])
+
 
 #### Quick Assignment
 Write a piece of code that prints each column label in `artist_header` and `artwork_header` next to its index in the list, beginning from zero as usual. You may want to keep this reference handy for the next few exercises.
