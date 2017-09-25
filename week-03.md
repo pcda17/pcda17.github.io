@@ -100,8 +100,8 @@ artwork_table[60946]
 
  **Tip:** Python will ignore any text following the “#” character on a line, which we can use to add explanatory comments within our code. Here are a couple lines from the snippet above followed by example notes.
 
->     artwork_header = artwork_table[0] #saves list of column titles to variable 'header'
->     artwork_table.remove(artwork_table[0])
+>     artwork_header = artwork_table[0]  # saves list of column titles to variable 'artwork_header'
+>     artwork_table.remove(artwork_table[0])  # removes header row
 
 
 #### Quick Assignment
@@ -110,16 +110,15 @@ Write a piece of code that prints each column label in `artist_header` and `artw
  _A possible solution:_
 
 ```python3
-     print('Artists\n')
+print('Artists\n')
 
-     for i in range(len(artist_header)):
+for i in range(len(artist_header)):
+    print(str(i) + ' ' + artist_header[i])
 
-           print(str(i)+' '+artist_header[i])
+print('\nArtworks\n')
 
-     print('\nArtworks\n')
-
-     for i in range(len(artwork_header)):
-           print(str(i)+' '+artwork_header[i])
+for i in range(len(artwork_header)):
+    print(str(i) + ' ' + artwork_header[i])
 ```
 #### Quick Assignment
 Write a piece of code that creates a new table (i.e., list of lists) containing only artists born in the 1880s.
@@ -135,13 +134,13 @@ for row in artist_table:
 ```
 
 #### Average Artist Age
-Now that we’ve defined a meaningful subset of our data, let’s see what we can do with it. For instance, what was the mean life span of artists born in the 1880s (that happen to be represented at MoMA)?
+Now that we’ve defined a meaningful subset of our data, let’s see what we can do with it. For instance, what was the mean life span of artists born in the 1880s (who happen to be included in MoMA's collections)?
 
 ```python3
 lifespans_1880s = []
 
 for row in born_1880s:
-    lifespans_1880s.append(int(row[6])-int(row[5]))
+    lifespans_1880s.append(int(row[6]) - int(row[5]))
 
 lifespans_1880s
 ```   
@@ -153,9 +152,9 @@ If you scroll through your list of lifespans, you’ll see occasional negative n
 lifespans_1880s = []
 
 for row in born_1880s:
-   age = int(row[6])-int(row[5])
-   if age > 0:
-       lifespans_1880s.append(age)
+    age = int(row[6])-int(row[5])
+    if age > 0:
+        lifespans_1880s.append(age)
 
 lifespans_1880s
 ```
@@ -171,13 +170,13 @@ That format is a bit verbose for a simple task like this, so to make life easier
 import numpy
 numpy.mean(lifespans_1880s)
 ```
-**Tip:** The code above imports the entire `numpy` library. Python also lets us import libraries’ individual functions to the current environment, which can make code more compact.
+**Tip:** The code above imports the entire `numpy` package. Python also lets us import packages’ individual functions to the current environment, which can make code more compact.
 
 ```python3
 from numpy import mean
 mean(lifespans_1880s)
 ```
-Another common convention is to rename `numpy` to `np` at the import step.
+A common convention is to rename `numpy` to `np` at the import step.
 
 ```python3
 import numpy as np
