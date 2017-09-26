@@ -39,7 +39,7 @@ print(json_data['records'][0])
 
 > *Output:*
 >
->     {u'pk': 19579, u'model': u'collection.museumobject', u'fields': {u'primary_image_id': u'2006AJ6728', u'object': u'Cabinet', u'year_start': 1600, u'artist': u'Fiamengo, Iacopo', u'museum_number': u'W.36:1, 2-1981', u'rights': 3, u'object_number': u'O61539', u'last_processed': u'2016-04-30 02:11:57', u'event_text': u'', u'collection_code': u'FWK', u'place': u'Naples', u'longitude': u'14.25185000', u'last_checked': u'2016-04-30 02:11:57', u'museum_number_token': u'w361981', u'latitude': u'40.83990100', u'title': u'', u'date_text': u'about 1600 (Made)\nca. 1600 (made)', u'slug': u'cabinet-fiamengo-iacopo', u'sys_updated': u'2015-12-11 00:00:00', u'location': u'Europe 1600-1815, room 6, case CA11'}}
+>     \{u'pk': 19579, u'model': u'collection.museumobject', u'fields': \{u'primary_image_id': u'2006AJ6728', u'object': u'Cabinet', u'year_start': 1600, u'artist': u'Fiamengo, Iacopo', u'museum_number': u'W.36:1, 2-1981', u'rights': 3, u'object_number': u'O61539', u'last_processed': u'2016-04-30 02:11:57', u'event_text': u'', u'collection_code': u'FWK', u'place': u'Naples', u'longitude': u'14.25185000', u'last_checked': u'2016-04-30 02:11:57', u'museum_number_token': u'w361981', u'latitude': u'40.83990100', u'title': u'', u'date_text': u'about 1600 (Made)\nca. 1600 (made)', u'slug': u'cabinet-fiamengo-iacopo', u'sys_updated': u'2015-12-11 00:00:00', u'location': u'Europe 1600-1815, room 6, case CA11'\}\}
 
 
 A record, in turn, contains three keys: “pk,” “model,” and “fields.”
