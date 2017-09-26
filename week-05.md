@@ -26,11 +26,26 @@ Today we will be analyzing and comparing two small text corpora. Choose two text
 - [Works of Ralph Waldo Emerson](http://www.stephenmclaughlin.net/pcda/sample-data/week-4/Emerson.zip)
 - [Works of Oscar Wilde](http://www.stephenmclaughlin.net/pcda/sample-data/week-4/Wilde.zip)
 
-Enter the following in the shell to open Jupyter. Create a new notebook Python 2 notebook.
 
-```python
-    jupyter notebook
+
+Open Terminal in macOS and launch our Docker container:
+
 ```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
+```
+
+In Windows 10, open PowerShell and enter the following to launch the Docker container:
+
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_here***\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
+```
+
+Go to [localhost:8889](localhost:8889) and create a new Python 3 Jupyter notebook.
+
 
 First, load each author’s works as a list of strings.
 
@@ -89,7 +104,7 @@ Note the following methods of manipulating your TextBlob results.
 
 #### Quick Exercise
 
-Each TextBlob object contains a dictionary with the number of times each word appears in a text. 
+Each TextBlob object contains a dictionary with the number of times each word appears in a text.
 
     print text1.word_counts
 
@@ -97,7 +112,7 @@ Create a function that returns the top 20 most frequent words in a given TextBlo
 
 _A possible solution:
 
-```python 
+```python
 from operator import itemgetter
 
 freq_dict=text1.word_counts
@@ -141,16 +156,16 @@ Now let’s look at the most frequent words in a text, disregarding stopwords.
 
     stopwords_eng=stopwords.words('english')
     freq_dict=text1.word_counts
-    
+
     freq_sans_stopwords=[]
-    
+
     for key in freq_dict:
          lemma=Word(key).lemmatize()
          if lemma not in stopwords_eng:
                freq_sans_stopwords.append([key,freq_dict[key]])
-    
+
     sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
-    
+
     print sorted_freq_sans_stopwords[:20]
 ```
 
@@ -173,7 +188,7 @@ _A possible solution:_
               freq_sans_stopwords.append([key,freq_dict[key]])
       sorted_freq_sans_stopwords=sorted(freq_sans_stopwords, key=itemgetter(1))[::-1]
       return sorted_freq_sans_stopwords
-  
+
   print topwords(text1)[:20]
   print topwords(text2)[:20]
 ```
@@ -192,7 +207,7 @@ Following Montfort’s example, let’s create a function that counts the number
             if tag == 'JJ':
                 count+=1
         return count
-    
+
     print adjs(text1)
 ```
 
@@ -201,7 +216,7 @@ And another function to calculate the percentage of words in the text that are t
 ```python
     def adj_percent(text):
         return float(adjs(text))/len(text.words)
-    
+
     print adj_percent(text1)
 ```
 
