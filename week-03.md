@@ -306,17 +306,19 @@ Note that the code above is an example of a decision tree, the absolute simplest
 
 #### Sorting a Table by Column
 
-We can sort a table based on the values in a given column with the `sorted` function and and the `itemgetter` tool, which we use to specify the column we’re sorting by. The following sorts the table `art_1960s` by artist name.
+We can sort a table based on the values in a given column with the `sorted` function and and the `itemgetter` tool, which we use to specify the column we’re sorting by. The following sorts the table `art_1960s` by artist name (i.e., index `1` in each row).
 
 ```python3
 from operator import itemgetter
 art_1960s_sorted = sorted(art_1960s, key = itemgetter(1))
 ```
-Since each row is so long, let’s just look at our sorted set of authors. The following notation returns a list of  each row’s “Artist” cell, located at index 1.
+
+Since each row is so long, let’s just look at our sorted set of authors. The following notation returns a list of  each row’s “Artist” cell, located at index `1`.
 
 ```python3
 [row[1] for row in art_1960s_sorted]
 ```
+
 ![](week/3/Image-4.png)
 
 Let's look at the most common nationalities in our table of 1960s artworks. Here we’re once again using the `Counter` constructor from the `collections` package.
@@ -334,12 +336,26 @@ Now that we’ve filtered and sorted our metadata, let’s export it to a new CS
 
 ```python3
 outpath = "/sharedfolder/art_1960s.csv"
+
+with open(outpath, 'w') as fo:
+    csv_writer = csv.writer(fo)
+    csv_writer.writerow(artwork_header)
+    csv_writer.writerows(art_1960s_sorted)
+```
+
+
+<!--
+```python3
+outpath = "/sharedfolder/art_1960s.csv"
 o = open(outpath, 'w')
 a = csv.writer(o)
 a.writerow(artwork_header)
 a.writerows(art_1960s_sorted)
 o.close()
 ```
+-->
+
+
 Note that we call use `writerow` function first to write the header row, then `writerows` to write the actual data.
 
 Find the new file in `sharedfolder` and open it in Excel or LibreOffice. Take a few moments to explore the collection.
@@ -361,12 +377,11 @@ row[1]
 
 This system is straightforward and well-suited for many jobs, but for large, complex projects it can be difficult to keep track of all those index numbers. Instead, we can use a dictionary to reference metadata fields by name rather than list index.
 
-
-Just like we can refer to a item in a list using brackets to enclose its position in the list, a dictionary, or dict, uses strings or numbers to identify each item in a collection. This data structure is known as a key-value pair. Here’s the simplest way to create a new dictionary.
+Just like we can refer to a item in a list using brackets to enclose its position in the list, a dictionary, or dict, uses any chosen string or number to identify a value in a collection. This data structure is known as a key-value pair. Here’s the simplest way to create a new dictionary.
 
 ```python3
 artist_meta = {}
-artist_meta['\ufeffConstituentID'] = 248
+artist_meta['ConstituentID'] = 248
 artist_meta['DisplayName'] = 'Richard Avedon'
 artist_meta['ArtistBio'] = 'American, 1923–2004'
 artist_meta['Nationality'] = 'American'
@@ -379,7 +394,7 @@ artist_meta['ULAN'] = '500013773'
 The following is a more compact format for the same key-value assignment.
 
 ```python3
-artist_meta = {'\ufeffConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923–2004', 'Nationality': 'American'}
+artist_meta = {'ConstituentID': 248, 'DisplayName': 'Richard Avedon', 'Gender': 'Male', 'BeginDate': 1923, 'EndDate': 2004, 'ULAN': '500013773', 'Wiki QID': 'Q305497', 'ArtistBio': 'American, 1923–2004', 'Nationality': 'American'}
 ```
 To access a value, enter its key between brackets like so.
 
@@ -419,7 +434,7 @@ artist_dicts = []
 
 for row in artist_table:
     artist_meta = {}
-    artist_meta['\ufeffConstituentID'] = row[0]
+    artist_meta['ConstituentID'] = row[0]
     artist_meta['DisplayName'] = row[1]
     artist_meta['ArtistBio'] = row[2]
     artist_meta['Nationality'] = row[3]
