@@ -173,7 +173,9 @@ Work through Chris Albon’s tutorial on Python string operations.
 - Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
-
+<!--
+2018 note: maybe add Witmer's piece on Latour and the two kingdoms. Move Padilla to optional readings. 
+-->
 
 ### Optional
 
