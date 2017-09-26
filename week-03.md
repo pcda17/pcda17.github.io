@@ -390,7 +390,7 @@ And note that you can iterate over a dict to view and/or use its keys.
 
 ```python3
 for key in artist_meta:
-    print key + " - " + str(artist_meta[key])  
+    print(key + " - " + str(artist_meta[key]))
 ```
 
 Next, let’s create a dict for each artist MoMA’s artist metadata. Here’s a snippet (repeated from above) that loads `Artists.csv` as a list of lists called `artist_table`.
