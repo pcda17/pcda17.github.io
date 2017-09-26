@@ -6,9 +6,11 @@ Launch your Docker Container and open a new Jupyter Notebook.
 JSON data is a representation of key-value pairs, very much like a dictionary in Python. For the following example we’ll download a JSON version of the artwork metadata we’ve been working with.
 
 ```python3
-import urllib2
-url="https://github.com/MuseumofModernArt/collection/blob/master/Artworks.json?raw=true"
-json_string=urllib2.urlopen(url).read()
+import json
+from urllib.request import urlopen
+
+url = "https://github.com/MuseumofModernArt/collection/blob/master/Artworks.json?raw=true"
+json_string = urlopen(url).read()
 json_data = json.loads(json_string)
 ```
 To view JSON data (as well as dictionaries and just about any other data format), Python offers a “pretty printer” module. There are also numerous online tools for prettifying JSON data, such as [these](http://jsonviewer.stack.hu/) [two](http://json.parser.online.fr/beta/).
@@ -126,12 +128,12 @@ Finally, we’ll write our metadata collection as a CSV.
 
 ```python3
 import csv
-outpath="/sharedfolder/V_and_A_ivory.csv"
-o = open(outpath, 'w')
-a = csv.writer(o)
-a.writerows([header_string])
-a.writerows(meta_table)
-o.close()
+out_path="/sharedfolder/V_and_A_ivory.csv"
+
+with open(out_path, 'w') as fo:
+    csv_out = csv.writer(fo)
+    csv_out.writerows([header_string])
+    csv_out.writerows(meta_table)
 ```
 Open your CSV in Excel or Calc.
 
