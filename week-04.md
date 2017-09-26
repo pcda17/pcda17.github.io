@@ -30,7 +30,6 @@ for key in json_data:
 >     records
 >     meta
 
-```
 In this case, the “records” key points to a list of item records. The following will return the first record.
 
 ```python3
@@ -47,6 +46,7 @@ A record, in turn, contains three keys: “pk,” “model,” and “fields.”
 ```python3
 print(json_data['records'][0])
 ```
+
 > *Output:*
 >
 >     pk
