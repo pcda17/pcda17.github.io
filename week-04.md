@@ -9,8 +9,8 @@ JSON data is a representation of key-value pairs, very much like a dictionary in
 import json
 from urllib.request import urlopen
 
-url = "https://github.com/MuseumofModernArt/collection/blob/master/Artworks.json?raw=true"
-json_string = urlopen(url).read()
+url = "https://media.githubusercontent.com/media/MuseumofModernArt/collection/master/Artworks.json?raw=true"
+json_string = urlopen(url).read().decode('utf8')
 json_data = json.loads(json_string)
 ```
 To view JSON data (as well as dictionaries and just about any other data format), Python offers a “pretty printer” module. There are also numerous online tools for prettifying JSON data, such as [these](http://jsonviewer.stack.hu/) [two](http://json.parser.online.fr/beta/).
