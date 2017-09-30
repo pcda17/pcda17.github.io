@@ -140,7 +140,9 @@ Open your CSV in Excel or Calc.
 
 #### OpenRefine
 
-Open a new terminal window and runt the following command to download and run a Dockerized copy of the tabluar data cleaning program OpenRefine.
+OpenRefine is very easy to download and run from your computer. You can get the download here: [http://openrefine.org/](http://openrefine.org/).
+
+Open a new terminal window and run the following command to download and run a Dockerized copy of the tabluar data cleaning program OpenRefine.
 
 ```
 docker run --name openrefine -d -p 3334:3333 psychemedia/docker-openrefine
@@ -150,8 +152,12 @@ Enter the following address in your browser’s URL bar to open the application.
 
 - [http://127.0.0.1:3334/](http://127.0.0.1:3334/)
 
+Today's OpenRefine tutorial is in this week's files on Canvas. 
+
+<!-- 
 Click `Create Project`, then `Choose Files` and choose `V_and_A_ivory.csv`. Click `Next`. In the following window, click `Create Project` in the upper right corner.
 
 At the top of the “place” column, click the dropdown button and choose “Text Facet.” A list of places will appear in the left column. Click “Paris” to display only works created there.
 
 Note that several “place” records are listed as “Germany,” while others are German cities. Let’s group them under a single facet.
+-->
