@@ -1,5 +1,5 @@
 
-# Syllabus: Programming for Cultural Data Analysis
+# Syllabus: Critical Perspectives in Cultural Data Analysis
 
 #### University of Texas at Austin School of Information
 
