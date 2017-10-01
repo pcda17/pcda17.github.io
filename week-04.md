@@ -47,7 +47,7 @@ artwork = random.choice(json_data)
 print(artwork['Artist'])
 print(artwork['Title'])
 print(artwork['Date'])
-print(artwork['AccessionNumber'])
+print(artwork['ObjectID'])
 print(artwork['URL'])
 ```
 
@@ -66,50 +66,52 @@ for item in random.sample(json_data, 100):
 ```
 
 #### JSON Data to CSV
-Next we’ll transfer these metadata fields to CSV format. First, let’s create a list of column titles for reference:
+Next we’ll transfer these metadata fields to CSV format. First, let’s print a list of metadata fields for reference:
 
 ```python3
-header=[]
+header = []
 
-for key in json_data['records'][0]['fields']:
+for key in json_data[0]:
     header.append(key)
-
-print(header)
 ```
-Then we’ll use our column titles (which are also keys in the “fields” key-value set) to create a list of rows for our CSV. Since the CSV writer prefers working with non-Unicode strings, we’ll use the `str()` function to reformat each metadata item as we add it to the table.
+
+Next we'll create a list of metadata fields to include in our CSV. These keys will appear at the top of the file as column headers.
+
+```
+column_headers = ['Date', 'Artist', 'Title', 'Medium', 'Nationality', 'ObjectID', 'URL', 'Department']
+
+pprint(column_headers)
+```
+Then we’ll use these keys to create a list of rows for our CSV. Since some metadata entries in the JSON object appear as lists rather than strings, we’ll use the `str()` function to reformat each metadata item as we add it to the table.
+
+To avoid slowing things down, we will work with metadata for 20,000 randomly chosen artworks.
 
 ```python3
 meta_table=[]
 
-for record in json_data['records']:
+for record in random.sample(json_data, 20000):
     row=[]
-    for key in header:
-        row.append(unidecode(record['fields'][key]))
+    for key in column_headers:
+        row.append(str(record[key]))
     meta_table.append(row)
 
-print(meta_table[0])
+pprint(meta_table[0])
 ```
 
-Now let’s make a string version of our header.
-
-```python3
-header_string=[]
-
-for item in header:
-    header_string.append(str(item))
-```
-Finally, we’ll write our metadata collection as a CSV.
+Finally, we will write our metadata list of lists as a CSV.
 
 ```python3
 import csv
-out_path="/sharedfolder/V_and_A_ivory.csv"
+
+out_path="/sharedfolder/MoMA_20K.csv"
 
 with open(out_path, 'w') as fo:
     csv_out = csv.writer(fo)
-    csv_out.writerows([header_string])
+    csv_out.writerow(column_headers)
     csv_out.writerows(meta_table)
 ```
-Open your CSV in Excel or Calc.
+
+Open your CSV in LibreOffice or Excel.
 
 
 #### OpenRefine
