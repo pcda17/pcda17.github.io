@@ -13,82 +13,56 @@ url = "https://media.githubusercontent.com/media/MuseumofModernArt/collection/ma
 json_string = urlopen(url).read().decode('utf8')
 json_data = json.loads(json_string)
 ```
-To view JSON data (as well as dictionaries and just about any other data format), Python offers a “pretty printer” module. There are also numerous online tools for prettifying JSON data, such as [these](http://jsonviewer.stack.hu/) [two](http://json.parser.online.fr/beta/).
+To view JSON data (as well as dictionaries and just about any other data format), Python offers a “pretty printer” module. Here we are viewing the first 200 artworks in the metadata set.
+
+There are also numerous online tools for prettifying JSON data, such as [these](http://jsonviewer.stack.hu/) [two](http://json.parser.online.fr/beta/).
 
 ```python3
 from pprint import pprint
-pprint(json_data)
+
+pprint(json_data[:200])
 ```
 
-To examine the top-level keys in our JSON data, enter the following.
+Much like a dictionary object in Python, a JSON object is made up of key-value pairs that can contain (and be contained in) lists. In this case, MoMA has presented metadata for its artworks as a list of key-value pairs.
 
-```python3
-for key in json_data:
-    print(key)
+To see the number of artworks included in the JSON object, use the `len()` function.
+
+```
+len(json_data)
 ```
 
-> *Output*:
->
->     records
->     meta
+To view the key-value metadata for a random artwork, use `random.choice()`.
 
-In this case, the “records” key points to a list of item records. The following will return the first record.
+```
+import random
 
-```python3
-print(json_data['records'][0])
+random.choice(json_data)
 ```
 
-> *Output:*
->
->     \{u'pk': 19579, u'model': u'collection.museumobject', u'fields': \{u'primary_image_id': u'2006AJ6728', u'object': u'Cabinet', u'year_start': 1600, u'artist': u'Fiamengo, Iacopo', u'museum_number': u'W.36:1, 2-1981', u'rights': 3, u'object_number': u'O61539', u'last_processed': u'2016-04-30 02:11:57', u'event_text': u'', u'collection_code': u'FWK', u'place': u'Naples', u'longitude': u'14.25185000', u'last_checked': u'2016-04-30 02:11:57', u'museum_number_token': u'w361981', u'latitude': u'40.83990100', u'title': u'', u'date_text': u'about 1600 (Made)\nca. 1600 (made)', u'slug': u'cabinet-fiamengo-iacopo', u'sys_updated': u'2015-12-11 00:00:00', u'location': u'Europe 1600-1815, room 6, case CA11'\}\}
+Using bracket notation, we can access individual metadata fields by their keys. Here we display several metadata fields for a randomly chosen artwork.
 
+```
+artwork = random.choice(json_data)
 
-A record, in turn, contains three keys: “pk,” “model,” and “fields.”
-
-```python3
-print(json_data['records'][0])
+print(artwork['Artist'])
+print(artwork['Title'])
+print(artwork['Date'])
+print(artwork['AccessionNumber'])
+print(artwork['URL'])
 ```
 
-> *Output:*
->
->     pk
->     model
->     fields
-
-The metadata we’re interested in is under “fields.”
+The following loop will print the `Artist` field for the first 100 artworks in the list.
 
 ```python3
-for key in json_data['records'][0]['fields']:
-    print(key)
+for item in json_data[:100]:
+    pprint(item['Artist'])
 ```
 
-> *Output:*
->
->     primary_image_id
->     object
->     year_start
->     artist
->     museum_number
->     rights
->     object_number
->     last_processed
->     event_text
->     collection_code
->     place
->     longitude
->     last_checked
->     museum_number_token
->     latitude
->     title
->     date_text
->     slug
->     sys_updated
->     location
+You can also use `random.sample()` to view artist names for 100 artworks chosen at random.
 
-We can thus view the “artist” field like so.
-
-```python3
-print(json_data['records'][0]['fields']['artist'])
+```
+for item in random.sample(json_data, 100):
+    pprint(item['Artist'])
 ```
 
 #### JSON Data to CSV
@@ -152,9 +126,9 @@ Enter the following address in your browser’s URL bar to open the application.
 
 - [http://127.0.0.1:3334/](http://127.0.0.1:3334/)
 
-Today's OpenRefine tutorial is in this week's files on Canvas. 
+Today's OpenRefine tutorial is in this week's files on Canvas.
 
-<!-- 
+<!--
 Click `Create Project`, then `Choose Files` and choose `V_and_A_ivory.csv`. Click `Next`. In the following window, click `Create Project` in the upper right corner.
 
 At the top of the “place” column, click the dropdown button and choose “Text Facet.” A list of places will appear in the left column. Click “Paris” to display only works created there.
