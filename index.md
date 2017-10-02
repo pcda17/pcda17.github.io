@@ -174,7 +174,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 <!--
-2018 note: maybe add Witmer's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings.
+2018 note: maybe add Witmer's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities? 
 -->
 
 ### Optional
