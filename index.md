@@ -132,6 +132,10 @@ To start for next week:
 
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip).
 
+<!--
+Kenneth Goldsmith and the Poetics of INformation? 
+-->
+
 ### Optional
 Read pages 1–28 of Shieber’s Python tutorial and work through the code examples.
 
