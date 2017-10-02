@@ -118,6 +118,8 @@ Open your CSV in LibreOffice or Excel.
 
 OpenRefine is very easy to download and run from your computer. You can get the download here: [http://openrefine.org/](http://openrefine.org/).
 
+*Note: Today's OpenRefine tutorial is in this week's files on Canvas.* If you would like to run OpenRefine from Docker, see below.
+
 Open a new terminal window and run the following command to download and run a Dockerized copy of the tabluar data cleaning program OpenRefine.
 
 ```
