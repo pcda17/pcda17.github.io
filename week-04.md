@@ -132,7 +132,6 @@ Enter the following address in your browser’s URL bar to open the application.
 
 - [http://127.0.0.1:3334/](http://127.0.0.1:3334/)
 
-Today's OpenRefine tutorial is in this week's files on Canvas.
 
 <!--
 Click `Create Project`, then `Choose Files` and choose `V_and_A_ivory.csv`. Click `Next`. In the following window, click `Create Project` in the upper right corner.
