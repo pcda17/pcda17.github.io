@@ -236,7 +236,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 
 
-# <a name="week5"></a>Week 5 (10/9): Word-Level Text Analysis
+# <a name="week5"></a>Week 5 (10/9): An Algorithmic Criticism: Word-Level Text Analysis
 
 
 <!--
