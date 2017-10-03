@@ -325,7 +325,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 ----------------------------------------------------------------
 
 
-# <a name="week7"></a>Week 7 (10/23) The Politics of Data
+# <a name="week7"></a>Week 7 (10/23) The Politics of Open Data
 
 ### Readings
 
@@ -360,12 +360,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 # <a name="week8"></a>Week 8 (10/30): Your Data, Your culture
 
-### Readings
-
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_8)**
-
-TBD
-
+### No Readings
 
 ### Assignment
 
@@ -373,8 +368,6 @@ TBD
 
 
 ##### [▸ In-class outline](week-08.md)
-
-
 
 ----------------------------------------------------------------
 
