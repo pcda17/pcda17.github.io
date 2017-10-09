@@ -87,10 +87,10 @@ Then we’ll use these keys to create a list of rows for our CSV. Since some met
 To avoid slowing things down, we will work with metadata for 20,000 randomly chosen artworks.
 
 ```python3
-meta_table=[]
+meta_table = []
 
 for record in random.sample(json_data, 20000):
-    row=[]
+    row = []
     for key in column_headers:
         row.append(str(record[key]))
     meta_table.append(row)
@@ -103,7 +103,7 @@ Finally, we will write our metadata list of lists as a CSV.
 ```python3
 import csv
 
-out_path="/sharedfolder/MoMA_20K.csv"
+out_path = "/sharedfolder/MoMA_20K.csv"
 
 with open(out_path, 'w') as fo:
     csv_out = csv.writer(fo)
