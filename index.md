@@ -295,20 +295,21 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 -   Pomerantz, Jeffrey. “The Future of Metadata.” In *Metadata*. The MIT Press Essential Knowledge Series. Cambridge, MA ; London, England: The MIT Press, 2015.
 
+-   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016.
+
 -   Swartz, Aaron. “Building a Platform: Providing APIs.” In *Aaron Swartz’s ‘A Programmable Web’: An Unfinished Work*, 31–39. San Rafael, CA: Morgan & Claypool Publishers, 2013.
 
 -   Kelly, Chelsea Emelie. “Beyond Digital: Open Collections & Cultural Institutions,” 2014. *https://artmuseumteaching.com/2014/11/06/beyond-digital-open-collections-cultural-institutions*
+
+
+### Optional Readings
+-   Albon, Chris. “Beautiful Soup Basic HTML Scraping.” [http://chrisalbon.com/python/beautiful_soup_html_basics.html](http://chrisalbon.com/python/beautiful_soup_html_basics.html)
 
 -   “HTML Introduction” and “HTML5 Introduction.” W3Schools.
 
     -   [http://www.w3schools.com/html/html_intro.asp](http://www.w3schools.com/html/html_intro.asp)
 
     -   [http://www.w3schools.com/html/html5_intro.asp](http://www.w3schools.com/html/html5_intro.asp)
-
--   Albon, Chris. “Beautiful Soup Basic HTML Scraping.” [http://chrisalbon.com/python/beautiful_soup_html_basics.html](http://chrisalbon.com/python/beautiful_soup_html_basics.html)
-
-
-### Optional Readings
 
 -   Sanger, David E., and Eric Schmitt. “Snowden Used Low-Cost Tool to Best N.S.A.” The New York Times. February 8, 2014. [http://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html](http://www.nytimes.com/2014/02/09/us/snowden-used-low-cost-tool-to-best-nsa.html)
 
@@ -332,8 +333,6 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
 -  Christen, Kim. “Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness.” International Journal of Communication 6 (2012), 2870–2893.
-
--   Peters, Justin. *The Idealist: Aaron Swartz and the Rise of Free Culture on the Internet*, Chapters 7 and 8. New York: Scribner, 2016.
 
 -   Greenwald, Glenn. “Chapter 1: Contact.” In *No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State*, 2015.
 
