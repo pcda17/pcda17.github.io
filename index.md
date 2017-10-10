@@ -279,7 +279,7 @@ python -m textblob.download_corpora
 ----------------------------------------------------------------
 
 
-# <a name="week6"></a>Week 6 (10/16): Web Scraping & APIs
+# <a name="week6"></a>Week 6 (10/16): The Rise of Free Culture: Web Scraping & APIs
 
 <!--
 Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library for parsing HTML.
@@ -299,7 +299,7 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 -   Swartz, Aaron. “Building a Platform: Providing APIs.” In *Aaron Swartz’s ‘A Programmable Web’: An Unfinished Work*, 31–39. San Rafael, CA: Morgan & Claypool Publishers, 2013.
 
--   Kelly, Chelsea Emelie. “Beyond Digital: Open Collections & Cultural Institutions,” 2014. *https://artmuseumteaching.com/2014/11/06/beyond-digital-open-collections-cultural-institutions*
+-   Kelly, Chelsea Emelie. “Beyond Digital: Open Collections & Cultural Institutions,” 2014. [https://artmuseumteaching.com/2014/11/06/beyond-digital-open-collections-cultural-institutions](https://artmuseumteaching.com/2014/11/06/beyond-digital-open-collections-cultural-institutions)
 
 
 ### Optional Readings
@@ -325,7 +325,6 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ----------------------------------------------------------------
 
-
 # <a name="week7"></a>Week 7 (10/23) The Politics of Open Data
 
 ### Readings
@@ -336,6 +335,8 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 -   Greenwald, Glenn. “Chapter 1: Contact.” In *No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State*, 2015.
 
+-   Hitchcock, Tim. “Digital Searching and the Re-formulation of Historical Knowledge” 2008. In *The Virtual Representation of the Past*, edited by Mark Greenglass and Lorna Hughes, 81-90. Ashgate: 2008.
+
 -   Freelon, Deen Goodwin, Charlton D. McIlwain, and Meredith D. Clark. “Beyond the Hashtags: #Ferguson, #Blacklivesmatter, and the Online Struggle for Offline Justice,” 2016. [http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf](http://cmsimpact.org/wp-content/uploads/2016/03/beyond_the_hashtags_2016.pdf)
 
 -   American Civil Liberties Union. "First Amendment Lawsuit Brought on Behalf of Academic Researchers and Journalists Who Fear Prosecution Under the Computer Fraud and Abuse Act." [https://www.aclu.org/news/aclu-challenges-law-preventing-studies-big-data-discrimination](https://www.aclu.org/news/aclu-challenges-law-preventing-studies-big-data-discrimination)
@@ -344,7 +345,6 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 -   Day, Ronald E. “Governing Expression: Social Big Data and Neoliberalism.” In *Indexing It All: The Subject in the Age of Documentation*, Information, and Data, 123–44. History and Foundations of Information Science. Cambridge, Massachusetts: The MIT Press, 2014.
 
--   Hitchcock, Tim. “Digital Searching and the Re-formulation of Historical Knowledge” 2008. In *The Virtual Representation of the Past*, edited by Mark Greenglass and Lorna Hughes, 81-90. Ashgate: 2008.
 
 ### Assignment
 
