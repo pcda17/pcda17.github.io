@@ -178,7 +178,8 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 <!--
-2018 note: maybe add Witmer's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities? 
+2018 note: maybe add Witmer's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities?  
+Assign Text I this week. 
 -->
 
 ### Optional
@@ -250,6 +251,10 @@ pip install --user -U textblob
 
 python -m textblob.download_corpora
 -->
+<! --
+Note: assign Text II this week -- have them turn in their Jupyter notebook.
+-->
+
 
 
 ### Readings
@@ -328,6 +333,8 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 # <a name="week7"></a>Week 7 (10/23) The Politics of Open Data
 
 ### Readings
+
+<!-- assign Text III this week. -->
 
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
