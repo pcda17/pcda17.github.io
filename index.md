@@ -426,7 +426,6 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Assignment
 
-[Due: Proposal Peer Review](https://utexas.instructure.com/courses/1204381/assignments/4166696).
 
 
 ##### [▸ In-class outline](week-09.md)
