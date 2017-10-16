@@ -92,13 +92,14 @@ In the first cell of your notebook, the following commands will change your work
 
 ```
 import os
+
 os.chdir('/sharedfolder/LOC_Recorded_Sound')
 
 os.listdir('./')
 ```
 
 
-Next we will use the BeautifulSoup package to parse an XML file. Insert one of your XML filenames in the snippet below and run it, then open the same file in your text editor.
+Next we will use the BeautifulSoup package to parse an XML file. Insert one of your XML filenames in the snippet below and run it.
 
 ```
 from bs4 import BeautifulSoup
@@ -110,15 +111,32 @@ xml_text = open(xml_filename).read()
 soup = BeautifulSoup(xml_text, 'lxml')
 ```
 
-Notice the tree structure of the XML file, in which each level of the XML tree is indented further than the one above it.
+Open the same file in your text editor. Notice the tree structure of the XML file, in which each level of the XML tree is indented further than the one above it.
 
-The following will locate the `author` field in the XML tree and display its contents.
+In case you're working with a XML or HTML file that isn't so neatly organized, this snippet will display a prettified version of the file.
 
 ```
-author = soup.ead.filedesc.titlestmt.author.string
+from pprint import pprint
+
+pprint(soup.prettify())
+```
+
+The following will locate the `author` element in the XML tree and display its contents.
+
+```
+author = soup.ead.filedesc.titlestmt.author.get_text()
 
 print(author)
 ```
+
+Or, more succinctly:
+
+```
+author = soup.find('author').get_text()
+
+print(author)
+```
+
 
 The following snippet will print the `author` field for each file in your collection of finding aids:
 
@@ -127,13 +145,40 @@ for filename in [item for item in os.listdir('./') if item[-2:]=='.2']:
     page = open(filename).read()
     soup = BeautifulSoup(page, 'lxml')
     title = soup.title.string
-    author = soup.ead.filedesc.titlestmt.author.string
+    author = soup.find('author').get_text()
     print(author)
+```
+
+
+If an XML element type appears multiple times in a file, use `soup.findAll()` to return them in a list:
+
+```
+title = soup.findAll('title')
+
+print(titles)
+```
+
+To extract text from each element, you can use a for loop or, as below, a list comprehension:
+
+```
+titles = [item.get_text() for item in soup.findAll('title')]
+
+print(titles)
 ```
 
 
 
 
+
+
+
+### Crossref API
+
+Crossref API format:
+
+```
+https://search.crossref.org/dois?q=10.5555%2F12345678
+```
 
 
 
