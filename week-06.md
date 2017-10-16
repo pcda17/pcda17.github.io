@@ -153,7 +153,7 @@ for filename in [item for item in os.listdir('./') if item[-2:]=='.2']:
 If an XML element type appears multiple times in a file, use `soup.findAll()` to return them in a list:
 
 ```
-title = soup.findAll('title')
+titles = soup.findAll('title')
 
 print(titles)
 ```
