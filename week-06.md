@@ -20,7 +20,7 @@ docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_here***\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
 ```
 
-Open a new browser window and navigate to the Library of Congress's list of XML finding aid collections: [http://findingaids.loc.gov/source/main](http://findingaids.loc.gov/source/main).
+Open a new browser window and navigate to the Library of Congress's list of XML finding aids by collection: [http://findingaids.loc.gov/source/main](http://findingaids.loc.gov/source/main).
 
 Choose a collection you would like to work with for today's class. For instance, the "Recorded Sound" collection is located at [http://findingaids.loc.gov/source/RS](http://findingaids.loc.gov/source/RS). Copy the URL of the page you've chosen.
 
@@ -41,9 +41,9 @@ wget http://findingaids.loc.gov/source/RS --adjust-extension
 ```
 
 > *Two more ways to download the contents of a web page:*
-> 
+>
 > - With the page open in your browser, go to `File > Save Page As ...` in the toolbar. In the window that pops up, select `Webpage, HTML Only` as your format, then save the file wherever you like.
-> 
+>
 > - Right click anywhere in the browser window and select `View Page Source`. A new browser tab will pop up to display the page's HTML source. Copy and paste the HTML into an empty text file.
 
 In the macOS Finder or Windows Explorer, navigate to the `sharedfolder` directory on your desktop. Open the HTML file you just downloaded in `Atom`, or a text editor of your choice.
@@ -56,32 +56,38 @@ Our goal is to get each finding aid URL onto a separate line, using the text edi
 
 Because the same series of characters appear before and after each URL — `href="` before and `" target=` after — use "Replace All" to replace each of these sequences with a newline.
 
-Now save the HTML file (which is no longer proper HTML).
 
-Return to the terminal session in your browser. We will now use the `grep` tool to search through the HTML file and extract lines containing our URLS. The following command will write all lines that contain "http" to a new file called `url_list_1.txt`.
+![](week/6/Image-1.png)
 
+![](week/6/Image-2.png)
+
+Now save the HTML file (which is no longer proper HTML) and return to the terminal session in your browser.
+
+We will now use the `grep` tool to search through the HTML file and extract lines containing URLS. The following command will write all lines in `RS.html` that include "http" to a new file called `url_list_1.txt`.
 
 ```
 grep "http://" RS.html > url_list_1.txt
 ```
 
-Open `url_list_1.txt` in your text editor and take a look. Note that the file still contains lines we don't need, including links to METS records, which end in `.4`. Since all the XML finding aid URLs end in `.2`, we can use `grep` again to extract just those URLs. Note that the `.` character in our `grep` search term needs to be escaped using a backslash.
+Open `url_list_1.txt` in your text editor and take a look. Note that the file still contains lines we don't need, including links to METS records, which end in `.4`. Since all finding aid URLs that we want end in `.2`, we can use `grep` again to extract just those URLs.
 
 ```
 grep "\.2" url_list_1.txt > url_list_2.txt
 ```
 
-Open `url_list_2.txt` in your text editor. If the file still contains any text other than URLs, delete it by hand and save the file.
+Note that the `.` character in our `grep` search term needs to be escaped using a backslash.
 
-Now we're ready to download our collection of XML finding aids with `wget`. The `-i` option specifies that we want to download the files at every URL in a text file, one URL per line.
+Open `url_list_2.txt` in your text editor. If the file still contains any text other than the URLs we want, delete it by hand and save the file.
+
+Now we're ready to download our collection of XML finding aids with `wget`. The `-i` option specifies that we want to download the files at every URL in a text file, with one URL per line.
 
 ```
 wget -i url_list_2.txt
 ```
 
-Navigate to the Jupyter Home page at [http://localhost:8889](http://localhost:8889) and create a new Python 3 notebook.
+Navigate Jupyter Home at [http://localhost:8889](http://localhost:8889) and create a new Python 3 notebook.
 
-In the first cell of your notebook, the following commands will change your working directory to `/sharedfolder/LOC_Recorded_Sound` and display a list of filenames in the directory. 
+In the first cell of your notebook, the following commands will change your working directory to `/sharedfolder/LOC_Recorded_Sound` and display a list of filenames in the directory.
 
 
 ```
@@ -92,15 +98,19 @@ os.listdir('./')
 ```
 
 
-Next we will use the BeautifulSoup package to parse an XML file. Insert one of your XML filenames in the snippet below, then open the same file in your text editor.
+Next we will use the BeautifulSoup package to parse an XML file. Insert one of your XML filenames in the snippet below and run it, then open the same file in your text editor.
 
 ```
 from bs4 import BeautifulSoup
 
-xml_text = open('eadmbrs.rs009003.2').read()
+xml_filename = 'eadmbrs.rs009003.2'
+
+xml_text = open(xml_filename).read()
 
 soup = BeautifulSoup(xml_text, 'lxml')
 ```
+
+Notice the tree structure of the XML file, in which each level of the XML tree is indented further than the one above it.
 
 The following will locate the `author` field in the XML tree and display its contents.
 
@@ -164,7 +174,7 @@ You can also download a series of sequentially numbered files with following not
 
 
 #### In-Class Exercise: Scraping a Metadata Set from Wikipedia
-- Choose a list of related Wikipedia articles (e.g., [The Top 100 Crime Novels of All Time](https://en.wikipedia.org/wiki/The_Top_100_Crime_Novels_of_All_Time)). 
+- Choose a list of related Wikipedia articles (e.g., [The Top 100 Crime Novels of All Time](https://en.wikipedia.org/wiki/The_Top_100_Crime_Novels_of_All_Time)).
   - More options: [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists#Literature)
 - Download the list using Beautiful Soup and create a list of URLs for each page.
 - Download each page on the list and extract relevant metadata (author, language, genre, publisher, date, page count, etc.).
@@ -179,7 +189,7 @@ You can also download a series of sequentially numbered files with following not
     import xml.etree.ElementTree as ET
     tree = ET.parse('/Users/yourname/Desktop/sandbox/country_data.xml')
     root = tree.getroot()
-    
+
     for child in root:
         print child.tag, child.attrib
 
