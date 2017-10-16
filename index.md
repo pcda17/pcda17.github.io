@@ -292,6 +292,8 @@ Install [Beauitful Soup](https://www.crummy.com/software/BeautifulSoup/) library
 > pip install -U --user beautifulsoup
 
 Work through Chris Albon’s Beautiful Soup tutorial.
+
+Notes 2018: We decided to skip working with APIs on Monday due to limited time. Instead we'll just demonstrate how to scrape XML finding aids from the LOC, then parse the files and extract specific pieces of information.
 -->
 
 ### Readings
@@ -334,7 +336,13 @@ Work through Chris Albon’s Beautiful Soup tutorial.
 
 ### Readings
 
-<!-- assign Text III this week. -->
+<!-- 
+
+Note: assign Text III this week. 
+
+we'll work with APIs in week 7 and return to parsing JSON files. Proposals will be due week 8.
+
+-->
 
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_7)**
 
@@ -429,6 +437,10 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 
 # <a name="week10"></a>Week 10 (11/13): Machine Learning
+
+<!--
+In week 9 we'll return to sentiment analysis, as a convenient source of data for creating visualizations.
+-->
 
 ### Readings
 
