@@ -23,28 +23,19 @@ Office hours: Mondays 1–3 p.m., UTA 5.558
 
 Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred;
 
-In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, *data* appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, *data* is “raw” and lacking in meaning, while *information*, the next higher level of the pyramid---just below *knowledge* and then *wisdom*---represents the presence of added links and relationships; *information* is higher up on the wisdom chain because it is *data* made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (*Where* is the data?); media, format, and technology constraints (*How* is the data?); and perspectives (*What* is the data? *Who* is involved in and impacted by its creation and use?).
+In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, data appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, data is “raw” and lacking in meaning, while information, the next higher level of the pyramid—just below knowledge and then wisdom—represents the presence of added links and relationships; information is higher up on the wisdom chain because it is data made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (Where is the data?); media, format, and technology constraints (How is the data?); and perspectives (What is the data? Who is involved in and impacted by its creation and use?).
 
-Learning to think critically about data as *information* means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about *information* from this more critical perspective means first understanding how a culture tends to understand what is informative.
+Learning to think critically about data as information means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about information from this more critical perspective means first understanding how a culture tends to understand what is informative.
 
-Towards these ends, this course takes on "data wrangling" in the context of humanist perspectives.
+Towards these ends, this course takes on “data wrangling” in the context of humanist perspectives.
 
-Goals:
+Learning goals:
 
--   Teach scripting-style programming in Python and Unix-like systems, emphasizing literacy in finding and using free and open source software.
+-  Exploration of cultural implications of large-scale preservation of cultural materials.
 
--   Familiarize students with techniques for collecting, transforming, and analyzing media and metadata available on the Web.
+-  Writing using perspectives in critical data studies;
 
--   Introduce commonly used data models and their standard formats, including CSV, JSON, and XML.
-
--   Explore computational text analysis techniques such as natural language processing (NLP), sentiment analysis, and machine learning classification.
-
--   Introduce tools for analyzing cultural data via visualization and statistical tests, emphasizing critical reflection on the limitations of these approaches.
-
--   Familiarize students with Web archiving and data curation practices.
-
--   Explore cultural implications of large-scale preservation of cultural materials.
-
+-  Familiarity with scripting-style programming in Python and Unix-like systems, emphasizing literacy in finding and using free and open source software; techniques for collecting, transforming, and analyzing media and metadata available on the Web; with commonly used data models and their standard formats, including CSV, JSON, and XML; with text analysis techniques such as natural language processing (NLP), sentiment analysis, and machine learning classification; and with tools for analyzing cultural data via visualization and statistical tests, emphasizing critical reflection on the limitations of these approaches.
 
 ### Course Principles
 
