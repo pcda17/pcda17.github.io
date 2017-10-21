@@ -355,29 +355,14 @@ we'll work with APIs in week 7 and return to parsing JSON files. Proposals will 
 ### Assignment
 
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
-
+<!--
 ##### [▸ In-class outline](week-07.md)
-
-
-
-----------------------------------------------------------------
-
-
-# <a name="week8"></a>Week 8 (10/30): Your Data, Your culture
-
-### No Readings
-
-### Assignment
-
-[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
-
-
-##### [▸ In-class outline](week-08.md)
+-->
 
 ----------------------------------------------------------------
 
 
-# <a name="week9"></a>Week 9 (11/6): Statistics and Visualization
+# <a name="week8"></a>Week 8 (10/30): Statistics and Visualization
 
 <!--
 Install [numpy](http://www.numpy.org/) scientific computing library for Python.
@@ -395,19 +380,13 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
 
--   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016.
+-   Montfort, Nick. “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016.
 
 -   Krumme, Coco. “What Data Doesn’t Do.” In *Beautiful Data: The Stories behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009.
 
--   Manovich, Lev. “What Is Visualisation?” *Visual Studies* 26, no. 1 (March 15, 2011): 36–49. *http://www.tandfonline.com/doi/abs/10.1080/1472586X.2011.548488*.
-
--   Moretti, Franco. “Graphs.” In *Graphs, Maps, Trees: Abstract Models for Literary History*, 3–33. London ; New York: Verso, 2007.
-
 -   McCandles, David. *Information is Beautiful*. *http://www.informationisbeautiful.net*
-
 
 ### Optional Readings
 
@@ -415,22 +394,33 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
 
+-   Manovich, Lev. “What Is Visualisation?” *Visual Studies* 26, no. 1 (March 15, 2011): 36–49. *http://www.tandfonline.com/doi/abs/10.1080/1472586X.2011.548488*.
+
+-   Moretti, Franco. “Graphs.” In *Graphs, Maps, Trees: Abstract Models for Literary History*, 3–33. London ; New York: Verso, 2007.
+
 ### Assignment
 
+##### [▸ In-class outline](week-08.md)
+
+----------------------------------------------------------------
 
 
+# <a name="week9"></a>Week 9 (11/6): Your Data, Your culture
+
+### No Readings
+
+### Assignment
+
+[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
+
+<!
 ##### [▸ In-class outline](week-09.md)
-
-
+-->
 
 ----------------------------------------------------------------
 
 
 # <a name="week10"></a>Week 10 (11/13): Machine Learning
-
-<!--
-In week 9 we'll return to sentiment analysis, as a convenient source of data for creating visualizations.
--->
 
 ### Readings
 
@@ -441,6 +431,8 @@ In week 9 we'll return to sentiment analysis, as a convenient source of data for
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006.
 
 -   Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, ProPublica. “Machine Bias.” *ProPublica*. May 23, 2016. [https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
+
+-   Revisit: Montfort, Nick. “Text III.” In *Exploratory Programming for the Arts and Humanities*, 185–213. Cambridge, MA: The MIT Press, 2016.
 
 -   “Working With Text Data.” scikit-learn.
                       [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
