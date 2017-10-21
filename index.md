@@ -355,6 +355,7 @@ we'll work with APIs in week 7 and return to parsing JSON files. Proposals will 
 ### Assignment
 
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
+
 <!--
 ##### [▸ In-class outline](week-07.md)
 -->
@@ -413,7 +414,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 [Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
 
-<!
+<!--
 ##### [▸ In-class outline](week-09.md)
 -->
 
