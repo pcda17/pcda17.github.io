@@ -22,11 +22,11 @@ Right click the following links and save the Jupyter notebook files to `sharedfo
 
 Then navigate to [localhost:8889](localhost:8889) in your browser to open each notebook.
 
-1. [https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/week-07.1_CSV-Input-Output.ipynb](CSV Input/Output)
+1. [CSV Input/Output in Python](https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/week-07.1_CSV-Input-Output.ipynb)
 
-2. [https://github.com/pcda17/pcda17.github.io/blob/master/week-07.2_Google_Books_API.ipynb](Google Books API)
+2. [Using the Google Books API](https://github.com/pcda17/pcda17.github.io/blob/master/week-07.2_Google_Books_API.ipynb)
 
-3. [https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/Week-06_Scraping-and-Parsing-XML.ipynb](Scraping and Parsing XML Finding Aids)
+3. [Scraping and Parsing XML finding aids](https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/Week-06_Scraping-and-Parsing-XML.ipynb)
 
 
 
