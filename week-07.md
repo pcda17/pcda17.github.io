@@ -18,7 +18,9 @@ docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_her
 ```
 
 
-Right click the following links and save the following Jupyter notebook files to `sharedfolder` on your desktop. Navigate to [localhost:8889](localhost:8889) in your browser to open each notebook.
+Right click the following links and save the Jupyter notebook files to `sharedfolder` on your desktop. 
+
+Then navigate to [localhost:8889](localhost:8889) in your browser to open each notebook.
 
 1. [https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/week-07.1_CSV-Input-Output.ipynb](CSV Input/Output)
 
