@@ -3,6 +3,14 @@
 
 #### Student and instructor introductions
 
+<!--
+2018 notes: 
+data objects, data types -- lists, dictionaries, variables; 
+for loops
+functions
+spread over two weeks
+
+-->
 
 #### Command Line Basics
 
