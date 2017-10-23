@@ -363,6 +363,7 @@ Find the new file in `sharedfolder` and open it in Excel or LibreOffice. Take a 
 ![](week/3/Image-6.png)
 
 #### The Dictionary Data Type
+
 So far, when we want to access the “Artist” field in MoMA’s metadata, we’ve been referring to its position in a given row.
 
 ```python3
