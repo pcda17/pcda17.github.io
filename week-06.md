@@ -180,7 +180,22 @@ Crossref API format:
 https://search.crossref.org/dois?q=10.5555%2F12345678
 ```
 
+<!--
+I just posted a Jupyter notebook that expands on what we did in class yesterday. It's a step-by-step demonstration of what it looks like to extract several metadata fields from a collection of XML files, then write everything to disk as a CSV file:
 
+https://github.com/pcda17/pcda17.github.io/blob/master/Week-06_Scraping-and-Parsing-XML.ipynb (Links to an external site.)Links to an external site.
+
+ (Links to an external site.)Links to an external site.
+
+To run the notebook yourself, click "Raw" at the top right of the GitHub page to download the file. Once you add it to 'sharedfolder' on your desktop, open the Jupyter Home page (localhost:8889 (Links to an external site.)Links to an external site. while the Docker container is running) and click "Week-06_Scraping-and-Parsing-XML.ipynb" to open the notebook. To remove the output I've included under each cell, go to "Kernel > Restart & Clear Output" in the Jupyter toolbar.
+
+You can find the CSV I created here:
+
+https://github.com/pcda17/pcda17.github.io/blob/master/week/6/LOC_RS_Reduced_Metadata.csv?raw=true (Links to an external site.)Links to an external site.
+
+Those XML finding aids are relatively messy and inconsistent, so the parsing process is a bit involved. I'd encourage you to take some time and try to understand each step.
+
+-->
 
 <!--
 

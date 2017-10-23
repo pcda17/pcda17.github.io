@@ -23,28 +23,19 @@ Office hours: Mondays 1–3 p.m., UTA 5.558
 
 Prerequsites: advanced-level undergraduate or graduate coursework in the humanities; no or very little programming experience preferred;
 
-In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, *data* appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, *data* is “raw” and lacking in meaning, while *information*, the next higher level of the pyramid---just below *knowledge* and then *wisdom*---represents the presence of added links and relationships; *information* is higher up on the wisdom chain because it is *data* made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (*Where* is the data?); media, format, and technology constraints (*How* is the data?); and perspectives (*What* is the data? *Who* is involved in and impacted by its creation and use?).
+In the data, information, knowledge, wisdom (DIKW) hierarchy that circulates through Knowledge Management (KM) and Information Science (IS) discussions, data appears at the base of a pyramid of which wisdom is the pinnacle. In this schematic, data is “raw” and lacking in meaning, while information, the next higher level of the pyramid—just below knowledge and then wisdom—represents the presence of added links and relationships; information is higher up on the wisdom chain because it is data made meaningful. In the humanities, students are taught that data is not found in the “raw” but has rather been cooked all along, taken and constructed and seasoned according to our situated contexts including access issues (Where is the data?); media, format, and technology constraints (How is the data?); and perspectives (What is the data? Who is involved in and impacted by its creation and use?).
 
-Learning to think critically about data as *information* means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about *information* from this more critical perspective means first understanding how a culture tends to understand what is informative.
+Learning to think critically about data as information means rejecting common illusions about data more generally, including its objectivity, impersonality, atemporality, and authorlessness. To teach students to think about information from this more critical perspective means first understanding how a culture tends to understand what is informative.
 
-Towards these ends, this course takes on "data wrangling" in the context of humanist perspectives.
+Towards these ends, this course takes on “data wrangling” in the context of humanist perspectives.
 
-Goals:
+Learning goals:
 
--   Teach scripting-style programming in Python and Unix-like systems, emphasizing literacy in finding and using free and open source software.
+-  Exploration of cultural implications of large-scale preservation of cultural materials.
 
--   Familiarize students with techniques for collecting, transforming, and analyzing media and metadata available on the Web.
+-  Writing using perspectives in critical data studies;
 
--   Introduce commonly used data models and their standard formats, including CSV, JSON, and XML.
-
--   Explore computational text analysis techniques such as natural language processing (NLP), sentiment analysis, and machine learning classification.
-
--   Introduce tools for analyzing cultural data via visualization and statistical tests, emphasizing critical reflection on the limitations of these approaches.
-
--   Familiarize students with Web archiving and data curation practices.
-
--   Explore cultural implications of large-scale preservation of cultural materials.
-
+-  Familiarity with scripting-style programming in Python and Unix-like systems, emphasizing literacy in finding and using free and open source software; techniques for collecting, transforming, and analyzing media and metadata available on the Web; with commonly used data models and their standard formats, including CSV, JSON, and XML; with text analysis techniques such as natural language processing (NLP), sentiment analysis, and machine learning classification; and with tools for analyzing cultural data via visualization and statistical tests, emphasizing critical reflection on the limitations of these approaches.
 
 ### Course Principles
 
@@ -365,28 +356,14 @@ we'll work with APIs in week 7 and return to parsing JSON files. Proposals will 
 
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
 
+<!--
 ##### [▸ In-class outline](week-07.md)
-
-
-
-----------------------------------------------------------------
-
-
-# <a name="week8"></a>Week 8 (10/30): Your Data, Your culture
-
-### No Readings
-
-### Assignment
-
-[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
-
-
-##### [▸ In-class outline](week-08.md)
+-->
 
 ----------------------------------------------------------------
 
 
-# <a name="week9"></a>Week 9 (11/6): Statistics and Visualization
+# <a name="week8"></a>Week 8 (10/30): Statistics and Visualization
 
 <!--
 Install [numpy](http://www.numpy.org/) scientific computing library for Python.
@@ -404,19 +381,13 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 ### Readings
 
-
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
 
--   Montfort, Nick. Excerpt from “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016.
+-   Montfort, Nick. “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016.
 
 -   Krumme, Coco. “What Data Doesn’t Do.” In *Beautiful Data: The Stories behind Elegant Data Solutions*, edited by Toby Segaran and Jeff Hammerbacher, 1st ed. Beijing ; Sebastopol, CA: O’Reilly, 2009.
 
--   Manovich, Lev. “What Is Visualisation?” *Visual Studies* 26, no. 1 (March 15, 2011): 36–49. *http://www.tandfonline.com/doi/abs/10.1080/1472586X.2011.548488*.
-
--   Moretti, Franco. “Graphs.” In *Graphs, Maps, Trees: Abstract Models for Literary History*, 3–33. London ; New York: Verso, 2007.
-
 -   McCandles, David. *Information is Beautiful*. *http://www.informationisbeautiful.net*
-
 
 ### Optional Readings
 
@@ -424,22 +395,33 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
 
+-   Manovich, Lev. “What Is Visualisation?” *Visual Studies* 26, no. 1 (March 15, 2011): 36–49. *http://www.tandfonline.com/doi/abs/10.1080/1472586X.2011.548488*.
+
+-   Moretti, Franco. “Graphs.” In *Graphs, Maps, Trees: Abstract Models for Literary History*, 3–33. London ; New York: Verso, 2007.
+
 ### Assignment
 
+##### [▸ In-class outline](week-08.md)
+
+----------------------------------------------------------------
 
 
+# <a name="week9"></a>Week 9 (11/6): Your Data, Your culture
+
+### No Readings
+
+### Assignment
+
+[Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
+
+<!--
 ##### [▸ In-class outline](week-09.md)
-
-
+-->
 
 ----------------------------------------------------------------
 
 
 # <a name="week10"></a>Week 10 (11/13): Machine Learning
-
-<!--
-In week 9 we'll return to sentiment analysis, as a convenient source of data for creating visualizations.
--->
 
 ### Readings
 
@@ -450,6 +432,8 @@ In week 9 we'll return to sentiment analysis, as a convenient source of data for
 -   Brew, Chris. “Language Processing: Statistical Methods.” In Encyclopedia of Language & Linguistics, edited by Keith Brown, 2nd ed., 12:597–604. Elsevier, 2006.
 
 -   Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner, ProPublica. “Machine Bias.” *ProPublica*. May 23, 2016. [https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
+
+-   Revisit: Montfort, Nick. “Text III.” In *Exploratory Programming for the Arts and Humanities*, 185–213. Cambridge, MA: The MIT Press, 2016.
 
 -   “Working With Text Data.” scikit-learn.
                       [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
