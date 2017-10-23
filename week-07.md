@@ -1,4 +1,4 @@
-##Week 7: Data and Politics
+##Week 7: Data and Politics / CSVs and APIs
 
 
 Open Terminal in macOS and launch our Docker container:
