@@ -356,9 +356,7 @@ we'll work with APIs in week 7 and return to parsing JSON files. Proposals will 
 
 [WA #6](https://utexas.instructure.com/courses/1204381/discussion_topics/2841926)
 
-<!--
 ##### [▸ In-class outline](week-07.md)
--->
 
 ----------------------------------------------------------------
 
