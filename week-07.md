@@ -29,3 +29,7 @@ Right click the following links and save the Jupyter notebook files to `sharedfo
 3. [Scraping and Parsing XML finding aids](https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/Week-06_Scraping-and-Parsing-XML.ipynb)
 
 Navigate to [localhost:8889](localhost:8889) in your browser to open each notebook.
+
+Helpful hint: you may get an error if you are running a loop for a field that is empty. The good news is that you can add a safety net for this kind of eventuality using the statements "try" and "except" as you see in this example: 
+
+![](img/try.except.png) 
