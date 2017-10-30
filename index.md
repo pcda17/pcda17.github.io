@@ -169,8 +169,10 @@ Work through Chris Albon’s tutorial on Python string operations.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 <!--
-2018 note: maybe add Witmer's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities?  
+2018 note: maybe add Witmore's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities?  
 Assign Text I this week. 
+
+Witmore, Michael. 2016. “Latour, the Digital Humanities, and the Divided Kingdom of Knowledge.” New Literary History 47 (2): 353–75.
 -->
 
 ### Optional
@@ -329,8 +331,6 @@ Notes 2018: We decided to skip working with APIs on Monday due to limited time. 
 
 <!-- 
 
-Note: assign Text III this week. 
-
 we'll work with APIs in week 7 and return to parsing JSON files. Proposals will be due week 8.
 
 -->
@@ -380,6 +380,12 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 ### Readings
 
 **[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_9)**
+
+<!--
+
+Note: assign Text III and Burrows this week. 
+
+-->
 
 -   Montfort, Nick. “Statistics and Visualization.” In *Exploratory Programming for the Arts and Humanities*, 215–40. Cambridge, MA: The MIT Press, 2016.
 
