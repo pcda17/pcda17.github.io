@@ -1,8 +1,9 @@
 ##Week 8: Statistics and Visualization
 
 
+A useful Matplotlib tutorial: [http://www.labri.fr/perso/nrougier/teaching/matplotlib/](http://www.labri.fr/perso/nrougier/teaching/matplotlib/)
 
-    - A useful Matplotlib tutorial: [http://www.labri.fr/perso/nrougier/teaching/matplotlib/](http://www.labri.fr/perso/nrougier/teaching/matplotlib/)
+Abd a gallery of Matplotlib examples: [https://matplotlib.org/gallery.html](https://matplotlib.org/gallery.html)
 
 
 Open Terminal in macOS and launch our Docker container:
