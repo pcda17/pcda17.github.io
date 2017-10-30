@@ -1,9 +1,5 @@
-##Week 8: Statistics and Visualization
+## Week 8: Statistics and Visualization
 
-
-A useful Matplotlib tutorial: [http://www.labri.fr/perso/nrougier/teaching/matplotlib/](http://www.labri.fr/perso/nrougier/teaching/matplotlib/)
-
-Abd a gallery of Matplotlib examples: [https://matplotlib.org/gallery.html](https://matplotlib.org/gallery.html)
 
 
 Open Terminal in macOS and launch our Docker container:
@@ -29,6 +25,20 @@ Right click the following link and save the Jupyter notebook file to `sharedfold
 
 
 Navigate to [localhost:8889](localhost:8889) in your browser to open the notebook.
+
+
+### Resources
+
+
+- [Matplotlib gallery](https://matplotlib.org/gallery.html)
+
+- [Matplotlib tutorial](http://www.labri.fr/perso/nrougier/teaching/matplotlib/)
+
+- [Numpy quickstart tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+
+- [scipy.stats tutorial](https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html)
+
+- [An introduction to Numpy and SciPy](https://engineering.ucsb.edu/~shell/che210d/numpy.pdf)
 
 <!--
 ## Topics to Cover
