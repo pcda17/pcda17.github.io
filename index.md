@@ -383,7 +383,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 <!--
 
-Note: assign Text III and Burrows this week. 
+Note:  2018, assign Text III and Burrows this week. 
 
 -->
 
@@ -399,9 +399,11 @@ Note: assign Text III and Burrows this week.
 
 -   Thompson, Clive. “The Surprising History of the Infographic.” <http://www.smithsonianmag.com/history/surprising-history-infographic-180959563/?no-ist>
 
--   Manovich, Lev. “What Is Visualisation?” *Visual Studies* 26, no. 1 (March 15, 2011): 36–49. *http://www.tandfonline.com/doi/abs/10.1080/1472586X.2011.548488*.
+-   Manovich, Lev. “What Is Visualisation?” *Visual Studies* 26, no. 1 (March 15, 2011): 36–49. <http://www.tandfonline.com/doi/abs/10.1080/1472586X.2011.548488>.
 
 -   Moretti, Franco. “Graphs.” In *Graphs, Maps, Trees: Abstract Models for Literary History*, 3–33. London ; New York: Verso, 2007.
+
+-   Schmidt, B. "Do Digital Humanists Need to Understand Algorithms? <http://dhdebates.gc.cuny.edu/debates/text/99>
 
 ### Assignment
 
