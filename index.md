@@ -124,7 +124,7 @@ To start for next week:
 -   Stephenson, Neal. “In the Beginning Was the Command Line.” Cryptonomicon, 1999. <http://www.cryptonomicon.com/beginning.html>. [TXT](http://www.cryptonomicon.com/command.zip).
 
 <!--
-Kenneth Goldsmith and the Poetics of INformation? 
+Kenneth Goldsmith and the Poetics of INformation?
 -->
 
 ### Optional
@@ -170,7 +170,7 @@ Work through Chris Albon’s tutorial on Python string operations.
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
 <!--
 2018 note: maybe add Witmore's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities?  
-Assign Text I this week. 
+Assign Text I this week.
 
 Witmore, Michael. 2016. “Latour, the Digital Humanities, and the Divided Kingdom of Knowledge.” New Literary History 47 (2): 353–75.
 -->
@@ -329,7 +329,7 @@ Notes 2018: We decided to skip working with APIs on Monday due to limited time. 
 
 ### Readings
 
-<!-- 
+<!--
 
 we'll work with APIs in week 7 and return to parsing JSON files. Proposals will be due week 8.
 
@@ -383,7 +383,7 @@ Install [matplotlib](http://matplotlib.org/) visualization library for Python.
 
 <!--
 
-Note:  2018, assign Text III and Burrows this week. 
+Note:  2018, assign Text III and Burrows this week.
 
 -->
 
@@ -420,9 +420,8 @@ Note:  2018, assign Text III and Burrows this week.
 
 [Due: Proposal](https://utexas.instructure.com/courses/1204381/assignments/4166696)
 
-<!--
 ##### [▸ In-class outline](week-09.md)
--->
+
 
 ----------------------------------------------------------------
 
