@@ -79,6 +79,8 @@ Assignments should be posted on Canvas by midnight the day before class.
 -   Software Tools
 
 -   Sample Data Sources
+
+Add Gitelman on raw data oxymoron
 -->
 
 
