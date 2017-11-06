@@ -21,7 +21,7 @@ docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_her
 Right click the following link and save the Jupyter notebook file to `sharedfolder` on your desktop.
 
 
-- [Data Visualization and Statistics](https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/Week-09_Machine-Learning.ipynb)
+- [Machine Learning 1](https://raw.githubusercontent.com/pcda17/pcda17.github.io/master/Week-09_Machine-Learning.ipynb)
 
 
 Navigate to [localhost:8889](localhost:8889) in your browser to open the notebook.
