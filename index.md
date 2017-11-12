@@ -505,7 +505,38 @@ Getting their and getting it structured;
 ----------------------------------------------------------------
 
 
-# <a name="week12"></a>Week 12 (11/27): Copyright and the Information Commons
+# <a name="week12"></a>Week 12 (11/27): Peer Production & Crowdsourcing
+
+### Readings
+
+**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
+
+-   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
+
+-   Manzo, Christina, Geoff Kaufman, Sukdith Punjasthitkul, and Mary Flanagan. “‘By the People, For the People’: Assessing the Value of Crowdsourced, User-Generated Metadata.” *Digital Humanities Quarterly* 9, no. 1 (2015). [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html)
+
+-   Bodó, Balázs. “Set the Fox to Watch the Geese: Voluntary IP Regimes in Piratical File-sharing Communities.” In Piracy: Leakages from Modernity, edited by James Arvanitakis and Martin Fredriksson, 241–63. Sacramento, CA: Litwin Books, 2014.
+
+### Optional Readings
+
+-   Benkler, Yochai, and Helen Nissenbaum. “Commons-Based Peer Production and Virtue.” Journal of Political Philosophy 14, no. 4 (2006): 394–419. [https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf](https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf).
+
+-   Kreiss, D., M. Finn, and F. Turner. “The Limits of Peer Production: Some Reminders from Max Weber for the Network Society.” New Media & Society 13, no. 2 (March 1, 2011): 243–59.
+
+
+### Assignment
+
+[WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
+
+<! - 
+Machine learning in class 
+-->
+
+##### [▸ In-class outline](week-13.md)
+
+----------------------------------------------------------------
+
+# <a name="week13"></a>Week 13 (12/4): Copyright and the Information Commons
 
 ### Readings
 
@@ -529,46 +560,13 @@ Getting their and getting it structured;
 
 ### Assignment
 
-[WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
-<! - 
-Machine learning in class 
--->
-
+[WA #10](https://utexas.instructure.com/courses/1204381/discussion_topics/2842250)
 
 ##### [▸ In-class outline](week-12.md)
 
-
-
-----------------------------------------------------------------
-
-
-# <a name="week13"></a>Week 13 (12/4): Peer Production & Crowdsourcing
-
-### Readings
-
-**[Canvas](https://utexas.instructure.com/courses/1204381/files/folder/Week_13)**
-
--   Benkler, Yochai. “Peer Production and Sharing.” In *The Wealth of Networks: How Social Production Transforms Markets and Freedom*, 59–90. New Haven [Conn.]: Yale University Press, 2006.
-
--   Manzo, Christina, Geoff Kaufman, Sukdith Punjasthitkul, and Mary Flanagan. “‘By the People, For the People’: Assessing the Value of Crowdsourced, User-Generated Metadata.” *Digital Humanities Quarterly* 9, no. 1 (2015). [http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html](http://www.digitalhumanities.org/dhq/vol/9/1/000204/000204.html)
-
--   Bodó, Balázs. “Set the Fox to Watch the Geese: Voluntary IP Regimes in Piratical File-sharing Communities.” In Piracy: Leakages from Modernity, edited by James Arvanitakis and Martin Fredriksson, 241–63. Sacramento, CA: Litwin Books, 2014.
-
-### Optional Readings
-
--   Benkler, Yochai, and Helen Nissenbaum. “Commons-Based Peer Production and Virtue.” Journal of Political Philosophy 14, no. 4 (2006): 394–419. [https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf](https://www.nyu.edu/projects/nissenbaum/papers/jopp_235.pdf).
-
--   Kreiss, D., M. Finn, and F. Turner. “The Limits of Peer Production: Some Reminders from Max Weber for the Network Society.” New Media & Society 13, no. 2 (March 1, 2011): 243–59.
-
-
-### Assignment
-
-[WA #10]()
 <!-- 
 Steve talks about copyright and helps students
 -->
-
-##### [▸ In-class outline](week-13.md)
 
 
 ----------------------------------------------------------------
