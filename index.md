@@ -442,9 +442,6 @@ Note:  2018, assign Text III and Burrows this week.
 
 -   Revisit: Montfort, Nick. “Text III.” In *Exploratory Programming for the Arts and Humanities*, 185–213. Cambridge, MA: The MIT Press, 2016.
 
--   “Working With Text Data.” scikit-learn.
-                      [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
-
 -   Geitgey, Adam. “Machine Learning is Fun!” *Medium*. [https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471)
 
 
@@ -456,6 +453,9 @@ Note:  2018, assign Text III and Burrows this week.
 -   Baharudin, Baharum, Lam Hong Lee, and Khairullah Khan. “A Review of Machine Learning Algorithms for Text-Documents Classification.” *Journal of Advances in Information Technology* 1, no. 1 (February 1, 2010).
 
 -   Wolfram, S. Machine Learning for Middle Schoolers. Stephen Wolfram Blog. 11 May 2017. [http://blog.stephenwolfram.com/2017/05/machine-learning-for-middle-schoolers/#comments](http://blog.stephenwolfram.com/2017/05/machine-learning-for-middle-schoolers/#comments)
+
+-   “Working With Text Data.” scikit-learn.
+                      [http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
 
 ### Assignment
 
@@ -494,6 +494,10 @@ Note:  2018, assign Text III and Burrows this week.
 
 [WA #8](https://utexas.instructure.com/courses/1204381/discussion_topics/2842240)
 
+<! -- 
+Getting their and getting it structured; 
+-->
+
 
 ##### [▸ In-class outline](week-11.md)
 
@@ -526,6 +530,9 @@ Note:  2018, assign Text III and Burrows this week.
 ### Assignment
 
 [WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
+<! - 
+Machine learning in class 
+-->
 
 
 ##### [▸ In-class outline](week-12.md)
@@ -557,6 +564,9 @@ Note:  2018, assign Text III and Burrows this week.
 ### Assignment
 
 [WA #10]()
+<!-- 
+Steve talks about copyright and helps students
+-->
 
 ##### [▸ In-class outline](week-13.md)
 
