@@ -104,6 +104,10 @@ To start for next week:
 
 ##### [▸ In-class outline](week-01.md)
 
+<!--
+http://sites.nationalacademies.org/cstb/currentprojects/cstb_175246
+-->
+
 
 
 ----------------------------------------------------------------
