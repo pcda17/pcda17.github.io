@@ -498,8 +498,8 @@ Note:  2018, assign Text III and Burrows this week.
 
 [WA #8](https://utexas.instructure.com/courses/1204381/discussion_topics/2842240)
 
-<! -- 
-Getting their and getting it structured; 
+<! --
+Getting their and getting it structured;
 -->
 
 
@@ -532,8 +532,8 @@ Getting their and getting it structured;
 
 [WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
 
-<! - 
-Machine learning in class 
+<! -
+Machine learning in class
 -->
 
 ##### [▸ In-class outline](week-13.md)
@@ -568,7 +568,7 @@ Machine learning in class
 
 ##### [▸ In-class outline](week-12.md)
 
-<!-- 
+<!--
 Steve talks about copyright and helps students
 -->
 
@@ -582,3 +582,7 @@ Steve talks about copyright and helps students
 -- **[Installation Tutorials](tutorials/)**
 
 12/18: [Final Project due](https://utexas.instructure.com/courses/1204381/assignments/4166548)
+
+----------------------------------------------------------------
+Additional resources:
+# [Jeroen Janssens Seven Command Line Tools for Data Science (2013) workbench.](https://hub.docker.com/r/wlanderson/dsatclwb/)
