@@ -24,4 +24,8 @@ Right click the following link and save the Jupyter notebook file to `sharedfold
 
 ### resources
 
+- [Refrence Snippets: Strings and Lists](https://github.com/pcda17/pcda17.github.io/blob/master/Reference_Snippets_--_Strings_and_Lists.ipynb)
+
+
+
 - [Scikit-Learn cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
