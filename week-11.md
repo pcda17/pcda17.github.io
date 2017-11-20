@@ -1,4 +1,4 @@
-##Week 11
+## Week 11
 
 
 Open Terminal in macOS and launch our Docker container:
@@ -17,15 +17,27 @@ docker pull pcda17/ubuntu-container
 docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_here***\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
 ```
 
-Right click the following link and save the Jupyter notebook file to `sharedfolder` on your desktop.
+Download a Jupyter notebook from the list below to `sharedfolder` on your desktop.
 
 
+Navigate to [localhost:8889](localhost:8889) in your browser to open the notebook.
+
+
+### Jupyter Notebooks
+
+- [Reference Snippets: Strings and Lists](https://github.com/pcda17/pcda17.github.io/blob/master/Reference_Snippets_--_Strings_and_Lists.ipynb)
+
+- [Unsupervised Learning: k-means clustering](https://github.com/pcda17/pcda17.github.io/blob/master/Week-11.1_Clustering.ipynb)
+
+- [Supervised Learning](https://github.com/pcda17/pcda17.github.io/blob/master/Week-11.2_Supervised-learning.ipynb)
+
+- [New York Times Article Scraper](https://github.com/pcda17/pcda17.github.io/blob/master/Week-11_NYT_Article_Scrape.ipynb)
 
 ### Resources
 
-- [Refrence Snippets: Strings and Lists](https://github.com/pcda17/pcda17.github.io/blob/master/Reference_Snippets_--_Strings_and_Lists.ipynb)
+- [scikit-learn cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
 
+- [scikit-learn: Clustering Overview](http://scikit-learn.org/stable/modules/clustering.html)
 
+- [scikit-learn: Supervised Learning Overview](http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html)
 
-
-- [Scikit-Learn cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
