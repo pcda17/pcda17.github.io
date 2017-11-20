@@ -1,13 +1,31 @@
-##Week 11: Critical Text Analysis
+##Week 11
 
 
-#### Critical Text Analysis
-Discuss readings for first 45 minutes.
+Open Terminal in macOS and launch our Docker container:
 
-#### Discussion
- Have students briefly present their work and discuss projects as a group.
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume ~/Desktop/sharedfolder/:/sharedfolder/ pcda17/ubuntu-container
+```
 
-#### Break
+In Windows 10, open PowerShell and enter the following to launch the Docker container:
 
-#### Exercise
-Work on final project in class.
+```
+docker rm -f pcda_ubuntu
+docker pull pcda17/ubuntu-container
+docker run --name pcda_ubuntu -ti -p 8889:8889 --volume C:\Users\***username_here***\Desktop\sharedfolder:/sharedfolder/ pcda17/ubuntu-container
+```
+
+Right click the following link and save the Jupyter notebook file to `sharedfolder` on your desktop.
+
+
+
+### Resources
+
+- [Refrence Snippets: Strings and Lists](https://github.com/pcda17/pcda17.github.io/blob/master/Reference_Snippets_--_Strings_and_Lists.ipynb)
+
+
+
+
+- [Scikit-Learn cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
