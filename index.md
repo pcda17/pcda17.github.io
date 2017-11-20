@@ -579,12 +579,13 @@ Steve talks about copyright and helps students
 
 [Final Presentation due](https://utexas.instructure.com/courses/1204381/assignments/4166564)
 
--- **[Installation Tutorials](tutorials/)**
+
 
 12/18: [Final Project due](https://utexas.instructure.com/courses/1204381/assignments/4166548)
 
 ----------------------------------------------------------------
 # Additional resources:
+-- **[Installation Tutorials](tutorials/)**
 [Jeroen Janssens Seven Command Line Tools for Data Science (2013) workbench.](https://hub.docker.com/r/wlanderson/dsatclwb/)
 Juola, P. and Ramsay, S. [Six Septembers: Mathematics for the Humanist](http://digitalcommons.unl.edu/zeabook/55/). Zea E-Books.
 Seaver, Nick ["Algorithms as culture: Some tactics for the ethnography of algorithmic systems"](http://journals.sagepub.com/doi/10.1177/2053951717738104) Big Data and Society. 9 Nov. 2017
