@@ -532,7 +532,7 @@ Getting their and getting it structured;
 
 [WA #9](https://utexas.instructure.com/courses/1204381/discussion_topics/2842243)
 
-<! -
+<!--
 Machine learning in class
 -->
 
