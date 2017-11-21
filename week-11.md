@@ -45,19 +45,3 @@ Navigate to [localhost:8889](localhost:8889) in your browser to open the noteboo
 - [scikit-learn Supervised Learning Overview](http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html)
 
 
-
-<!--
-Add to notebook:
-
-print('Naive Bayes')
-print(naive_bayes_classifier.predict(input_vector)) ## Classifying each article in the list. '0' is correct.
-print('KNN')
-print(knn_classifier.predict(input_vector)) ## Classifying each article in the list. '0' is correct.
-print('Logistic Regression')
-print(lr_classifier.predict(input_vector)) ## Classifying each article in the list. '0' is correct.
-print('SVM')
-print(svm_classifier.predict(input_vector)) ## Classifying each article in the list. '0' is correct.
-print('MLP')
-print(mlp_classifier.predict(input_vector)) ## Classifying each article in the list. '0' is correct.
-
--->
