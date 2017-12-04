@@ -9,7 +9,9 @@ Topics to Cover
 
 -   legal debates around acquiring material for text and data mining research
 
+### In-Class Demos
 
+- [Link to GitHub](https://github.com/pcda17/pcda17.github.io/tree/master/week/13)
 
 ### Resources
 
