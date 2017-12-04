@@ -8,3 +8,9 @@ Topics to Cover
 -   database copyright in the U.S. vs. Europe
 
 -   legal debates around acquiring material for text and data mining research
+
+
+
+### Resources
+
+- [Data Visualization LibGuide](https://guides.lib.utexas.edu/data-visualization/resources)
