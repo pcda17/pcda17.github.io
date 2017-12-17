@@ -570,7 +570,6 @@ Machine learning in class
 Steve talks about copyright and helps students
 -->
 
-
 ----------------------------------------------------------------
 
 # <a name="week14"></a>Week 14 (12/11): Final Presentations
