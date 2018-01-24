@@ -174,11 +174,14 @@ Work through Chris Albon’s tutorial on Python string operations.
 - Liu, Alan. “The Meaning of the Digital Humanities.” *PMLA* 128, no. 2 (March 2013): 409–23.
 
 - Padilla, T. "On a Collections as Data Imperative." [PDF](http://digitalpreservation.gov/meetings/dcs16/tpadilla_OnaCollectionsasDataImperative_final.pdf).
+
 <!--
+
 2018 note: maybe add Witmore's piece on Latour and the two kingdoms or first chapter of Bens. Move Padilla to optional readings. What about Fish and interpretive communities?  
 Assign Text I this week.
 
 Witmore, Michael. 2016. “Latour, the Digital Humanities, and the Divided Kingdom of Knowledge.” New Literary History 47 (2): 353–75.
+
 -->
 
 ### Optional
